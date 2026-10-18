@@ -16,7 +16,7 @@ def build_report(data, games, team_id=None):
     report = {
         'generated_at': datetime.now(timezone.utc).isoformat(),
         'gameweek': event['id'] if event else None,
-        'methodology': 'Uncalibrated heuristic of ep_next, form, fixtures and availability',
+        'methodology': 'Uncalibrated heuristic of ep_next, form, fixtures and availability; do not treat projections as verified',
         'top_players': top,
         'value_picks': sorted(players, key=lambda p: p['value'], reverse=True)[:15],
         'captain_candidates': captains(players),
@@ -52,7 +52,7 @@ def build_report(data, games, team_id=None):
             bank = report['team']['manager']['bank']
             report['team']['multiweek_transfers'] = transfers_with_prices(squad, players, forecasts, bank)
             report['team']['starting_eleven'] = starting_eleven(squad)
-            report['team']['transfer_ideas'] = transfer_ideas(squad, players)
+            report['team']['transfer_ideas'] = []  # Replaced: legacy suggestions ignored selling prices and free transfer constraints.
         report['team']['note'] = 'Previous GW public picks and historical bank; may be stale, verify before transfer.'
     return report
 
