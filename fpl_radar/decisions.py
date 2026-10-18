@@ -36,8 +36,11 @@ def decision_desk(squad, market, forecasts, bank, event, deadline=None):
                                   'sell_price':selling,'bank_after':round(bank+selling-new['price'],1),
                                   'gain_5gw':round(total_gain,2),'gain_next':round(week_gain,2),
                                   'price_verified':price_verified})
+    # Highly uncertain recovery estimates must not masquerade as validated gains.
     moves.sort(key=lambda x:x['gain_5gw'],reverse=True)
     watchlist.sort(key=lambda x:x['gain_5gw'],reverse=True)
+    for item in moves+watchlist:
+        item['estimate_warning']='تقديرات خمس جولات تتأثر بافتراضات تعافي المصابين؛ ليست مكسباً مضموناً.'
     # No implied hit or confirmation of actual free-transfer count; this is a published-GW plan.
     recommended= moves[0] if moves and moves[0]['gain_5gw']>=5 else None
     if recommended:
@@ -46,7 +49,8 @@ def decision_desk(squad, market, forecasts, bank, event, deadline=None):
     else:
         action='الاحتفاظ بالانتقال مؤقتاً'
         reason='لا يوجد مكسب واضح يستحق انتقالاً وفق نموذج التقديرات الحالي، أو أسعار البيع غير متاحة'
-    return {'action':action,'reason':reason,'confidence':'منخفضة — نموذج غير معاير',
+    captain_scores=[{'name':p['name'],'points':round(forecasts.get(p['id'],{}).get('weeks',{}).get(event,0),2)} for p in captain[:3]]
+    return {'action':action,'reason':reason,'captain_comparison':captain_scores,'confidence':'منخفضة — نموذج غير معاير',
             'captain':captain[0]['name'] if captain else None,
             'vice_captain':captain[1]['name'] if len(captain)>1 else None,
             'starting': [p['name'] for p in starting],
