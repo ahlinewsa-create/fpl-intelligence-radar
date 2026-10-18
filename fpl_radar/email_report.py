@@ -47,6 +47,8 @@ def render(report):
             lead += '<p><strong>الصفقة المقترحة للمراجعة:</strong> '+esc(bestmove.get('sell'))+' ← '+esc(bestmove.get('buy'))+'، تحسن تقديري على خمس جولات: '+esc(bestmove.get('gain_5gw'))+'</p>'
         parts.insert(1, section('🎯 قرار فريقك لهذه الجولة', lead))
         parts.insert(2, section('تشكيلتك الأساسية والاحتياط', '<p><strong>الأساسي:</strong> '+esc('، '.join(desk.get('starting') or []))+'</p><p><strong>الاحتياط:</strong> '+esc('، '.join(desk.get('bench') or []))+'</p>'))
+        if desk.get('watchlist'):
+            parts.insert(3,section('🔎 فرص انتقال للمراقبة — الأسعار غير مؤكدة',table([(x.get('sell'),x.get('buy'),x.get('gain_next'),x.get('gain_5gw')) for x in desk['watchlist']],['بيع محتمل','شراء محتمل','فرق الجولة','فرق 5 جولات'])+'<p>هذه قائمة مراقبة تستخدم سعر اللاعب الحالي بديلاً تقريبياً عن سعر بيعه الشخصي. قد لا تكون الصفقات قابلة للتنفيذ؛ تحقق داخل اللعبة.</p>'))
         if desk.get('transfers'):
             parts.insert(3, section('أفضل ثلاث صفقات قابلة للمراجعة', table([(x.get('sell'),x.get('buy'),x.get('sell_price'),x.get('cost'),x.get('bank_after'),x.get('gain_5gw')) for x in desk['transfers']], ['بيع','شراء','سعر البيع','الشراء','البنك بعد','مكسب 5 جولات'])))
     chips = report.get('chip_strategy') or {}
@@ -64,22 +66,24 @@ def render(report):
             warning += '<p>لا توجد إشارة قوية حالياً؛ يفضّل الانتظار ومراقبة تغيّر الجداول.</p>'
         parts.append(section('توقيت الخواص الذكي', warning))
     parts.append(section('أفضل خيارات الكابتن', table([(p.get('name'),p.get('projected_double_points'), str(round(100*p.get('availability',0)))+'%') for p in captain[:5]], ['اللاعب','نقاط مضاعفة تقديرية','احتمال الإتاحة التقريبي'])))
-    parts.append(section('أعلى اللاعبين تقييماً', table([(p.get('name'),p.get('team'),p.get('position'),p.get('price'),p.get('estimated_score')) for p in report.get('top_players',[])[:12]], ['اللاعب','الفريق','المركز','السعر','نقاط تقديرية'])))
-    parts.append(section('أفضل قيمة مقابل السعر', table([(p.get('name'),p.get('price'),p.get('value')) for p in report.get('value_picks',[])[:8]], ['اللاعب','السعر','مؤشر القيمة'])))
+    parts.append(section('أعلى اللاعبين تقييماً', table([(p.get('name'),p.get('team'),p.get('position'),p.get('price'),p.get('estimated_score')) for p in report.get('top_players',[])[:7]], ['اللاعب','الفريق','المركز','السعر','نقاط تقديرية'])))
+    parts.append(section('أفضل قيمة مقابل السعر', table([(p.get('name'),p.get('price'),p.get('value')) for p in report.get('value_picks',[])[:5]], ['اللاعب','السعر','مؤشر القيمة'])))
     squad = report.get('suggested_squad') or {}
-    if squad.get('status') == 'ok':
+    if squad.get('status') == 'ok' and not team:
         parts.append(section('تشكيلة افتراضية من الصفر — ليست خطة انتقالات لحسابك', '<p>التكلفة '+esc(squad.get('cost'))+' — النقاط التقديرية لأفضل 11: '+esc((squad.get('lineup') or {}).get('projected_points'))+'</p>'+table([(p.get('name'),p.get('position'),p.get('price')) for p in squad.get('players',[])],['اللاعب','المركز','السعر'])))
     difficulty = report.get('fixture_difficulty_next_5') or {}
     parts.append(section('صعوبة المباريات القادمة', '<p>تم رصد جدول الصعوبة لـ '+esc(len(difficulty))+' فريقاً. الأرقام من 1 (أسهل) إلى 5 (أصعب) وفق FPL.</p>'))
     upcoming = report.get('multiweek_top') or []
     if upcoming:
-        parts.append(section('توقعات الخمس جولات القادمة', table([(x.get('name') or x.get('id'), x.get('total'), x.get('minutes_estimate'), x.get('xg_season_total'), x.get('xa_season_total')) for x in upcoming[:10]], ['اللاعب','نقاط 5 جولات','دقائق/مشاركة','xG الموسم','xA الموسم'])))
+        parts.append(section('توقعات الخمس جولات القادمة', table([(x.get('name') or x.get('id'), x.get('total'), x.get('minutes_estimate'), x.get('xg_season_total'), x.get('xa_season_total')) for x in upcoming[:6]], ['اللاعب','نقاط 5 جولات','دقائق/مشاركة','xG الموسم','xA الموسم'])))
     differentials = report.get('differentials') or []
     if differentials:
-        parts.append(section('فرص قليلة الملكية', table([(x.get('name'),x.get('ownership_pct'),x.get('five_week_estimate')) for x in differentials[:8]], ['اللاعب','الملكية %','تقييم 5 جولات'])))
+        parts.append(section('فرص قليلة الملكية', table([(x.get('name'),x.get('ownership_pct'),x.get('five_week_estimate')) for x in differentials[:5]], ['اللاعب','الملكية %','تقييم 5 جولات'])))
     watch = report.get('injury_watch') or []
     if watch:
-        parts.append(section('مراقبة الغيابات', table([(x.get('player'),x.get('status'),x.get('news')) for x in watch[:12]], ['اللاعب','الحالة','الخبر'])))
+        owned_names=set((desk.get('starting') or [])+(desk.get('bench') or []))
+        watch=sorted(watch,key=lambda x:(x.get('player') not in owned_names,x.get('player') or ''))
+        parts.append(section('مراقبة الغيابات', table([(x.get('player'),x.get('status'),x.get('news')) for x in watch[:7]], ['اللاعب','الحالة','الخبر'])))
     blanks = report.get('blank_double') or []
     if blanks:
         parts.append(section('الجولات المزدوجة والفارغة', table([(x.get('gw'),len(x.get('blank_team_ids') or []),len(x.get('double_team_ids') or [])) for x in blanks],['الجولة','فرق بلا مباريات','فرق بمباراتين'])))
