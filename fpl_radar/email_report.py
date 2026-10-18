@@ -31,27 +31,27 @@ def transfer_cards(moves, provisional=False):
         def label(side):
             name = esc(move.get(side))
             meta = esc(move.get(side + '_team') or '?') + ' · ' + esc(move.get(side + '_position') or '?') + ' · #' + esc(move.get(side + '_id'))
-            return ('<strong style="font-size:15px;color:#e2e8f0;">' + name + '</strong>'
-                    '<span style="display:block;color:#9caec1;font-size:11px;line-height:16px;">' + meta + '</span>')
+            return ('<strong style="font-size:15px;color:#1f2937;">' + name + '</strong>'
+                    '<span style="display:block;color:#64748b;font-size:11px;line-height:16px;">' + meta + '</span>')
         metric_cells = []
         for heading, value in [('توقع المباع', move.get('old_5gw')),
                                ('توقع المشترى', move.get('new_5gw')),
                                ('مكسب أفضل 11', '+' + str(move.get('team_gain_5gw', '—')))]:
-            metric_cells.append('<td width="33%" style="text-align:center;padding:8px 2px;background:#253e37;border:3px solid #30343a;border-radius:8px;vertical-align:top;">'
-                                '<span style="display:block;font-size:11px;color:#cbd5e1;">'+esc(heading)+'</span>'
-                                '<strong style="display:block;font-size:18px;color:#9af0d6;padding-top:3px;">'+esc(value)+'</strong></td>')
+            metric_cells.append('<td width="33%" style="text-align:center;padding:8px 2px;background:#edf7f2;border:3px solid #ffffff;border-radius:8px;vertical-align:top;">'
+                                '<span style="display:block;font-size:11px;color:#64748b;">'+esc(heading)+'</span>'
+                                '<strong dir="ltr" style="display:block;direction:ltr;text-align:center;font-size:18px;color:#16845f;padding-top:3px;">'+esc(value)+'</strong></td>')
         notes = ''
         if not provisional:
-            notes = '<p style="font-size:11px;color:#94a3b8;margin:8px 0 0;">سعر البيع '+esc(move.get('sell_price'))+' · الشراء '+esc(move.get('cost'))+' · البنك '+esc(move.get('bank_after'))+'</p>'
+            notes = '<p style="font-size:11px;color:#64748b;margin:8px 0 0;">سعر البيع '+esc(move.get('sell_price'))+' · الشراء '+esc(move.get('cost'))+' · البنك '+esc(move.get('bank_after'))+'</p>'
         cards.append(
-            '<table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="width:100%;border-collapse:separate;border-spacing:0;background:#30343a;border:1px solid #485563;border-radius:12px;margin:0 0 10px;">'
+            '<table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="width:100%;border-collapse:separate;border-spacing:0;background:#ffffff;border:1px solid #d8e1ea;border-radius:12px;margin:0 0 10px;">'
             '<tr><td style="padding:12px 12px 5px;text-align:right;">'
             '<table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:collapse;"><tr>'
             '<td width="47%" style="text-align:right;vertical-align:top;padding:0 3px;">'
-            '<span style="display:block;font-size:11px;color:#aebbc9;margin-bottom:3px;">بيع</span>'+label('sell')+'</td>'
-            '<td width="6%" style="text-align:center;color:#9af0d6;font-size:19px;vertical-align:middle;">←</td>'
+            '<span style="display:block;font-size:11px;color:#64748b;margin-bottom:3px;">بيع</span>'+label('sell')+'</td>'
+            '<td width="6%" style="text-align:center;color:#16845f;font-size:19px;vertical-align:middle;">←</td>'
             '<td width="47%" style="text-align:right;vertical-align:top;padding:0 3px;">'
-            '<span style="display:block;font-size:11px;color:#aebbc9;margin-bottom:3px;">شراء</span>'+label('buy')+'</td>'
+            '<span style="display:block;font-size:11px;color:#64748b;margin-bottom:3px;">شراء</span>'+label('buy')+'</td>'
             '</tr></table></td></tr><tr><td style="padding:5px 8px 10px;">'
             '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:collapse;"><tr>'+''.join(metric_cells)+'</tr></table>'+notes+
             '</td></tr></table>'
@@ -142,8 +142,7 @@ def render(report):
     if benchmark.get('n'):
         parts.append(section('🔬 فحص التوقعات', '<p>تمت مقارنة توقعاتنا مع تقييم FPL الرسمي لعدد '+esc(benchmark['n'])+' لاعب. متوسط الاختلاف المطلق: '+esc(benchmark.get('mean_absolute_disagreement'))+' نقطة. هذه مقارنة بين نموذجين وليست قياساً لدقة التنبؤ بنتائج المباريات.</p>'))
     parts.append('<p class="fine">هذه مؤشرات تقديرية غير مضمونة، وليست توقعاً إحصائياً معايراً. التشكيلات والانتقالات لا تنفذ تلقائياً، وبيانات الفريق قد تعكس الجولة السابقة فقط.</p>')
-    style='''body{margin:0;background:#f1f5f9;font-family:Tahoma,Arial,sans-serif;color:#142439;direction:rtl}.wrap{max-width:740px;margin:24px auto;background:#fff;border-radius:16px;overflow:hidden}.hero{background:#101a39;color:#fff;padding:30px}.hero h1{font-size:28px;margin:0 0 8px}.hero p{color:#cad5ee;margin:0}.inner{padding:20px 24px}.summary{display:flex;gap:8px;flex-wrap:wrap}.summary div{flex:1;min-width:130px;background:#eaf8f3;border-radius:10px;padding:14px;font-size:12px}.summary strong{display:block;font-size:19px;color:#005c4d;margin-top:6px}section{margin:22px 0 0;border:1px solid #e1e8f0;border-radius:10px;overflow:hidden}h2{font-size:17px;background:#f4f7fb;padding:14px;margin:0}section p{padding:0 14px}table{width:100%;border-collapse:collapse;text-align:right;font-size:13px}th,td{padding:10px;border-bottom:1px solid #e6edf3}th{color:#475569;background:#fafcfe}.fine{font-size:12px;color:#64748b;line-height:1.8}.footer{background:#f4f7fb;padding:15px;color:#64748b;font-size:12px}@media(max-width:500px){.inner{padding:10px}th,td{padding:6px;font-size:11px}}'''
-    style += '''.transfer-card{padding:14px;margin:12px;border:1px solid #cdd9e5;border-radius:12px;background:#fbfdff}.transfer-card p{padding:0;margin:7px 0;line-height:1.65}.transfer-label{font-size:11px;color:#64748b}.transfer-person{font-size:15px;font-weight:bold;overflow-wrap:anywhere}.player-meta{font-size:11px;color:#65758a;font-weight:normal;white-space:normal}.transfer-metrics{display:flex;gap:6px;margin:12px 0}.transfer-metrics div{flex:1;min-width:0;text-align:center;background:#eaf8f3;border-radius:8px;padding:9px 4px;font-size:10px;color:#475569}.transfer-metrics strong{display:block;font-size:17px;color:#005c4d;margin-top:5px}@media(max-width:500px){.transfer-card{margin:10px 7px;padding:12px}.transfer-person{font-size:14px}.transfer-metrics strong{font-size:15px}}'''
+    style='''body{margin:0;background:#f3f6fb;font-family:Tahoma,Arial,sans-serif;color:#1f2937;direction:rtl}.wrap{max-width:740px;margin:24px auto;background:#ffffff;border:1px solid #d8e1ea;border-radius:16px;overflow:hidden}.hero{background:#eef4fb;color:#1f2937;padding:30px}.hero h1{font-size:28px;margin:0 0 8px;color:#1f2937}.hero p{color:#64748b;margin:0}.inner{padding:20px 24px}.summary{display:flex;gap:8px;flex-wrap:wrap}.summary div{flex:1;min-width:130px;background:#edf7f2;border-radius:10px;padding:14px;font-size:12px;color:#475569}.summary strong{display:block;font-size:19px;color:#16845f;margin-top:6px}section{margin:22px 0 0;border:1px solid #d8e1ea;border-radius:10px;overflow:hidden;background:#ffffff}h2{font-size:17px;background:#f8fafc;color:#1f2937;padding:14px;margin:0}section p{padding:0 14px;color:#1f2937;line-height:1.8}table{width:100%;border-collapse:collapse;text-align:right;font-size:13px;color:#1f2937}th,td{padding:10px;border-bottom:1px solid #e6edf3}th{color:#475569;background:#f8fafc}.fine{font-size:12px;color:#64748b;line-height:1.8}.footer{background:#f8fafc;padding:15px;color:#64748b;font-size:12px}@media(max-width:500px){.inner{padding:10px}th,td{padding:6px;font-size:11px}}'''
     return '<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><style>'+style+'</style></head><body><div class="wrap"><div class="hero"><h1>⚽ رادار الفانتسي الذكي</h1><p>تقرير أسبوعي مخصص • الجولة '+esc(gw)+'</p></div><div class="inner">'+''.join(parts)+'</div><div class="footer">FPL Intelligence Radar • تقرير آلي • '+esc(datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC'))+' • نسخة '+esc(report.get('build_sha','unknown'))+'</div></div></body></html>'
 
 def send(report, *, smtp_host, smtp_port, username, password, recipient):
