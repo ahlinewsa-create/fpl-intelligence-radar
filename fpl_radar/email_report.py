@@ -37,6 +37,18 @@ def render(report):
         parts.append(section('اقتراحات الانتقالات', table([(m.get('sell'),m.get('buy'),m.get('estimated_gain_next_week')) for m in moves[:8]], ['بيع','شراء','فرق نقاط تقديري']) if moves else '<p>لا توجد اقتراحات موثوقة حالياً.</p>'))
     else:
         parts.append(section('بيانات فريقك', '<p>تعذر الحصول على تفاصيل فريقك في هذا التقرير؛ التحليل العام متاح.</p>'))
+    chips = report.get('chip_strategy') or {}
+    if chips:
+        names = {'wildcard':'وايلد كارد', 'freehit':'فري هيت', 'bboost':'بنش بوست', '3xc':'تريبل كابتن'}
+        advice = chips.get('recommendations') or []
+        warning = '<p>آخر جولة لاحتساب خواص هذا النصف: '+esc(chips.get('chip_deadline_gameweek'))+'. '+esc(chips.get('decision'))+'</p>'
+        if not chips.get('history_verified'):
+            warning += '<p><strong>تنبيه:</strong> لم يتم التأكد من سجل استخدام الخواص لدى حسابك. راجع اللعبة قبل تطبيق التوصية.</p>'
+        if advice:
+            warning += table([(x.get('gameweek'), names.get(x.get('chip'), x.get('chip')), x.get('confidence'), x.get('reason')) for x in advice], ['الجولة','الخاصية','الثقة','سبب الترشيح'])
+        else:
+            warning += '<p>لا توجد إشارة قوية حالياً؛ يفضّل الانتظار ومراقبة تغيّر الجداول.</p>'
+        parts.append(section('توقيت الخواص الذكي', warning))
     parts.append(section('أفضل خيارات الكابتن', table([(p.get('name'),p.get('projected_double_points'), str(round(100*p.get('availability',0)))+'%') for p in captain[:5]], ['اللاعب','نقاط مضاعفة تقديرية','احتمال الإتاحة التقريبي'])))
     parts.append(section('أعلى اللاعبين تقييماً', table([(p.get('name'),p.get('team'),p.get('position'),p.get('price'),p.get('estimated_score')) for p in report.get('top_players',[])[:12]], ['اللاعب','الفريق','المركز','السعر','نقاط تقديرية'])))
     parts.append(section('أفضل قيمة مقابل السعر', table([(p.get('name'),p.get('price'),p.get('value')) for p in report.get('value_picks',[])[:8]], ['اللاعب','السعر','مؤشر القيمة'])))
