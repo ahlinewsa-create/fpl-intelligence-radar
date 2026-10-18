@@ -78,6 +78,16 @@ class DecisionTests(unittest.TestCase):
         result=decision_desk(squad,market,forecasts,0,8)
         ids=[x['player_id'] for x in result['forecast_anomalies']]
         self.assertEqual(len(ids),len(set(ids)))
+    def test_transfer_identity_fields(self):
+        squad=self.squad()
+        candidate={'id':99,'name':'Duplicate','team':'XYZ','position':'MID','team_id':8,'estimated_score':8,'availability':1,'price':5}
+        forecasts={p['id']:{'weeks':{g:2 for g in range(8,13)}} for p in squad}
+        forecasts[99]={'weeks':{g:8 for g in range(8,13)}}
+        result=decision_desk(squad,squad+[candidate],forecasts,0,8)
+        move=result['transfers'][0]
+        self.assertEqual(move['buy_id'],99)
+        self.assertEqual(move['buy_team'],'XYZ')
+        self.assertEqual(len(move['new_starters']),11)
     def test_email_decision_render(self):
         html=render({'gameweek':8,'decision_desk':{'action':'انتقال يستحق المراجعة','starting':['A'],'bench':['B']}})
         self.assertIn('انتقال يستحق المراجعة',html)
