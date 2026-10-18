@@ -21,14 +21,41 @@ def section(title, content):
     return '<section><h2>'+esc(title)+'</h2>'+content+'</section>'
 
 def transfer_cards(moves, provisional=False):
-    """Compact stacked email cards, readable on mobile without horizontal tables."""
-    cards=[]
+    """Compact email-safe cards inspired by Foundation/Inky table layouts.
+
+    Inline styles avoid relying on Gmail preserving embedded CSS or flexbox.
+    A single compact row communicates each transfer; no giant paragraph gaps.
+    """
+    cards = []
     for move in moves[:3]:
-        def player(which):
-            return esc(move.get(which))+' <span class="player-meta">('+esc(move.get(which+'_team') or '?')+' · '+esc(move.get(which+'_position') or '?')+' · #'+esc(move.get(which+'_id'))+')</span>'
-        metrics='<div class="transfer-metrics"><div>توقع المباع<strong>'+esc(move.get('old_5gw'))+'</strong></div><div>توقع المشترى<strong>'+esc(move.get('new_5gw'))+'</strong></div><div>مكسب أفضل 11<strong>+'+esc(move.get('team_gain_5gw'))+'</strong></div></div>'
-        prices=(' <p class="fine">سعر البيع: '+esc(move.get('sell_price'))+' | سعر الشراء: '+esc(move.get('cost'))+' | البنك بعد: '+esc(move.get('bank_after'))+'</p>') if not provisional else ''
-        cards.append('<div class="transfer-card"><p class="transfer-label">بيع محتمل</p><p class="transfer-person">'+player('sell')+'</p><p class="transfer-label">⬇ شراء محتمل</p><p class="transfer-person">'+player('buy')+'</p>'+metrics+prices+'</div>')
+        def label(side):
+            name = esc(move.get(side))
+            meta = esc(move.get(side + '_team') or '?') + ' · ' + esc(move.get(side + '_position') or '?') + ' · #' + esc(move.get(side + '_id'))
+            return ('<strong style="font-size:15px;color:#e2e8f0;">' + name + '</strong>'
+                    '<span style="display:block;color:#9caec1;font-size:11px;line-height:16px;">' + meta + '</span>')
+        metric_cells = []
+        for heading, value in [('توقع المباع', move.get('old_5gw')),
+                               ('توقع المشترى', move.get('new_5gw')),
+                               ('مكسب أفضل 11', '+' + str(move.get('team_gain_5gw', '—')))]:
+            metric_cells.append('<td width="33%" style="text-align:center;padding:8px 2px;background:#253e37;border:3px solid #30343a;border-radius:8px;vertical-align:top;">'
+                                '<span style="display:block;font-size:11px;color:#cbd5e1;">'+esc(heading)+'</span>'
+                                '<strong style="display:block;font-size:18px;color:#9af0d6;padding-top:3px;">'+esc(value)+'</strong></td>')
+        notes = ''
+        if not provisional:
+            notes = '<p style="font-size:11px;color:#94a3b8;margin:8px 0 0;">سعر البيع '+esc(move.get('sell_price'))+' · الشراء '+esc(move.get('cost'))+' · البنك '+esc(move.get('bank_after'))+'</p>'
+        cards.append(
+            '<table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="width:100%;border-collapse:separate;border-spacing:0;background:#30343a;border:1px solid #485563;border-radius:12px;margin:0 0 10px;">'
+            '<tr><td style="padding:12px 12px 5px;text-align:right;">'
+            '<table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:collapse;"><tr>'
+            '<td width="47%" style="text-align:right;vertical-align:top;padding:0 3px;">'
+            '<span style="display:block;font-size:11px;color:#aebbc9;margin-bottom:3px;">بيع</span>'+label('sell')+'</td>'
+            '<td width="6%" style="text-align:center;color:#9af0d6;font-size:19px;vertical-align:middle;">←</td>'
+            '<td width="47%" style="text-align:right;vertical-align:top;padding:0 3px;">'
+            '<span style="display:block;font-size:11px;color:#aebbc9;margin-bottom:3px;">شراء</span>'+label('buy')+'</td>'
+            '</tr></table></td></tr><tr><td style="padding:5px 8px 10px;">'
+            '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:collapse;"><tr>'+''.join(metric_cells)+'</tr></table>'+notes+
+            '</td></tr></table>'
+        )
     return ''.join(cards)
 
 def render(report):
