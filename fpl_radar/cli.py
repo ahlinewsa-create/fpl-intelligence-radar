@@ -5,12 +5,14 @@ from pathlib import Path
 from .sources import bootstrap, fixtures, public_team, history_csv, statsbomb_competitions, chip_history
 from .analysis import ranked_players, current_event, assess_team
 from .chips import recommend_chips
+from .advanced import player_forecasts, injury_watch, price_watch, ownership_differentials, blank_double, manager_snapshot, transfers_with_prices
 from .strategy import fixture_matrix, team_strength, captains, suggested_squad, starting_eleven, transfer_ideas
 
 def build_report(data, games, team_id=None):
     event = current_event(data)
     players = ranked_players(data, games, limit=len(data['elements']))
     top = players[:20]
+    forecasts = player_forecasts(data, games, event['id']) if event else {}
     report = {
         'generated_at': datetime.now(timezone.utc).isoformat(),
         'gameweek': event['id'] if event else None,
@@ -21,6 +23,11 @@ def build_report(data, games, team_id=None):
         'fixture_difficulty_next_5': fixture_matrix(games, event['id']) if event else {},
         'team_strength': team_strength(data),
         'suggested_squad': suggested_squad(players),
+        'multiweek_top': sorted([{'id':pid, **value} for pid,value in forecasts.items()], key=lambda x:x['total'], reverse=True)[:25],
+        'injury_watch': injury_watch(data),
+        'price_watch': price_watch(data),
+        'differentials': ownership_differentials(data, forecasts),
+        'blank_double': blank_double(games, event['id']) if event else [],
         'sources': ['FPL bootstrap-static', 'FPL fixtures']
     }
     if team_id and event and event['id'] > 1:
@@ -32,14 +39,21 @@ def build_report(data, games, team_id=None):
             report['chip_history_warning'] = type(exc).__name__
         previous = public_team(team_id, event['id'] - 1)
         report['team'] = assess_team(previous['picks'], players)
+        report['team']['manager'] = manager_snapshot(previous['entry'], previous['picks'])
         by_id = {p['id']: p for p in players}
         squad = [by_id[x['element']] for x in previous['picks']['picks'] if x['element'] in by_id]
         report['chip_strategy'] = recommend_chips(event['id'], games, players, previous['picks'],
                                                    used_chips=chips_used, history_verified=verified)
         if len(squad) == 15:
+            prices = {p['element']:p.get('selling_price') for p in previous['picks']['picks']}
+            for player in squad:
+                if isinstance(prices.get(player['id']), int):
+                    player['selling_price'] = prices[player['id']] / 10
+            bank = report['team']['manager']['bank']
+            report['team']['multiweek_transfers'] = transfers_with_prices(squad, players, forecasts, bank)
             report['team']['starting_eleven'] = starting_eleven(squad)
             report['team']['transfer_ideas'] = transfer_ideas(squad, players)
-        report['team']['note'] = 'Previous GW public picks, indicative prices only; no future transfers exposed.'
+        report['team']['note'] = 'Previous GW public picks and historical bank; may be stale, verify before transfer.'
     return report
 
 def main():
