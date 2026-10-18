@@ -38,3 +38,21 @@ def audit_report(report):
     return {'status':'review' if problems else 'ok', 'warnings':problems,
             'prediction_is_calibrated':False,
             'data_freshness':'Previous published gameweek squad; live squad is not authenticated.'}
+
+def benchmark_forecasts(data, forecasts, gameweek):
+    """Compare with public FPL ep_next, a baseline rather than actual results."""
+    rows=[]
+    for player in data.get('elements', []):
+        predicted=forecasts.get(player.get('id'),{}).get('weeks',{}).get(gameweek)
+        try:
+            official=float(player.get('ep_next'))
+            if predicted is None:continue
+            rows.append({'name':player.get('web_name'), 'ours':float(predicted),
+                         'fpl_ep_next':official,'difference':round(float(predicted)-official,2)})
+        except (TypeError, ValueError):
+            continue
+    rows.sort(key=lambda x:abs(x['difference']),reverse=True)
+    return {'n':len(rows),
+            'mean_absolute_disagreement':round(sum(abs(r['difference']) for r in rows)/len(rows),3) if rows else None,
+            'outliers':rows[:8],
+            'note':'Disagreement with FPL estimates does not measure predictive accuracy.'}
