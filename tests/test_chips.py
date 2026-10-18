@@ -16,6 +16,12 @@ class ChipTests(unittest.TestCase):
         r = recommend_chips(19, [], [], {}, [], True)
         weeks = [x['gameweek'] for x in r['recommendations']]
         self.assertEqual(len(weeks), len(set(weeks)))
+    def test_no_wildcard_from_weak_count_only(self):
+        players=[{'id':i,'team_id':i,'availability':1.0,'estimated_score':1.0,'position':('GKP' if i<=2 else 'DEF' if i<=7 else 'MID' if i<=12 else 'FWD')} for i in range(1,16)]
+        picks={'picks':[{'element':i} for i in range(1,16)]}
+        fixtures=[{'event':8,'team_h':1,'team_a':2}]
+        result=recommend_chips(8,fixtures,players,picks,[],True)
+        self.assertNotIn('wildcard',[x['chip'] for x in result['recommendations']])
     def test_used_not_recommended(self):
         r = recommend_chips(19, [], [], {}, [{'name':'freehit','event':7}], True)
         self.assertNotIn('freehit', [x['chip'] for x in r['recommendations']])
