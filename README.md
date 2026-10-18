@@ -49,3 +49,11 @@ Personal team details come from the last published gameweek and may not reflect 
 Module `fpl_radar.advanced.backtest` can score saved predictions against actual points, but persistent history and automated reconciliation are not yet configured. Rival league comparison, guaranteed notification before each dynamic deadline, calibrated minute/points probabilities, authenticated real-time squads, and true mathematically optimal multiweek transfer/chip scheduling remain future work—not claimed as operational.
 
 The schedule remains **Wednesday 07:20 UTC**; do not treat it as a deadline reminder because FPL deadlines move.
+
+## Forecast evaluation (October 2026)
+
+Each successful report run now writes `data/forecast_history/gw_XX.json` **before** the gameweek has finished and includes it in the `fpl-report` Actions artifact. Snapshots are immutable within an individual run. To measure real accuracy, retrieve archived files from past runs and run `fpl_radar.history.evaluate(bootstrap(), directory='data/forecast_history')` after their gameweeks are marked finished.
+
+**Important limitations:** GitHub Actions runners are ephemeral. The workflow does **not yet consolidate snapshots between weekly runs**, automatically calculate accuracy in the next report, or auto-tune model weights. Uploaded artifacts expire after 14 days and must be downloaded or moved to persistent storage to keep a long-term record. A benchmark against official FPL `ep_next` measures disagreement, **not predictive skill**. No claims of improved model accuracy should be made without a genuine walk-forward backtest.
+
+Source candidates studied: vaastav/Fantasy-Premier-League for dated historical CSVs, probberechts/soccerdata for optional multi-source xG/Elo integration, and open-source FPL optimizers for mathematical multiweek transfer constraints. No third-party source code has been copied or installed. Keep the Wednesday 07:20 UTC workflow and existing mail secrets unchanged.
