@@ -14,6 +14,11 @@ from .strategy import fixture_matrix, team_strength, captains, suggested_squad, 
 def build_report(data, games, team_id=None):
     event = current_event(data)
     players = ranked_players(data, games, limit=len(data['elements']))
+    raw_by_id = {p['id']:p for p in data['elements']}
+    for player in players:
+        raw = raw_by_id[player['id']]
+        player['fpl_status'] = raw.get('status')
+        player['chance_of_playing_next_round'] = raw.get('chance_of_playing_next_round')
     top = players[:20]
     forecasts = player_forecasts(data, games, event['id']) if event else {}
     report = {
