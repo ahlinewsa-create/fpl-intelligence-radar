@@ -35,8 +35,12 @@ def recommend_chips(week, fixtures, players, squad, used_chips=(), history_verif
             fixtures_available = sum(1 for p in selected if counts.get(p['team_id'], 0))
             double_count = sum(1 for p in selected if p['team_id'] in double_teams)
             weak = sum(1 for p in selected if p['availability'] < .75 or p['estimated_score'] < 2.2)
-            bench = sorted(selected, key=lambda p: p['estimated_score'])[:4]
-            bench_estimate = sum(p['estimated_score'] for p in bench)
+            from .strategy import starting_eleven
+            try:
+                bench_ids = set(starting_eleven(selected)['bench_ids'])
+                bench_estimate = sum(p['estimated_score'] for p in selected if p['id'] in bench_ids)
+            except (ValueError, KeyError):
+                bench_estimate = 0
             captain = max(selected, key=lambda p: p['estimated_score'])
             captain_estimate = captain['estimated_score']
         else:
@@ -75,15 +79,19 @@ def recommend_chips(week, fixtures, players, squad, used_chips=(), history_verif
         if item['gameweek'] not in taken:
             picks.append(item)
             taken.add(item['gameweek'])
+    unique = {}
+    for item in sorted(picks, key=lambda p: (p['confidence'] != 'متوسط', p['gameweek'])):
+        unique.setdefault(item['chip'], item)
+    selected_advice = sorted(unique.values(), key=lambda p:p['gameweek']) if history_verified else []
     return {
         'half': 'الأول' if week <= 19 else 'الثاني',
         'chip_deadline_gameweek': end, 'weeks_remaining': remaining,
         'used_chips': sorted(used),
         'history_verified': history_verified,
         'decision': 'تحقق من توفر الخواص داخل حسابك قبل التفعيل؛ لا يمكن ترحيل خواص النصف الأول بعد الجولة 19.',
-        'recommendations': picks[:5],
+        'recommendations': selected_advice,
         'unused_count': len(CHIPS) - len(used),
         'urgency_note': ('تبقى %d خواص غير مستخدمة في النصف الحالي؛ لا يمكن استخدام أكثر من خاصية واحدة في الجولة.' % (len(CHIPS) - len(used))) if remaining <= 4 else '',
-        'no_action': not bool(picks),
+        'no_action': not bool(selected_advice),
         'rule': 'خاصية واحدة فقط لكل جولة'
     }
