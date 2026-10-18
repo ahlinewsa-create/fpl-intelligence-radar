@@ -42,6 +42,8 @@ def render(report):
         names = {'wildcard':'وايلد كارد', 'freehit':'فري هيت', 'bboost':'بنش بوست', '3xc':'تريبل كابتن'}
         advice = chips.get('recommendations') or []
         warning = '<p>آخر جولة لاحتساب خواص هذا النصف: '+esc(chips.get('chip_deadline_gameweek'))+'. '+esc(chips.get('decision'))+'</p>'
+        if chips.get('urgency_note'):
+            warning += '<p><strong>تنبيه المهلة:</strong> '+esc(chips['urgency_note'])+'</p>'
         if not chips.get('history_verified'):
             warning += '<p><strong>تنبيه:</strong> لم يتم التأكد من سجل استخدام الخواص لدى حسابك. راجع اللعبة قبل تطبيق التوصية.</p>'
         if advice:
