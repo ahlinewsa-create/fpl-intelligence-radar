@@ -28,6 +28,13 @@ class AdvancedTests(unittest.TestCase):
     def test_unavailable_player(self):
         inactive={**DATA,'elements':[{**DATA['elements'][0],'status':'u'}]}
         self.assertEqual(player_forecasts(inactive,FIX,8,2)[1]['weeks'][8],0)
+    def test_injury_recovery_is_not_permanently_zero(self):
+        injured={**DATA,'elements':[{**DATA['elements'][0],'status':'i','chance_of_playing_next_round':0}]}
+        games=FIX+[{'event':10,'team_h':10,'team_a':12,'team_h_difficulty':3}]
+        f=player_forecasts(injured,games,8,3)[1]
+        self.assertEqual(f['weeks'][8],0)
+        self.assertGreater(f['weeks'][9],0)
+        self.assertTrue(f['future_availability_uncertain'])
     def test_forecast_name_and_xg_labels(self):
         value=player_forecasts(DATA,FIX,8,2)[1]
         self.assertEqual(value['name'],'Player A')
