@@ -20,6 +20,17 @@ def table(rows, headings):
 def section(title, content):
     return '<section><h2>'+esc(title)+'</h2>'+content+'</section>'
 
+def transfer_cards(moves, provisional=False):
+    """Compact stacked email cards, readable on mobile without horizontal tables."""
+    cards=[]
+    for move in moves[:3]:
+        def player(which):
+            return esc(move.get(which))+' <span class="player-meta">('+esc(move.get(which+'_team') or '?')+' · '+esc(move.get(which+'_position') or '?')+' · #'+esc(move.get(which+'_id'))+')</span>'
+        metrics='<div class="transfer-metrics"><div>توقع المباع<strong>'+esc(move.get('old_5gw'))+'</strong></div><div>توقع المشترى<strong>'+esc(move.get('new_5gw'))+'</strong></div><div>مكسب أفضل 11<strong>+'+esc(move.get('team_gain_5gw'))+'</strong></div></div>'
+        prices=(' <p class="fine">سعر البيع: '+esc(move.get('sell_price'))+' | سعر الشراء: '+esc(move.get('cost'))+' | البنك بعد: '+esc(move.get('bank_after'))+'</p>') if not provisional else ''
+        cards.append('<div class="transfer-card"><p class="transfer-label">بيع محتمل</p><p class="transfer-person">'+player('sell')+'</p><p class="transfer-label">⬇ شراء محتمل</p><p class="transfer-person">'+player('buy')+'</p>'+metrics+prices+'</div>')
+    return ''.join(cards)
+
 def render(report):
     gw = report.get('gameweek') or 'غير محددة'
     captain = report.get('captain_candidates') or []
@@ -51,9 +62,9 @@ def render(report):
         if desk.get('forecast_anomalies'):
             parts.insert(3,section('⚠️ توقعات تحتاج مراجعة',table([(x.get('sell'),x.get('old_5gw'),x.get('reason')) for x in desk['forecast_anomalies']],['اللاعب','توقع 5 جولات','سبب التنبيه'])))
         if desk.get('watchlist'):
-            parts.insert(3,section('🔎 فرص انتقال للمراقبة — الأسعار غير مؤكدة',table([(str(x.get('sell'))+' ('+str(x.get('sell_team','?'))+' / '+str(x.get('sell_position','?'))+' #'+str(x.get('sell_id','?'))+')',str(x.get('buy'))+' ('+str(x.get('buy_team','?'))+' / '+str(x.get('buy_position','?'))+' #'+str(x.get('buy_id','?'))+')',x.get('old_5gw'),x.get('new_5gw'),x.get('team_gain_5gw')) for x in desk['watchlist']],['بيع محتمل','شراء محتمل','توقع المباع','توقع المشترى','مكسب أفضل 11'])+'<p>الأرقام تتأثر بافتراضات تعافي المصابين. هذه قائمة مراقبة تستخدم سعر اللاعب الحالي بديلاً تقريبياً عن سعر بيعه الشخصي. قد لا تكون الصفقات قابلة للتنفيذ؛ تحقق داخل اللعبة.</p>'))
+            parts.insert(3,section('🔎 فرص انتقال للمراقبة — الأسعار غير مؤكدة',transfer_cards(desk['watchlist'],provisional=True)+'<p class="fine">توقعات تقديرية غير معايرة، وليست نقاطاً مضمونة. تحقق من سعر البيع داخل اللعبة وعدد الانتقالات المجانية.</p>'))
         if desk.get('transfers'):
-            parts.insert(3, section('أفضل ثلاث صفقات قابلة للمراجعة', table([(str(x.get('sell'))+' ('+str(x.get('sell_team','?'))+' #'+str(x.get('sell_id','?'))+')',str(x.get('buy'))+' ('+str(x.get('buy_team','?'))+' #'+str(x.get('buy_id','?'))+')',x.get('sell_price'),x.get('cost'),x.get('bank_after'),x.get('old_5gw'),x.get('new_5gw'),x.get('team_gain_5gw')) for x in desk['transfers']], ['بيع','شراء','سعر البيع','الشراء','البنك بعد','توقع المباع','توقع المشترى','مكسب أفضل 11'])))
+            parts.insert(3,section('أفضل ثلاث صفقات قابلة للمراجعة',transfer_cards(desk['transfers'])))
     chips = report.get('chip_strategy') or {}
     if chips:
         names = {'wildcard':'وايلد كارد', 'freehit':'فري هيت', 'bboost':'بنش بوست', '3xc':'تريبل كابتن'}
@@ -105,6 +116,7 @@ def render(report):
         parts.append(section('🔬 فحص التوقعات', '<p>تمت مقارنة توقعاتنا مع تقييم FPL الرسمي لعدد '+esc(benchmark['n'])+' لاعب. متوسط الاختلاف المطلق: '+esc(benchmark.get('mean_absolute_disagreement'))+' نقطة. هذه مقارنة بين نموذجين وليست قياساً لدقة التنبؤ بنتائج المباريات.</p>'))
     parts.append('<p class="fine">هذه مؤشرات تقديرية غير مضمونة، وليست توقعاً إحصائياً معايراً. التشكيلات والانتقالات لا تنفذ تلقائياً، وبيانات الفريق قد تعكس الجولة السابقة فقط.</p>')
     style='''body{margin:0;background:#f1f5f9;font-family:Tahoma,Arial,sans-serif;color:#142439;direction:rtl}.wrap{max-width:740px;margin:24px auto;background:#fff;border-radius:16px;overflow:hidden}.hero{background:#101a39;color:#fff;padding:30px}.hero h1{font-size:28px;margin:0 0 8px}.hero p{color:#cad5ee;margin:0}.inner{padding:20px 24px}.summary{display:flex;gap:8px;flex-wrap:wrap}.summary div{flex:1;min-width:130px;background:#eaf8f3;border-radius:10px;padding:14px;font-size:12px}.summary strong{display:block;font-size:19px;color:#005c4d;margin-top:6px}section{margin:22px 0 0;border:1px solid #e1e8f0;border-radius:10px;overflow:hidden}h2{font-size:17px;background:#f4f7fb;padding:14px;margin:0}section p{padding:0 14px}table{width:100%;border-collapse:collapse;text-align:right;font-size:13px}th,td{padding:10px;border-bottom:1px solid #e6edf3}th{color:#475569;background:#fafcfe}.fine{font-size:12px;color:#64748b;line-height:1.8}.footer{background:#f4f7fb;padding:15px;color:#64748b;font-size:12px}@media(max-width:500px){.inner{padding:10px}th,td{padding:6px;font-size:11px}}'''
+    style += '''.transfer-card{padding:14px;margin:12px;border:1px solid #cdd9e5;border-radius:12px;background:#fbfdff}.transfer-card p{padding:0;margin:7px 0;line-height:1.65}.transfer-label{font-size:11px;color:#64748b}.transfer-person{font-size:15px;font-weight:bold;overflow-wrap:anywhere}.player-meta{font-size:11px;color:#65758a;font-weight:normal;white-space:normal}.transfer-metrics{display:flex;gap:6px;margin:12px 0}.transfer-metrics div{flex:1;min-width:0;text-align:center;background:#eaf8f3;border-radius:8px;padding:9px 4px;font-size:10px;color:#475569}.transfer-metrics strong{display:block;font-size:17px;color:#005c4d;margin-top:5px}@media(max-width:500px){.transfer-card{margin:10px 7px;padding:12px}.transfer-person{font-size:14px}.transfer-metrics strong{font-size:15px}}'''
     return '<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><style>'+style+'</style></head><body><div class="wrap"><div class="hero"><h1>⚽ رادار الفانتسي الذكي</h1><p>تقرير أسبوعي مخصص • الجولة '+esc(gw)+'</p></div><div class="inner">'+''.join(parts)+'</div><div class="footer">FPL Intelligence Radar • تقرير آلي • '+esc(datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC'))+' • نسخة '+esc(report.get('build_sha','unknown'))+'</div></div></body></html>'
 
 def send(report, *, smtp_host, smtp_port, username, password, recipient):
