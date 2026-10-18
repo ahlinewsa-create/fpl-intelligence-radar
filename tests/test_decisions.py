@@ -52,6 +52,14 @@ class DecisionTests(unittest.TestCase):
         forecasts[99]={'weeks':{g:8 for g in range(8,13)}}
         move=decision_desk(squad,squad+[target],forecasts,0,8)['transfers'][0]
         self.assertEqual(move['gain_5gw'],move['new_5gw']-move['old_5gw'])
+    def test_low_baseline_is_quarantined(self):
+        squad=self.squad()
+        forecasts={p['id']:{'weeks':{g:0.5 for g in range(8,13)}} for p in squad}
+        target={'id':99,'name':'Strong','position':'MID','team_id':8,'estimated_score':8,'availability':1,'fpl_status':'a','price':5}
+        forecasts[99]={'weeks':{g:8 for g in range(8,13)}}
+        result=decision_desk(squad,squad+[target],forecasts,0,8)
+        self.assertFalse(result['transfers'])
+        self.assertTrue(result['forecast_anomalies'])
     def test_email_decision_render(self):
         html=render({'gameweek':8,'decision_desk':{'action':'انتقال يستحق المراجعة','starting':['A'],'bench':['B']}})
         self.assertIn('انتقال يستحق المراجعة',html)
