@@ -6,7 +6,7 @@ from .sources import bootstrap, fixtures, public_team, history_csv, statsbomb_co
 from .analysis import ranked_players, current_event, assess_team
 from .chips import recommend_chips
 from .decisions import decision_desk
-from .quality import audit_report
+from .quality import audit_report, benchmark_forecasts
 from .advanced import player_forecasts, injury_watch, price_watch, ownership_differentials, blank_double, manager_snapshot, transfers_with_prices
 from .strategy import fixture_matrix, team_strength, captains, suggested_squad, starting_eleven, transfer_ideas
 
@@ -57,6 +57,7 @@ def build_report(data, games, team_id=None):
             report['decision_desk'] = decision_desk(squad, players, forecasts, bank, event['id'], event.get('deadline_time'))
             report['team']['transfer_ideas'] = []  # Replaced: legacy suggestions ignored selling prices and free transfer constraints.
         report['team']['note'] = 'Previous GW public picks and historical bank; may be stale, verify before transfer.'
+    report['forecast_benchmark'] = benchmark_forecasts(data, forecasts, event['id']) if event else {}
     report['quality'] = audit_report(report)
     return report
 
