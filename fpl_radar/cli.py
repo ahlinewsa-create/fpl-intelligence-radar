@@ -2,8 +2,9 @@ import argparse
 import json
 from datetime import datetime, timezone
 from pathlib import Path
-from .sources import bootstrap, fixtures, public_team, history_csv, statsbomb_competitions
+from .sources import bootstrap, fixtures, public_team, history_csv, statsbomb_competitions, chip_history
 from .analysis import ranked_players, current_event, assess_team
+from .chips import recommend_chips
 from .strategy import fixture_matrix, team_strength, captains, suggested_squad, starting_eleven, transfer_ideas
 
 def build_report(data, games, team_id=None):
@@ -23,10 +24,18 @@ def build_report(data, games, team_id=None):
         'sources': ['FPL bootstrap-static', 'FPL fixtures']
     }
     if team_id and event and event['id'] > 1:
+        try:
+            chips_used = chip_history(team_id)
+            verified = True
+        except (OSError, ValueError, KeyError) as exc:
+            chips_used, verified = [], False
+            report['chip_history_warning'] = type(exc).__name__
         previous = public_team(team_id, event['id'] - 1)
         report['team'] = assess_team(previous['picks'], players)
         by_id = {p['id']: p for p in players}
         squad = [by_id[x['element']] for x in previous['picks']['picks'] if x['element'] in by_id]
+        report['chip_strategy'] = recommend_chips(event['id'], games, players, previous['picks'],
+                                                   used_chips=chips_used, history_verified=verified)
         if len(squad) == 15:
             report['team']['starting_eleven'] = starting_eleven(squad)
             report['team']['transfer_ideas'] = transfer_ideas(squad, players)
