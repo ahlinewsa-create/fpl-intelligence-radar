@@ -39,3 +39,13 @@ The workflow creates a mobile-friendly RTL Arabic HTML report and attempts sendi
 The email step skips with a workflow warning if any of these values are missing; email delivery is **not enabled** until they exist and a live run succeeds. Secrets belong to this repository; secrets in `cults-radar` are not automatically shared. No credentials are committed to files. The workflow will still upload JSON reports without email. The existing weekly schedule remains `20 7 * * 3`.
 
 Run email unit tests with `python -m unittest discover -s tests -v`. Email delivery needs a separate live test.
+
+## Advanced analytics (development preview)
+
+The weekly JSON and RTL email now include per-GW five-week scoring heuristics, fixture blanks/doubles, injuries/news, ownership differentials, player xG/xA season totals, price-demand signals, and bank/buy suggestions where historically published pick selling prices exist. Their estimates are **not calibrated models**; all proposed moves must be confirmed inside the official game.
+
+Personal team details come from the last published gameweek and may not reflect transfers made since. If private/past team data is unavailable, the workflow attempts a general report and labels personal data unavailable.
+
+Module `fpl_radar.advanced.backtest` can score saved predictions against actual points, but persistent history and automated reconciliation are not yet configured. Rival league comparison, guaranteed notification before each dynamic deadline, calibrated minute/points probabilities, authenticated real-time squads, and true mathematically optimal multiweek transfer/chip scheduling remain future work—not claimed as operational.
+
+The schedule remains **Wednesday 07:20 UTC**; do not treat it as a deadline reminder because FPL deadlines move.
