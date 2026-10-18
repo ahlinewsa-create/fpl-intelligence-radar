@@ -15,6 +15,10 @@ def decision_desk(squad, market, forecasts, bank, event, deadline=None):
     moves=[]
     watchlist=[]
     flagged=[]
+    flagged_ids=set()
+    def xi_score(members, gw):
+        weekly=[{**p,'estimated_score':forecasts.get(p['id'],{}).get('weeks',{}).get(gw,0)} for p in members]
+        return starting_eleven(weekly)['projected_points']
     if bank is not None:
         for old in squad:
             selling=old.get('selling_price')
@@ -38,22 +42,28 @@ def decision_desk(squad, market, forecasts, bank, event, deadline=None):
                 total_gain=new_total-old_total
                 # Extremely low five-week baseline is a data-quality warning, not a reliable giant gain.
                 if old_total < 5 and old.get('fpl_status','a') == 'a' and old.get('availability',1)>=.75:
-                    flagged.append({'sell':old['name'],'buy':new['name'],'old_5gw':round(old_total,2), 'new_5gw':round(new_total,2),'reason':'توقع اللاعب المباع منخفض جداً ويحتاج مراجعة المباريات والدقائق'})
+                    if old['id'] not in flagged_ids:
+                        flagged_ids.add(old['id'])
+                        flagged.append({'player_id':old['id'],'sell':old['name'],'old_5gw':round(old_total,2),'reason':'توقع اللاعب المباع منخفض جداً ويحتاج مراجعة المباريات والدقائق'})
                     continue
-                if total_gain>2 and week_gain>-.5:
+                replacement=[p for p in squad if p['id']!=old['id']]+[new]
+                team_gain=sum(xi_score(replacement,g)-xi_score(squad,g) for g in range(event,event+5))
+                next_team_gain=xi_score(replacement,event)-xi_score(squad,event)
+                if team_gain>2 and next_team_gain>-.5:
                     target=moves if price_verified else watchlist
                     target.append({'sell':old['name'],'buy':new['name'],'cost':new['price'],
                                   'sell_price':selling,'bank_after':round(bank+selling-new['price'],1),
                                   'gain_5gw':round(total_gain,2),'gain_next':round(week_gain,2),
                                   'old_5gw':round(old_total,2),'new_5gw':round(new_total,2),
-                                  'price_verified':price_verified})
+                                  'price_verified':price_verified,'team_gain_5gw':round(team_gain,2), 'team_gain_next':round(next_team_gain,2),
+                                  'sell_id':old['id'],'buy_id':new['id']})
     # Highly uncertain recovery estimates must not masquerade as validated gains.
-    moves.sort(key=lambda x:x['gain_5gw'],reverse=True)
-    watchlist.sort(key=lambda x:x['gain_5gw'],reverse=True)
+    moves.sort(key=lambda x:x['team_gain_5gw'],reverse=True)
+    watchlist.sort(key=lambda x:x['team_gain_5gw'],reverse=True)
     for item in moves+watchlist:
         item['estimate_warning']='تقديرات خمس جولات تتأثر بافتراضات تعافي المصابين؛ ليست مكسباً مضموناً.'
     # No implied hit or confirmation of actual free-transfer count; this is a published-GW plan.
-    recommended= moves[0] if moves and moves[0]['gain_5gw']>=5 else None
+    recommended= moves[0] if moves and moves[0]['team_gain_5gw']>=5 else None
     if recommended:
         action='انتقال يستحق المراجعة'
         reason='أفضل انتقال متاح مالياً وفق بيانات الجولة المنشورة، بشرط تأكيد الانتقالات المجانية والأسعار الحالية'
@@ -64,6 +74,7 @@ def decision_desk(squad, market, forecasts, bank, event, deadline=None):
     return {'action':action,'reason':reason,'captain_comparison':captain_scores,'confidence':'منخفضة — نموذج غير معاير',
             'captain':captain[0]['name'] if captain else None,
             'vice_captain':captain[1]['name'] if len(captain)>1 else None,
+            'starting_ids':[p['id'] for p in starting], 'bench_ids':[p['id'] for p in bench],
             'starting': [p['name'] for p in starting],
             'bench':[p['name'] for p in bench],
             'bench_estimate':round(sum(forecasts.get(p['id'],{}).get('weeks',{}).get(event,0) for p in bench),2),
