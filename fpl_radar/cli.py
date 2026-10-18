@@ -74,7 +74,15 @@ def main():
         if not results['fpl']['ok'] or not results['fixtures']['ok']:
             raise SystemExit(1)
         return
-    report = build_report(bootstrap(), fixtures(), args.team_id)
+    data, games = bootstrap(), fixtures()
+    try:
+        report = build_report(data, games, args.team_id)
+    except (OSError, ValueError, KeyError, TypeError) as exc:
+        if not args.team_id:
+            raise
+        print(f'Warning: personalized data unavailable ({type(exc).__name__}); generating general report')
+        report = build_report(data, games)
+        report['personal_data_warning'] = type(exc).__name__
     output = Path(args.output)
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(json.dumps(report, indent=2, ensure_ascii=False), encoding='utf-8')
