@@ -5,6 +5,7 @@ from pathlib import Path
 from .sources import bootstrap, fixtures, public_team, history_csv, statsbomb_competitions, chip_history
 from .analysis import ranked_players, current_event, assess_team
 from .chips import recommend_chips
+from .decisions import decision_desk
 from .advanced import player_forecasts, injury_watch, price_watch, ownership_differentials, blank_double, manager_snapshot, transfers_with_prices
 from .strategy import fixture_matrix, team_strength, captains, suggested_squad, starting_eleven, transfer_ideas
 
@@ -52,6 +53,7 @@ def build_report(data, games, team_id=None):
             bank = report['team']['manager']['bank']
             report['team']['multiweek_transfers'] = transfers_with_prices(squad, players, forecasts, bank)
             report['team']['starting_eleven'] = starting_eleven(squad)
+            report['decision_desk'] = decision_desk(squad, players, forecasts, bank, event['id'], event.get('deadline_time'))
             report['team']['transfer_ideas'] = []  # Replaced: legacy suggestions ignored selling prices and free transfer constraints.
         report['team']['note'] = 'Previous GW public picks and historical bank; may be stale, verify before transfer.'
     return report
