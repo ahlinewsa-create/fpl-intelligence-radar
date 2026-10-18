@@ -51,3 +51,12 @@ def history_csv(season='2024-25'):
 
 def statsbomb_competitions():
     return get_json(f'{STATSBOMB}/competitions.json')
+
+def chip_history(team_id):
+    """Public history includes chips previously played, not future activations."""
+    if not 1 <= int(team_id) <= 100_000_000:
+        raise ValueError('Invalid team ID')
+    history = get_json(f'{FPL}/entry/{int(team_id)}/history/')
+    if not isinstance(history.get('chips'), list):
+        raise ValueError('Invalid chip history')
+    return history['chips']
