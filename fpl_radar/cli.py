@@ -1,5 +1,6 @@
 import argparse
 import json
+import os
 from datetime import datetime, timezone
 from pathlib import Path
 from .sources import bootstrap, fixtures, public_team, history_csv, statsbomb_competitions, chip_history
@@ -19,22 +20,24 @@ def build_report(data, games, team_id=None):
         raw = raw_by_id[player['id']]
         player['fpl_status'] = raw.get('status')
         player['chance_of_playing_next_round'] = raw.get('chance_of_playing_next_round')
-    top = players[:20]
+    healthy = [p for p in players if p.get('fpl_status') == 'a' and p.get('availability',0)>=.75]
+    top = healthy[:20]
     forecasts = player_forecasts(data, games, event['id']) if event else {}
     report = {
         'generated_at': datetime.now(timezone.utc).isoformat(),
+        'build_sha': os.environ.get('GITHUB_SHA','unknown')[:12],
         'gameweek': event['id'] if event else None,
         'methodology': 'Uncalibrated heuristic of ep_next, form, fixtures and availability; do not treat projections as verified',
         'top_players': top,
-        'value_picks': sorted(players, key=lambda p: p['value'], reverse=True)[:15],
-        'captain_candidates': captains(players),
+        'value_picks': sorted(healthy, key=lambda p: p['value'], reverse=True)[:15],
+        'captain_candidates': captains(healthy),
         'fixture_difficulty_next_5': fixture_matrix(games, event['id']) if event else {},
         'team_strength': team_strength(data),
         'suggested_squad': suggested_squad(players),
         'multiweek_top': sorted([{'id':pid, **value} for pid,value in forecasts.items()], key=lambda x:x['total'], reverse=True)[:25],
         'injury_watch': injury_watch(data),
         'price_watch': price_watch(data),
-        'differentials': ownership_differentials(data, forecasts),
+        'differentials': [x for x in ownership_differentials(data, forecasts,limit=100) if raw_by_id[x['player_id']].get('status') == 'a' and forecasts[x['player_id']]['availability'] >= .75][:12],
         'blank_double': blank_double(games, event['id']) if event else [],
         'sources': ['FPL bootstrap-static', 'FPL fixtures']
     }
