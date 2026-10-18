@@ -47,4 +47,4 @@ jobs:
           path: |
             reports/latest.json
             data/forecast_history/*.json
-          retention-days: 14
+          retention-days: 90
