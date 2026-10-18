@@ -33,14 +33,15 @@ def render(report):
         if lineup:
             details += '<p>التقدير الأساسي للتشكيلة: '+esc(lineup.get('projected_points'))+' نقطة تقريبية — مبني على لاعبي الجولة السابقة.</p>'
         parts.append(section('فريقك الشخصي', details))
-        moves = [] # Legacy single-GW suggestions omit true selling-price constraints.
-        parts.append(section('اقتراحات الانتقالات', '<p>'+esc((report.get('decision_desk') or {}).get('transfer_explanation') or 'لم تتوفر صفقة مؤهلة بحسب البيانات المنشورة.')+'</p>'))
+        # Transfer watchlist is presented once in the decision desk.
     else:
         parts.append(section('بيانات فريقك', '<p>تعذر الحصول على تفاصيل فريقك في هذا التقرير؛ التحليل العام متاح.</p>'))
     desk = report.get('decision_desk') or {}
     if desk:
         lead = '<p><strong>'+esc(desk.get('action'))+'</strong> — '+esc(desk.get('reason'))+'</p>'
         lead += '<p>الكابتن من فريقك: '+esc(desk.get('captain'))+' | النائب: '+esc(desk.get('vice_captain'))+'</p>'
+        if desk.get('captain_comparison'):
+            lead += '<p><strong>مقارنة كباتن فريقك:</strong> '+esc(' | '.join(str(x['name'])+': '+str(x['points']) for x in desk['captain_comparison']))+' نقطة متوقعة قبل المضاعفة.</p>'
         lead += '<p>المهلة: '+esc(desk.get('deadline'))+' | درجة الثقة: '+esc(desk.get('confidence'))+'</p>'
         bestmove = desk.get('best_transfer')
         if bestmove:
@@ -48,7 +49,7 @@ def render(report):
         parts.insert(1, section('🎯 قرار فريقك لهذه الجولة', lead))
         parts.insert(2, section('تشكيلتك الأساسية والاحتياط', '<p><strong>الأساسي:</strong> '+esc('، '.join(desk.get('starting') or []))+'</p><p><strong>الاحتياط:</strong> '+esc('، '.join(desk.get('bench') or []))+'</p>'))
         if desk.get('watchlist'):
-            parts.insert(3,section('🔎 فرص انتقال للمراقبة — الأسعار غير مؤكدة',table([(x.get('sell'),x.get('buy'),x.get('gain_next'),x.get('gain_5gw')) for x in desk['watchlist']],['بيع محتمل','شراء محتمل','فرق الجولة','فرق 5 جولات'])+'<p>هذه قائمة مراقبة تستخدم سعر اللاعب الحالي بديلاً تقريبياً عن سعر بيعه الشخصي. قد لا تكون الصفقات قابلة للتنفيذ؛ تحقق داخل اللعبة.</p>'))
+            parts.insert(3,section('🔎 فرص انتقال للمراقبة — الأسعار غير مؤكدة',table([(x.get('sell'),x.get('buy'),x.get('gain_next'),x.get('gain_5gw')) for x in desk['watchlist']],['بيع محتمل','شراء محتمل','فرق الجولة','فرق 5 جولات'])+'<p>الأرقام تتأثر بافتراضات تعافي المصابين. هذه قائمة مراقبة تستخدم سعر اللاعب الحالي بديلاً تقريبياً عن سعر بيعه الشخصي. قد لا تكون الصفقات قابلة للتنفيذ؛ تحقق داخل اللعبة.</p>'))
         if desk.get('transfers'):
             parts.insert(3, section('أفضل ثلاث صفقات قابلة للمراجعة', table([(x.get('sell'),x.get('buy'),x.get('sell_price'),x.get('cost'),x.get('bank_after'),x.get('gain_5gw')) for x in desk['transfers']], ['بيع','شراء','سعر البيع','الشراء','البنك بعد','مكسب 5 جولات'])))
     chips = report.get('chip_strategy') or {}
@@ -82,17 +83,16 @@ def render(report):
     watch = report.get('injury_watch') or []
     if watch:
         owned_names=set((desk.get('starting') or [])+(desk.get('bench') or []))
-        watch=sorted(watch,key=lambda x:(x.get('player') not in owned_names,x.get('player') or ''))
-        parts.append(section('مراقبة الغيابات', table([(x.get('player'),x.get('status'),x.get('news')) for x in watch[:7]], ['اللاعب','الحالة','الخبر'])))
+        target_names={x.get('buy') for x in (desk.get('watchlist') or [])+(desk.get('transfers') or [])}
+        watch=[x for x in watch if x.get('player') in owned_names or x.get('player') in target_names]
+        if watch: parts.append(section('غيابات فريقك وأهداف الانتقالات', table([(x.get('player'),x.get('status'),x.get('news')) for x in watch[:7]], ['اللاعب','الحالة','الخبر'])))
     blanks = report.get('blank_double') or []
     if blanks:
         parts.append(section('الجولات المزدوجة والفارغة', table([(x.get('gw'),len(x.get('blank_team_ids') or []),len(x.get('double_team_ids') or [])) for x in blanks],['الجولة','فرق بلا مباريات','فرق بمباراتين'])))
     manager = team.get('manager') or {}
     if manager:
         parts.append(section('ميزانية الفريق', '<p>البنك وفق بيانات الجولة السابقة: '+esc(manager.get('bank'))+' مليون. الترتيب العام: '+esc(manager.get('overall_rank'))+'. يجب التحقق من الرصيد الحالي قبل إجراء أي انتقال.</p>'))
-    moves_future = team.get('multiweek_transfers') or {}
-    if moves_future.get('ideas'):
-        parts.append(section('انتقالات وفق أفق خمس جولات', table([(x.get('sell'),x.get('buy'),x.get('gain_next_weeks')) for x in moves_future['ideas'][:6]],['بيع','شراء','تحسن تقديري'])))
+
     if not desk:
         parts.insert(1,section('القرار الرئيسي', '<p>تعذر استخراج توصية خاصة بالفريق؛ راجع بياناتك المنشورة.</p>'))
     quality = report.get('quality') or {}
