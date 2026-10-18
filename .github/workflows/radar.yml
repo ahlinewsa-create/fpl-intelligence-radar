@@ -20,7 +20,7 @@ jobs:
         run: python -m fpl_radar.cli --check-sources
       - name: Build report
         env:
-          FPL_TEAM_ID: ${{ vars.FPL_TEAM_ID }}
+          FPL_TEAM_ID: ${{ vars.FPL_TEAM_ID || '7954653' }}
         run: |
           if [ -n "$FPL_TEAM_ID" ]; then
             python -m fpl_radar.cli --team-id "$FPL_TEAM_ID"
