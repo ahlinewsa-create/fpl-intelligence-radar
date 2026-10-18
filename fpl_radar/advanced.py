@@ -42,7 +42,7 @@ def player_forecasts(data, fixtures, start_gw, horizon=5):
     return forecasts
 
 def injury_watch(data):
-    return [{'player':p.get('web_name'), 'status':p.get('status'), 'news':p.get('news') or '',
+    return [{'player_id':p.get('id'), 'team_id':p.get('team'), 'player':p.get('web_name'), 'status':p.get('status'), 'news':p.get('news') or '',
              'chance_next':p.get('chance_of_playing_next_round')}
             for p in data.get('elements',[]) if p.get('status') not in ('a',None) or p.get('news')]
 
