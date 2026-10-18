@@ -17,22 +17,22 @@ def player_forecasts(data, fixtures, start_gw, horizon=5):
     forecasts={}
     for p in elements:
         availability=p.get('chance_of_playing_next_round')
-        chance=(safe_float(availability)/100 if availability is not None else (1. if p.get('status')=='a' else .5))
+        chance=max(0.0,min(1.0,safe_float(availability)/100 if availability is not None else (1.0 if p.get('status')=='a' else (0.0 if p.get('status')=='u' else .5))))
         minutes=safe_float(p.get('minutes'))
         starts=safe_float(p.get('starts'))
-        minutes_per_start=(minutes/max(starts,1)) if starts else min(90,minutes/max(1,start_gw-1))
+        minutes_per_start=min(90.0,max(0.0,(minutes/max(starts,1)) if starts else (minutes/max(1,start_gw-1))))
         minute_factor=min(1.,minutes_per_start/80)
         form=safe_float(p.get('form'))
         ep=safe_float(p.get('ep_next'))
-        future_base=.55*form+.45*safe_float(p.get('points_per_game'),form)
+        future_base=.35*form+.65*safe_float(p.get('points_per_game'),form)
         by_gw={}
         for gw in range(start_gw,start_gw+horizon):
             ds=games.get((p.get('team'),gw),[])
             base=(.65*ep+.35*form) if gw==start_gw else future_base
-            by_gw[gw]=round(max(0,base*sum(1+(3-d)*.08 for d in ds)*chance*minute_factor),2)
+            by_gw[gw]=round(min(20.0,max(0,base*sum(1+(3-d)*.08 for d in ds)*chance*minute_factor)),2)
         forecasts[p['id']]={'weeks':by_gw, 'total':round(sum(by_gw.values()),2),
                              'availability':round(chance,2), 'minutes_estimate':round(minutes_per_start,1),
-                             'xg':safe_float(p.get('expected_goals')), 'xa':safe_float(p.get('expected_assists')),
+                             'name':p.get('web_name'), 'xg_season_total':safe_float(p.get('expected_goals')), 'xa_season_total':safe_float(p.get('expected_assists')),
                              'defensive_contributions':safe_float(p.get('defensive_contribution')),
                              'ownership_pct':safe_float(p.get('selected_by_percent'))}
     return forecasts
@@ -104,7 +104,7 @@ def transfers_with_prices(current_picks, available, forecasts, bank, free_transf
             if gain>0: ideas.append({'sell':old['name'],'buy':new['name'],'gain_next_weeks':round(gain,2),
                                     'cash_remaining':round(bank+selling-new['price'],2),
                                     'free_transfers_verified':free_transfers is not None})
-    return {'status':'ok','horizon':horizon,'free_transfers':free_transfers,
+    return {'status':'historical_estimates_only','horizon':horizon,'free_transfers':free_transfers,
             'warning':'Verify current squad and free transfers before acting; past GW picks may be stale.',
             'ideas':sorted(ideas,key=lambda x:x['gain_next_weeks'],reverse=True)[:limit]}
 
