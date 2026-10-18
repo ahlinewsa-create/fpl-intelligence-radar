@@ -37,6 +37,21 @@ class DecisionTests(unittest.TestCase):
         self.assertFalse(result['transfers'])
         self.assertTrue(result['watchlist'])
         self.assertIsNone(result['best_transfer'])
+    def test_injured_target_is_excluded(self):
+        squad=self.squad()
+        candidate={'id':99,'name':'Injured','position':'MID','team_id':8,'estimated_score':8,'availability':1,'fpl_status':'d','chance_of_playing_next_round':50,'price':5}
+        forecasts={p['id']:{'weeks':{g:2 for g in range(8,13)}} for p in squad}
+        forecasts[99]={'weeks':{g:8 for g in range(8,13)}}
+        result=decision_desk(squad,squad+[candidate],forecasts,1,8)
+        self.assertFalse(result['transfers'])
+        self.assertFalse(result['watchlist'])
+    def test_transfer_components_sum_to_gain(self):
+        squad=self.squad()
+        target={'id':99,'name':'Star','position':'MID','team_id':8,'estimated_score':8,'availability':1,'fpl_status':'a','price':5}
+        forecasts={p['id']:{'weeks':{g:2 for g in range(8,13)}} for p in squad}
+        forecasts[99]={'weeks':{g:8 for g in range(8,13)}}
+        move=decision_desk(squad,squad+[target],forecasts,0,8)['transfers'][0]
+        self.assertEqual(move['gain_5gw'],move['new_5gw']-move['old_5gw'])
     def test_email_decision_render(self):
         html=render({'gameweek':8,'decision_desk':{'action':'انتقال يستحق المراجعة','starting':['A'],'bench':['B']}})
         self.assertIn('انتقال يستحق المراجعة',html)
