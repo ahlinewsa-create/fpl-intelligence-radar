@@ -8,9 +8,12 @@ def recommend_chips(week, fixtures, players, squad, used_chips=(), history_verif
     end = 19 if week <= 19 else 38
     remaining = end - week + 1
     used = set()
+    previous_freehit_gw19 = False
     for item in used_chips:
         name = item.get('name') if isinstance(item, dict) else item
         event = item.get('event') if isinstance(item, dict) else None
+        if name == 'freehit' and event == 19:
+            previous_freehit_gw19 = True
         if name in CHIPS and (event is None or (event <= 19) == (week <= 19)):
             used.add(name)
     pool = {p['id']: p for p in players}
@@ -48,6 +51,8 @@ def recommend_chips(week, fixtures, players, squad, used_chips=(), history_verif
         }
         if remaining <= 4 and gw >= end - 3:
             for chip in CHIPS:
+                if chip == 'freehit' and gw == 20 and previous_freehit_gw19:
+                    continue
                 if chip in used:
                     continue
                 active, reason = signals[chip]
@@ -58,6 +63,8 @@ def recommend_chips(week, fixtures, players, squad, used_chips=(), history_verif
                                             'reason': 'آخر فرصة لهذه الخاصية في نصف الموسم؛ تقييمها ضعيف بالبيانات الحالية'})
         else:
             for chip, (active, reason) in signals.items():
+                if chip == 'freehit' and gw == 20 and previous_freehit_gw19:
+                    continue
                 if active and chip not in used:
                     recommendations.append({'gameweek': gw, 'chip': chip, 'confidence': 'متوسط', 'reason': reason})
     # Never recommend two chips in the same round; prioritize strength and shorter horizon.
@@ -75,6 +82,8 @@ def recommend_chips(week, fixtures, players, squad, used_chips=(), history_verif
         'history_verified': history_verified,
         'decision': 'تحقق من توفر الخواص داخل حسابك قبل التفعيل؛ لا يمكن ترحيل خواص النصف الأول بعد الجولة 19.',
         'recommendations': picks[:5],
+        'unused_count': len(CHIPS) - len(used),
+        'urgency_note': ('تبقى %d خواص غير مستخدمة في النصف الحالي؛ لا يمكن استخدام أكثر من خاصية واحدة في الجولة.' % (len(CHIPS) - len(used))) if remaining <= 4 else '',
         'no_action': not bool(picks),
         'rule': 'خاصية واحدة فقط لكل جولة'
     }
