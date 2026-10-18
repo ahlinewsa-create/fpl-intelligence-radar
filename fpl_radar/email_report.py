@@ -45,15 +45,15 @@ def render(report):
         lead += '<p>المهلة: '+esc(desk.get('deadline'))+' | درجة الثقة: '+esc(desk.get('confidence'))+'</p>'
         bestmove = desk.get('best_transfer')
         if bestmove:
-            lead += '<p><strong>الصفقة المقترحة للمراجعة:</strong> '+esc(bestmove.get('sell'))+' ← '+esc(bestmove.get('buy'))+'، تحسن تقديري على خمس جولات: '+esc(bestmove.get('gain_5gw'))+'</p>'
+            lead += '<p><strong>الصفقة المقترحة للمراجعة:</strong> '+esc(bestmove.get('sell'))+' ← '+esc(bestmove.get('buy'))+'، تحسن التشكيلة على خمس جولات: '+esc(bestmove.get('team_gain_5gw'))+'</p>'
         parts.insert(1, section('🎯 قرار فريقك لهذه الجولة', lead))
         parts.insert(2, section('تشكيلتك الأساسية والاحتياط', '<p><strong>الأساسي:</strong> '+esc('، '.join(desk.get('starting') or []))+'</p><p><strong>الاحتياط:</strong> '+esc('، '.join(desk.get('bench') or []))+'</p>'))
         if desk.get('forecast_anomalies'):
             parts.insert(3,section('⚠️ توقعات تحتاج مراجعة',table([(x.get('sell'),x.get('old_5gw'),x.get('reason')) for x in desk['forecast_anomalies']],['اللاعب','توقع 5 جولات','سبب التنبيه'])))
         if desk.get('watchlist'):
-            parts.insert(3,section('🔎 فرص انتقال للمراقبة — الأسعار غير مؤكدة',table([(x.get('sell'),x.get('buy'),x.get('old_5gw'),x.get('new_5gw'),x.get('gain_5gw')) for x in desk['watchlist']],['بيع محتمل','شراء محتمل','توقع المباع','توقع المشترى','الفرق'])+'<p>الأرقام تتأثر بافتراضات تعافي المصابين. هذه قائمة مراقبة تستخدم سعر اللاعب الحالي بديلاً تقريبياً عن سعر بيعه الشخصي. قد لا تكون الصفقات قابلة للتنفيذ؛ تحقق داخل اللعبة.</p>'))
+            parts.insert(3,section('🔎 فرص انتقال للمراقبة — الأسعار غير مؤكدة',table([(x.get('sell'),x.get('buy'),x.get('old_5gw'),x.get('new_5gw'),x.get('team_gain_5gw')) for x in desk['watchlist']],['بيع محتمل','شراء محتمل','توقع المباع','توقع المشترى','مكسب أفضل 11'])+'<p>الأرقام تتأثر بافتراضات تعافي المصابين. هذه قائمة مراقبة تستخدم سعر اللاعب الحالي بديلاً تقريبياً عن سعر بيعه الشخصي. قد لا تكون الصفقات قابلة للتنفيذ؛ تحقق داخل اللعبة.</p>'))
         if desk.get('transfers'):
-            parts.insert(3, section('أفضل ثلاث صفقات قابلة للمراجعة', table([(x.get('sell'),x.get('buy'),x.get('sell_price'),x.get('cost'),x.get('bank_after'),x.get('old_5gw'),x.get('new_5gw'),x.get('gain_5gw')) for x in desk['transfers']], ['بيع','شراء','سعر البيع','الشراء','البنك بعد','توقع المباع','توقع المشترى','الفرق'])))
+            parts.insert(3, section('أفضل ثلاث صفقات قابلة للمراجعة', table([(x.get('sell'),x.get('buy'),x.get('sell_price'),x.get('cost'),x.get('bank_after'),x.get('old_5gw'),x.get('new_5gw'),x.get('gain_5gw')) for x in desk['transfers']], ['بيع','شراء','سعر البيع','الشراء','البنك بعد','توقع المباع','توقع المشترى','مكسب أفضل 11'])))
     chips = report.get('chip_strategy') or {}
     if chips:
         names = {'wildcard':'وايلد كارد', 'freehit':'فري هيت', 'bboost':'بنش بوست', '3xc':'تريبل كابتن'}
@@ -84,9 +84,9 @@ def render(report):
         parts.append(section('فرص قليلة الملكية', table([(x.get('name'),x.get('ownership_pct'),x.get('five_week_estimate')) for x in differentials[:5]], ['اللاعب','الملكية %','تقييم 5 جولات'])))
     watch = report.get('injury_watch') or []
     if watch:
-        owned_names=set((desk.get('starting') or [])+(desk.get('bench') or []))
-        target_names={x.get('buy') for x in (desk.get('watchlist') or [])+(desk.get('transfers') or [])}
-        watch=[x for x in watch if x.get('player') in owned_names or x.get('player') in target_names]
+        owned_ids=set((desk.get('starting_ids') or [])+(desk.get('bench_ids') or []))
+        target_ids={x.get('buy_id') for x in (desk.get('watchlist') or [])+(desk.get('transfers') or [])}
+        watch=[x for x in watch if x.get('player_id') in owned_ids or x.get('player_id') in target_ids]
         if watch: parts.append(section('غيابات فريقك وأهداف الانتقالات', table([(x.get('player'),x.get('status'),x.get('news')) for x in watch[:7]], ['اللاعب','الحالة','الخبر'])))
     blanks = report.get('blank_double') or []
     if blanks:
