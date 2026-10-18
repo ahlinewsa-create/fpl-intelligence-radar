@@ -44,5 +44,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: fpl-report
-          path: reports/latest.json
+          path: |
+            reports/latest.json
+            data/forecast_history/*.json
           retention-days: 14
