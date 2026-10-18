@@ -21,4 +21,15 @@ class AdvancedTests(unittest.TestCase):
         self.assertEqual(len(injury_watch(DATA)),0)
     def test_differentials(self):
         self.assertEqual(ownership_differentials(DATA,player_forecasts(DATA,FIX,8,2))[0]['name'],'Player A')
+
+    def test_minutes_cap(self):
+        inflated={**DATA,'elements':[{**DATA['elements'][0],'minutes':1250,'starts':10}]}
+        self.assertLessEqual(player_forecasts(inflated,FIX,8,2)[1]['minutes_estimate'],90)
+    def test_unavailable_player(self):
+        inactive={**DATA,'elements':[{**DATA['elements'][0],'status':'u'}]}
+        self.assertEqual(player_forecasts(inactive,FIX,8,2)[1]['weeks'][8],0)
+    def test_forecast_name_and_xg_labels(self):
+        value=player_forecasts(DATA,FIX,8,2)[1]
+        self.assertEqual(value['name'],'Player A')
+        self.assertIn('xg_season_total',value)
 if __name__ == '__main__':unittest.main()
