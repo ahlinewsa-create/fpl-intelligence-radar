@@ -27,6 +27,16 @@ class DecisionTests(unittest.TestCase):
         result=decision_desk(squad,squad+[candidate],forecasts,1,8)
         self.assertTrue(result['transfers'])
         self.assertEqual(result['transfers'][0]['bank_after'],0)
+    def test_provisional_watchlist(self):
+        squad=self.squad()
+        for p in squad:p.pop('selling_price')
+        candidate={'id':99,'name':'Star','position':'MID','team_id':8,'estimated_score':8.0,'availability':1.0,'price':5.0}
+        forecasts={p['id']:{'weeks':{g:2 for g in range(8,13)}} for p in squad}
+        forecasts[99]={'weeks':{g:8 for g in range(8,13)}}
+        result=decision_desk(squad,squad+[candidate],forecasts,0,8)
+        self.assertFalse(result['transfers'])
+        self.assertTrue(result['watchlist'])
+        self.assertIsNone(result['best_transfer'])
     def test_email_decision_render(self):
         html=render({'gameweek':8,'decision_desk':{'action':'انتقال يستحق المراجعة','starting':['A'],'bench':['B']}})
         self.assertIn('انتقال يستحق المراجعة',html)
