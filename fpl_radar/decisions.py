@@ -56,7 +56,10 @@ def decision_desk(squad, market, forecasts, bank, event, deadline=None):
                                   'gain_5gw':round(total_gain,2),'gain_next':round(week_gain,2),
                                   'old_5gw':round(old_total,2),'new_5gw':round(new_total,2),
                                   'price_verified':price_verified,'team_gain_5gw':round(team_gain,2), 'team_gain_next':round(next_team_gain,2),
-                                  'sell_id':old['id'],'buy_id':new['id']})
+                                  'sell_id':old['id'],'buy_id':new['id'],
+                                  'sell_team':old.get('team'),'buy_team':new.get('team'),
+                                  'sell_position':old.get('position'),'buy_position':new.get('position'),
+                                  'new_starters':[p['name'] for p in replacement if p['id'] in starting_eleven([{**q,'estimated_score':forecasts.get(q['id'],{}).get('weeks',{}).get(event,0)} for q in replacement])['starting_ids']]})
     # Highly uncertain recovery estimates must not masquerade as validated gains.
     moves.sort(key=lambda x:x['team_gain_5gw'],reverse=True)
     watchlist.sort(key=lambda x:x['team_gain_5gw'],reverse=True)
