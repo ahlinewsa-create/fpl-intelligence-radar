@@ -60,6 +60,24 @@ class DecisionTests(unittest.TestCase):
         result=decision_desk(squad,squad+[target],forecasts,0,8)
         self.assertFalse(result['transfers'])
         self.assertTrue(result['forecast_anomalies'])
+    def test_team_gain_less_than_raw_gain_for_bench_swap(self):
+        squad=self.squad()
+        for p in squad: p['estimated_score']=4.0
+        target={'id':99,'name':'Better','position':'MID','team_id':8,'estimated_score':4,'availability':1,'fpl_status':'a','price':5}
+        forecasts={p['id']:{'weeks':{g:4 for g in range(8,13)}} for p in squad}
+        forecasts[99]={'weeks':{g:6 for g in range(8,13)}}
+        result=decision_desk(squad,squad+[target],forecasts,0,8)
+        self.assertTrue(result['transfers'])
+        self.assertLessEqual(result['transfers'][0]['team_gain_5gw'],result['transfers'][0]['gain_5gw'])
+    def test_duplicate_anomaly_one_per_seller(self):
+        squad=self.squad()
+        forecasts={p['id']:{'weeks':{g:.5 for g in range(8,13)}} for p in squad}
+        market=squad+[{'id':98,'name':'A','position':'MID','team_id':8,'estimated_score':8,'availability':1,'price':5},{'id':99,'name':'B','position':'MID','team_id':9,'estimated_score':8,'availability':1,'price':5}]
+        forecasts[98]={'weeks':{g:8 for g in range(8,13)}}
+        forecasts[99]={'weeks':{g:8 for g in range(8,13)}}
+        result=decision_desk(squad,market,forecasts,0,8)
+        ids=[x['player_id'] for x in result['forecast_anomalies']]
+        self.assertEqual(len(ids),len(set(ids)))
     def test_email_decision_render(self):
         html=render({'gameweek':8,'decision_desk':{'action':'انتقال يستحق المراجعة','starting':['A'],'bench':['B']}})
         self.assertIn('انتقال يستحق المراجعة',html)
