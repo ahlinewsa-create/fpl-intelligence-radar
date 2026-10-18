@@ -27,6 +27,20 @@ jobs:
           else
             python -m fpl_radar.cli
           fi
+      - name: Email polished Arabic report
+        if: ${{ success() }}
+        env:
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_PASS: ${{ secrets.GMAIL_PASS }}
+          TO_EMAIL: ${{ secrets.TO_EMAIL }}
+          SMTP_HOST: smtp.gmail.com
+          SMTP_PORT: '465'
+        run: |
+          if [ -z "$GMAIL_USER" ] || [ -z "$GMAIL_PASS" ] || [ -z "$TO_EMAIL" ]; then
+            echo "::warning::Email not configured. Add GMAIL_USER, GMAIL_PASS and TO_EMAIL repository secrets."
+          else
+            python -m fpl_radar.email_report
+          fi
       - uses: actions/upload-artifact@v4
         with:
           name: fpl-report
