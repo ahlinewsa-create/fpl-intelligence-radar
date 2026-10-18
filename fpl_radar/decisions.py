@@ -1,0 +1,48 @@
+"""Actionable but cautious FPL decision desk; uses only published data."""
+from .strategy import starting_eleven
+
+def decision_desk(squad, market, forecasts, bank, event, deadline=None):
+    if len(squad) != 15:
+        return {'action':'راجع بيانات فريقك','reason':'لم تُسترجع تشكيلة كاملة','transfers':[]}
+    by_id={p['id']:p for p in squad}
+    lineup=starting_eleven(squad)
+    starting=[by_id[i] for i in lineup['starting_ids']]
+    bench=[by_id[i] for i in lineup['bench_ids']]
+    captain=sorted(starting,key=lambda p:forecasts.get(p['id'],{}).get('weeks',{}).get(event,0),reverse=True)
+    owned=set(by_id)
+    clubs={}
+    for p in squad:clubs[p['team_id']]=clubs.get(p['team_id'],0)+1
+    moves=[]
+    if bank is not None:
+        for old in squad:
+            selling=old.get('selling_price')
+            if selling is None:continue
+            for new in market:
+                if new['id'] in owned or new['position']!=old['position'] or new.get('availability',0)<.75:continue
+                if new['price']>selling+bank+.00001:continue
+                if clubs.get(new['team_id'],0)-(old['team_id']==new['team_id'])>=3:continue
+                oldf=forecasts.get(old['id'],{}).get('weeks',{})
+                newf=forecasts.get(new['id'],{}).get('weeks',{})
+                week_gain=newf.get(event,0)-oldf.get(event,0)
+                total_gain=sum(newf.get(g,0)-oldf.get(g,0) for g in range(event,event+5))
+                if total_gain>2 and week_gain>-.5:
+                    moves.append({'sell':old['name'],'buy':new['name'],'cost':new['price'],
+                                  'sell_price':selling,'bank_after':round(bank+selling-new['price'],1),
+                                  'gain_5gw':round(total_gain,2),'gain_next':round(week_gain,2)})
+    moves.sort(key=lambda x:x['gain_5gw'],reverse=True)
+    # No implied hit or confirmation of actual free-transfer count; this is a published-GW plan.
+    recommended= moves[0] if moves and moves[0]['gain_5gw']>=5 else None
+    if recommended:
+        action='انتقال يستحق المراجعة'
+        reason='أفضل انتقال متاح مالياً وفق بيانات الجولة المنشورة، بشرط تأكيد الانتقالات المجانية والأسعار الحالية'
+    else:
+        action='الاحتفاظ بالانتقال مؤقتاً'
+        reason='لا يوجد مكسب واضح يستحق انتقالاً وفق نموذج التقديرات الحالي، أو أسعار البيع غير متاحة'
+    return {'action':action,'reason':reason,'confidence':'منخفضة — نموذج غير معاير',
+            'captain':captain[0]['name'] if captain else None,
+            'vice_captain':captain[1]['name'] if len(captain)>1 else None,
+            'starting': [p['name'] for p in starting],
+            'bench':[p['name'] for p in bench],
+            'bench_estimate':round(sum(forecasts.get(p['id'],{}).get('weeks',{}).get(event,0) for p in bench),2),
+            'transfers':moves[:3],'best_transfer':recommended,'deadline':deadline,
+            'data_note':'تشكيلة الجولة السابقة؛ ليست تأكيداً لتشكيلتك الحالية. لا تنفذ انتقالات تلقائياً.'}
