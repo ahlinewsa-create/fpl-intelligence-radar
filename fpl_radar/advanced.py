@@ -26,12 +26,16 @@ def player_forecasts(data, fixtures, start_gw, horizon=5):
         ep=safe_float(p.get('ep_next'))
         future_base=.35*form+.65*safe_float(p.get('points_per_game'),form)
         by_gw={}
+        # Current-week injury risk must not automatically be extrapolated for five rounds.
+        # Recovery is an uncertain scenario, not a confirmed return date.
+        permanently_unavailable = p.get('status') == 'u'
         for gw in range(start_gw,start_gw+horizon):
             ds=games.get((p.get('team'),gw),[])
             base=(.65*ep+.35*form) if gw==start_gw else future_base
-            by_gw[gw]=round(min(20.0,max(0,base*sum(1+(3-d)*.08 for d in ds)*chance*minute_factor)),2)
+            gw_chance = (0.0 if permanently_unavailable else (chance if gw == start_gw else min(0.85, chance + 0.15*(gw-start_gw)) if chance < .75 else chance))
+            by_gw[gw]=round(min(20.0,max(0,base*sum(1+(3-d)*.08 for d in ds)*gw_chance*minute_factor)),2)
         forecasts[p['id']]={'weeks':by_gw, 'total':round(sum(by_gw.values()),2),
-                             'availability':round(chance,2), 'minutes_estimate':round(minutes_per_start,1),
+                             'availability':round(chance,2), 'future_availability_uncertain':chance<.75 and not permanently_unavailable, 'minutes_estimate':round(minutes_per_start,1),
                              'name':p.get('web_name'), 'xg_season_total':safe_float(p.get('expected_goals')), 'xa_season_total':safe_float(p.get('expected_assists')),
                              'defensive_contributions':safe_float(p.get('defensive_contribution')),
                              'ownership_pct':safe_float(p.get('selected_by_percent'))}
