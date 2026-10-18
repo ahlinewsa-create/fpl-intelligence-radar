@@ -47,7 +47,7 @@ def recommend_chips(week, fixtures, players, squad, used_chips=(), history_verif
             fixtures_available = double_count = weak = 0
             bench_estimate = captain_estimate = 0
         signals = {
-            'wildcard': (weak >= 5, f'توجد {weak} نقاط ضعف تقريبية في الفريق'),
+            'wildcard': (False, f'وجود {weak} نقاط ضعف وحده لا يثبت جدوى الوايلد كارد؛ يلزم تقييم مكسبها مقابل الانتظار'),
             'freehit': (fixtures_available <= 8 and safe, f'{fixtures_available} لاعبين من فريقك لديهم مباريات في الجولة'),
             'bboost': (safe and bench_estimate >= 12 and fixtures_available >= 14, f'تقدير نقاط الدكة {bench_estimate:.1f}'),
             '3xc': (safe and captain_estimate >= 8 and (captain['team_id'] in double_teams or captain_estimate >= 11),
@@ -88,7 +88,7 @@ def recommend_chips(week, fixtures, players, squad, used_chips=(), history_verif
         'chip_deadline_gameweek': end, 'weeks_remaining': remaining,
         'used_chips': sorted(used),
         'history_verified': history_verified,
-        'decision': 'تحقق من توفر الخواص داخل حسابك قبل التفعيل؛ لا يمكن ترحيل خواص النصف الأول بعد الجولة 19.',
+        'decision': 'لا يُنصح بالوايلد كارد دون مقارنة خطتي التفعيل والانتظار؛ إشارات الخواص الأخرى مبدئية. تحقق من قواعد الموسم والمهل الرسمية.',
         'recommendations': selected_advice,
         'unused_count': len(CHIPS) - len(used),
         'urgency_note': ('تبقى %d خواص غير مستخدمة في النصف الحالي؛ لا يمكن استخدام أكثر من خاصية واحدة في الجولة.' % (len(CHIPS) - len(used))) if remaining <= 4 else '',
