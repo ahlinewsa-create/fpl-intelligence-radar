@@ -14,6 +14,7 @@ def decision_desk(squad, market, forecasts, bank, event, deadline=None):
     for p in squad:clubs[p['team_id']]=clubs.get(p['team_id'],0)+1
     moves=[]
     watchlist=[]
+    flagged=[]
     if bank is not None:
         for old in squad:
             selling=old.get('selling_price')
@@ -35,6 +36,10 @@ def decision_desk(squad, market, forecasts, bank, event, deadline=None):
                 old_total=sum(oldf.get(g,0) for g in range(event,event+5))
                 new_total=sum(newf.get(g,0) for g in range(event,event+5))
                 total_gain=new_total-old_total
+                # Extremely low five-week baseline is a data-quality warning, not a reliable giant gain.
+                if old_total < 5 and old.get('fpl_status','a') == 'a' and old.get('availability',1)>=.75:
+                    flagged.append({'sell':old['name'],'buy':new['name'],'old_5gw':round(old_total,2), 'new_5gw':round(new_total,2),'reason':'توقع اللاعب المباع منخفض جداً ويحتاج مراجعة المباريات والدقائق'})
+                    continue
                 if total_gain>2 and week_gain>-.5:
                     target=moves if price_verified else watchlist
                     target.append({'sell':old['name'],'buy':new['name'],'cost':new['price'],
@@ -62,5 +67,5 @@ def decision_desk(squad, market, forecasts, bank, event, deadline=None):
             'starting': [p['name'] for p in starting],
             'bench':[p['name'] for p in bench],
             'bench_estimate':round(sum(forecasts.get(p['id'],{}).get('weeks',{}).get(event,0) for p in bench),2),
-            'transfers':moves[:3],'watchlist':watchlist[:3],'best_transfer':recommended,'deadline':deadline,
+            'transfers':moves[:3],'watchlist':watchlist[:3],'forecast_anomalies':flagged[:3],'best_transfer':recommended,'deadline':deadline,
             'data_note':'تشكيلة الجولة السابقة؛ ليست تأكيداً لتشكيلتك الحالية. لا تنفذ انتقالات تلقائياً.'}
