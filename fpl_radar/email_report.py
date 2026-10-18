@@ -34,7 +34,7 @@ def render(report):
             details += '<p>التقدير الأساسي للتشكيلة: '+esc(lineup.get('projected_points'))+' نقطة تقريبية — مبني على لاعبي الجولة السابقة.</p>'
         parts.append(section('فريقك الشخصي', details))
         moves = [] # Legacy single-GW suggestions omit true selling-price constraints.
-        parts.append(section('اقتراحات الانتقالات', table([(m.get('sell'),m.get('buy'),m.get('estimated_gain_next_week')) for m in moves[:8]], ['بيع','شراء','فرق نقاط تقديري']) if moves else '<p>لا توجد اقتراحات موثوقة حالياً.</p>'))
+        parts.append(section('اقتراحات الانتقالات', '<p>'+esc((report.get('decision_desk') or {}).get('transfer_explanation') or 'لم تتوفر صفقة مؤهلة بحسب البيانات المنشورة.')+'</p>'))
     else:
         parts.append(section('بيانات فريقك', '<p>تعذر الحصول على تفاصيل فريقك في هذا التقرير؛ التحليل العام متاح.</p>'))
     desk = report.get('decision_desk') or {}
@@ -91,6 +91,9 @@ def render(report):
         parts.append(section('انتقالات وفق أفق خمس جولات', table([(x.get('sell'),x.get('buy'),x.get('gain_next_weeks')) for x in moves_future['ideas'][:6]],['بيع','شراء','تحسن تقديري'])))
     if not desk:
         parts.insert(1,section('القرار الرئيسي', '<p>تعذر استخراج توصية خاصة بالفريق؛ راجع بياناتك المنشورة.</p>'))
+    quality = report.get('quality') or {}
+    if quality.get('warnings'):
+        parts.append(section('ملاحظات جودة البيانات', '<p>'+esc(' | '.join(quality['warnings']))+'</p>'))
     parts.append('<p class="fine">هذه مؤشرات تقديرية غير مضمونة، وليست توقعاً إحصائياً معايراً. التشكيلات والانتقالات لا تنفذ تلقائياً، وبيانات الفريق قد تعكس الجولة السابقة فقط.</p>')
     style='''body{margin:0;background:#f1f5f9;font-family:Tahoma,Arial,sans-serif;color:#142439;direction:rtl}.wrap{max-width:740px;margin:24px auto;background:#fff;border-radius:16px;overflow:hidden}.hero{background:#101a39;color:#fff;padding:30px}.hero h1{font-size:28px;margin:0 0 8px}.hero p{color:#cad5ee;margin:0}.inner{padding:20px 24px}.summary{display:flex;gap:8px;flex-wrap:wrap}.summary div{flex:1;min-width:130px;background:#eaf8f3;border-radius:10px;padding:14px;font-size:12px}.summary strong{display:block;font-size:19px;color:#005c4d;margin-top:6px}section{margin:22px 0 0;border:1px solid #e1e8f0;border-radius:10px;overflow:hidden}h2{font-size:17px;background:#f4f7fb;padding:14px;margin:0}section p{padding:0 14px}table{width:100%;border-collapse:collapse;text-align:right;font-size:13px}th,td{padding:10px;border-bottom:1px solid #e6edf3}th{color:#475569;background:#fafcfe}.fine{font-size:12px;color:#64748b;line-height:1.8}.footer{background:#f4f7fb;padding:15px;color:#64748b;font-size:12px}@media(max-width:500px){.inner{padding:10px}th,td{padding:6px;font-size:11px}}'''
     return '<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><style>'+style+'</style></head><body><div class="wrap"><div class="hero"><h1>⚽ رادار الفانتسي الذكي</h1><p>تقرير أسبوعي مخصص • الجولة '+esc(gw)+'</p></div><div class="inner">'+''.join(parts)+'</div><div class="footer">FPL Intelligence Radar • تقرير آلي • '+esc(datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC'))+'</div></div></body></html>'
