@@ -24,10 +24,10 @@ class EmailReportTests(unittest.TestCase):
     def test_mobile_transfer_cards(self):
         from fpl_radar.email_report import transfer_cards
         html=transfer_cards([{'sell':'Szoboszlai','buy':'Henderson','sell_id':368,'buy_id':101,'sell_team':'LIV','buy_team':'CHE','sell_position':'MID','buy_position':'MID','old_5gw':3.75,'new_5gw':38.5,'team_gain_5gw':29.66}],provisional=True)
-        self.assertIn('transfer-card',html)
+        self.assertIn('role="presentation"',html)
         self.assertIn('#101',html)
         self.assertIn('29.66',html)
-        self.assertNotIn('<table',html)
+        self.assertIn('<table',html)
 
 if __name__ == '__main__':
     unittest.main()
