@@ -1,50 +1,9 @@
-name: FPL Radar
+name: Fantasy Radar (retired)
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '20 7 * * 3'
-permissions:
-  contents: read
 jobs:
-  radar:
+  retired:
+    if: ${{ false }}
     runs-on: ubuntu-latest
-    timeout-minutes: 8
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-      - name: Unit tests
-        run: python -m unittest discover -s tests -v
-      - name: Check sources
-        run: python -m fpl_radar.cli --check-sources
-      - name: Build report
-        env:
-          FPL_TEAM_ID: ${{ vars.FPL_TEAM_ID || '7954653' }}
-        run: |
-          if [ -n "$FPL_TEAM_ID" ]; then
-            python -m fpl_radar.cli --team-id "$FPL_TEAM_ID"
-          else
-            python -m fpl_radar.cli
-          fi
-      - name: Email polished Arabic report
-        if: ${{ success() }}
-        env:
-          GMAIL_USER: ${{ secrets.GMAIL_USER }}
-          GMAIL_PASS: ${{ secrets.GMAIL_PASS }}
-          TO_EMAIL: ${{ secrets.TO_EMAIL }}
-          SMTP_HOST: smtp.gmail.com
-          SMTP_PORT: '465'
-        run: |
-          if [ -z "$GMAIL_USER" ] || [ -z "$GMAIL_PASS" ] || [ -z "$TO_EMAIL" ]; then
-            echo "::warning::Email not configured. Add GMAIL_USER, GMAIL_PASS and TO_EMAIL repository secrets."
-          else
-            python -m fpl_radar.email_report
-          fi
-      - uses: actions/upload-artifact@v4
-        with:
-          name: fpl-report
-          path: |
-            reports/latest.json
-            data/forecast_history/*.json
-          retention-days: 90
+      - run: echo 'Retired'
