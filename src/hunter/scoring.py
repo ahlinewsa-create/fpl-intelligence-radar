@@ -22,8 +22,9 @@ def compute(op: dict) -> dict:
     context = " ".join(x.get("excerpt", "") for x in evidence).casefold()
     metrics = {
         "demand": min(1.0, intents / 5) if intents else None,
-        "gap": (max(0.0, 0.85 - 0.20 * competition.get("exact_name_candidates", 0))
-                if competition.get("status") == "sampled" else None),
+        # A sampled name search is never proof of an unsaturated STL market.
+        # Reserve numeric market-gap scoring for a future object-verified audit.
+        "gap": None,
         "freshness": (1 if age <= 1 else 0.8 if age <= 3 else 0.5 if age <= 7
                       else 0.2) if age is not None else None,
         "scarcity": (0.35 if any(s in context for s in ("exclusive", "limited", "collector", "sold out"))
@@ -38,7 +39,7 @@ def compute(op: dict) -> dict:
     confidence = round(100 * (
         0.25 * bool(evidence) +
         0.25 * bool(demand) +
-        0.25 * (competition.get("status") == "sampled") +
+        0.10 * (competition.get("status") == "sampled") +
         0.15 * bool(op.get("first_signal_date")) +
         0.10 * (missing < 15)
     ))
@@ -46,6 +47,9 @@ def compute(op: dict) -> dict:
         confidence = min(confidence, 49)
     if competition.get("status") != "sampled":
         confidence = min(confidence, 35)
+    else:
+        # Competition is an observed search *sample*, not an exhaustive audit.
+        confidence = min(confidence, 55)
     # A provisional name match is never sufficient evidence to recommend cloning.
     decision = "WATCH"
     if not evidence:
@@ -54,8 +58,8 @@ def compute(op: dict) -> dict:
         "lower": round(lower, 1), "upper": round(min(100, lower + missing), 1),
         "confidence": confidence, "decision": decision,
         "missing_factors": [key for key, value in metrics.items() if value is None],
-        "window": "WATCH", "score_version": "MVP-1",
-        "notes": "Provisional candidate; image/rights review and demand evidence required.",
+        "window": "WATCH", "score_version": "MVP-2",
+        "notes": "Search sample is unverified; visual competition, buying demand and rights review required.",
     }
 
 
