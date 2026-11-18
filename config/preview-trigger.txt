@@ -1,2 +1,4 @@
 Safe non-email preview of upgraded TaL3D analysis (Horizon-inspired full article extraction).
 Triggered 2026-11-18 Asia/Riyadh.
+
+Retry safe preview with diagnostic output after Horizon-inspired changes (2026-11-18).
