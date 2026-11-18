@@ -364,9 +364,11 @@
   "opportunities": {},
   "outbox": {
     "tal3d-hunter:2026-11-18:Asia-Riyadh:primary": {
+      "accepted_at": "2026-11-18T18:04:40+00:00",
       "claimed_at": "2026-11-18T18:04:37+00:00",
+      "provider_reference": "smtp_accepted",
       "report_sha256": "3d7370bd0c44d3a8717d868dd2099891e2cf9b1373158e17964c354a2efd5c0b",
-      "status": "ATTEMPTING",
+      "status": "SENT",
       "token": "44365656892:1"
     }
   },
