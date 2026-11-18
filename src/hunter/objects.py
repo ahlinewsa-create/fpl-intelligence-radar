@@ -101,7 +101,71 @@ def extract_objects(text: str) -> list[dict]:
         add(match.group(0), KINDS.get(match.group(2), "figurine"),
             match.start(), 0.55)
 
-    return found[:25]
+    return consolidate_objects(found, clean)[:25]
+
+
+OBJECT_SUFFIX = re.compile(
+    r"(?:\s*(?:amiibo|figurine|figure|statue|mascot|plush|"
+    r"miniature|フィギュア|マスコット|ぬいぐるみ|手办|模型|피규어))\s*$",
+    re.I,
+)
+GENERIC_JAPANESE = re.compile(
+    r"(?:シリーズ|育成可能|対応可能|追加機能|予約受付|最新情報|数量限定特典)"
+)
+
+
+def object_core(name: str) -> str:
+    base = OBJECT_SUFFIX.sub("", name).strip()
+    return re.sub(r"[\s\-_・]+", "", base).casefold()
+
+
+def consolidate_objects(items: list[dict], text: str) -> list[dict]:
+    """Merge same-article aliases while preserving distinct named components.
+
+    Names of a *series* or generic adjective are not an individual physical
+    product. Quote-backed long names are prioritized over short fragments.
+    """
+    explicit = set(
+        m.group(1).strip()
+        for m in JP_QUOTE.finditer(text[:240])
+        if len(m.group(1)) >= 4
+    )
+    candidates = []
+    for item in items:
+        core = object_core(item["name"])
+        if len(core) < 3 or GENERIC_JAPANESE.search(core):
+            continue
+        item = dict(item)
+        item.setdefault("aliases", [])
+        item["_priority"] = (
+            10 if any(q == core or object_core(q) == core for q in explicit)
+            else 0
+        )
+        candidates.append(item)
+    candidates.sort(
+        key=lambda x: (x["_priority"], x["extraction_confidence"],
+                       len(object_core(x["name"]))),
+        reverse=True,
+    )
+    accepted = []
+    for candidate in candidates:
+        core = object_core(candidate["name"])
+        duplicate = None
+        for existing in accepted:
+            current = object_core(existing["name"])
+            if (core == current or
+                (len(core) >= 4 and len(current) >= 4 and
+                 (core in current or current in core))):
+                duplicate = existing
+                break
+        if duplicate is not None:
+            if candidate["name"] != duplicate["name"]:
+                duplicate["aliases"].append(candidate["name"])
+        else:
+            accepted.append(candidate)
+    for item in accepted:
+        item.pop("_priority", None)
+    return accepted
 
 
 def detect_demand(text: str) -> list[str]:
