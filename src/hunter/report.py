@@ -194,6 +194,7 @@ def opportunity_card(op: dict) -> str:
     name = op.get("name", "عنصر غير مسمى")
     demand_count = len(op.get("demand_evidence") or [])
     meta = (
+        f'{op.get("origin", "مصدر الخبر غير معروف")} • '
         f'{op.get("region", "غير محدد")} • '
         f'{local_time(op.get("first_signal_date"))} • '
         f'نوع القطعة: {op.get("kind", "غير محدد")}'
