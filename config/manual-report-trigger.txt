@@ -1,0 +1,3 @@
+TaL3D one-off manual test trigger
+Triggered by a dedicated commit to this file instead of the mobile Run workflow button.
+Date: 2026-11-18 Asia/Riyadh
