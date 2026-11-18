@@ -23,7 +23,7 @@ HEADERS = {
     "Accept": "application/rss+xml,application/atom+xml,application/xml,text/xml",
 }
 USER_CONTENT_LIMIT = 3200
-EXTRACTOR_VERSION = "horizon-inspired-article-v3"
+EXTRACTOR_VERSION = "horizon-inspired-article-v4"
 
 COLLECTOR_TERMS = re.compile(
     r"collector|limited|exclusive|merch|figurine|statue|mascot|plush|"
