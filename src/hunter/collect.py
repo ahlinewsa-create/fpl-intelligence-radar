@@ -23,7 +23,7 @@ HEADERS = {
     "Accept": "application/rss+xml,application/atom+xml,application/xml,text/xml",
 }
 USER_CONTENT_LIMIT = 3200
-EXTRACTOR_VERSION = "horizon-inspired-article-v2"
+EXTRACTOR_VERSION = "horizon-inspired-article-v3"
 
 COLLECTOR_TERMS = re.compile(
     r"collector|limited|exclusive|merch|figurine|statue|mascot|plush|"
@@ -171,14 +171,24 @@ def review_documents(
         title = document.get("title", "")
         text = (title + ". " + summary + ". " + full)[:17500]
         detected = extract_objects(text)
+        accepted_ids = {
+            stable_id("object", doc_id, obj["name"]) for obj in detected
+        }
         for obj in detected:
             oid = stable_id("object", doc_id, obj["name"])
             if oid in state["opportunities"]:
+                active = state["opportunities"][oid]
+                active.pop("status", None)
+                active.pop("superseded_reason", None)
+                active["aliases"] = sorted(set(
+                    active.get("aliases", []) + obj.get("aliases", [])
+                ))
                 continue
             seen = now_utc()
             old_seen = document.get("first_seen")
             state["opportunities"][oid] = {
                 "id": oid, "name": obj["name"], "kind": obj["kind"],
+                "aliases": obj.get("aliases", []),
                 "origin": title,
                 "region": source.get("region", "unknown"),
                 "language": source.get("language", "unknown"),
@@ -204,6 +214,17 @@ def review_documents(
                 "last_changed": seen,
             }
             results["new_objects"] += 1
+        # Preserve the earlier audit trail, but retire provisional aliases that
+        # are no longer distinct objects under the new extractor.
+        for existing_id, existing in state["opportunities"].items():
+            if existing_id in accepted_ids:
+                continue
+            if (any(ev.get("url") == url for ev in existing.get("evidence", []))
+                and existing.get("rights_status") == "unverified"
+                and not existing.get("demand_evidence")
+                and not existing.get("user_decision")):
+                existing["status"] = "superseded"
+                existing["superseded_reason"] = "Merged or removed by object extraction v3"
         document["extractor_version"] = EXTRACTOR_VERSION
         document["reviewed_at"] = now_utc()
         document["analysis_status"] = output.get("status", "not_checked")
