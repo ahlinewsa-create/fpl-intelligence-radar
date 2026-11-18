@@ -52,6 +52,13 @@ jobs:
             '${{ steps.tests.outcome }}' \
             '${{ steps.collect.outcome }}' \
             '${{ steps.preview.outcome }}' > data/preview_status.txt
+          if [ -f /tmp/tal3d-tests.log ]; then
+            echo '--- pytest diagnosis (nonsecret offline tests) ---' >> data/preview_status.txt
+            tail -n 42 /tmp/tal3d-tests.log >> data/preview_status.txt
+          elif [ -f /tmp/tal3d-install.log ]; then
+            echo '--- installer diagnosis ---' >> data/preview_status.txt
+            tail -n 16 /tmp/tal3d-install.log >> data/preview_status.txt
+          fi
       - name: Commit evidence and preview status
         if: always()
         run: |
