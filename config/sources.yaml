@@ -8,6 +8,7 @@ sources:
     language: en
     enabled: true
     url: https://blog.playstation.com/feed/
+    article_hosts: [blog.playstation.com]
   - id: xbox_wire
     name: Xbox Wire
     kind: official
@@ -15,6 +16,7 @@ sources:
     language: en
     enabled: true
     url: https://news.xbox.com/en-us/feed/
+    article_hosts: [news.xbox.com]
   - id: nintendo_jp
     name: Nintendo Japan
     kind: official
@@ -22,6 +24,7 @@ sources:
     language: ja
     enabled: true
     url: https://www.nintendo.co.jp/news/whatsnew.xml
+    article_hosts: [www.nintendo.co.jp, www.nintendo.com]
   # Add only authorized community feeds. Reddit API access may need approval.
   - id: community_placeholder
     name: Authorized community feed (configure before enabling)
