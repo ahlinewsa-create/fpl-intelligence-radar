@@ -9,4 +9,4 @@ tests/test_article.py::test_full_article_extraction_and_image_from_html
     warnings.warn(
 
 -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
-21 passed, 1 warning in 0.56s
+21 passed, 1 warning in 0.49s
