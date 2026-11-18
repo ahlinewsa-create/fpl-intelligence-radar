@@ -1,0 +1,57 @@
+name: TaL3D - Preview Improved Intelligence Report
+on:
+  push:
+    branches: [main]
+    paths:
+      - "config/preview-trigger.txt"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: tal3d-state-main
+  cancel-in-progress: false
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install and test (no network in tests)
+        run: |
+          python -m pip install -e ".[test]"
+          python -m pytest -q
+      - name: Collect and re-analyze older news
+        env:
+          CULTS_USERNAME: ${{ secrets.CULTS_USERNAME }}
+          CULTS_API_KEY: ${{ secrets.CULTS_API_KEY }}
+        run: python main.py collect
+      - name: Create preview without email
+        env:
+          HUNTER_NOTIFICATIONS_ENABLED: "0"
+        run: python main.py dry-run
+      - name: Commit evidence and preview
+        run: |
+          git config user.name "tal3d-hunter[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/state.json
+          git add -f reports/preview.html
+          if ! git diff --cached --quiet; then
+            git commit -m "hunter: update reanalysis ledger and report preview [skip ci]"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+      - name: Store backup preview
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: tal3d-preview-${{ github.run_id }}
+          path: |
+            reports/preview.html
+            data/state.json
+          retention-days: 14
+          if-no-files-found: warn
