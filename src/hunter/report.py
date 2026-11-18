@@ -227,7 +227,10 @@ def stat_cell(value: str | int, name: str) -> str:
 
 def render(state: dict, date: str) -> str:
     documents = state.get("documents") or {}
-    ops = list((state.get("opportunities") or {}).values())
+    ops = [
+        op for op in (state.get("opportunities") or {}).values()
+        if op.get("status") != "superseded"
+    ]
     ops.sort(
         key=lambda o: (
             o.get("score", {}).get("lower", 0),
