@@ -4,3 +4,5 @@ Triggered 2026-11-18 Asia/Riyadh.
 Retry safe preview with diagnostic output after Horizon-inspired changes (2026-11-18).
 
 Preview attempt with bounded test diagnostics; 2026-11-18 run 3.
+
+Alias consolidation verification run (no email) 2026-11-18.
