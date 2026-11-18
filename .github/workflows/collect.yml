@@ -1,0 +1,47 @@
+name: TaL3D - Collect Global Signals
+on:
+  schedule:
+    - cron: "19 2 * * *"
+      timezone: Asia/Riyadh
+    - cron: "19 6 * * *"
+      timezone: Asia/Riyadh
+    - cron: "19 8 * * *"
+      timezone: Asia/Riyadh
+    - cron: "19 14 * * *"
+      timezone: Asia/Riyadh
+    - cron: "19 18 * * *"
+      timezone: Asia/Riyadh
+    - cron: "19 22 * * *"
+      timezone: Asia/Riyadh
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: tal3d-state-main
+  cancel-in-progress: false
+jobs:
+  collect:
+    if: github.event_name == 'workflow_dispatch' || github.event.schedule == '19 8 * * *' || vars.HUNTER_MODE == 'early'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install and test
+        run: pip install -e ".[test]" && python -m pytest -q
+      - name: Collect
+        env:
+          CULTS_USERNAME: ${{ secrets.CULTS_USERNAME }}
+          CULTS_API_KEY: ${{ secrets.CULTS_API_KEY }}
+        run: python main.py collect
+      - name: Persist evidence
+        run: |
+          git config user.name "tal3d-hunter[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/state.json
+          if ! git diff --cached --quiet; then
+            git commit -m "hunter: save evidence"
+            git push origin HEAD:main
+          fi

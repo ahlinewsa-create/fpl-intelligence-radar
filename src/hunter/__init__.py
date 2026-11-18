@@ -1,0 +1,1 @@
+"""TaL3D Global Opportunity Hunter (MVP)."""

@@ -1,0 +1,32 @@
+# Verify a feed is reachable and permitted before adding it to production.
+# No source is treated as a global sample of demand.
+sources:
+  - id: playstation_blog
+    name: PlayStation Blog
+    kind: official
+    region: global
+    language: en
+    enabled: true
+    url: https://blog.playstation.com/feed/
+  - id: xbox_wire
+    name: Xbox Wire
+    kind: official
+    region: global
+    language: en
+    enabled: true
+    url: https://news.xbox.com/en-us/feed/
+  - id: nintendo_jp
+    name: Nintendo Japan
+    kind: official
+    region: japan
+    language: ja
+    enabled: true
+    url: https://www.nintendo.co.jp/news/whatsnew.xml
+  # Add only authorized community feeds. Reddit API access may need approval.
+  - id: community_placeholder
+    name: Authorized community feed (configure before enabling)
+    kind: community
+    region: unspecified
+    language: en
+    enabled: false
+    url: https://example.org/community.rss

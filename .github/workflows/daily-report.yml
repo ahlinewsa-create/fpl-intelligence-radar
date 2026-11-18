@@ -1,0 +1,82 @@
+name: TaL3D - Daily Arabic Report
+on:
+  schedule:
+    - cron: "0 9 * * *"
+      timezone: Asia/Riyadh
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: tal3d-state-main
+  cancel-in-progress: false
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test
+        run: pip install -e ".[test]" && python -m pytest -q
+      - name: Fallback collection
+        env:
+          CULTS_USERNAME: ${{ secrets.CULTS_USERNAME }}
+          CULTS_API_KEY: ${{ secrets.CULTS_API_KEY }}
+        run: python main.py collect
+      - name: Render report
+        run: python main.py report
+      - name: Persist report BEFORE sending
+        run: |
+          git config user.name "tal3d-hunter[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/state.json reports/
+          if ! git diff --cached --quiet; then
+            git commit -m "hunter: archive daily report"
+            git push origin HEAD:main
+          fi
+      - name: Claim daily email if Gmail secrets exist
+        env:
+          HUNTER_NOTIFICATIONS_ENABLED: ${{ vars.HUNTER_NOTIFICATIONS_ENABLED || '1' }}
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_PASS: ${{ secrets.GMAIL_PASS }}
+          TO_EMAIL: ${{ secrets.TO_EMAIL }}
+        run: |
+          if [ -z "$GMAIL_USER" ] || [ -z "$GMAIL_PASS" ] || [ -z "$TO_EMAIL" ]; then
+            echo "::warning::Gmail secrets missing; report saved without notification."
+          else
+            python main.py claim
+          fi
+      - name: Persist claim BEFORE SMTP call
+        run: |
+          git add data/state.json
+          if ! git diff --cached --quiet; then
+            git commit -m "hunter: claim one daily email"
+            git push origin HEAD:main
+          fi
+      - name: Send claimed email
+        env:
+          HUNTER_NOTIFY_CHANNEL: email
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_PASS: ${{ secrets.GMAIL_PASS }}
+          TO_EMAIL: ${{ secrets.TO_EMAIL }}
+        run: python main.py send
+      - name: Persist delivery attempt
+        if: always()
+        run: |
+          git add data/state.json
+          if ! git diff --cached --quiet; then
+            git commit -m "hunter: record notification status"
+            git push origin HEAD:main
+          fi
+      - name: Upload report backup
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: hunter-report-${{ github.run_id }}
+          path: |
+            reports/*.html
+            data/state.json
+          retention-days: 30
+          if-no-files-found: warn

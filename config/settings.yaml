@@ -1,0 +1,10 @@
+timezone: Asia/Riyadh
+max_items_per_feed: 25
+max_article_age_days: 14
+max_market_scans_per_run: 8
+market_sample_limit: 20
+max_opportunities_in_report: 5
+max_http_content_bytes: 750000
+mode: economy
+notifications_enabled: false
+# Enable through HUNTER_NOTIFICATIONS_ENABLED=1 only after testing.

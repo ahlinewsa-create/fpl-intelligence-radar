@@ -1,4 +1,8 @@
 __pycache__/
+.pytest_cache/
 *.py[cod]
-reports/
+.venv/
 .env
+*.sqlite3
+.coverage
+reports/preview.html

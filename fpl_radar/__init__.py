@@ -1,1 +1,0 @@
-"""FPL Intelligence Radar core."""
