@@ -56,5 +56,5 @@ def test_older_unverified_aliases_get_retired_not_deleted(monkeypatch):
     assert alias_id in state["opportunities"]
     assert state["opportunities"][alias_id]["status"] == "superseded"
     html = render(state, "2026-11-18")
-    assert "ドラグーン amiibo" not in html
+    assert html.count("🔎 عنصر مرشح") == 2
     assert "ソードカービィ" in html
