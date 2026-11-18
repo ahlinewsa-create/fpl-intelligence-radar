@@ -1,28 +1,43 @@
-"""Conservative text-only object discovery. Vision and multilingual NER are V2."""
+"""Conservative object extraction from source-backed news.
+
+A candidate is an object mention, not verified buying demand or a licensing grant.
+"""
+from __future__ import annotations
 import re
 from bs4 import BeautifulSoup
 
 KINDS = {
     "figurine": "figurine", "figure": "figurine", "statue": "statue",
     "mascot": "mascot", "replica": "replica", "mask": "mask",
-    "plush": "plush", "badge": "badge", "pin": "pin",
-    "emblem": "emblem", "keychain": "keychain", "stand": "stand",
-    "miniature": "miniature", "sculpture": "sculpture",
-    "フィギュア": "figurine", "マスコット": "mascot", "ぬいぐるみ": "plush",
+    "plush": "plush", "badge": "badge", "pin": "pin", "emblem": "emblem",
+    "keychain": "keychain", "stand": "stand", "miniature": "miniature",
+    "sculpture": "sculpture", "amiibo": "figurine", "lamp": "lamp",
+    "bookend": "bookend", "ornament": "ornament", "medallion": "medallion",
+    "フィギュア": "figurine", "マスコット": "mascot",
+    "ぬいぐるみ": "plush", "アミーボ": "figurine",
     "手办": "figurine", "模型": "miniature", "피규어": "figurine",
 }
-OBJECT_WORDS = "|".join(map(re.escape, sorted(KINDS, key=len, reverse=True)))
+EN_TERMS = [key for key in KINDS if key.isascii()]
+NOUNS = "|".join(re.escape(x) for x in sorted(EN_TERMS, key=len, reverse=True))
 EN_PHRASE = re.compile(
-    rf"\b(?:[a-zA-Z][a-zA-Z0-9'’-]*\s+){{0,4}}(?:{OBJECT_WORDS})\b",
+    rf"\b(?:[a-zA-Z][a-zA-Z0-9'’\-]*\s+){{1,5}}(?:{NOUNS})s?\b",
     re.I,
 )
-JP_PHRASE = re.compile(r"(?:[\u3040-\u30ff\u3400-\u9fffA-Za-z0-9・]{1,30})(?:フィギュア|マスコット|ぬいぐるみ|手办|模型|피규어)")
-GENERIC = {"figure", "figurine", "statue", "mascot", "replica", "mask",
-           "plush", "pin", "badge", "stand", "miniature", "sculpture"}
+JP_QUOTE = re.compile(r"[「『]([^」』]{2,70})[」』]")
+JP_KEYWORDS = re.compile(
+    r"amiibo|アミーボ|フィギュア|マスコット|ぬいぐるみ|手办|模型|피규어", re.I,
+)
+JP_COMPOUND = re.compile(
+    r"([\u3040-\u30ff\u3400-\u9fffA-Za-z0-9・ー&＋\-\s]{2,36})"
+    r"(フィギュア|マスコット|ぬいぐるみ|手办|模型|피규어)"
+)
+GENERIC = set(KINDS)
 SIGNAL = re.compile(
-    r"collector.s edition|limited edition|exclusive|bundle|physical edition|"
-    r"merchandise|figurine|statue|mascot|replica|plush|フィギュア|マスコット|手办|模型",
-    re.I,
+    r"collector.?s? edition|limited edition|exclusive|bundle|"
+    r"merchandise|figurine|statue|mascot|replica|plush|amiibo|"
+    r"badge|keychain|medallion|ornament|bookend|"
+    r"フィギュア|マスコット|ぬいぐるみ|手办|模型|피규어|"
+    r"限定特典|数量限定|グッズ", re.I,
 )
 DEMAND_PATTERNS = {
     "want_to_own": r"\b(i want (?:one|this|it)|i need this|would buy|take my money)\b",
@@ -35,37 +50,63 @@ DEMAND_PATTERNS = {
 
 def plain_text(value: str) -> str:
     soup = BeautifulSoup(value or "", "html.parser")
-    for tag in soup(["script", "style", "noscript"]):
+    for tag in soup(["script", "style", "noscript", "svg"]):
         tag.decompose()
     return re.sub(r"\s+", " ", soup.get_text(" ", strip=True)).strip()
 
 
 def extract_objects(text: str) -> list[dict]:
-    clean = plain_text(text)
+    clean = plain_text(text)[:16000]
     if not SIGNAL.search(clean):
         return []
-    found = []
-    seen = set()
-    for pattern in (EN_PHRASE, JP_PHRASE):
-        for match in pattern.finditer(clean):
-            name = re.sub(r"\s+", " ", match.group(0)).strip(" ,:;.-")
-            if name.casefold() in GENERIC or len(name) < 5:
+    found: list[dict] = []
+    seen: set[str] = set()
+
+    def add(name: str, kind: str, index: int, confidence: float) -> None:
+        name = re.sub(r"\s+", " ", name).strip(" ,.:;–-")
+        if len(name) < 5 or len(name) > 100 or name.casefold() in GENERIC:
+            return
+        if name.casefold() in seen:
+            return
+        seen.add(name.casefold())
+        found.append({
+            "name": name, "kind": kind,
+            "excerpt": clean[max(0, index-85):index+max(100, len(name)+60)][:280],
+            "extraction_method": "named_object_in_source",
+            "extraction_confidence": confidence,
+        })
+
+    # Handles paired quoted figures like Nintendo's Japanese amiibo announcements.
+    for keyword in JP_KEYWORDS.finditer(clean):
+        prefix = clean[max(0, keyword.start()-125):keyword.start()]
+        for quoted in list(JP_QUOTE.finditer(prefix))[-3:]:
+            name = quoted.group(1).strip()
+            if len(name) > 55 or any(x in name for x in ("オンライン", "ニュース", "発売日")):
                 continue
-            if name.casefold() in seen:
-                continue
-            seen.add(name.casefold())
-            kind = next((v for k, v in KINDS.items() if k.casefold() in name.casefold()), "object")
-            found.append({
-                "name": name[:90],
-                "kind": kind,
-                "excerpt": clean[max(0, match.start()-85): min(len(clean), match.end()+85)][:260],
-                "extraction_method": "text_pattern",
-                "extraction_confidence": 0.50,  # candidate, NOT an official object identity
-            })
+            add(f"{name} {keyword.group(0)}", "figurine", keyword.start(), 0.72)
+
+    for match in EN_PHRASE.finditer(clean):
+        name = match.group(0).strip()
+        # Product name must be connected to the physical object, not a general release.
+        name = re.split(
+            r"\b(?:includes?|features?|reveals?|featuring|contains?|offers?|with|and|the)\s+",
+            name, flags=re.I
+        )[-1].strip()
+        if len(name.split()) > 5:
+            name = " ".join(name.split()[-5:])
+        noun = name.split()[-1].lower().rstrip("s")
+        add(name, KINDS.get(noun, "object"), match.start(), 0.60)
+
+    for match in JP_COMPOUND.finditer(clean):
+        add(match.group(0), KINDS.get(match.group(2), "figurine"),
+            match.start(), 0.55)
+
     return found[:25]
 
 
 def detect_demand(text: str) -> list[str]:
     clean = plain_text(text).casefold()
-    return [kind for kind, expression in DEMAND_PATTERNS.items()
-            if re.search(expression, clean, re.I)]
+    return [
+        kind for kind, expression in DEMAND_PATTERNS.items()
+        if re.search(expression, clean, re.I)
+    ]
