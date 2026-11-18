@@ -183,14 +183,20 @@ def opportunity_card(op: dict) -> str:
     score = op.get("score") or {}
     comp = op.get("competition") or {}
     source = (op.get("evidence") or [{}])[0]
-    if comp.get("status") == "sampled":
+    if comp.get("status") == "sampled" and comp.get("schema_version") == 2:
         competition = (
-            f'{comp.get("exact_name_candidates", 0)} مطابق اسمًا محتمل، '
-            f'{comp.get("similar_name_candidates", 0)} مشابه اسمًا؛ '
-            'غير متحقق بصريًا'
+            f'فُحصت عينة من {comp.get("sample_size", 0)} نتيجة: '
+            f'{comp.get("contextual_name_candidates", 0)} مرشح اسم وسياق، '
+            f'{comp.get("name_only_candidates", 0)} اسم مشترك، '
+            f'{comp.get("similar_name_candidates", 0)} اسم مشابه. '
+            'لم يُثبت عدد الملفات المطابقة بصريًا، ولا تشبع السوق.'
         )
+    elif comp.get("status") == "sampled":
+        competition = "نتائج قديمة بمعيار مطابقة غير دقيق — تحتاج إعادة فحص"
+    elif comp.get("status") == "failed":
+        competition = "تعذّر فحص Cults3D — غير متحقق"
     else:
-        competition = "غير مفحوص — لا تعني صفر منافسين"
+        competition = "Cults3D غير مفحوص — لا تعني صفر منافسين"
     name = op.get("name", "عنصر غير مسمى")
     demand_count = len(op.get("demand_evidence") or [])
     meta = (
@@ -209,10 +215,25 @@ def opportunity_card(op: dict) -> str:
         "WATCH فقط: الحقوق والطباعة FDM والطلب التجاري تحتاج تحققًا. "
         "الصورة من الخبر الأصلي، وليست ملف STL."
     )
-    return row_card(
+    card = row_card(
         name, op.get("image_url"), details, meta,
         source.get("url"), "🔎 عنصر مرشح", note,
     )
+    # Show a few source-linked result names, never claim these are exact STL
+    # matches; users can review the evidence on Cults3D.
+    listing_links = [
+        safe_link(entry.get("url"), entry.get("name", "ملف مرشح"))
+        for entry in (comp.get("listings") or [])[:3]
+        if entry.get("url")
+    ]
+    if listing_links:
+        card += shell_card(
+            '<div style="font-size:12px;line-height:2;color:#667085">'
+            'أمثلة نتائج أسماء تحتاج مراجعة، وليست منافسين مطابقين مثبتين:'
+            '</div><div style="font-size:12px;line-height:2">'
+            + '<br>'.join(listing_links) + '</div>'
+        )
+    return card
 
 
 def stat_cell(value: str | int, name: str) -> str:
