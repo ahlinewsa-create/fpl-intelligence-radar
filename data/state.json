@@ -1,16 +1,24 @@
 {
   "documents": {
     "0046f05a36b6d64eea5f": {
+      "_render_category": "other",
+      "_render_rank": 1,
+      "analysis_status": "not_html",
+      "candidate_count": 0,
+      "extractor_version": "horizon-inspired-article-v4",
       "first_seen": "2026-11-18T18:04:36+00:00",
       "image_url": null,
       "kind": "official",
       "published_at": "2026-11-06T04:54:54+00:00",
+      "reviewed_at": "2026-11-18T23:30:58+00:00",
       "source": "nintendo_jp",
       "summary": "",
       "title": "「第87期 半期報告書」を掲載しました。",
       "url": "https://www.nintendo.co.jp/ir/pdf/2026/security_q2609.pdf"
     },
     "016875533045fc4eb6e6": {
+      "_render_category": "gaming",
+      "_render_rank": 2,
       "analysis_status": "full_text",
       "candidate_count": 0,
       "extractor_version": "horizon-inspired-article-v4",
@@ -26,6 +34,8 @@
       "url": "https://www.nintendo.com/jp/topics/article/cc5713ab-c529-4d4f-b1c3-06b1cf46f690"
     },
     "0588ceaeef4ec889a482": {
+      "_render_category": "other",
+      "_render_rank": 1,
       "analysis_status": "full_text",
       "candidate_count": 0,
       "extractor_version": "horizon-inspired-article-v4",
@@ -40,6 +50,8 @@
       "url": "https://news.xbox.com/en-us/2026/11/17/millions-of-butt-slaps-last-pirates/"
     },
     "0875392b86166ff4c2e1": {
+      "_render_category": "gaming",
+      "_render_rank": 2,
       "analysis_status": "full_text",
       "candidate_count": 0,
       "extractor_version": "horizon-inspired-article-v4",
@@ -55,16 +67,24 @@
       "url": "https://www.nintendo.com/jp/topics/article/482f5918-f83f-453f-90c1-78c1cc02065c"
     },
     "0ffa51d254bb9417313b": {
+      "_render_category": "other",
+      "_render_rank": 0,
+      "analysis_status": "not_html",
+      "candidate_count": 0,
+      "extractor_version": "horizon-inspired-article-v4",
       "first_seen": "2026-11-18T18:04:36+00:00",
       "image_url": null,
       "kind": "official",
       "published_at": "2026-11-06T12:01:48+00:00",
+      "reviewed_at": "2026-11-18T23:30:59+00:00",
       "source": "nintendo_jp",
       "summary": "",
       "title": "「2027年3月期 第2四半期決算説明会/ 経営方針説明会（オンライン） 質疑応答」を掲載しました。",
       "url": "https://www.nintendo.co.jp/ir/pdf/2026/261106_2.pdf"
     },
     "12218893c912e2c16409": {
+      "_render_category": "other",
+      "_render_rank": 1,
       "analysis_status": "full_text",
       "candidate_count": 2,
       "extractor_version": "horizon-inspired-article-v4",
@@ -79,6 +99,8 @@
       "url": "https://news.xbox.com/en-us/2026/11/17/world-of-fallout-expansion/"
     },
     "1dff57c1d17ca5be8ff0": {
+      "_render_category": "gaming",
+      "_render_rank": 2,
       "analysis_status": "full_text",
       "candidate_count": 0,
       "extractor_version": "horizon-inspired-article-v4",
@@ -94,16 +116,25 @@
       "url": "https://www.nintendo.com/jp/topics/article/31e57164-941c-4103-bd30-f04744073cc3"
     },
     "1e59f64bcc138f5b63f8": {
+      "_render_category": "other",
+      "_render_rank": 0,
+      "analysis_status": "full_text",
+      "candidate_count": 0,
+      "extractor_version": "horizon-inspired-article-v4",
       "first_seen": "2026-11-18T18:04:36+00:00",
-      "image_url": null,
+      "image_type": "official_article_preview",
+      "image_url": "https://www.nintendo.co.jp/jobs/recruit/sns.png",
       "kind": "official",
       "published_at": "2026-11-18T05:12:40+00:00",
+      "reviewed_at": "2026-11-18T23:30:58+00:00",
       "source": "nintendo_jp",
       "summary": "",
       "title": "「サウンド系 ワークショップ」のお申し込み受付を開始しました。",
       "url": "https://www.nintendo.co.jp/jobs/recruit/event/sound_workshop.html"
     },
     "215aec91247975ae2811": {
+      "_render_category": "other",
+      "_render_rank": 1,
       "analysis_status": "full_text",
       "candidate_count": 0,
       "extractor_version": "horizon-inspired-article-v4",
@@ -119,16 +150,25 @@
       "url": "https://www.nintendo.com/jp/topics/article/98f912b6-f33b-4dfa-940c-a6681bb2ea9e"
     },
     "218cc56cf1b0570a5fc7": {
+      "_render_category": "other",
+      "_render_rank": 1,
+      "analysis_status": "full_text",
+      "candidate_count": 0,
+      "extractor_version": "horizon-inspired-article-v4",
       "first_seen": "2026-11-18T18:04:36+00:00",
-      "image_url": null,
+      "image_type": "official_article_preview",
+      "image_url": "https://assets.topics.apps-jp.nintendo.com/image/2026/11/10002857913857/1280/3030210e0d874519a46cda0d7059fda0.jpg",
       "kind": "official",
       "published_at": "2026-11-11T01:01:53+00:00",
+      "reviewed_at": "2026-11-18T23:30:56+00:00",
       "source": "nintendo_jp",
       "summary": "",
       "title": "「Hello! インディー」タヌキがBMXで郵便配達！？『TANUKI: Pon's Summer - タヌキ：ポンの夏』",
       "url": "https://www.nintendo.com/jp/topics/article/11a5acfe-42af-4294-b421-1504a2a8cf45"
     },
     "250c5c3e15252ea6831a": {
+      "_render_category": "other",
+      "_render_rank": 1,
       "analysis_status": "full_text",
       "candidate_count": 0,
       "extractor_version": "horizon-inspired-article-v4",
@@ -143,6 +183,8 @@
       "url": "https://news.xbox.com/en-us/2026/11/17/ice-cream-simulator/"
     },
     "2674ae59c8cc13810c71": {
+      "_render_category": "gaming",
+      "_render_rank": 2,
       "analysis_status": "full_text",
       "candidate_count": 0,
       "extractor_version": "horizon-inspired-article-v4",
@@ -158,6 +200,8 @@
       "url": "https://www.nintendo.com/jp/topics/article/f5182976-316a-4bc7-9d99-8278bcc0c497"
     },
     "2892210d2114778fcdbb": {
+      "_render_category": "other",
+      "_render_rank": 1,
       "analysis_status": "full_text",
       "candidate_count": 0,
       "extractor_version": "horizon-inspired-article-v4",
@@ -172,6 +216,8 @@
       "url": "https://blog.playstation.com/2026/11/13/qssr-arrives-in-marvels-spider-man-2-control-resonant-the-finals-arc-raiders-and-hell-let-loose-vietnam/"
     },
     "2934ee13bb0b57cd02cd": {
+      "_render_category": "gaming",
+      "_render_rank": 2,
       "analysis_status": "full_text",
       "candidate_count": 0,
       "extractor_version": "horizon-inspired-article-v4",
@@ -187,6 +233,8 @@
       "url": "https://www.nintendo.com/jp/character/pikmin/hello-pikmin/index.html"
     },
     "2e7fd21e57416c2abac7": {
+      "_render_category": "other",
+      "_render_rank": 1,
       "analysis_status": "full_text",
       "candidate_count": 0,
       "extractor_version": "horizon-inspired-article-v4",
@@ -202,6 +250,8 @@
       "url": "https://www.nintendo.com/jp/topics/article/5280ccbd-f23c-4820-8cbb-6f1e9bdf5998"
     },
     "389fed1f0b7c8074c886": {
+      "_render_category": "other",
+      "_render_rank": 1,
       "analysis_status": "full_text",
       "candidate_count": 0,
       "extractor_version": "horizon-inspired-article-v4",
@@ -216,6 +266,8 @@
       "url": "https://blog.playstation.com/2026/11/17/first-details-on-mlb-the-show-27/"
     },
     "524b58634dc62207f7df": {
+      "_render_category": "gaming",
+      "_render_rank": 2,
       "analysis_status": "full_text",
       "candidate_count": 0,
       "extractor_version": "horizon-inspired-article-v4",
@@ -231,6 +283,8 @@
       "url": "https://www.nintendo.com/jp/topics/article/e77acfd6-fdd4-4265-9d2f-d682b85430d9"
     },
     "544d662940355ef21edb": {
+      "_render_category": "collector",
+      "_render_rank": 5,
       "analysis_status": "full_text",
       "candidate_count": 0,
       "extractor_version": "horizon-inspired-article-v4",
@@ -246,6 +300,8 @@
       "url": "https://www.nintendo.com/jp/topics/article/c73c1b54-c93c-4895-aaaa-8ced4b6508cb"
     },
     "58d340466427e20f0fdf": {
+      "_render_category": "collector",
+      "_render_rank": 5,
       "analysis_status": "full_text",
       "candidate_count": 2,
       "extractor_version": "horizon-inspired-article-v4",
@@ -261,26 +317,42 @@
       "url": "https://www.nintendo.com/jp/topics/article/13827716-39ef-4435-911e-ab6583921da4"
     },
     "5bd6272ceffa4c19c1da": {
+      "_render_category": "other",
+      "_render_rank": 1,
+      "analysis_status": "full_text",
+      "candidate_count": 0,
+      "extractor_version": "horizon-inspired-article-v4",
       "first_seen": "2026-11-18T18:04:36+00:00",
-      "image_url": null,
+      "image_type": "official_article_preview",
+      "image_url": "https://assets.topics.apps-jp.nintendo.com/image/2026/11/04021806729851/1280/26d245804c6e49cc96a2e47c03416236.jpg",
       "kind": "official",
       "published_at": "2026-11-10T01:19:54+00:00",
+      "reviewed_at": "2026-11-18T23:30:57+00:00",
       "source": "nintendo_jp",
       "summary": "",
       "title": "『スーパー マリオパーティ ジャンボリー Nintendo Switch 2 Edition ＋ ジャンボリーTV』が無料アップデート。ソフトが1本あれば、オンラインで、みんなでスゴロクができるように。",
       "url": "https://www.nintendo.com/jp/topics/article/1f0dba7a-c553-4ae7-bb75-a6586db1d824"
     },
     "6a6b392dafa3fc81fbb7": {
+      "_render_category": "other",
+      "_render_rank": 0,
+      "analysis_status": "full_text",
+      "candidate_count": 0,
+      "extractor_version": "horizon-inspired-article-v4",
       "first_seen": "2026-11-18T18:04:36+00:00",
-      "image_url": null,
+      "image_type": "official_article_preview",
+      "image_url": "https://www.nintendo.co.jp/jobs/recruit/sns.png",
       "kind": "official",
       "published_at": "2026-11-06T05:17:05+00:00",
+      "reviewed_at": "2026-11-18T23:30:59+00:00",
       "source": "nintendo_jp",
       "summary": "",
       "title": "「デザイン系 オンラインセミナー アートワーク制作」「デザイン系 オンラインセミナー ソフトウェア制作」のお申し込み受付を開始しました。",
       "url": "https://www.nintendo.co.jp/jobs/recruit/event/index.html"
     },
     "6b0c0c9bda6d9d1cb055": {
+      "_render_category": "other",
+      "_render_rank": 1,
       "analysis_status": "no_article_text",
       "candidate_count": 0,
       "extractor_version": "horizon-inspired-article-v4",
@@ -296,6 +368,8 @@
       "url": "https://www.nintendo.co.jp/jobs/keyword/index.html"
     },
     "72edfad0ae605aff7cbb": {
+      "_render_category": "gaming",
+      "_render_rank": 2,
       "analysis_status": "full_text",
       "candidate_count": 0,
       "extractor_version": "horizon-inspired-article-v4",
@@ -311,6 +385,8 @@
       "url": "https://www.nintendo.com/jp/topics/article/405b3f79-3dfb-4336-baae-5256a086eb35"
     },
     "8f7aba9950c3ce8194df": {
+      "_render_category": "other",
+      "_render_rank": 1,
       "analysis_status": "full_text",
       "candidate_count": 0,
       "extractor_version": "horizon-inspired-article-v4",
@@ -325,6 +401,8 @@
       "url": "https://blog.playstation.com/2026/11/13/guild-saga-vanished-worlds-brings-tactical-adventure-to-ps5-in-may-2027/"
     },
     "943bac84562d894fc267": {
+      "_render_category": "other",
+      "_render_rank": 1,
       "analysis_status": "full_text",
       "candidate_count": 0,
       "extractor_version": "horizon-inspired-article-v4",
@@ -339,6 +417,8 @@
       "url": "https://news.xbox.com/en-us/2026/11/16/minecraft-dungeons-ii-the-humblers-awaken-arrives-on-december-1/"
     },
     "981c991aa872db703fb9": {
+      "_render_category": "other",
+      "_render_rank": 1,
       "analysis_status": "full_text",
       "candidate_count": 0,
       "extractor_version": "horizon-inspired-article-v4",
@@ -353,6 +433,8 @@
       "url": "https://blog.playstation.com/2026/11/13/share-of-the-week-lights/"
     },
     "9f2d57941340f80a6ec3": {
+      "_render_category": "gaming",
+      "_render_rank": 2,
       "analysis_status": "full_text",
       "candidate_count": 0,
       "extractor_version": "horizon-inspired-article-v4",
@@ -368,6 +450,8 @@
       "url": "https://www.nintendo.co.jp/corporate/release/2026/261111.html"
     },
     "a42e3d892bb4f4ad1205": {
+      "_render_category": "gaming",
+      "_render_rank": 2,
       "analysis_status": "full_text",
       "candidate_count": 1,
       "extractor_version": "horizon-inspired-article-v4",
@@ -382,6 +466,8 @@
       "url": "https://blog.playstation.com/2026/11/12/once-human-season-5-gameplay-showcases-co-op-colossus-boss-battle-live-november-18/"
     },
     "acd3f90bf0196533ef91": {
+      "_render_category": "other",
+      "_render_rank": 1,
       "analysis_status": "full_text",
       "candidate_count": 0,
       "extractor_version": "horizon-inspired-article-v4",
@@ -396,6 +482,8 @@
       "url": "https://news.xbox.com/en-us/2026/11/16/xbox-black-friday-sale-2026/"
     },
     "af91cbb93fbb72fcf6fc": {
+      "_render_category": "other",
+      "_render_rank": 1,
       "analysis_status": "full_text",
       "candidate_count": 0,
       "extractor_version": "horizon-inspired-article-v4",
@@ -410,6 +498,8 @@
       "url": "https://blog.playstation.com/2026/11/17/introducing-hounded-crafting-the-dog-adventure-coming-to-ps5-in-2027/"
     },
     "b1a71b64b1bec45e0569": {
+      "_render_category": "gaming",
+      "_render_rank": 2,
       "analysis_status": "full_text",
       "candidate_count": 0,
       "extractor_version": "horizon-inspired-article-v4",
@@ -425,14 +515,24 @@
       "url": "https://www.nintendo.com/jp/topics/article/ca36364e-5117-4881-9688-ea2d023a7b45"
     },
     "bc9f8f749091798eb0c4": {
+      "_render_category": "other",
+      "_render_rank": 1,
+      "analysis_status": "full_text",
+      "candidate_count": 0,
+      "extractor_version": "horizon-inspired-article-v4",
       "first_seen": "2026-11-18T18:04:35+00:00",
+      "image_type": "official_article_preview",
+      "image_url": "https://blog.playstation.com/tachyon/2048/11/e686260d9a10aee07a9ef785c5482efc7cb1055b.jpg",
       "kind": "official",
       "published_at": "2026-11-10T18:00:31+00:00",
+      "reviewed_at": "2026-11-18T23:30:56+00:00",
       "source": "playstation_blog",
       "title": "The Outer Worlds 2’s first DLC arrives December 2",
       "url": "https://blog.playstation.com/2026/11/10/the-outer-worlds-2s-first-dlc-arrives-december-2/"
     },
     "c7bfce9e289b49b835a7": {
+      "_render_category": "other",
+      "_render_rank": 1,
       "analysis_status": "full_text",
       "candidate_count": 0,
       "extractor_version": "horizon-inspired-article-v4",
@@ -447,6 +547,8 @@
       "url": "https://news.xbox.com/en-us/2026/11/17/xbox-game-pass-november-2026-wave-2/"
     },
     "d9ebeabbd48d9968c8ff": {
+      "_render_category": "collector",
+      "_render_rank": 5,
       "analysis_status": "full_text",
       "candidate_count": 0,
       "extractor_version": "horizon-inspired-article-v4",
@@ -461,14 +563,24 @@
       "url": "https://news.xbox.com/en-us/2026/11/17/carenado-releases-a-microsoft-flight-simulator-marketplace-exclusive-the-do228-200/"
     },
     "da0c7f312b2ae839f1fa": {
+      "_render_category": "other",
+      "_render_rank": 1,
+      "analysis_status": "full_text",
+      "candidate_count": 0,
+      "extractor_version": "horizon-inspired-article-v4",
       "first_seen": "2026-11-18T18:04:35+00:00",
+      "image_type": "official_article_preview",
+      "image_url": "https://blog.playstation.com/tachyon/2026/11/6ae8af767f59801bb5a0ceabf7fe915f00eed004.jpg",
       "kind": "official",
       "published_at": "2026-11-10T16:30:03+00:00",
+      "reviewed_at": "2026-11-18T23:30:56+00:00",
       "source": "playstation_blog",
       "title": "PlayStation Plus Game Catalog for November: Death Stranding 2: On the Beach, Like a Dragon: Pirate Yakuza in Hawaii, Atomfall, Dragon Quest III HD-2D Remake and more",
       "url": "https://blog.playstation.com/2026/11/10/playstation-plus-game-catalog-for-november-death-stranding-2-on-the-beach-like-a-dragon-pirate-yakuza-in-hawaii-atomfall-dragon-quest-iii-hd-2d-remake-and-more/"
     },
     "dc2add945404ae0e9caa": {
+      "_render_category": "gaming",
+      "_render_rank": 2,
       "analysis_status": "full_text",
       "candidate_count": 0,
       "extractor_version": "horizon-inspired-article-v4",
@@ -484,6 +596,8 @@
       "url": "https://www.nintendo.com/jp/topics/article/b852fe50-71bf-4c1a-a338-5b75951d040d"
     },
     "e52271c6b50b93f4cd36": {
+      "_render_category": "other",
+      "_render_rank": 1,
       "analysis_status": "full_text",
       "candidate_count": 0,
       "extractor_version": "horizon-inspired-article-v4",
@@ -498,6 +612,8 @@
       "url": "https://blog.playstation.com/2026/11/18/grand-theft-auto-vi-launches-tomorrow-november-19/"
     },
     "e7b2186ad2391aa4ba1b": {
+      "_render_category": "gaming",
+      "_render_rank": 2,
       "analysis_status": "full_text",
       "candidate_count": 0,
       "extractor_version": "horizon-inspired-article-v4",
@@ -513,6 +629,8 @@
       "url": "https://www.nintendo.com/jp/switch/as8sa/senior-bowling-2026/index.html"
     },
     "e9aaf2a32855b46a3165": {
+      "_render_category": "other",
+      "_render_rank": 1,
       "analysis_status": "full_text",
       "candidate_count": 0,
       "extractor_version": "horizon-inspired-article-v4",
@@ -527,6 +645,8 @@
       "url": "https://blog.playstation.com/2026/11/12/vindictus-defying-fate-comes-to-ps5-next-year/"
     },
     "ea69f60d6ea5b117fae9": {
+      "_render_category": "gaming",
+      "_render_rank": 2,
       "analysis_status": "full_text",
       "candidate_count": 0,
       "extractor_version": "horizon-inspired-article-v4",
@@ -542,6 +662,8 @@
       "url": "https://www.nintendo.com/jp/my-mario/index.html"
     },
     "ea71d72c3a4898b7cfef": {
+      "_render_category": "other",
+      "_render_rank": 1,
       "analysis_status": "full_text",
       "candidate_count": 0,
       "extractor_version": "horizon-inspired-article-v4",
@@ -556,16 +678,24 @@
       "url": "https://news.xbox.com/en-us/2026/11/17/the-game-awards-2026-nominees-on-xbox/"
     },
     "ec33cdcd566a6c1995c6": {
+      "_render_category": "other",
+      "_render_rank": 0,
+      "analysis_status": "not_html",
+      "candidate_count": 0,
+      "extractor_version": "horizon-inspired-article-v4",
       "first_seen": "2026-11-18T18:04:36+00:00",
       "image_url": null,
       "kind": "official",
       "published_at": "2026-11-06T01:34:15+00:00",
+      "reviewed_at": "2026-11-18T23:30:59+00:00",
       "source": "nintendo_jp",
       "summary": "",
       "title": "「2027年3月期 第2四半期決算説明会/ 経営方針説明会（オンライン）プレゼンテーション資料」を掲載しました。",
       "url": "https://www.nintendo.co.jp/ir/pdf/2026/261106.pdf"
     },
     "f93e993f52ce5e34a3a6": {
+      "_render_category": "other",
+      "_render_rank": 1,
       "analysis_status": "full_text",
       "candidate_count": 0,
       "extractor_version": "horizon-inspired-article-v4",
@@ -580,6 +710,8 @@
       "url": "https://news.xbox.com/en-us/2026/11/17/how-to-get-ready-for-november-19/"
     },
     "fd4c3ec1807e200d9ff8": {
+      "_render_category": "other",
+      "_render_rank": 1,
       "analysis_status": "full_text",
       "candidate_count": 0,
       "extractor_version": "horizon-inspired-article-v4",
@@ -594,6 +726,8 @@
       "url": "https://news.xbox.com/en-us/2026/11/16/dr-xbox-its-time-to-take-the-day-off-and-play-xbox/"
     },
     "fd9d70392864fbcdb739": {
+      "_render_category": "gaming",
+      "_render_rank": 2,
       "analysis_status": "full_text",
       "candidate_count": 0,
       "extractor_version": "horizon-inspired-article-v4",
@@ -1510,13 +1644,19 @@
       "path": "reports/2026-11-18.html",
       "sha256": "3d7370bd0c44d3a8717d868dd2099891e2cf9b1373158e17964c354a2efd5c0b",
       "status": "saved"
+    },
+    "2026-11-19": {
+      "created_at": "2026-11-18T23:30:59+00:00",
+      "path": "reports/2026-11-19.html",
+      "sha256": "a9a72e95c44f2f4598f9b65d3b2cda66854a4b799394dcd67265e715284e76e5",
+      "status": "saved"
     }
   },
   "schema_version": 1,
   "source_health": {
     "community_placeholder": {
       "kind": "community",
-      "last_checked": "2026-11-18T23:27:06+00:00",
+      "last_checked": "2026-11-18T23:30:55+00:00",
       "source_name": "Authorized community feed (configure before enabling)",
       "status": "disabled"
     },
@@ -1525,9 +1665,9 @@
       "etag": null,
       "items_seen": 25,
       "kind": "official",
-      "last_checked": "2026-11-18T23:27:06+00:00",
+      "last_checked": "2026-11-18T23:30:55+00:00",
       "last_modified": "Wed, 18 Nov 2026 23:15:08 GMT",
-      "last_success": "2026-11-18T23:27:06+00:00",
+      "last_success": "2026-11-18T23:30:55+00:00",
       "source_name": "Nintendo Japan",
       "status": "ok_not_modified"
     },
@@ -1536,9 +1676,9 @@
       "etag": "\"6060d952211bfc153b77d4b32c7bebf9\"",
       "items_seen": 10,
       "kind": "official",
-      "last_checked": "2026-11-18T23:27:06+00:00",
+      "last_checked": "2026-11-18T23:30:55+00:00",
       "last_modified": "Wed, 18 Nov 2026 17:35:01 GMT",
-      "last_success": "2026-11-18T23:27:06+00:00",
+      "last_success": "2026-11-18T23:30:55+00:00",
       "source_name": "PlayStation Blog",
       "status": "ok_not_modified"
     },
@@ -1547,9 +1687,9 @@
       "etag": "W/\"eb5e212df74d30663b09bd5fe862adb0\"",
       "items_seen": 10,
       "kind": "official",
-      "last_checked": "2026-11-18T23:27:06+00:00",
+      "last_checked": "2026-11-18T23:30:55+00:00",
       "last_modified": "Wed, 18 Nov 2026 00:07:58 GMT",
-      "last_success": "2026-11-18T23:27:06+00:00",
+      "last_success": "2026-11-18T23:30:55+00:00",
       "source_name": "Xbox Wire",
       "status": "ok_not_modified"
     }
