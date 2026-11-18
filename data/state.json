@@ -2,17 +2,26 @@
   "documents": {
     "0046f05a36b6d64eea5f": {
       "first_seen": "2026-11-18T18:04:36+00:00",
+      "image_url": null,
       "kind": "official",
       "published_at": "2026-11-06T04:54:54+00:00",
       "source": "nintendo_jp",
+      "summary": "",
       "title": "「第87期 半期報告書」を掲載しました。",
       "url": "https://www.nintendo.co.jp/ir/pdf/2026/security_q2609.pdf"
     },
     "016875533045fc4eb6e6": {
+      "analysis_status": "full_text",
+      "candidate_count": 0,
+      "extractor_version": "horizon-inspired-article-v2",
       "first_seen": "2026-11-18T18:04:36+00:00",
+      "image_type": "official_article_preview",
+      "image_url": "https://assets.topics.apps-jp.nintendo.com/image/2026/11/13020549265480/1280/15c05113d1e1445693a2d00ae9ce75a8.jpg",
       "kind": "official",
       "published_at": "2026-11-17T03:02:40+00:00",
+      "reviewed_at": "2026-11-18T19:30:31+00:00",
       "source": "nintendo_jp",
+      "summary": "",
       "title": "Nintendo Switch 2『スプラトゥーン レイダース』の体験版を配信中。",
       "url": "https://www.nintendo.com/jp/topics/article/cc5713ab-c529-4d4f-b1c3-06b1cf46f690"
     },
@@ -25,18 +34,27 @@
       "url": "https://news.xbox.com/en-us/2026/11/17/millions-of-butt-slaps-last-pirates/"
     },
     "0875392b86166ff4c2e1": {
+      "analysis_status": "full_text",
+      "candidate_count": 0,
+      "extractor_version": "horizon-inspired-article-v2",
       "first_seen": "2026-11-18T18:04:36+00:00",
+      "image_type": "official_article_preview",
+      "image_url": "https://assets.topics.apps-jp.nintendo.com/image/2026/11/04114709243154/1280/0052091b0dc34c279571488d3dcb2488.png",
       "kind": "official",
       "published_at": "2026-11-12T05:06:52+00:00",
+      "reviewed_at": "2026-11-18T19:30:33+00:00",
       "source": "nintendo_jp",
+      "summary": "",
       "title": "タブレット・スマートフォン向けアプリ「かおルイージ」、「かおピーチ」を配信開始。そのほか、「マイマリオ」の最新情報もご紹介。",
       "url": "https://www.nintendo.com/jp/topics/article/482f5918-f83f-453f-90c1-78c1cc02065c"
     },
     "0ffa51d254bb9417313b": {
       "first_seen": "2026-11-18T18:04:36+00:00",
+      "image_url": null,
       "kind": "official",
       "published_at": "2026-11-06T12:01:48+00:00",
       "source": "nintendo_jp",
+      "summary": "",
       "title": "「2027年3月期 第2四半期決算説明会/ 経営方針説明会（オンライン） 質疑応答」を掲載しました。",
       "url": "https://www.nintendo.co.jp/ir/pdf/2026/261106_2.pdf"
     },
@@ -50,33 +68,41 @@
     },
     "1dff57c1d17ca5be8ff0": {
       "first_seen": "2026-11-18T18:04:36+00:00",
+      "image_url": null,
       "kind": "official",
       "published_at": "2026-11-10T01:20:58+00:00",
       "source": "nintendo_jp",
+      "summary": "",
       "title": "Nintendo Switch 2 / Nintendo Switchの本体機能をバージョンアップ。新しい機能をご紹介します。",
       "url": "https://www.nintendo.com/jp/topics/article/31e57164-941c-4103-bd30-f04744073cc3"
     },
     "1e59f64bcc138f5b63f8": {
       "first_seen": "2026-11-18T18:04:36+00:00",
+      "image_url": null,
       "kind": "official",
       "published_at": "2026-11-18T05:12:40+00:00",
       "source": "nintendo_jp",
+      "summary": "",
       "title": "「サウンド系 ワークショップ」のお申し込み受付を開始しました。",
       "url": "https://www.nintendo.co.jp/jobs/recruit/event/sound_workshop.html"
     },
     "215aec91247975ae2811": {
       "first_seen": "2026-11-18T18:04:36+00:00",
+      "image_url": null,
       "kind": "official",
       "published_at": "2026-11-11T01:02:53+00:00",
       "source": "nintendo_jp",
+      "summary": "",
       "title": "「Hello! インディー」特殊コインを投入し、効率よくコインを集める『RACCOIN: Chaos Max Edition』",
       "url": "https://www.nintendo.com/jp/topics/article/98f912b6-f33b-4dfa-940c-a6681bb2ea9e"
     },
     "218cc56cf1b0570a5fc7": {
       "first_seen": "2026-11-18T18:04:36+00:00",
+      "image_url": null,
       "kind": "official",
       "published_at": "2026-11-11T01:01:53+00:00",
       "source": "nintendo_jp",
+      "summary": "",
       "title": "「Hello! インディー」タヌキがBMXで郵便配達！？『TANUKI: Pon's Summer - タヌキ：ポンの夏』",
       "url": "https://www.nintendo.com/jp/topics/article/11a5acfe-42af-4294-b421-1504a2a8cf45"
     },
@@ -89,10 +115,17 @@
       "url": "https://news.xbox.com/en-us/2026/11/17/ice-cream-simulator/"
     },
     "2674ae59c8cc13810c71": {
+      "analysis_status": "full_text",
+      "candidate_count": 0,
+      "extractor_version": "horizon-inspired-article-v2",
       "first_seen": "2026-11-18T18:04:36+00:00",
+      "image_type": "official_article_preview",
+      "image_url": "https://assets.topics.apps-jp.nintendo.com/image/2026/11/12074445686606/1280/f475766f262a4543b3c578defa664d52.jpg",
       "kind": "official",
       "published_at": "2026-11-13T01:02:55+00:00",
+      "reviewed_at": "2026-11-18T19:30:32+00:00",
       "source": "nintendo_jp",
+      "summary": "",
       "title": "ニンテンドーeショップ新作ソフト情報 11/13（金）号。",
       "url": "https://www.nintendo.com/jp/topics/article/f5182976-316a-4bc7-9d99-8278bcc0c497"
     },
@@ -105,18 +138,27 @@
       "url": "https://blog.playstation.com/2026/11/13/qssr-arrives-in-marvels-spider-man-2-control-resonant-the-finals-arc-raiders-and-hell-let-loose-vietnam/"
     },
     "2934ee13bb0b57cd02cd": {
+      "analysis_status": "full_text",
+      "candidate_count": 0,
+      "extractor_version": "horizon-inspired-article-v2",
       "first_seen": "2026-11-18T18:04:36+00:00",
+      "image_type": "official_article_preview",
+      "image_url": "https://nintendo.com/jp/character/pikmin/sns.png",
       "kind": "official",
       "published_at": "2026-11-11T14:00:34+00:00",
+      "reviewed_at": "2026-11-18T19:30:36+00:00",
       "source": "nintendo_jp",
+      "summary": "",
       "title": "「Hello! Pikmin 03 ボウリング」を公開しました。",
       "url": "https://www.nintendo.com/jp/character/pikmin/hello-pikmin/index.html"
     },
     "2e7fd21e57416c2abac7": {
       "first_seen": "2026-11-18T18:04:36+00:00",
+      "image_url": null,
       "kind": "official",
       "published_at": "2026-11-13T01:03:20+00:00",
       "source": "nintendo_jp",
+      "summary": "",
       "title": "「Hello! インディー」ソニックたちと力を合わせてゴールを目指せ『SONIC PICO PARK』",
       "url": "https://www.nintendo.com/jp/topics/article/5280ccbd-f23c-4820-8cbb-6f1e9bdf5998"
     },
@@ -130,57 +172,86 @@
     },
     "524b58634dc62207f7df": {
       "first_seen": "2026-11-18T18:04:36+00:00",
+      "image_url": null,
       "kind": "official",
       "published_at": "2026-11-10T01:03:56+00:00",
       "source": "nintendo_jp",
+      "summary": "",
       "title": "「Hello! インディー」遊べるテーブルゲームは40種類以上『テーブルゲームワールド CCFOLIA for Nintendo Switch 2』",
       "url": "https://www.nintendo.com/jp/topics/article/e77acfd6-fdd4-4265-9d2f-d682b85430d9"
     },
     "544d662940355ef21edb": {
+      "analysis_status": "full_text",
+      "candidate_count": 0,
+      "extractor_version": "horizon-inspired-article-v2",
       "first_seen": "2026-11-18T18:04:36+00:00",
+      "image_type": "official_article_preview",
+      "image_url": "https://assets.topics.apps-jp.nintendo.com/image/2026/11/12021115143837/1920/ec0e145af793496291f9d80fe0509b94.jpg",
       "kind": "official",
       "published_at": "2026-11-16T06:03:19+00:00",
+      "reviewed_at": "2026-11-18T19:30:28+00:00",
       "source": "nintendo_jp",
+      "summary": "",
       "title": "「スプラトゥーン レイダース イカすアートブック」発売決定＆予約開始。Nintendo Storeの数量限定特典もご紹介。",
       "url": "https://www.nintendo.com/jp/topics/article/c73c1b54-c93c-4895-aaaa-8ced4b6508cb"
     },
     "58d340466427e20f0fdf": {
+      "analysis_status": "full_text",
+      "candidate_count": 10,
+      "extractor_version": "horizon-inspired-article-v2",
       "first_seen": "2026-11-18T18:04:36+00:00",
+      "image_type": "official_article_preview",
+      "image_url": "https://assets.topics.apps-jp.nintendo.com/image/2026/10/30062407064136/1280/b1eefa664b744a3096e133ebc089c025.jpg",
       "kind": "official",
       "published_at": "2026-11-12T01:13:02+00:00",
+      "reviewed_at": "2026-11-18T19:30:30+00:00",
       "source": "nintendo_jp",
+      "summary": "",
       "title": "「ソードカービィ&ドラグーン」「ノワールデデデ&ハイドラ」のamiiboは本日発売。ゲーム内イベントも近日開催予定。",
       "url": "https://www.nintendo.com/jp/topics/article/13827716-39ef-4435-911e-ab6583921da4"
     },
     "5bd6272ceffa4c19c1da": {
       "first_seen": "2026-11-18T18:04:36+00:00",
+      "image_url": null,
       "kind": "official",
       "published_at": "2026-11-10T01:19:54+00:00",
       "source": "nintendo_jp",
+      "summary": "",
       "title": "『スーパー マリオパーティ ジャンボリー Nintendo Switch 2 Edition ＋ ジャンボリーTV』が無料アップデート。ソフトが1本あれば、オンラインで、みんなでスゴロクができるように。",
       "url": "https://www.nintendo.com/jp/topics/article/1f0dba7a-c553-4ae7-bb75-a6586db1d824"
     },
     "6a6b392dafa3fc81fbb7": {
       "first_seen": "2026-11-18T18:04:36+00:00",
+      "image_url": null,
       "kind": "official",
       "published_at": "2026-11-06T05:17:05+00:00",
       "source": "nintendo_jp",
+      "summary": "",
       "title": "「デザイン系 オンラインセミナー アートワーク制作」「デザイン系 オンラインセミナー ソフトウェア制作」のお申し込み受付を開始しました。",
       "url": "https://www.nintendo.co.jp/jobs/recruit/event/index.html"
     },
     "6b0c0c9bda6d9d1cb055": {
       "first_seen": "2026-11-18T18:04:36+00:00",
+      "image_url": null,
       "kind": "official",
       "published_at": "2026-11-12T05:06:35+00:00",
       "source": "nintendo_jp",
+      "summary": "",
       "title": "「仕事を読み解くキーワード」のページを更新しました。任天堂ではたらく社員の声を追加しています。",
       "url": "https://www.nintendo.co.jp/jobs/keyword/index.html"
     },
     "72edfad0ae605aff7cbb": {
+      "analysis_status": "full_text",
+      "candidate_count": 0,
+      "extractor_version": "horizon-inspired-article-v2",
       "first_seen": "2026-11-18T18:04:36+00:00",
+      "image_type": "official_article_preview",
+      "image_url": "https://assets.topics.apps-jp.nintendo.com/image/2026/11/12114112234440/1280/da7413a6a2eb4b8a9ada9419f76166b9.jpg",
       "kind": "official",
       "published_at": "2026-11-18T03:01:15+00:00",
+      "reviewed_at": "2026-11-18T19:30:30+00:00",
       "source": "nintendo_jp",
+      "summary": "",
       "title": "『スプラトゥーン3』の更新データVer.12.0.0を本日配信。さまざまなアイテムが手に入るゲームニュースも配信中。",
       "url": "https://www.nintendo.com/jp/topics/article/405b3f79-3dfb-4336-baae-5256a086eb35"
     },
@@ -210,16 +281,24 @@
     },
     "9f2d57941340f80a6ec3": {
       "first_seen": "2026-11-18T18:04:36+00:00",
+      "image_url": null,
       "kind": "official",
       "published_at": "2026-11-11T06:30:51+00:00",
       "source": "nintendo_jp",
+      "summary": "",
       "title": "ニュースリリース「Nintendo Switch 2 ソフト『ゼルダの伝説 時のオカリナ』の世界累計販売本数が発売後4日間で520万本を突破」を公開しました。",
       "url": "https://www.nintendo.co.jp/corporate/release/2026/261111.html"
     },
     "a42e3d892bb4f4ad1205": {
+      "analysis_status": "full_text",
+      "candidate_count": 1,
+      "extractor_version": "horizon-inspired-article-v2",
       "first_seen": "2026-11-18T18:04:35+00:00",
+      "image_type": "official_article_preview",
+      "image_url": "https://blog.playstation.com/tachyon/2026/11/4307c0e946544855e38087de41e890782dd7d4bf.jpg",
       "kind": "official",
       "published_at": "2026-11-12T23:00:19+00:00",
+      "reviewed_at": "2026-11-18T19:30:32+00:00",
       "source": "playstation_blog",
       "title": "Once Human: Season 5 gameplay showcases co-op Colossus boss battle, live November 18",
       "url": "https://blog.playstation.com/2026/11/12/once-human-season-5-gameplay-showcases-co-op-colossus-boss-battle-live-november-18/"
@@ -241,10 +320,17 @@
       "url": "https://blog.playstation.com/2026/11/17/introducing-hounded-crafting-the-dog-adventure-coming-to-ps5-in-2027/"
     },
     "b1a71b64b1bec45e0569": {
+      "analysis_status": "full_text",
+      "candidate_count": 0,
+      "extractor_version": "horizon-inspired-article-v2",
       "first_seen": "2026-11-18T18:04:36+00:00",
+      "image_type": "official_article_preview",
+      "image_url": "https://assets.topics.apps-jp.nintendo.com/image/2026/10/28054115611340/1280/c6f668f7d0d24667ab1086c449c7d41e.jpg",
       "kind": "official",
       "published_at": "2026-11-12T01:07:59+00:00",
+      "reviewed_at": "2026-11-18T19:30:36+00:00",
       "source": "nintendo_jp",
+      "summary": "",
       "title": "幻想を超える旅が始まる。ファンタジーRPG『メタファー：リファンタジオ』がNintendo Switch 2 で本日発売。 ※本作の対象年齢は「15歳以上」です。",
       "url": "https://www.nintendo.com/jp/topics/article/ca36364e-5117-4881-9688-ea2d023a7b45"
     },
@@ -265,9 +351,15 @@
       "url": "https://news.xbox.com/en-us/2026/11/17/xbox-game-pass-november-2026-wave-2/"
     },
     "d9ebeabbd48d9968c8ff": {
+      "analysis_status": "full_text",
+      "candidate_count": 0,
+      "extractor_version": "horizon-inspired-article-v2",
       "first_seen": "2026-11-18T18:04:35+00:00",
+      "image_type": "official_article_preview",
+      "image_url": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/11/MSFS_Do228_NoSnipe_NoLogo_NoText-JPG-182b68b8ea0ab412e237.jpg",
       "kind": "official",
       "published_at": "2026-11-17T21:30:00+00:00",
+      "reviewed_at": "2026-11-18T19:30:27+00:00",
       "source": "xbox_wire",
       "title": "Carenado Releases a Microsoft Flight Simulator Marketplace Exclusive: The DO228-200",
       "url": "https://news.xbox.com/en-us/2026/11/17/carenado-releases-a-microsoft-flight-simulator-marketplace-exclusive-the-do228-200/"
@@ -281,10 +373,17 @@
       "url": "https://blog.playstation.com/2026/11/10/playstation-plus-game-catalog-for-november-death-stranding-2-on-the-beach-like-a-dragon-pirate-yakuza-in-hawaii-atomfall-dragon-quest-iii-hd-2d-remake-and-more/"
     },
     "dc2add945404ae0e9caa": {
+      "analysis_status": "full_text",
+      "candidate_count": 0,
+      "extractor_version": "horizon-inspired-article-v2",
       "first_seen": "2026-11-18T18:04:36+00:00",
+      "image_type": "official_article_preview",
+      "image_url": "https://assets.topics.apps-jp.nintendo.com/image/2026/11/06124452859443/1280/f83984a3c68a43488cdb333bc076a9a9.jpg",
       "kind": "official",
       "published_at": "2026-11-12T01:14:34+00:00",
+      "reviewed_at": "2026-11-18T19:30:34+00:00",
       "source": "nintendo_jp",
+      "summary": "",
       "title": "『ピクミン4 Nintendo Switch 2 Edition + だれでもチャレンジ! ダンドリ検定』は本日発売。小芝風花さんがダンドリ検定に挑む長編映像も公開中。",
       "url": "https://www.nintendo.com/jp/topics/article/b852fe50-71bf-4c1a-a338-5b75951d040d"
     },
@@ -298,9 +397,11 @@
     },
     "e7b2186ad2391aa4ba1b": {
       "first_seen": "2026-11-18T18:04:36+00:00",
+      "image_url": null,
       "kind": "official",
       "published_at": "2026-11-10T01:37:44+00:00",
       "source": "nintendo_jp",
+      "summary": "",
       "title": "「Nintendo Switch Sports ゲーム運動会 シニアボウリングトーナメント2026」のページを更新しました。 全国から集った16団体の頂点をかけ、「広川町ゲームサポーター」と「けっぱれ！青森県」が決勝戦に臨みます。 これまでの全試合の様子も公開しています。",
       "url": "https://www.nintendo.com/jp/switch/as8sa/senior-bowling-2026/index.html"
     },
@@ -314,9 +415,11 @@
     },
     "ea69f60d6ea5b117fae9": {
       "first_seen": "2026-11-18T18:04:36+00:00",
+      "image_url": null,
       "kind": "official",
       "published_at": "2026-11-11T01:09:02+00:00",
       "source": "nintendo_jp",
+      "summary": "",
       "title": "「マイマリオ（MY MARIO）」の公式サイトを更新しました。 コマどりマリオ 第10話「がんばれキノピオ！」を公開しています。",
       "url": "https://www.nintendo.com/jp/my-mario/index.html"
     },
@@ -330,9 +433,11 @@
     },
     "ec33cdcd566a6c1995c6": {
       "first_seen": "2026-11-18T18:04:36+00:00",
+      "image_url": null,
       "kind": "official",
       "published_at": "2026-11-06T01:34:15+00:00",
       "source": "nintendo_jp",
+      "summary": "",
       "title": "「2027年3月期 第2四半期決算説明会/ 経営方針説明会（オンライン）プレゼンテーション資料」を掲載しました。",
       "url": "https://www.nintendo.co.jp/ir/pdf/2026/261106.pdf"
     },
@@ -353,15 +458,563 @@
       "url": "https://news.xbox.com/en-us/2026/11/16/dr-xbox-its-time-to-take-the-day-off-and-play-xbox/"
     },
     "fd9d70392864fbcdb739": {
+      "analysis_status": "full_text",
+      "candidate_count": 1,
+      "extractor_version": "horizon-inspired-article-v2",
       "first_seen": "2026-11-18T18:04:36+00:00",
+      "image_type": "official_article_preview",
+      "image_url": "https://assets.topics.apps-jp.nintendo.com/image/2026/11/11045828091528/1280/f677ada4c577413b807f271776a883ed.jpg",
       "kind": "official",
       "published_at": "2026-11-12T01:08:55+00:00",
+      "reviewed_at": "2026-11-18T19:30:35+00:00",
       "source": "nintendo_jp",
+      "summary": "",
       "title": "プレゼントにおすすめのグッズをご紹介。『マリオカート ワールド』のラッピンググッズは本日発売。",
       "url": "https://www.nintendo.com/jp/topics/article/680e0eda-8dd6-4533-9f42-ef26376f111f"
     }
   },
-  "opportunities": {},
+  "opportunities": {
+    "089b7956a26f4ab46e3b": {
+      "competition": {
+        "reason": "missing_api_credentials",
+        "status": "not_checked"
+      },
+      "demand_evidence": [],
+      "discovery_date": "2026-11-18T19:30:30+00:00",
+      "discovery_note": "Re-extracted from previously seen news",
+      "document_first_seen": "2026-11-18T18:04:36+00:00",
+      "evidence": [
+        {
+          "excerpt": "手になっています。 ぜひ実際に試してみてくださいね。 これらのamiiboは、Nintendo Storeでお買い求めいただけます。 「カービィのエアライダーシリーズ」のamiiboの特徴 「カービィのエアライダーシリーズ」のamiiboは、ゲームさながらにライダーとマシンを乗せかえることができ、乗せかえた情報はゲーム内に反映されます。 これまでに発売したamiibo",
+          "extraction_confidence": 0.72,
+          "extraction_method": "named_object_in_source",
+          "type": "official_article",
+          "url": "https://www.nintendo.com/jp/topics/article/13827716-39ef-4435-911e-ab6583921da4"
+        }
+      ],
+      "first_signal_date": "2026-11-12T01:13:02+00:00",
+      "id": "089b7956a26f4ab46e3b",
+      "image_type": "official_article_preview",
+      "image_url": "https://assets.topics.apps-jp.nintendo.com/image/2026/10/30062407064136/1280/b1eefa664b744a3096e133ebc089c025.jpg",
+      "kind": "figurine",
+      "language": "ja",
+      "last_changed": "2026-11-18T19:30:30+00:00",
+      "name": "カービィのエアライダーシリーズ amiibo",
+      "origin": "「ソードカービィ&ドラグーン」「ノワールデデデ&ハイドラ」のamiiboは本日発売。ゲーム内イベントも近日開催予定。",
+      "region": "japan",
+      "rights_status": "unverified",
+      "score": {
+        "confidence": 35,
+        "decision": "WATCH",
+        "lower": 17.0,
+        "missing_factors": [
+          "demand",
+          "gap",
+          "scarcity",
+          "timing"
+        ],
+        "notes": "Provisional candidate; image/rights review and demand evidence required.",
+        "score_version": "MVP-1",
+        "upper": 82.0,
+        "window": "WATCH"
+      }
+    },
+    "18d87f871c4a88489f6c": {
+      "competition": {
+        "reason": "missing_api_credentials",
+        "status": "not_checked"
+      },
+      "demand_evidence": [],
+      "discovery_date": "2026-11-18T19:30:30+00:00",
+      "discovery_note": "Re-extracted from previously seen news",
+      "document_first_seen": "2026-11-18T18:04:36+00:00",
+      "evidence": [
+        {
+          "excerpt": "ハイドラ」を発売しました。 空の支配者「ドラグーン」と破壊王「ハイドラ」は、シティトライアルで3つのパーツを集めると完成させられる伝説のエアライドマシン。そのスケール感はamiiboでも健在です。 伝説のエアライドマシンも、育成可能フィギュアプレイヤーとして呼び出すことができます。ちなみに、ドラグーンとハイドラは、伝説のエアライドマシンらしく、フィギュアプレイヤーでも",
+          "extraction_confidence": 0.72,
+          "extraction_method": "named_object_in_source",
+          "type": "official_article",
+          "url": "https://www.nintendo.com/jp/topics/article/13827716-39ef-4435-911e-ab6583921da4"
+        }
+      ],
+      "first_signal_date": "2026-11-12T01:13:02+00:00",
+      "id": "18d87f871c4a88489f6c",
+      "image_type": "official_article_preview",
+      "image_url": "https://assets.topics.apps-jp.nintendo.com/image/2026/10/30062407064136/1280/b1eefa664b744a3096e133ebc089c025.jpg",
+      "kind": "figurine",
+      "language": "ja",
+      "last_changed": "2026-11-18T19:30:30+00:00",
+      "name": "ドラグーン amiibo",
+      "origin": "「ソードカービィ&ドラグーン」「ノワールデデデ&ハイドラ」のamiiboは本日発売。ゲーム内イベントも近日開催予定。",
+      "region": "japan",
+      "rights_status": "unverified",
+      "score": {
+        "confidence": 35,
+        "decision": "WATCH",
+        "lower": 17.0,
+        "missing_factors": [
+          "demand",
+          "gap",
+          "scarcity",
+          "timing"
+        ],
+        "notes": "Provisional candidate; image/rights review and demand evidence required.",
+        "score_version": "MVP-1",
+        "upper": 82.0,
+        "window": "WATCH"
+      }
+    },
+    "3b0c6c017b03b195b03b": {
+      "competition": {
+        "reason": "missing_api_credentials",
+        "status": "not_checked"
+      },
+      "demand_evidence": [],
+      "discovery_date": "2026-11-18T19:30:30+00:00",
+      "discovery_note": "Re-extracted from previously seen news",
+      "document_first_seen": "2026-11-18T18:04:36+00:00",
+      "evidence": [
+        {
+          "excerpt": "「ソードカービィ&ドラグーン」「ノワールデデデ&ハイドラ」のamiiboは本日発売。ゲーム内イベントも近日開催予定。. . 本日、amiibo「カービィのエアライダーシリーズ」から、「ソードカービィ&ドラグーン」「ノワールデデデ&ハイドラ」を発売しました。 空",
+          "extraction_confidence": 0.72,
+          "extraction_method": "named_object_in_source",
+          "type": "official_article",
+          "url": "https://www.nintendo.com/jp/topics/article/13827716-39ef-4435-911e-ab6583921da4"
+        }
+      ],
+      "first_signal_date": "2026-11-12T01:13:02+00:00",
+      "id": "3b0c6c017b03b195b03b",
+      "image_type": "official_article_preview",
+      "image_url": "https://assets.topics.apps-jp.nintendo.com/image/2026/10/30062407064136/1280/b1eefa664b744a3096e133ebc089c025.jpg",
+      "kind": "figurine",
+      "language": "ja",
+      "last_changed": "2026-11-18T19:30:30+00:00",
+      "name": "ノワールデデデ&ハイドラ amiibo",
+      "origin": "「ソードカービィ&ドラグーン」「ノワールデデデ&ハイドラ」のamiiboは本日発売。ゲーム内イベントも近日開催予定。",
+      "region": "japan",
+      "rights_status": "unverified",
+      "score": {
+        "confidence": 35,
+        "decision": "WATCH",
+        "lower": 17.0,
+        "missing_factors": [
+          "demand",
+          "gap",
+          "scarcity",
+          "timing"
+        ],
+        "notes": "Provisional candidate; image/rights review and demand evidence required.",
+        "score_version": "MVP-1",
+        "upper": 82.0,
+        "window": "WATCH"
+      }
+    },
+    "3e9f0670a5a2a99ee530": {
+      "competition": {
+        "reason": "missing_api_credentials",
+        "status": "not_checked"
+      },
+      "demand_evidence": [],
+      "discovery_date": "2026-11-18T19:30:30+00:00",
+      "discovery_note": "Re-extracted from previously seen news",
+      "document_first_seen": "2026-11-18T18:04:36+00:00",
+      "evidence": [
+        {
+          "excerpt": "ハイドラ」は、シティトライアルで3つのパーツを集めると完成させられる伝説のエアライドマシン。そのスケール感はamiiboでも健在です。 伝説のエアライドマシンも、育成可能フィギュアプレイヤーとして呼び出すことができます。ちなみに、ドラグーンとハイドラは、伝説のエアライドマシンらしく、フィギュアプレイヤーでもとても強く、勝つのは難しい相手になっています。 ぜひ実際に試し",
+          "extraction_confidence": 0.72,
+          "extraction_method": "named_object_in_source",
+          "type": "official_article",
+          "url": "https://www.nintendo.com/jp/topics/article/13827716-39ef-4435-911e-ab6583921da4"
+        }
+      ],
+      "first_signal_date": "2026-11-12T01:13:02+00:00",
+      "id": "3e9f0670a5a2a99ee530",
+      "image_type": "official_article_preview",
+      "image_url": "https://assets.topics.apps-jp.nintendo.com/image/2026/10/30062407064136/1280/b1eefa664b744a3096e133ebc089c025.jpg",
+      "kind": "figurine",
+      "language": "ja",
+      "last_changed": "2026-11-18T19:30:30+00:00",
+      "name": "ドラグーン フィギュア",
+      "origin": "「ソードカービィ&ドラグーン」「ノワールデデデ&ハイドラ」のamiiboは本日発売。ゲーム内イベントも近日開催予定。",
+      "region": "japan",
+      "rights_status": "unverified",
+      "score": {
+        "confidence": 35,
+        "decision": "WATCH",
+        "lower": 17.0,
+        "missing_factors": [
+          "demand",
+          "gap",
+          "scarcity",
+          "timing"
+        ],
+        "notes": "Provisional candidate; image/rights review and demand evidence required.",
+        "score_version": "MVP-1",
+        "upper": 82.0,
+        "window": "WATCH"
+      }
+    },
+    "461d3afe567fe01a2a4d": {
+      "competition": {
+        "reason": "missing_api_credentials",
+        "status": "not_checked"
+      },
+      "demand_evidence": [],
+      "discovery_date": "2026-11-18T19:30:30+00:00",
+      "discovery_note": "Re-extracted from previously seen news",
+      "document_first_seen": "2026-11-18T18:04:36+00:00",
+      "evidence": [
+        {
+          "excerpt": "ハイドラ」は、シティトライアルで3つのパーツを集めると完成させられる伝説のエアライドマシン。そのスケール感はamiiboでも健在です。 伝説のエアライドマシンも、育成可能フィギュアプレイヤーとして呼び出すことができます。ちなみに、ドラグーンとハイドラは、伝説のエアライドマシンらしく、フィギュアプレイヤーでもとても強く、勝つのは難しい相手になっています。 ぜひ実際に試し",
+          "extraction_confidence": 0.72,
+          "extraction_method": "named_object_in_source",
+          "type": "official_article",
+          "url": "https://www.nintendo.com/jp/topics/article/13827716-39ef-4435-911e-ab6583921da4"
+        }
+      ],
+      "first_signal_date": "2026-11-12T01:13:02+00:00",
+      "id": "461d3afe567fe01a2a4d",
+      "image_type": "official_article_preview",
+      "image_url": "https://assets.topics.apps-jp.nintendo.com/image/2026/10/30062407064136/1280/b1eefa664b744a3096e133ebc089c025.jpg",
+      "kind": "figurine",
+      "language": "ja",
+      "last_changed": "2026-11-18T19:30:30+00:00",
+      "name": "ノワールデデデ&ハイドラ フィギュア",
+      "origin": "「ソードカービィ&ドラグーン」「ノワールデデデ&ハイドラ」のamiiboは本日発売。ゲーム内イベントも近日開催予定。",
+      "region": "japan",
+      "rights_status": "unverified",
+      "score": {
+        "confidence": 35,
+        "decision": "WATCH",
+        "lower": 17.0,
+        "missing_factors": [
+          "demand",
+          "gap",
+          "scarcity",
+          "timing"
+        ],
+        "notes": "Provisional candidate; image/rights review and demand evidence required.",
+        "score_version": "MVP-1",
+        "upper": 82.0,
+        "window": "WATCH"
+      }
+    },
+    "47f1dbe8170ecc217083": {
+      "competition": {
+        "reason": "missing_api_credentials",
+        "status": "not_checked"
+      },
+      "demand_evidence": [],
+      "discovery_date": "2026-11-18T19:30:30+00:00",
+      "discovery_note": "Re-extracted from previously seen news",
+      "document_first_seen": "2026-11-18T18:04:36+00:00",
+      "evidence": [
+        {
+          "excerpt": "ハイドラ」は、シティトライアルで3つのパーツを集めると完成させられる伝説のエアライドマシン。そのスケール感はamiiboでも健在です。 伝説のエアライドマシンも、育成可能フィギュアプレイヤーとして呼び出すことができます。ちなみに、ドラグーンとハイドラは、伝説のエアライドマシンらしく、フィギュアプレイヤーでもとても強く、勝つのは難しい相手になっています。 ぜひ実際に試し",
+          "extraction_confidence": 0.72,
+          "extraction_method": "named_object_in_source",
+          "type": "official_article",
+          "url": "https://www.nintendo.com/jp/topics/article/13827716-39ef-4435-911e-ab6583921da4"
+        }
+      ],
+      "first_signal_date": "2026-11-12T01:13:02+00:00",
+      "id": "47f1dbe8170ecc217083",
+      "image_type": "official_article_preview",
+      "image_url": "https://assets.topics.apps-jp.nintendo.com/image/2026/10/30062407064136/1280/b1eefa664b744a3096e133ebc089c025.jpg",
+      "kind": "figurine",
+      "language": "ja",
+      "last_changed": "2026-11-18T19:30:30+00:00",
+      "name": "ハイドラ フィギュア",
+      "origin": "「ソードカービィ&ドラグーン」「ノワールデデデ&ハイドラ」のamiiboは本日発売。ゲーム内イベントも近日開催予定。",
+      "region": "japan",
+      "rights_status": "unverified",
+      "score": {
+        "confidence": 35,
+        "decision": "WATCH",
+        "lower": 17.0,
+        "missing_factors": [
+          "demand",
+          "gap",
+          "scarcity",
+          "timing"
+        ],
+        "notes": "Provisional candidate; image/rights review and demand evidence required.",
+        "score_version": "MVP-1",
+        "upper": 82.0,
+        "window": "WATCH"
+      }
+    },
+    "68021828fd188ffe3828": {
+      "competition": {
+        "reason": "missing_api_credentials",
+        "status": "not_checked"
+      },
+      "demand_evidence": [],
+      "discovery_date": "2026-11-18T19:30:30+00:00",
+      "discovery_note": "Re-extracted from previously seen news",
+      "document_first_seen": "2026-11-18T18:04:36+00:00",
+      "evidence": [
+        {
+          "excerpt": "iiboは、ゲームさながらにライダーとマシンを乗せかえることができ、乗せかえた情報はゲーム内に反映されます。 これまでに発売したamiiboと共に、乗せかえを楽しんだり、フィギュアプレイヤーの育成を楽しんだりしてみてくださいね。 『カービィのエアライダー』はまもなく発売から1年が経ちますが、それに合わせてゲーム内イベントも実施予定です。 ゲーム内イベント「戦え! 乗り",
+          "extraction_confidence": 0.72,
+          "extraction_method": "named_object_in_source",
+          "type": "official_article",
+          "url": "https://www.nintendo.com/jp/topics/article/13827716-39ef-4435-911e-ab6583921da4"
+        }
+      ],
+      "first_signal_date": "2026-11-12T01:13:02+00:00",
+      "id": "68021828fd188ffe3828",
+      "image_type": "official_article_preview",
+      "image_url": "https://assets.topics.apps-jp.nintendo.com/image/2026/10/30062407064136/1280/b1eefa664b744a3096e133ebc089c025.jpg",
+      "kind": "figurine",
+      "language": "ja",
+      "last_changed": "2026-11-18T19:30:30+00:00",
+      "name": "カービィのエアライダーシリーズ フィギュア",
+      "origin": "「ソードカービィ&ドラグーン」「ノワールデデデ&ハイドラ」のamiiboは本日発売。ゲーム内イベントも近日開催予定。",
+      "region": "japan",
+      "rights_status": "unverified",
+      "score": {
+        "confidence": 35,
+        "decision": "WATCH",
+        "lower": 17.0,
+        "missing_factors": [
+          "demand",
+          "gap",
+          "scarcity",
+          "timing"
+        ],
+        "notes": "Provisional candidate; image/rights review and demand evidence required.",
+        "score_version": "MVP-1",
+        "upper": 82.0,
+        "window": "WATCH"
+      }
+    },
+    "929e602d5be4c6fb567a": {
+      "competition": {
+        "reason": "missing_api_credentials",
+        "status": "not_checked"
+      },
+      "demand_evidence": [],
+      "discovery_date": "2026-11-18T19:30:30+00:00",
+      "discovery_note": "Re-extracted from previously seen news",
+      "document_first_seen": "2026-11-18T18:04:36+00:00",
+      "evidence": [
+        {
+          "excerpt": "ハイドラ」を発売しました。 空の支配者「ドラグーン」と破壊王「ハイドラ」は、シティトライアルで3つのパーツを集めると完成させられる伝説のエアライドマシン。そのスケール感はamiiboでも健在です。 伝説のエアライドマシンも、育成可能フィギュアプレイヤーとして呼び出すことができます。ちなみに、ドラグーンとハイドラは、伝説のエアライドマシンらしく、フィギュアプレイヤーでも",
+          "extraction_confidence": 0.72,
+          "extraction_method": "named_object_in_source",
+          "type": "official_article",
+          "url": "https://www.nintendo.com/jp/topics/article/13827716-39ef-4435-911e-ab6583921da4"
+        }
+      ],
+      "first_signal_date": "2026-11-12T01:13:02+00:00",
+      "id": "929e602d5be4c6fb567a",
+      "image_type": "official_article_preview",
+      "image_url": "https://assets.topics.apps-jp.nintendo.com/image/2026/10/30062407064136/1280/b1eefa664b744a3096e133ebc089c025.jpg",
+      "kind": "figurine",
+      "language": "ja",
+      "last_changed": "2026-11-18T19:30:30+00:00",
+      "name": "ハイドラ amiibo",
+      "origin": "「ソードカービィ&ドラグーン」「ノワールデデデ&ハイドラ」のamiiboは本日発売。ゲーム内イベントも近日開催予定。",
+      "region": "japan",
+      "rights_status": "unverified",
+      "score": {
+        "confidence": 35,
+        "decision": "WATCH",
+        "lower": 17.0,
+        "missing_factors": [
+          "demand",
+          "gap",
+          "scarcity",
+          "timing"
+        ],
+        "notes": "Provisional candidate; image/rights review and demand evidence required.",
+        "score_version": "MVP-1",
+        "upper": 82.0,
+        "window": "WATCH"
+      }
+    },
+    "993527d99eee71d98a41": {
+      "competition": {
+        "reason": "missing_api_credentials",
+        "status": "not_checked"
+      },
+      "demand_evidence": [],
+      "discovery_date": "2026-11-18T19:30:30+00:00",
+      "discovery_note": "Re-extracted from previously seen news",
+      "document_first_seen": "2026-11-18T18:04:36+00:00",
+      "evidence": [
+        {
+          "excerpt": "「ソードカービィ&ドラグーン」「ノワールデデデ&ハイドラ」のamiiboは本日発売。ゲーム内イベントも近日開催予定。. . 本日、amiibo「カービィのエアライダーシリーズ」から、「ソードカービィ&ドラグーン」「ノワールデデデ&ハイドラ」を発売しました。 空",
+          "extraction_confidence": 0.72,
+          "extraction_method": "named_object_in_source",
+          "type": "official_article",
+          "url": "https://www.nintendo.com/jp/topics/article/13827716-39ef-4435-911e-ab6583921da4"
+        }
+      ],
+      "first_signal_date": "2026-11-12T01:13:02+00:00",
+      "id": "993527d99eee71d98a41",
+      "image_type": "official_article_preview",
+      "image_url": "https://assets.topics.apps-jp.nintendo.com/image/2026/10/30062407064136/1280/b1eefa664b744a3096e133ebc089c025.jpg",
+      "kind": "figurine",
+      "language": "ja",
+      "last_changed": "2026-11-18T19:30:30+00:00",
+      "name": "ソードカービィ&ドラグーン amiibo",
+      "origin": "「ソードカービィ&ドラグーン」「ノワールデデデ&ハイドラ」のamiiboは本日発売。ゲーム内イベントも近日開催予定。",
+      "region": "japan",
+      "rights_status": "unverified",
+      "score": {
+        "confidence": 35,
+        "decision": "WATCH",
+        "lower": 17.0,
+        "missing_factors": [
+          "demand",
+          "gap",
+          "scarcity",
+          "timing"
+        ],
+        "notes": "Provisional candidate; image/rights review and demand evidence required.",
+        "score_version": "MVP-1",
+        "upper": 82.0,
+        "window": "WATCH"
+      }
+    },
+    "acb58cffa60a68b7cd6c": {
+      "competition": {
+        "reason": "missing_api_credentials",
+        "status": "not_checked"
+      },
+      "demand_evidence": [],
+      "discovery_date": "2026-11-18T19:30:30+00:00",
+      "discovery_note": "Re-extracted from previously seen news",
+      "document_first_seen": "2026-11-18T18:04:36+00:00",
+      "evidence": [
+        {
+          "excerpt": "破壊王「ハイドラ」は、シティトライアルで3つのパーツを集めると完成させられる伝説のエアライドマシン。そのスケール感はamiiboでも健在です。 伝説のエアライドマシンも、育成可能フィギュアプレイヤーとして呼び出すことができます。ちなみに、ドラグーンとハイドラは、伝説のエアライドマシンらしく、フィギュアプレイヤーでもとても強く、勝つのは難しい相手になっています。 ぜひ実",
+          "extraction_confidence": 0.55,
+          "extraction_method": "named_object_in_source",
+          "type": "official_article",
+          "url": "https://www.nintendo.com/jp/topics/article/13827716-39ef-4435-911e-ab6583921da4"
+        }
+      ],
+      "first_signal_date": "2026-11-12T01:13:02+00:00",
+      "id": "acb58cffa60a68b7cd6c",
+      "image_type": "official_article_preview",
+      "image_url": "https://assets.topics.apps-jp.nintendo.com/image/2026/10/30062407064136/1280/b1eefa664b744a3096e133ebc089c025.jpg",
+      "kind": "figurine",
+      "language": "ja",
+      "last_changed": "2026-11-18T19:30:30+00:00",
+      "name": "育成可能フィギュア",
+      "origin": "「ソードカービィ&ドラグーン」「ノワールデデデ&ハイドラ」のamiiboは本日発売。ゲーム内イベントも近日開催予定。",
+      "region": "japan",
+      "rights_status": "unverified",
+      "score": {
+        "confidence": 35,
+        "decision": "WATCH",
+        "lower": 17.0,
+        "missing_factors": [
+          "demand",
+          "gap",
+          "scarcity",
+          "timing"
+        ],
+        "notes": "Provisional candidate; image/rights review and demand evidence required.",
+        "score_version": "MVP-1",
+        "upper": 82.0,
+        "window": "WATCH"
+      }
+    },
+    "e2eac6d8e4bdb8133e2b": {
+      "competition": {
+        "reason": "missing_api_credentials",
+        "status": "not_checked"
+      },
+      "demand_evidence": [],
+      "discovery_date": "2026-11-18T19:30:32+00:00",
+      "discovery_note": "Re-extracted from previously seen news",
+      "document_first_seen": "2026-11-18T18:04:35+00:00",
+      "evidence": [
+        {
+          "excerpt": "ou survive this apocalyptic symphony, we are also introducing the brand-new Deviant, Silent Statue. Appearing initially as a shattered, gray monument, it silently absorbs the elemental ",
+          "extraction_confidence": 0.6,
+          "extraction_method": "named_object_in_source",
+          "type": "official_article",
+          "url": "https://blog.playstation.com/2026/11/12/once-human-season-5-gameplay-showcases-co-op-colossus-boss-battle-live-november-18/"
+        }
+      ],
+      "first_signal_date": "2026-11-12T23:00:19+00:00",
+      "id": "e2eac6d8e4bdb8133e2b",
+      "image_type": "official_article_preview",
+      "image_url": "https://blog.playstation.com/tachyon/2026/11/4307c0e946544855e38087de41e890782dd7d4bf.jpg",
+      "kind": "statue",
+      "language": "en",
+      "last_changed": "2026-11-18T19:30:32+00:00",
+      "name": "Silent Statue",
+      "origin": "Once Human: Season 5 gameplay showcases co-op Colossus boss battle, live November 18",
+      "region": "global",
+      "rights_status": "unverified",
+      "score": {
+        "confidence": 35,
+        "decision": "WATCH",
+        "lower": 17.0,
+        "missing_factors": [
+          "demand",
+          "gap",
+          "scarcity",
+          "timing"
+        ],
+        "notes": "Provisional candidate; image/rights review and demand evidence required.",
+        "score_version": "MVP-1",
+        "upper": 82.0,
+        "window": "WATCH"
+      }
+    },
+    "e39e3618d89d1cd2d647": {
+      "competition": {
+        "reason": "missing_api_credentials",
+        "status": "not_checked"
+      },
+      "demand_evidence": [],
+      "discovery_date": "2026-11-18T19:30:35+00:00",
+      "discovery_note": "Re-extracted from previously seen news",
+      "document_first_seen": "2026-11-18T18:04:36+00:00",
+      "evidence": [
+        {
+          "excerpt": "す。 11月12日（木）発売 『マリオカート ワールド』のラッピンググッズ3種類 ラッピング×エコバッグ L（レース） Nintendo Switch 2 本体やソフト、amiibo、周辺機器などを一緒にラッピングできる大きめサイズ。付属のリボンを結んでアイテムボックス型のポーチを付けるとラッピングが完成します。どんなアイテムが飛び出すのか、ワクワクするレース中のあの",
+          "extraction_confidence": 0.72,
+          "extraction_method": "named_object_in_source",
+          "type": "official_article",
+          "url": "https://www.nintendo.com/jp/topics/article/680e0eda-8dd6-4533-9f42-ef26376f111f"
+        }
+      ],
+      "first_signal_date": "2026-11-12T01:08:55+00:00",
+      "id": "e39e3618d89d1cd2d647",
+      "image_type": "official_article_preview",
+      "image_url": "https://assets.topics.apps-jp.nintendo.com/image/2026/11/11045828091528/1280/f677ada4c577413b807f271776a883ed.jpg",
+      "kind": "figurine",
+      "language": "ja",
+      "last_changed": "2026-11-18T19:30:35+00:00",
+      "name": "マリオカート ワールド amiibo",
+      "origin": "プレゼントにおすすめのグッズをご紹介。『マリオカート ワールド』のラッピンググッズは本日発売。",
+      "region": "japan",
+      "rights_status": "unverified",
+      "score": {
+        "confidence": 35,
+        "decision": "WATCH",
+        "lower": 17.0,
+        "missing_factors": [
+          "demand",
+          "gap",
+          "scarcity",
+          "timing"
+        ],
+        "notes": "Provisional candidate; image/rights review and demand evidence required.",
+        "score_version": "MVP-1",
+        "upper": 82.0,
+        "window": "WATCH"
+      }
+    }
+  },
   "outbox": {
     "tal3d-hunter:2026-11-18:Asia-Riyadh:primary": {
       "accepted_at": "2026-11-18T18:04:40+00:00",
@@ -384,7 +1037,7 @@
   "source_health": {
     "community_placeholder": {
       "kind": "community",
-      "last_checked": "2026-11-18T18:04:36+00:00",
+      "last_checked": "2026-11-18T19:30:27+00:00",
       "source_name": "Authorized community feed (configure before enabling)",
       "status": "disabled"
     },
@@ -393,9 +1046,9 @@
       "etag": null,
       "items_seen": 25,
       "kind": "official",
-      "last_checked": "2026-11-18T18:04:35+00:00",
-      "last_modified": "Wed, 18 Nov 2026 18:00:10 GMT",
-      "last_success": "2026-11-18T18:04:36+00:00",
+      "last_checked": "2026-11-18T19:30:26+00:00",
+      "last_modified": "Wed, 18 Nov 2026 19:30:09 GMT",
+      "last_success": "2026-11-18T19:30:27+00:00",
       "source_name": "Nintendo Japan",
       "status": "ok"
     },
@@ -404,22 +1057,22 @@
       "etag": "\"6060d952211bfc153b77d4b32c7bebf9\"",
       "items_seen": 10,
       "kind": "official",
-      "last_checked": "2026-11-18T18:04:35+00:00",
+      "last_checked": "2026-11-18T19:30:25+00:00",
       "last_modified": "Wed, 18 Nov 2026 17:35:01 GMT",
-      "last_success": "2026-11-18T18:04:35+00:00",
+      "last_success": "2026-11-18T19:30:25+00:00",
       "source_name": "PlayStation Blog",
-      "status": "ok"
+      "status": "ok_not_modified"
     },
     "xbox_wire": {
       "error": null,
       "etag": "W/\"eb5e212df74d30663b09bd5fe862adb0\"",
       "items_seen": 10,
       "kind": "official",
-      "last_checked": "2026-11-18T18:04:35+00:00",
+      "last_checked": "2026-11-18T19:30:25+00:00",
       "last_modified": "Wed, 18 Nov 2026 00:07:58 GMT",
-      "last_success": "2026-11-18T18:04:35+00:00",
+      "last_success": "2026-11-18T19:30:26+00:00",
       "source_name": "Xbox Wire",
-      "status": "ok"
+      "status": "ok_not_modified"
     }
   }
 }
