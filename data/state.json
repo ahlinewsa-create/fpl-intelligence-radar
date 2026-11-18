@@ -13,13 +13,13 @@
     "016875533045fc4eb6e6": {
       "analysis_status": "full_text",
       "candidate_count": 0,
-      "extractor_version": "horizon-inspired-article-v2",
+      "extractor_version": "horizon-inspired-article-v3",
       "first_seen": "2026-11-18T18:04:36+00:00",
       "image_type": "official_article_preview",
       "image_url": "https://assets.topics.apps-jp.nintendo.com/image/2026/11/13020549265480/1280/15c05113d1e1445693a2d00ae9ce75a8.jpg",
       "kind": "official",
       "published_at": "2026-11-17T03:02:40+00:00",
-      "reviewed_at": "2026-11-18T19:30:31+00:00",
+      "reviewed_at": "2026-11-18T19:35:29+00:00",
       "source": "nintendo_jp",
       "summary": "",
       "title": "Nintendo Switch 2『スプラトゥーン レイダース』の体験版を配信中。",
@@ -36,13 +36,13 @@
     "0875392b86166ff4c2e1": {
       "analysis_status": "full_text",
       "candidate_count": 0,
-      "extractor_version": "horizon-inspired-article-v2",
+      "extractor_version": "horizon-inspired-article-v3",
       "first_seen": "2026-11-18T18:04:36+00:00",
       "image_type": "official_article_preview",
       "image_url": "https://assets.topics.apps-jp.nintendo.com/image/2026/11/04114709243154/1280/0052091b0dc34c279571488d3dcb2488.png",
       "kind": "official",
       "published_at": "2026-11-12T05:06:52+00:00",
-      "reviewed_at": "2026-11-18T19:30:33+00:00",
+      "reviewed_at": "2026-11-18T19:35:31+00:00",
       "source": "nintendo_jp",
       "summary": "",
       "title": "タブレット・スマートフォン向けアプリ「かおルイージ」、「かおピーチ」を配信開始。そのほか、「マイマリオ」の最新情報もご紹介。",
@@ -117,13 +117,13 @@
     "2674ae59c8cc13810c71": {
       "analysis_status": "full_text",
       "candidate_count": 0,
-      "extractor_version": "horizon-inspired-article-v2",
+      "extractor_version": "horizon-inspired-article-v3",
       "first_seen": "2026-11-18T18:04:36+00:00",
       "image_type": "official_article_preview",
       "image_url": "https://assets.topics.apps-jp.nintendo.com/image/2026/11/12074445686606/1280/f475766f262a4543b3c578defa664d52.jpg",
       "kind": "official",
       "published_at": "2026-11-13T01:02:55+00:00",
-      "reviewed_at": "2026-11-18T19:30:32+00:00",
+      "reviewed_at": "2026-11-18T19:35:30+00:00",
       "source": "nintendo_jp",
       "summary": "",
       "title": "ニンテンドーeショップ新作ソフト情報 11/13（金）号。",
@@ -140,13 +140,13 @@
     "2934ee13bb0b57cd02cd": {
       "analysis_status": "full_text",
       "candidate_count": 0,
-      "extractor_version": "horizon-inspired-article-v2",
+      "extractor_version": "horizon-inspired-article-v3",
       "first_seen": "2026-11-18T18:04:36+00:00",
       "image_type": "official_article_preview",
       "image_url": "https://nintendo.com/jp/character/pikmin/sns.png",
       "kind": "official",
       "published_at": "2026-11-11T14:00:34+00:00",
-      "reviewed_at": "2026-11-18T19:30:36+00:00",
+      "reviewed_at": "2026-11-18T19:35:34+00:00",
       "source": "nintendo_jp",
       "summary": "",
       "title": "「Hello! Pikmin 03 ボウリング」を公開しました。",
@@ -183,13 +183,13 @@
     "544d662940355ef21edb": {
       "analysis_status": "full_text",
       "candidate_count": 0,
-      "extractor_version": "horizon-inspired-article-v2",
+      "extractor_version": "horizon-inspired-article-v3",
       "first_seen": "2026-11-18T18:04:36+00:00",
       "image_type": "official_article_preview",
       "image_url": "https://assets.topics.apps-jp.nintendo.com/image/2026/11/12021115143837/1920/ec0e145af793496291f9d80fe0509b94.jpg",
       "kind": "official",
       "published_at": "2026-11-16T06:03:19+00:00",
-      "reviewed_at": "2026-11-18T19:30:28+00:00",
+      "reviewed_at": "2026-11-18T19:35:27+00:00",
       "source": "nintendo_jp",
       "summary": "",
       "title": "「スプラトゥーン レイダース イカすアートブック」発売決定＆予約開始。Nintendo Storeの数量限定特典もご紹介。",
@@ -197,14 +197,14 @@
     },
     "58d340466427e20f0fdf": {
       "analysis_status": "full_text",
-      "candidate_count": 10,
-      "extractor_version": "horizon-inspired-article-v2",
+      "candidate_count": 2,
+      "extractor_version": "horizon-inspired-article-v3",
       "first_seen": "2026-11-18T18:04:36+00:00",
       "image_type": "official_article_preview",
       "image_url": "https://assets.topics.apps-jp.nintendo.com/image/2026/10/30062407064136/1280/b1eefa664b744a3096e133ebc089c025.jpg",
       "kind": "official",
       "published_at": "2026-11-12T01:13:02+00:00",
-      "reviewed_at": "2026-11-18T19:30:30+00:00",
+      "reviewed_at": "2026-11-18T19:35:28+00:00",
       "source": "nintendo_jp",
       "summary": "",
       "title": "「ソードカービィ&ドラグーン」「ノワールデデデ&ハイドラ」のamiiboは本日発売。ゲーム内イベントも近日開催予定。",
@@ -243,13 +243,13 @@
     "72edfad0ae605aff7cbb": {
       "analysis_status": "full_text",
       "candidate_count": 0,
-      "extractor_version": "horizon-inspired-article-v2",
+      "extractor_version": "horizon-inspired-article-v3",
       "first_seen": "2026-11-18T18:04:36+00:00",
       "image_type": "official_article_preview",
       "image_url": "https://assets.topics.apps-jp.nintendo.com/image/2026/11/12114112234440/1280/da7413a6a2eb4b8a9ada9419f76166b9.jpg",
       "kind": "official",
       "published_at": "2026-11-18T03:01:15+00:00",
-      "reviewed_at": "2026-11-18T19:30:30+00:00",
+      "reviewed_at": "2026-11-18T19:35:29+00:00",
       "source": "nintendo_jp",
       "summary": "",
       "title": "『スプラトゥーン3』の更新データVer.12.0.0を本日配信。さまざまなアイテムが手に入るゲームニュースも配信中。",
@@ -292,13 +292,13 @@
     "a42e3d892bb4f4ad1205": {
       "analysis_status": "full_text",
       "candidate_count": 1,
-      "extractor_version": "horizon-inspired-article-v2",
+      "extractor_version": "horizon-inspired-article-v3",
       "first_seen": "2026-11-18T18:04:35+00:00",
       "image_type": "official_article_preview",
       "image_url": "https://blog.playstation.com/tachyon/2026/11/4307c0e946544855e38087de41e890782dd7d4bf.jpg",
       "kind": "official",
       "published_at": "2026-11-12T23:00:19+00:00",
-      "reviewed_at": "2026-11-18T19:30:32+00:00",
+      "reviewed_at": "2026-11-18T19:35:30+00:00",
       "source": "playstation_blog",
       "title": "Once Human: Season 5 gameplay showcases co-op Colossus boss battle, live November 18",
       "url": "https://blog.playstation.com/2026/11/12/once-human-season-5-gameplay-showcases-co-op-colossus-boss-battle-live-november-18/"
@@ -322,13 +322,13 @@
     "b1a71b64b1bec45e0569": {
       "analysis_status": "full_text",
       "candidate_count": 0,
-      "extractor_version": "horizon-inspired-article-v2",
+      "extractor_version": "horizon-inspired-article-v3",
       "first_seen": "2026-11-18T18:04:36+00:00",
       "image_type": "official_article_preview",
       "image_url": "https://assets.topics.apps-jp.nintendo.com/image/2026/10/28054115611340/1280/c6f668f7d0d24667ab1086c449c7d41e.jpg",
       "kind": "official",
       "published_at": "2026-11-12T01:07:59+00:00",
-      "reviewed_at": "2026-11-18T19:30:36+00:00",
+      "reviewed_at": "2026-11-18T19:35:33+00:00",
       "source": "nintendo_jp",
       "summary": "",
       "title": "幻想を超える旅が始まる。ファンタジーRPG『メタファー：リファンタジオ』がNintendo Switch 2 で本日発売。 ※本作の対象年齢は「15歳以上」です。",
@@ -353,13 +353,13 @@
     "d9ebeabbd48d9968c8ff": {
       "analysis_status": "full_text",
       "candidate_count": 0,
-      "extractor_version": "horizon-inspired-article-v2",
+      "extractor_version": "horizon-inspired-article-v3",
       "first_seen": "2026-11-18T18:04:35+00:00",
       "image_type": "official_article_preview",
       "image_url": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/11/MSFS_Do228_NoSnipe_NoLogo_NoText-JPG-182b68b8ea0ab412e237.jpg",
       "kind": "official",
       "published_at": "2026-11-17T21:30:00+00:00",
-      "reviewed_at": "2026-11-18T19:30:27+00:00",
+      "reviewed_at": "2026-11-18T19:35:26+00:00",
       "source": "xbox_wire",
       "title": "Carenado Releases a Microsoft Flight Simulator Marketplace Exclusive: The DO228-200",
       "url": "https://news.xbox.com/en-us/2026/11/17/carenado-releases-a-microsoft-flight-simulator-marketplace-exclusive-the-do228-200/"
@@ -375,13 +375,13 @@
     "dc2add945404ae0e9caa": {
       "analysis_status": "full_text",
       "candidate_count": 0,
-      "extractor_version": "horizon-inspired-article-v2",
+      "extractor_version": "horizon-inspired-article-v3",
       "first_seen": "2026-11-18T18:04:36+00:00",
       "image_type": "official_article_preview",
       "image_url": "https://assets.topics.apps-jp.nintendo.com/image/2026/11/06124452859443/1280/f83984a3c68a43488cdb333bc076a9a9.jpg",
       "kind": "official",
       "published_at": "2026-11-12T01:14:34+00:00",
-      "reviewed_at": "2026-11-18T19:30:34+00:00",
+      "reviewed_at": "2026-11-18T19:35:32+00:00",
       "source": "nintendo_jp",
       "summary": "",
       "title": "『ピクミン4 Nintendo Switch 2 Edition + だれでもチャレンジ! ダンドリ検定』は本日発売。小芝風花さんがダンドリ検定に挑む長編映像も公開中。",
@@ -460,13 +460,13 @@
     "fd9d70392864fbcdb739": {
       "analysis_status": "full_text",
       "candidate_count": 1,
-      "extractor_version": "horizon-inspired-article-v2",
+      "extractor_version": "horizon-inspired-article-v3",
       "first_seen": "2026-11-18T18:04:36+00:00",
       "image_type": "official_article_preview",
       "image_url": "https://assets.topics.apps-jp.nintendo.com/image/2026/11/11045828091528/1280/f677ada4c577413b807f271776a883ed.jpg",
       "kind": "official",
       "published_at": "2026-11-12T01:08:55+00:00",
-      "reviewed_at": "2026-11-18T19:30:35+00:00",
+      "reviewed_at": "2026-11-18T19:35:33+00:00",
       "source": "nintendo_jp",
       "summary": "",
       "title": "プレゼントにおすすめのグッズをご紹介。『マリオカート ワールド』のラッピンググッズは本日発売。",
@@ -517,7 +517,9 @@
         "score_version": "MVP-1",
         "upper": 82.0,
         "window": "WATCH"
-      }
+      },
+      "status": "superseded",
+      "superseded_reason": "Merged or removed by object extraction v3"
     },
     "18d87f871c4a88489f6c": {
       "competition": {
@@ -562,9 +564,16 @@
         "score_version": "MVP-1",
         "upper": 82.0,
         "window": "WATCH"
-      }
+      },
+      "status": "superseded",
+      "superseded_reason": "Merged or removed by object extraction v3"
     },
     "3b0c6c017b03b195b03b": {
+      "aliases": [
+        "ノワールデデデ&ハイドラ フィギュア",
+        "ハイドラ amiibo",
+        "ハイドラ フィギュア"
+      ],
       "competition": {
         "reason": "missing_api_credentials",
         "status": "not_checked"
@@ -652,7 +661,9 @@
         "score_version": "MVP-1",
         "upper": 82.0,
         "window": "WATCH"
-      }
+      },
+      "status": "superseded",
+      "superseded_reason": "Merged or removed by object extraction v3"
     },
     "461d3afe567fe01a2a4d": {
       "competition": {
@@ -697,7 +708,9 @@
         "score_version": "MVP-1",
         "upper": 82.0,
         "window": "WATCH"
-      }
+      },
+      "status": "superseded",
+      "superseded_reason": "Merged or removed by object extraction v3"
     },
     "47f1dbe8170ecc217083": {
       "competition": {
@@ -742,7 +755,9 @@
         "score_version": "MVP-1",
         "upper": 82.0,
         "window": "WATCH"
-      }
+      },
+      "status": "superseded",
+      "superseded_reason": "Merged or removed by object extraction v3"
     },
     "68021828fd188ffe3828": {
       "competition": {
@@ -787,7 +802,9 @@
         "score_version": "MVP-1",
         "upper": 82.0,
         "window": "WATCH"
-      }
+      },
+      "status": "superseded",
+      "superseded_reason": "Merged or removed by object extraction v3"
     },
     "929e602d5be4c6fb567a": {
       "competition": {
@@ -832,9 +849,15 @@
         "score_version": "MVP-1",
         "upper": 82.0,
         "window": "WATCH"
-      }
+      },
+      "status": "superseded",
+      "superseded_reason": "Merged or removed by object extraction v3"
     },
     "993527d99eee71d98a41": {
+      "aliases": [
+        "ドラグーン amiibo",
+        "ドラグーン フィギュア"
+      ],
       "competition": {
         "reason": "missing_api_credentials",
         "status": "not_checked"
@@ -922,9 +945,12 @@
         "score_version": "MVP-1",
         "upper": 82.0,
         "window": "WATCH"
-      }
+      },
+      "status": "superseded",
+      "superseded_reason": "Merged or removed by object extraction v3"
     },
     "e2eac6d8e4bdb8133e2b": {
+      "aliases": [],
       "competition": {
         "reason": "missing_api_credentials",
         "status": "not_checked"
@@ -970,6 +996,7 @@
       }
     },
     "e39e3618d89d1cd2d647": {
+      "aliases": [],
       "competition": {
         "reason": "missing_api_credentials",
         "status": "not_checked"
@@ -1037,7 +1064,7 @@
   "source_health": {
     "community_placeholder": {
       "kind": "community",
-      "last_checked": "2026-11-18T19:30:27+00:00",
+      "last_checked": "2026-11-18T19:35:26+00:00",
       "source_name": "Authorized community feed (configure before enabling)",
       "status": "disabled"
     },
@@ -1046,20 +1073,20 @@
       "etag": null,
       "items_seen": 25,
       "kind": "official",
-      "last_checked": "2026-11-18T19:30:26+00:00",
+      "last_checked": "2026-11-18T19:35:26+00:00",
       "last_modified": "Wed, 18 Nov 2026 19:30:09 GMT",
-      "last_success": "2026-11-18T19:30:27+00:00",
+      "last_success": "2026-11-18T19:35:26+00:00",
       "source_name": "Nintendo Japan",
-      "status": "ok"
+      "status": "ok_not_modified"
     },
     "playstation_blog": {
       "error": null,
       "etag": "\"6060d952211bfc153b77d4b32c7bebf9\"",
       "items_seen": 10,
       "kind": "official",
-      "last_checked": "2026-11-18T19:30:25+00:00",
+      "last_checked": "2026-11-18T19:35:26+00:00",
       "last_modified": "Wed, 18 Nov 2026 17:35:01 GMT",
-      "last_success": "2026-11-18T19:30:25+00:00",
+      "last_success": "2026-11-18T19:35:26+00:00",
       "source_name": "PlayStation Blog",
       "status": "ok_not_modified"
     },
@@ -1068,9 +1095,9 @@
       "etag": "W/\"eb5e212df74d30663b09bd5fe862adb0\"",
       "items_seen": 10,
       "kind": "official",
-      "last_checked": "2026-11-18T19:30:25+00:00",
+      "last_checked": "2026-11-18T19:35:26+00:00",
       "last_modified": "Wed, 18 Nov 2026 00:07:58 GMT",
-      "last_success": "2026-11-18T19:30:26+00:00",
+      "last_success": "2026-11-18T19:35:26+00:00",
       "source_name": "Xbox Wire",
       "status": "ok_not_modified"
     }
