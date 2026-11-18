@@ -21,27 +21,46 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Install and test (no network in tests)
+      - name: Install and test
+        id: tests
+        continue-on-error: true
         run: |
-          python -m pip install -e ".[test]"
-          python -m pytest -q
+          set -o pipefail
+          python -m pip install -e ".[test]" > /tmp/tal3d-install.log 2>&1 || { tail -n 35 /tmp/tal3d-install.log; exit 1; }
+          python -m pytest -q > /tmp/tal3d-tests.log 2>&1 || { cat /tmp/tal3d-tests.log; exit 1; }
+          cat /tmp/tal3d-tests.log
       - name: Collect and re-analyze older news
+        id: collect
+        if: steps.tests.outcome == 'success'
+        continue-on-error: true
         env:
           CULTS_USERNAME: ${{ secrets.CULTS_USERNAME }}
           CULTS_API_KEY: ${{ secrets.CULTS_API_KEY }}
         run: python main.py collect
       - name: Create preview without email
+        id: preview
+        if: steps.collect.outcome == 'success'
+        continue-on-error: true
         env:
           HUNTER_NOTIFICATIONS_ENABLED: "0"
         run: python main.py dry-run
-      - name: Commit evidence and preview
+      - name: Write diagnostic status (no secrets)
+        if: always()
+        run: |
+          mkdir -p data
+          printf 'tests=%s\ncollect=%s\npreview=%s\n' \
+            '${{ steps.tests.outcome }}' \
+            '${{ steps.collect.outcome }}' \
+            '${{ steps.preview.outcome }}' > data/preview_status.txt
+      - name: Commit evidence and preview status
+        if: always()
         run: |
           git config user.name "tal3d-hunter[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/state.json
-          git add -f reports/preview.html
+          git add data/state.json data/preview_status.txt
+          if [ -f reports/preview.html ]; then git add -f reports/preview.html; fi
           if ! git diff --cached --quiet; then
-            git commit -m "hunter: update reanalysis ledger and report preview [skip ci]"
+            git commit -m "hunter: update preview evidence and diagnostic status [skip ci]"
             git pull --rebase origin main
             git push origin HEAD:main
           fi
@@ -53,5 +72,12 @@ jobs:
           path: |
             reports/preview.html
             data/state.json
+            data/preview_status.txt
           retention-days: 14
           if-no-files-found: warn
+      - name: Enforce green only when review succeeds
+        if: always()
+        run: |
+          test '${{ steps.tests.outcome }}' = success
+          test '${{ steps.collect.outcome }}' = success
+          test '${{ steps.preview.outcome }}' = success
