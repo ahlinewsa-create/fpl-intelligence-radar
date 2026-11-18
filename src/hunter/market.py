@@ -94,7 +94,8 @@ def update_market(state: dict, limit: int = 8, sample_limit: int = 20) -> int:
                 op["competition"]["reason"] = "missing_api_credentials"
         return 0
     pending = [item for item in state["opportunities"].values()
-               if item.get("competition", {}).get("status") in ("not_checked", "failed")]
+               if item.get("status") != "superseded"
+               and item.get("competition", {}).get("status") in ("not_checked", "failed")]
     pending.sort(key=lambda x: x.get("discovery_date", ""), reverse=True)
     for item in pending[:max(0, limit)]:
         item["competition"] = scan(item["name"], sample_limit)
