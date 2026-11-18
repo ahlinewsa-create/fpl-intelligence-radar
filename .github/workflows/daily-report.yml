@@ -1,11 +1,13 @@
 name: TaL3D - Daily Arabic Report
 on:
   push:
+    branches: [main]
     paths:
       - "config/manual-report-trigger.txt"
   schedule:
-    - cron: "0 9 * * *"
-      timezone: Asia/Riyadh
+    # 06:00 UTC = 09:00 Asia/Riyadh (same UTC-cron approach as Cults Radar)
+    - cron: "0 6 * * *"
+  # Same manual action trigger as cults-radar, plus a mobile-friendly push fallback.
   workflow_dispatch:
 permissions:
   contents: write
