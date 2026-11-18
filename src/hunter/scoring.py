@@ -61,6 +61,8 @@ def compute(op: dict) -> dict:
 
 def refresh_scores(state: dict) -> None:
     for op in state["opportunities"].values():
+        if op.get("status") == "superseded":
+            continue
         new = compute(op)
         old = op.get("score")
         if old and old != new:
