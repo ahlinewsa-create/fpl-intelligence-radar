@@ -79,7 +79,18 @@ def extract_objects(text: str) -> list[dict]:
     # Handles paired quoted figures like Nintendo's Japanese amiibo announcements.
     for keyword in JP_KEYWORDS.finditer(clean):
         prefix = clean[max(0, keyword.start()-125):keyword.start()]
-        for quoted in list(JP_QUOTE.finditer(prefix))[-3:]:
+        # Do not associate a character in an earlier headline with an
+        # unrelated "amiibo" mention (e.g. gift wrapping *can hold* amiibo).
+        # Only quotes adjacent to the merchandise noun in the SAME sentence
+        # are an object claim; otherwise they are background context.
+        clause = re.split(r"[。！？.!?]", prefix)[-1]
+        quoted_names = list(JP_QUOTE.finditer(clause))
+        if not quoted_names:
+            continue
+        gap = clause[quoted_names[-1].end():]
+        if not re.fullmatch(r"[\sの、と、・&＋-]{0,8}", gap):
+            continue
+        for quoted in quoted_names[-3:]:
             name = quoted.group(1).strip()
             if len(name) > 55 or any(x in name for x in ("オンライン", "ニュース", "発売日")):
                 continue
