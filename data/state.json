@@ -1,8 +1,416 @@
 {
-  "documents": {},
+  "documents": {
+    "0046f05a36b6d64eea5f": {
+      "first_seen": "2026-11-18T18:04:36+00:00",
+      "kind": "official",
+      "published_at": "2026-11-06T04:54:54+00:00",
+      "source": "nintendo_jp",
+      "title": "「第87期 半期報告書」を掲載しました。",
+      "url": "https://www.nintendo.co.jp/ir/pdf/2026/security_q2609.pdf"
+    },
+    "016875533045fc4eb6e6": {
+      "first_seen": "2026-11-18T18:04:36+00:00",
+      "kind": "official",
+      "published_at": "2026-11-17T03:02:40+00:00",
+      "source": "nintendo_jp",
+      "title": "Nintendo Switch 2『スプラトゥーン レイダース』の体験版を配信中。",
+      "url": "https://www.nintendo.com/jp/topics/article/cc5713ab-c529-4d4f-b1c3-06b1cf46f690"
+    },
+    "0588ceaeef4ec889a482": {
+      "first_seen": "2026-11-18T18:04:35+00:00",
+      "kind": "official",
+      "published_at": "2026-11-17T23:00:00+00:00",
+      "source": "xbox_wire",
+      "title": "Millions of Butt Slaps: Last Pirates Sails into XBOX Game Preview",
+      "url": "https://news.xbox.com/en-us/2026/11/17/millions-of-butt-slaps-last-pirates/"
+    },
+    "0875392b86166ff4c2e1": {
+      "first_seen": "2026-11-18T18:04:36+00:00",
+      "kind": "official",
+      "published_at": "2026-11-12T05:06:52+00:00",
+      "source": "nintendo_jp",
+      "title": "タブレット・スマートフォン向けアプリ「かおルイージ」、「かおピーチ」を配信開始。そのほか、「マイマリオ」の最新情報もご紹介。",
+      "url": "https://www.nintendo.com/jp/topics/article/482f5918-f83f-453f-90c1-78c1cc02065c"
+    },
+    "0ffa51d254bb9417313b": {
+      "first_seen": "2026-11-18T18:04:36+00:00",
+      "kind": "official",
+      "published_at": "2026-11-06T12:01:48+00:00",
+      "source": "nintendo_jp",
+      "title": "「2027年3月期 第2四半期決算説明会/ 経営方針説明会（オンライン） 質疑応答」を掲載しました。",
+      "url": "https://www.nintendo.co.jp/ir/pdf/2026/261106_2.pdf"
+    },
+    "12218893c912e2c16409": {
+      "first_seen": "2026-11-18T18:04:35+00:00",
+      "kind": "official",
+      "published_at": "2026-11-17T21:10:49+00:00",
+      "source": "xbox_wire",
+      "title": "World of Fallout Exhibit at the Las Vegas Atomic Museum Expands – and It’s Full of Easter Eggs for Fans",
+      "url": "https://news.xbox.com/en-us/2026/11/17/world-of-fallout-expansion/"
+    },
+    "1dff57c1d17ca5be8ff0": {
+      "first_seen": "2026-11-18T18:04:36+00:00",
+      "kind": "official",
+      "published_at": "2026-11-10T01:20:58+00:00",
+      "source": "nintendo_jp",
+      "title": "Nintendo Switch 2 / Nintendo Switchの本体機能をバージョンアップ。新しい機能をご紹介します。",
+      "url": "https://www.nintendo.com/jp/topics/article/31e57164-941c-4103-bd30-f04744073cc3"
+    },
+    "1e59f64bcc138f5b63f8": {
+      "first_seen": "2026-11-18T18:04:36+00:00",
+      "kind": "official",
+      "published_at": "2026-11-18T05:12:40+00:00",
+      "source": "nintendo_jp",
+      "title": "「サウンド系 ワークショップ」のお申し込み受付を開始しました。",
+      "url": "https://www.nintendo.co.jp/jobs/recruit/event/sound_workshop.html"
+    },
+    "215aec91247975ae2811": {
+      "first_seen": "2026-11-18T18:04:36+00:00",
+      "kind": "official",
+      "published_at": "2026-11-11T01:02:53+00:00",
+      "source": "nintendo_jp",
+      "title": "「Hello! インディー」特殊コインを投入し、効率よくコインを集める『RACCOIN: Chaos Max Edition』",
+      "url": "https://www.nintendo.com/jp/topics/article/98f912b6-f33b-4dfa-940c-a6681bb2ea9e"
+    },
+    "218cc56cf1b0570a5fc7": {
+      "first_seen": "2026-11-18T18:04:36+00:00",
+      "kind": "official",
+      "published_at": "2026-11-11T01:01:53+00:00",
+      "source": "nintendo_jp",
+      "title": "「Hello! インディー」タヌキがBMXで郵便配達！？『TANUKI: Pon's Summer - タヌキ：ポンの夏』",
+      "url": "https://www.nintendo.com/jp/topics/article/11a5acfe-42af-4294-b421-1504a2a8cf45"
+    },
+    "250c5c3e15252ea6831a": {
+      "first_seen": "2026-11-18T18:04:35+00:00",
+      "kind": "official",
+      "published_at": "2026-11-17T21:00:00+00:00",
+      "source": "xbox_wire",
+      "title": "Ice Cream Simulator: Why We Gave Our Customers Infinite Patience",
+      "url": "https://news.xbox.com/en-us/2026/11/17/ice-cream-simulator/"
+    },
+    "2674ae59c8cc13810c71": {
+      "first_seen": "2026-11-18T18:04:36+00:00",
+      "kind": "official",
+      "published_at": "2026-11-13T01:02:55+00:00",
+      "source": "nintendo_jp",
+      "title": "ニンテンドーeショップ新作ソフト情報 11/13（金）号。",
+      "url": "https://www.nintendo.com/jp/topics/article/f5182976-316a-4bc7-9d99-8278bcc0c497"
+    },
+    "2892210d2114778fcdbb": {
+      "first_seen": "2026-11-18T18:04:35+00:00",
+      "kind": "official",
+      "published_at": "2026-11-13T14:00:16+00:00",
+      "source": "playstation_blog",
+      "title": "QSSR arrives in Marvel’s Spider-Man 2, Control Resonant, The Finals, Arc Raiders, No Man’s Sky, and Hell Let Loose: Vietnam",
+      "url": "https://blog.playstation.com/2026/11/13/qssr-arrives-in-marvels-spider-man-2-control-resonant-the-finals-arc-raiders-and-hell-let-loose-vietnam/"
+    },
+    "2934ee13bb0b57cd02cd": {
+      "first_seen": "2026-11-18T18:04:36+00:00",
+      "kind": "official",
+      "published_at": "2026-11-11T14:00:34+00:00",
+      "source": "nintendo_jp",
+      "title": "「Hello! Pikmin 03 ボウリング」を公開しました。",
+      "url": "https://www.nintendo.com/jp/character/pikmin/hello-pikmin/index.html"
+    },
+    "2e7fd21e57416c2abac7": {
+      "first_seen": "2026-11-18T18:04:36+00:00",
+      "kind": "official",
+      "published_at": "2026-11-13T01:03:20+00:00",
+      "source": "nintendo_jp",
+      "title": "「Hello! インディー」ソニックたちと力を合わせてゴールを目指せ『SONIC PICO PARK』",
+      "url": "https://www.nintendo.com/jp/topics/article/5280ccbd-f23c-4820-8cbb-6f1e9bdf5998"
+    },
+    "389fed1f0b7c8074c886": {
+      "first_seen": "2026-11-18T18:04:35+00:00",
+      "kind": "official",
+      "published_at": "2026-11-17T14:00:23+00:00",
+      "source": "playstation_blog",
+      "title": "First details on MLB The Show 27",
+      "url": "https://blog.playstation.com/2026/11/17/first-details-on-mlb-the-show-27/"
+    },
+    "524b58634dc62207f7df": {
+      "first_seen": "2026-11-18T18:04:36+00:00",
+      "kind": "official",
+      "published_at": "2026-11-10T01:03:56+00:00",
+      "source": "nintendo_jp",
+      "title": "「Hello! インディー」遊べるテーブルゲームは40種類以上『テーブルゲームワールド CCFOLIA for Nintendo Switch 2』",
+      "url": "https://www.nintendo.com/jp/topics/article/e77acfd6-fdd4-4265-9d2f-d682b85430d9"
+    },
+    "544d662940355ef21edb": {
+      "first_seen": "2026-11-18T18:04:36+00:00",
+      "kind": "official",
+      "published_at": "2026-11-16T06:03:19+00:00",
+      "source": "nintendo_jp",
+      "title": "「スプラトゥーン レイダース イカすアートブック」発売決定＆予約開始。Nintendo Storeの数量限定特典もご紹介。",
+      "url": "https://www.nintendo.com/jp/topics/article/c73c1b54-c93c-4895-aaaa-8ced4b6508cb"
+    },
+    "58d340466427e20f0fdf": {
+      "first_seen": "2026-11-18T18:04:36+00:00",
+      "kind": "official",
+      "published_at": "2026-11-12T01:13:02+00:00",
+      "source": "nintendo_jp",
+      "title": "「ソードカービィ&ドラグーン」「ノワールデデデ&ハイドラ」のamiiboは本日発売。ゲーム内イベントも近日開催予定。",
+      "url": "https://www.nintendo.com/jp/topics/article/13827716-39ef-4435-911e-ab6583921da4"
+    },
+    "5bd6272ceffa4c19c1da": {
+      "first_seen": "2026-11-18T18:04:36+00:00",
+      "kind": "official",
+      "published_at": "2026-11-10T01:19:54+00:00",
+      "source": "nintendo_jp",
+      "title": "『スーパー マリオパーティ ジャンボリー Nintendo Switch 2 Edition ＋ ジャンボリーTV』が無料アップデート。ソフトが1本あれば、オンラインで、みんなでスゴロクができるように。",
+      "url": "https://www.nintendo.com/jp/topics/article/1f0dba7a-c553-4ae7-bb75-a6586db1d824"
+    },
+    "6a6b392dafa3fc81fbb7": {
+      "first_seen": "2026-11-18T18:04:36+00:00",
+      "kind": "official",
+      "published_at": "2026-11-06T05:17:05+00:00",
+      "source": "nintendo_jp",
+      "title": "「デザイン系 オンラインセミナー アートワーク制作」「デザイン系 オンラインセミナー ソフトウェア制作」のお申し込み受付を開始しました。",
+      "url": "https://www.nintendo.co.jp/jobs/recruit/event/index.html"
+    },
+    "6b0c0c9bda6d9d1cb055": {
+      "first_seen": "2026-11-18T18:04:36+00:00",
+      "kind": "official",
+      "published_at": "2026-11-12T05:06:35+00:00",
+      "source": "nintendo_jp",
+      "title": "「仕事を読み解くキーワード」のページを更新しました。任天堂ではたらく社員の声を追加しています。",
+      "url": "https://www.nintendo.co.jp/jobs/keyword/index.html"
+    },
+    "72edfad0ae605aff7cbb": {
+      "first_seen": "2026-11-18T18:04:36+00:00",
+      "kind": "official",
+      "published_at": "2026-11-18T03:01:15+00:00",
+      "source": "nintendo_jp",
+      "title": "『スプラトゥーン3』の更新データVer.12.0.0を本日配信。さまざまなアイテムが手に入るゲームニュースも配信中。",
+      "url": "https://www.nintendo.com/jp/topics/article/405b3f79-3dfb-4336-baae-5256a086eb35"
+    },
+    "8f7aba9950c3ce8194df": {
+      "first_seen": "2026-11-18T18:04:35+00:00",
+      "kind": "official",
+      "published_at": "2026-11-13T13:01:11+00:00",
+      "source": "playstation_blog",
+      "title": "Guild Saga: Vanished Worlds brings tactical adventure to PS5 in May 2027",
+      "url": "https://blog.playstation.com/2026/11/13/guild-saga-vanished-worlds-brings-tactical-adventure-to-ps5-in-may-2027/"
+    },
+    "943bac84562d894fc267": {
+      "first_seen": "2026-11-18T18:04:35+00:00",
+      "kind": "official",
+      "published_at": "2026-11-16T10:43:38+00:00",
+      "source": "xbox_wire",
+      "title": "Minecraft Dungeons II: The Humblers Awaken Arrives on December 1",
+      "url": "https://news.xbox.com/en-us/2026/11/16/minecraft-dungeons-ii-the-humblers-awaken-arrives-on-december-1/"
+    },
+    "981c991aa872db703fb9": {
+      "first_seen": "2026-11-18T18:04:35+00:00",
+      "kind": "official",
+      "published_at": "2026-11-13T17:00:13+00:00",
+      "source": "playstation_blog",
+      "title": "Share of the Week: Lights",
+      "url": "https://blog.playstation.com/2026/11/13/share-of-the-week-lights/"
+    },
+    "9f2d57941340f80a6ec3": {
+      "first_seen": "2026-11-18T18:04:36+00:00",
+      "kind": "official",
+      "published_at": "2026-11-11T06:30:51+00:00",
+      "source": "nintendo_jp",
+      "title": "ニュースリリース「Nintendo Switch 2 ソフト『ゼルダの伝説 時のオカリナ』の世界累計販売本数が発売後4日間で520万本を突破」を公開しました。",
+      "url": "https://www.nintendo.co.jp/corporate/release/2026/261111.html"
+    },
+    "a42e3d892bb4f4ad1205": {
+      "first_seen": "2026-11-18T18:04:35+00:00",
+      "kind": "official",
+      "published_at": "2026-11-12T23:00:19+00:00",
+      "source": "playstation_blog",
+      "title": "Once Human: Season 5 gameplay showcases co-op Colossus boss battle, live November 18",
+      "url": "https://blog.playstation.com/2026/11/12/once-human-season-5-gameplay-showcases-co-op-colossus-boss-battle-live-november-18/"
+    },
+    "acd3f90bf0196533ef91": {
+      "first_seen": "2026-11-18T18:04:35+00:00",
+      "kind": "official",
+      "published_at": "2026-11-16T23:57:43+00:00",
+      "source": "xbox_wire",
+      "title": "XBOX Black Friday Sale Starts November 19 with Our Biggest Sale of the Year on Games, Accessories and More!",
+      "url": "https://news.xbox.com/en-us/2026/11/16/xbox-black-friday-sale-2026/"
+    },
+    "af91cbb93fbb72fcf6fc": {
+      "first_seen": "2026-11-18T18:04:35+00:00",
+      "kind": "official",
+      "published_at": "2026-11-17T15:00:56+00:00",
+      "source": "playstation_blog",
+      "title": "Introducing Hounded: Crafting the dog adventure coming to PS5 in 2027",
+      "url": "https://blog.playstation.com/2026/11/17/introducing-hounded-crafting-the-dog-adventure-coming-to-ps5-in-2027/"
+    },
+    "b1a71b64b1bec45e0569": {
+      "first_seen": "2026-11-18T18:04:36+00:00",
+      "kind": "official",
+      "published_at": "2026-11-12T01:07:59+00:00",
+      "source": "nintendo_jp",
+      "title": "幻想を超える旅が始まる。ファンタジーRPG『メタファー：リファンタジオ』がNintendo Switch 2 で本日発売。 ※本作の対象年齢は「15歳以上」です。",
+      "url": "https://www.nintendo.com/jp/topics/article/ca36364e-5117-4881-9688-ea2d023a7b45"
+    },
+    "bc9f8f749091798eb0c4": {
+      "first_seen": "2026-11-18T18:04:35+00:00",
+      "kind": "official",
+      "published_at": "2026-11-10T18:00:31+00:00",
+      "source": "playstation_blog",
+      "title": "The Outer Worlds 2’s first DLC arrives December 2",
+      "url": "https://blog.playstation.com/2026/11/10/the-outer-worlds-2s-first-dlc-arrives-december-2/"
+    },
+    "c7bfce9e289b49b835a7": {
+      "first_seen": "2026-11-18T18:04:35+00:00",
+      "kind": "official",
+      "published_at": "2026-11-17T17:00:00+00:00",
+      "source": "xbox_wire",
+      "title": "Coming to XBOX Game Pass: Hela: of Mice & Magic, The Outlast Trials, Sniper Ghost Warrior Contracts 2, and More",
+      "url": "https://news.xbox.com/en-us/2026/11/17/xbox-game-pass-november-2026-wave-2/"
+    },
+    "d9ebeabbd48d9968c8ff": {
+      "first_seen": "2026-11-18T18:04:35+00:00",
+      "kind": "official",
+      "published_at": "2026-11-17T21:30:00+00:00",
+      "source": "xbox_wire",
+      "title": "Carenado Releases a Microsoft Flight Simulator Marketplace Exclusive: The DO228-200",
+      "url": "https://news.xbox.com/en-us/2026/11/17/carenado-releases-a-microsoft-flight-simulator-marketplace-exclusive-the-do228-200/"
+    },
+    "da0c7f312b2ae839f1fa": {
+      "first_seen": "2026-11-18T18:04:35+00:00",
+      "kind": "official",
+      "published_at": "2026-11-10T16:30:03+00:00",
+      "source": "playstation_blog",
+      "title": "PlayStation Plus Game Catalog for November: Death Stranding 2: On the Beach, Like a Dragon: Pirate Yakuza in Hawaii, Atomfall, Dragon Quest III HD-2D Remake and more",
+      "url": "https://blog.playstation.com/2026/11/10/playstation-plus-game-catalog-for-november-death-stranding-2-on-the-beach-like-a-dragon-pirate-yakuza-in-hawaii-atomfall-dragon-quest-iii-hd-2d-remake-and-more/"
+    },
+    "dc2add945404ae0e9caa": {
+      "first_seen": "2026-11-18T18:04:36+00:00",
+      "kind": "official",
+      "published_at": "2026-11-12T01:14:34+00:00",
+      "source": "nintendo_jp",
+      "title": "『ピクミン4 Nintendo Switch 2 Edition + だれでもチャレンジ! ダンドリ検定』は本日発売。小芝風花さんがダンドリ検定に挑む長編映像も公開中。",
+      "url": "https://www.nintendo.com/jp/topics/article/b852fe50-71bf-4c1a-a338-5b75951d040d"
+    },
+    "e52271c6b50b93f4cd36": {
+      "first_seen": "2026-11-18T18:04:35+00:00",
+      "kind": "official",
+      "published_at": "2026-11-18T16:00:23+00:00",
+      "source": "playstation_blog",
+      "title": "Grand Theft Auto VI launches tomorrow, November 19",
+      "url": "https://blog.playstation.com/2026/11/18/grand-theft-auto-vi-launches-tomorrow-november-19/"
+    },
+    "e7b2186ad2391aa4ba1b": {
+      "first_seen": "2026-11-18T18:04:36+00:00",
+      "kind": "official",
+      "published_at": "2026-11-10T01:37:44+00:00",
+      "source": "nintendo_jp",
+      "title": "「Nintendo Switch Sports ゲーム運動会 シニアボウリングトーナメント2026」のページを更新しました。 全国から集った16団体の頂点をかけ、「広川町ゲームサポーター」と「けっぱれ！青森県」が決勝戦に臨みます。 これまでの全試合の様子も公開しています。",
+      "url": "https://www.nintendo.com/jp/switch/as8sa/senior-bowling-2026/index.html"
+    },
+    "e9aaf2a32855b46a3165": {
+      "first_seen": "2026-11-18T18:04:35+00:00",
+      "kind": "official",
+      "published_at": "2026-11-12T13:07:48+00:00",
+      "source": "playstation_blog",
+      "title": "Vindictus: Defying Fate comes to PS5 next year",
+      "url": "https://blog.playstation.com/2026/11/12/vindictus-defying-fate-comes-to-ps5-next-year/"
+    },
+    "ea69f60d6ea5b117fae9": {
+      "first_seen": "2026-11-18T18:04:36+00:00",
+      "kind": "official",
+      "published_at": "2026-11-11T01:09:02+00:00",
+      "source": "nintendo_jp",
+      "title": "「マイマリオ（MY MARIO）」の公式サイトを更新しました。 コマどりマリオ 第10話「がんばれキノピオ！」を公開しています。",
+      "url": "https://www.nintendo.com/jp/my-mario/index.html"
+    },
+    "ea71d72c3a4898b7cfef": {
+      "first_seen": "2026-11-18T18:04:35+00:00",
+      "kind": "official",
+      "published_at": "2026-11-17T19:30:00+00:00",
+      "source": "xbox_wire",
+      "title": "The Game Awards 2026 Nominees – Play Gears of War: E-Day, Grand Theft Auto VI, Resident Evil Requiem, and More on XBOX",
+      "url": "https://news.xbox.com/en-us/2026/11/17/the-game-awards-2026-nominees-on-xbox/"
+    },
+    "ec33cdcd566a6c1995c6": {
+      "first_seen": "2026-11-18T18:04:36+00:00",
+      "kind": "official",
+      "published_at": "2026-11-06T01:34:15+00:00",
+      "source": "nintendo_jp",
+      "title": "「2027年3月期 第2四半期決算説明会/ 経営方針説明会（オンライン）プレゼンテーション資料」を掲載しました。",
+      "url": "https://www.nintendo.co.jp/ir/pdf/2026/261106.pdf"
+    },
+    "f93e993f52ce5e34a3a6": {
+      "first_seen": "2026-11-18T18:04:35+00:00",
+      "kind": "official",
+      "published_at": "2026-11-18T00:00:00+00:00",
+      "source": "xbox_wire",
+      "title": "How to Get Ready for November 19",
+      "url": "https://news.xbox.com/en-us/2026/11/17/how-to-get-ready-for-november-19/"
+    },
+    "fd4c3ec1807e200d9ff8": {
+      "first_seen": "2026-11-18T18:04:35+00:00",
+      "kind": "official",
+      "published_at": "2026-11-16T14:00:00+00:00",
+      "source": "xbox_wire",
+      "title": "A Message From Dr. XBOX: It’s Time to Take the Day Off and Play XBOX",
+      "url": "https://news.xbox.com/en-us/2026/11/16/dr-xbox-its-time-to-take-the-day-off-and-play-xbox/"
+    },
+    "fd9d70392864fbcdb739": {
+      "first_seen": "2026-11-18T18:04:36+00:00",
+      "kind": "official",
+      "published_at": "2026-11-12T01:08:55+00:00",
+      "source": "nintendo_jp",
+      "title": "プレゼントにおすすめのグッズをご紹介。『マリオカート ワールド』のラッピンググッズは本日発売。",
+      "url": "https://www.nintendo.com/jp/topics/article/680e0eda-8dd6-4533-9f42-ef26376f111f"
+    }
+  },
   "opportunities": {},
   "outbox": {},
-  "reports": {},
+  "reports": {
+    "2026-11-18": {
+      "created_at": "2026-11-18T18:04:36+00:00",
+      "path": "reports/2026-11-18.html",
+      "sha256": "3d7370bd0c44d3a8717d868dd2099891e2cf9b1373158e17964c354a2efd5c0b",
+      "status": "saved"
+    }
+  },
   "schema_version": 1,
-  "source_health": {}
+  "source_health": {
+    "community_placeholder": {
+      "kind": "community",
+      "last_checked": "2026-11-18T18:04:36+00:00",
+      "source_name": "Authorized community feed (configure before enabling)",
+      "status": "disabled"
+    },
+    "nintendo_jp": {
+      "error": null,
+      "etag": null,
+      "items_seen": 25,
+      "kind": "official",
+      "last_checked": "2026-11-18T18:04:35+00:00",
+      "last_modified": "Wed, 18 Nov 2026 18:00:10 GMT",
+      "last_success": "2026-11-18T18:04:36+00:00",
+      "source_name": "Nintendo Japan",
+      "status": "ok"
+    },
+    "playstation_blog": {
+      "error": null,
+      "etag": "\"6060d952211bfc153b77d4b32c7bebf9\"",
+      "items_seen": 10,
+      "kind": "official",
+      "last_checked": "2026-11-18T18:04:35+00:00",
+      "last_modified": "Wed, 18 Nov 2026 17:35:01 GMT",
+      "last_success": "2026-11-18T18:04:35+00:00",
+      "source_name": "PlayStation Blog",
+      "status": "ok"
+    },
+    "xbox_wire": {
+      "error": null,
+      "etag": "W/\"eb5e212df74d30663b09bd5fe862adb0\"",
+      "items_seen": 10,
+      "kind": "official",
+      "last_checked": "2026-11-18T18:04:35+00:00",
+      "last_modified": "Wed, 18 Nov 2026 00:07:58 GMT",
+      "last_success": "2026-11-18T18:04:35+00:00",
+      "source_name": "Xbox Wire",
+      "status": "ok"
+    }
+  }
 }
