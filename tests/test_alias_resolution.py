@@ -58,3 +58,15 @@ def test_older_unverified_aliases_get_retired_not_deleted(monkeypatch):
     html = render(state, "2026-11-18")
     assert html.count("🔎 عنصر مرشح") == 2
     assert "ソードカービィ" in html
+
+
+def test_wrapping_accessory_does_not_create_fake_mario_kart_amiibo():
+    text = (
+        "プレゼントにおすすめのグッズをご紹介。"
+        "『マリオカート ワールド』のラッピンググッズは本日発売。 "
+        "ラッピング×エコバッグ L（レース）。"
+        "Nintendo Switch 2 本体やソフト、amiibo、周辺機器などを"
+        "一緒にラッピングできる大きめサイズ。"
+    )
+    names = [item["name"] for item in extract_objects(text)]
+    assert not any("マリオカート ワールド amiibo" in name for name in names)
