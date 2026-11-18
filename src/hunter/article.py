@@ -20,7 +20,11 @@ def allowed_url(url: str, allowed_hosts: list[str]) -> bool:
     host = (parsed.hostname or "").lower().rstrip(".")
     if parsed.scheme != "https" or not host or parsed.username or parsed.password:
         return False
-    if parsed.port not in (None, 443) or host == "localhost":
+    try:
+        port = parsed.port
+    except ValueError:
+        return False
+    if port not in (None, 443) or host == "localhost":
         return False
     try:
         ipaddress.ip_address(host)
