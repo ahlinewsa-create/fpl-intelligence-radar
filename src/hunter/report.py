@@ -65,7 +65,7 @@ def image_cell(url: str | None) -> str:
         )
     return (
         f'<img src="{h(value, quote=True)}" width="82" height="82" '
-        'alt="صورة من مصدر الخبر الرسمي" style="width:82px;height:82px;'
+        'alt="صورة من الخبر المنشور" style="width:82px;height:82px;'
         'object-fit:cover;border-radius:10px;display:block;background:#f2ecfa">'
     )
 
@@ -177,7 +177,10 @@ def opportunity_group_card(group: dict, communities_checked: bool) -> str:
     elif kind == "merchandise":
         kind_label = "مقتنيات رسمية"
         caveat = (
-            "الإعلان الرسمي يؤكد ظهور القطعة فقط؛ "
+            "التغطية الصحفية رصد أولي؛ تحقّق من إعلان الشركة الأصلي. "
+            "ظهور القطعة لا يثبت طلب STL أو حق استنساخها."
+            if primary.get("source_kind") == "press" else
+            "الإعلان الرسمي يشير إلى ظهور القطعة فقط؛ "
             "لا يثبت وجود طلب STL أو حق استنساخ المنتج."
         )
     else:
