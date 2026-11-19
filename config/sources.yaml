@@ -25,6 +25,32 @@ sources:
     enabled: true
     url: https://www.nintendo.co.jp/news/whatsnew.xml
     article_hosts: [www.nintendo.co.jp, www.nintendo.com]
+  # Independent reporting sources. Their articles are NOT official releases.
+  # These are genuine public RSS endpoints, checked separately in source health.
+  - id: siliconera
+    name: Siliconera - Japanese Gaming and Merchandise
+    kind: press
+    region: japan_global
+    language: en
+    enabled: true
+    url: https://www.siliconera.com/feed/
+    article_hosts: [www.siliconera.com]
+  - id: gematsu
+    name: Gematsu - Japanese Gaming Announcements
+    kind: press
+    region: japan_global
+    language: en
+    enabled: true
+    url: https://www.gematsu.com/feed
+    article_hosts: [www.gematsu.com, gematsu.com]
+  - id: nintendo_life
+    name: Nintendo Life - Games and Merchandise
+    kind: press
+    region: global
+    language: en
+    enabled: true
+    url: https://www.nintendolife.com/feeds/latest
+    article_hosts: [www.nintendolife.com]
   # Add only authorized community feeds. Reddit API access may need approval.
   - id: community_placeholder
     name: Authorized community feed (configure before enabling)
