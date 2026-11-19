@@ -79,7 +79,10 @@ def group_events(ops: list[dict], report_date: str, max_age_days: int = 7,
     for op in ops:
         if op.get("status") == "superseded":
             continue
-        origin_age = age_days(op.get("first_signal_date"), report_date)
+        origin_age = age_days(
+            op.get("first_signal_date") or op.get("document_first_seen")
+            or op.get("discovery_date"), report_date
+        )
         if origin_age is None or origin_age > max_age_days or origin_age < -1:
             # The date of extraction does not make an old press release new.
             continue
@@ -89,7 +92,10 @@ def group_events(ops: list[dict], report_date: str, max_age_days: int = 7,
         members.sort(key=lambda op: (specificity(op), op.get("name", "")), reverse=True)
         main = members[0]
         demand = sum(len(op.get("demand_evidence") or []) for op in members)
-        oldness = age_days(main.get("first_signal_date"), report_date) or 0
+        oldness = age_days(
+            main.get("first_signal_date") or main.get("document_first_seen")
+            or main.get("discovery_date"), report_date
+        ) or 0
         typ = event_type(main.get("origin", ""))
         rank = (
             min(3, demand) * 100
