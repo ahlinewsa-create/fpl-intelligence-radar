@@ -1664,7 +1664,7 @@
   "source_health": {
     "community_placeholder": {
       "kind": "community",
-      "last_checked": "2026-11-19T00:09:13+00:00",
+      "last_checked": "2026-11-19T00:11:39+00:00",
       "source_name": "Authorized community feed (configure before enabling)",
       "status": "disabled"
     },
@@ -1673,20 +1673,20 @@
       "etag": null,
       "items_seen": 25,
       "kind": "official",
-      "last_checked": "2026-11-19T00:09:13+00:00",
+      "last_checked": "2026-11-19T00:11:39+00:00",
       "last_modified": "Thu, 19 Nov 2026 00:00:11 GMT",
-      "last_success": "2026-11-19T00:09:13+00:00",
+      "last_success": "2026-11-19T00:11:39+00:00",
       "source_name": "Nintendo Japan",
-      "status": "ok"
+      "status": "ok_not_modified"
     },
     "playstation_blog": {
       "error": null,
       "etag": "\"6060d952211bfc153b77d4b32c7bebf9\"",
       "items_seen": 10,
       "kind": "official",
-      "last_checked": "2026-11-19T00:09:13+00:00",
+      "last_checked": "2026-11-19T00:11:38+00:00",
       "last_modified": "Wed, 18 Nov 2026 17:35:01 GMT",
-      "last_success": "2026-11-19T00:09:13+00:00",
+      "last_success": "2026-11-19T00:11:39+00:00",
       "source_name": "PlayStation Blog",
       "status": "ok_not_modified"
     },
@@ -1695,9 +1695,9 @@
       "etag": "W/\"eb5e212df74d30663b09bd5fe862adb0\"",
       "items_seen": 10,
       "kind": "official",
-      "last_checked": "2026-11-19T00:09:13+00:00",
+      "last_checked": "2026-11-19T00:11:39+00:00",
       "last_modified": "Wed, 18 Nov 2026 00:07:58 GMT",
-      "last_success": "2026-11-19T00:09:13+00:00",
+      "last_success": "2026-11-19T00:11:39+00:00",
       "source_name": "Xbox Wire",
       "status": "ok_not_modified"
     }
