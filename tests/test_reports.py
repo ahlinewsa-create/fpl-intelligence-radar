@@ -34,6 +34,7 @@ def test_no_verified_demand_no_design_now():
 
 
 def test_no_claim_without_email_secrets(monkeypatch):
+    monkeypatch.setenv("HUNTER_REPORT_MODE", "scheduled")
     for key in ("GMAIL_USER", "GMAIL_PASS", "TO_EMAIL"):
         monkeypatch.delenv(key, raising=False)
     monkeypatch.setenv("HUNTER_NOTIFICATIONS_ENABLED", "1")
@@ -44,6 +45,8 @@ def test_no_claim_without_email_secrets(monkeypatch):
 
 
 def test_at_most_once_on_manual_rerun(monkeypatch):
+    # Legacy daily-idempotency regression: does not represent a manual run.
+    monkeypatch.setenv("HUNTER_REPORT_MODE", "scheduled")
     monkeypatch.setenv("HUNTER_NOTIFICATIONS_ENABLED", "1")
     monkeypatch.setenv("GMAIL_USER", "example@example.org")
     monkeypatch.setenv("GMAIL_PASS", "dummy")
