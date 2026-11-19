@@ -93,13 +93,17 @@
       "url": "https://news.xbox.com/en-us/2026/11/17/millions-of-butt-slaps-last-pirates/"
     },
     "06791991d52e46446c37": {
+      "analysis_status": "full_text",
+      "candidate_count": 0,
+      "extractor_version": "horizon-inspired-article-v4",
       "first_seen": "2026-11-19T00:31:30+00:00",
-      "image_type": "feed_preview",
-      "image_url": "https://images.nintendolife.com/86a4b44568440/small.jpg",
+      "image_type": "official_article_preview",
+      "image_url": "https://images.nintendolife.com/86a4b44568440/1280x720.jpg",
       "kind": "press",
       "news_category": "gaming",
       "news_interest": 2,
       "published_at": "2026-11-17T17:15:00+00:00",
+      "reviewed_at": "2026-11-19T00:33:11+00:00",
       "source": "nintendo_life",
       "summary": "Grim. A new report from Bloomberg reveals that Firaxis Games, the developer behind Civilization and XCOM , has cut around one third of its staff. Meanwhile, its studio head Heather Hazen will also depart. Approximately 60 people have been laid off as work on a new XCOM stalled over the Summer, with the game reportedly missing a huge milestone. Development will continue, but it will likely be met with a pretty drastic shake-up. Read the full article on nintendolife.com",
       "title": "Civilization Developer Firaxis Games Cuts A Third Of Its Staff, Studio Head Departs",
@@ -123,13 +127,17 @@
       "url": "https://www.nintendo.com/jp/topics/article/482f5918-f83f-453f-90c1-78c1cc02065c"
     },
     "0ccf636f0eae8a4e3b6c": {
+      "analysis_status": "full_text",
+      "candidate_count": 2,
+      "extractor_version": "horizon-inspired-article-v4",
       "first_seen": "2026-11-19T00:31:29+00:00",
-      "image_type": "feed_preview",
-      "image_url": null,
+      "image_type": "official_article_preview",
+      "image_url": "https://www.siliconera.com/wp-content/uploads/2026/11/furuta-animal-crossing-choco-egg-candy-with-figures-returns.jpg",
       "kind": "press",
       "news_category": "gaming",
       "news_interest": 2,
       "published_at": "2026-11-17T22:00:00+00:00",
+      "reviewed_at": "2026-11-19T00:33:10+00:00",
       "source": "siliconera",
       "summary": "Furuta and Nintendo announced that Animal Crossing Choco Egg candies that feature a figure of one of the characters inside a chocolate shell will return to Japan. These will be sold again in the country on December 7, 2026. It will cost 330 yen (~$2) per egg. Due to restrictions on things like these and Kinder Eggs, we might not see these in the US. However, if they do turn up outside Japan, it will likely be at Asian grocery stores or via an online store. ( Sugoi Mart sold them in the past.) [Thanks, Inside Games !] As this is a rerun, we’re already aware of which characters are part of the Furuta Animal Crossing Choco Egg figure collection. There are 18 “known” individuals and two “secret” ones. Each of the revealed ones are NPCs and neighbors. The “hidden” ones are male and female Villager avatars. Since this is a blind box situation, you don’t know which item is inside the plastic egg inside the chocolate until you open it. Some assembly is required, as the characters come with a base they can be attached to. Here’s the full list of who is present in this set in order. The human villager avatars are the 19th and 20th ones. Isabelle Tom Nook KK Slider Mabel Timmy and Tommy Blathers Rosie Bunnie Goldie Apollo Marshall Molly Julian Hamlet Fauna Peanut Stitches Whitney Here’s the official photo showing how those will look. Images via Nintendo and Furuta In the last few years, we’ve seen a lot of Animal Crossing merchandise. One of the most notable items is the Re-Ment Happy Room series of sets , which involve dioramas of characters inside rooms you can decorate. The Furuta Animal Crossing Choco Egg with character figures will be back in Japan on December 7, 2026. Animal Crossing: New Horizons is on the Switch and Switch 2.",
       "title": "Furuta Animal Crossing Choco Egg Candy With Figures Returns",
@@ -215,13 +223,17 @@
       "url": "https://news.xbox.com/en-us/2026/11/17/world-of-fallout-expansion/"
     },
     "17fe7690814c2f01f736": {
+      "analysis_status": "full_text",
+      "candidate_count": 0,
+      "extractor_version": "horizon-inspired-article-v4",
       "first_seen": "2026-11-19T00:31:30+00:00",
-      "image_type": "feed_preview",
-      "image_url": null,
+      "image_type": "official_article_preview",
+      "image_url": "https://www.gematsu.com/wp-content/uploads/2026/11/Exodus-PV_11-17-26.jpg",
       "kind": "press",
       "news_category": "gaming",
       "news_interest": 2,
       "published_at": "2026-11-17T15:54:27+00:00",
+      "reviewed_at": "2026-11-19T00:33:11+00:00",
       "source": "gematsu",
       "summary": "Archetype Entertainment has released an eight-minute featurette for science-fiction action adventure RPG EXODUS revealing the … Source",
       "title": "EXODUS ‘Female Jun Reveal + Scrappy Salvager’ featurette",
@@ -597,13 +609,17 @@
       "url": "https://www.nintendo.com/jp/topics/article/13827716-39ef-4435-911e-ab6583921da4"
     },
     "5ab39393be714e8f085e": {
+      "analysis_status": "full_text",
+      "candidate_count": 0,
+      "extractor_version": "horizon-inspired-article-v4",
       "first_seen": "2026-11-19T00:31:30+00:00",
-      "image_type": "feed_preview",
-      "image_url": null,
+      "image_type": "official_article_preview",
+      "image_url": "https://www.gematsu.com/wp-content/uploads/2026/11/Calame-Release-Window_11-17-26.jpg",
       "kind": "press",
       "news_category": "gaming",
       "news_interest": 2,
       "published_at": "2026-11-17T17:41:01+00:00",
+      "reviewed_at": "2026-11-19T00:33:11+00:00",
       "source": "gematsu",
       "summary": "Calame, a single-player isometric strategy RPG that “blends deep, classic strategy with innovative reality-shifting gameplay,” …",
       "title": "Calame launches in February 2027",
@@ -691,13 +707,17 @@
       "url": "https://www.nintendo.co.jp/jobs/keyword/index.html"
     },
     "6c564c817adae8f93a14": {
+      "analysis_status": "full_text",
+      "candidate_count": 0,
+      "extractor_version": "horizon-inspired-article-v4",
       "first_seen": "2026-11-19T00:31:30+00:00",
-      "image_type": "feed_preview",
-      "image_url": null,
+      "image_type": "official_article_preview",
+      "image_url": "https://www.gematsu.com/wp-content/uploads/2026/11/First-Zombie-Date_11-18-26.jpg",
       "kind": "press",
       "news_category": "other",
       "news_interest": 1,
       "published_at": "2026-11-18T22:32:03+00:00",
+      "reviewed_at": "2026-11-19T00:33:12+00:00",
       "source": "gematsu",
       "summary": "The First Zombie, the “reverse” zombie game produced by Kentaro Fujii of Japanese variety show … Source",
       "title": "The First Zombie launches December 16",
@@ -764,13 +784,17 @@
       "url": "https://www.nintendolife.com/guides/stage-tour-all-songs-list-full-tracklist-every-confirmed-artist"
     },
     "78b20c06b6ec6acbafc1": {
+      "analysis_status": "full_text",
+      "candidate_count": 0,
+      "extractor_version": "horizon-inspired-article-v4",
       "first_seen": "2026-11-19T00:31:29+00:00",
-      "image_type": "feed_preview",
-      "image_url": null,
+      "image_type": "official_article_preview",
+      "image_url": "https://www.siliconera.com/wp-content/uploads/2026/11/hxv6rcwbuaa-2np.jpg",
       "kind": "press",
       "news_category": "gaming",
       "news_interest": 2,
       "published_at": "2026-11-17T18:00:00+00:00",
+      "reviewed_at": "2026-11-19T00:33:10+00:00",
       "source": "siliconera",
       "summary": "All of the game nominees and people who could be honored at The Game Awards 2026 have been revealed. While GTA VI isn’t even out yet , the latest Grand Theft Auto entry nabbed seven nominations. This year, people will be able to watch it on December 10, 2026 on both YouTube and Disney+. Voting is now open on the official site , though as of time of writing it was a bit slammed due to demand. Here are all the categories and nominees for The Game Awards 2026. Game of the Year 2026 Nominees: 007 First Light Control Resonant Grand Theft Auto VI The Legend of Zelda: Ocarina of Time Phantom Blade Zero Resident Evil Requiem Best Action Game: Ace Combat 8: Wings of Theve Gears of War: E-Day Onimusha: Way of the Sword Phantom Blade Zero Saros Best Action-Adventure Game: 007 First Light Control Resonant Grand Theft Auto VI The Legend of Zelda: Ocarina of Time Pragmata Resident Evil Requiem Best Family Game: Big Walk Lego Batman: Legacy of the Dark Knight Nintendo Switch Sports Resort Pokemon Pokopia Yoshi and the Mysterious Book Best Fighting Game: 2XKO Avatar Legends: The Fighting Game Invincible VS Marvel Tokon: Fighting Souls My Hero Academia: All’s Justice Best RPG: The Blood of Dawnwalker Final Fantasy Resonance Fire Emblem: Fortune’s Weave Monster Hunter Stories 3: Twisted Reflection Trails in the Sky 2nd Chapter Best Sim or Strategy Game: Mewgenics Planet Zoo 2 Pokemon Pokopia Slay the Spire 2 Star Wars Zero Company Best Sports or Racing Game: EA Sports FC 27 Forza Horizon 6 Nintendo Switch Sports Resort Screamer Star Wars: Galactic Racer Best Independent Game: Big Walk Cairn Denshattack! Mewgenics Mina the Hollower Best Debut Indie Game: Dressmaker Esoteric Ebb Orbitals Replaced Silver Pines Best Mobile Game: Arknights: Endfield Monster Hunter Outlanders Neverness to Everness Pokemon Champions Where Winds Meet Best VR/AR Game: Forefront Into the Radius 2 Little Nightmares VR: Altered Echoes Teenage Mutant Ninja Turtles: Empire City Thief VR: Legacy of Shadow Best Ongoing Game: Arc Raiders Final Fantasy XIV Fortnite No Man’s Sky The Witcher 3: Wild Hunt Most Anticipated Game: Fable Final Fantasy VII: Revelation God of War Laufey Resident Evil: Veronica The Witcher 4 Best Narrative: 007 First Light The Blood of Dawnwalker Control Resonant Grand Theft Auto 6 Resident Evil Requiem Best Multiplayer: Big Walk Call of Duty: Modern Warfare 4 Gears of War: E-Day Marathon Mecca Chameleon Orbitals Best Game Direction: Control Resonant GTA VI Phantom Blade Zero Pragmata Resident Evil Requiem Best Art Direction: Control Resonant GTA VI The Legend of Zelda: Ocarina of Time Mouse P.I. For Hire Phantom Blade Zero Best Audio Design: Ace Combat 8: Wings of Theve Control Resonant GTA VI Resident Evil Requiem Star Wars: Galactic Racers Best Score and Music: Ace Combat 8: Wings of Theve GTA VI The Legend of Zelda: Ocarina of Time Mixtape Phantom Blade Zero Best User Creation: A Dream of Silence : Revamped Create Aeronautics Nopixel V Star Wars : Droid Tycoon TTK Testing Best Performance: Angela Sant’Albano for Resident Evil Requiem Liam McIntyre for Marvel’s Wolverine Manni L. Perez for GTA VI Patrick Gibson for 007 First Light Rahul Kohli for Saros Games for Impac",
       "title": "Unreleased GTA VI Leads The Game Awards 2026 Nominations",
@@ -946,13 +970,17 @@
       "url": "https://blog.playstation.com/2026/11/13/share-of-the-week-lights/"
     },
     "9e5008673bf41d792f05": {
+      "analysis_status": "full_text",
+      "candidate_count": 0,
+      "extractor_version": "horizon-inspired-article-v4",
       "first_seen": "2026-11-19T00:31:29+00:00",
-      "image_type": "feed_preview",
-      "image_url": null,
+      "image_type": "official_article_preview",
+      "image_url": "https://www.siliconera.com/wp-content/uploads/2026/11/target-black-friday-2026-ad-highlights-switch-2-and-ps5-game-sales.jpg",
       "kind": "press",
       "news_category": "other",
       "news_interest": 1,
       "published_at": "2026-11-18T20:00:00+00:00",
+      "reviewed_at": "2026-11-19T00:33:12+00:00",
       "source": "siliconera",
       "summary": "The Target Black Friday 2026 ad is live on the official site and features a number of sales on Switch 2 and PS5 games and accessories like controllers. It also kicks off the flyer with a reminder of the Switch 2 Black Friday 2026 bundle that gives people the system and copy of Mario Kart World for $499.99 instead of $549.99. (That’s universal and everywhere .) While the store will be closed on Thanksgiving Day, it will open at 6am local time in the US on November 27, 2026 again. In terms of possible game deals, here are the Switch 2 and PS5 titles that showed up on sale in the Target Black Friday 2026 ad. In cases where they are multiplatform, it is possible that price will apply to every version. Bluey’s Happy Snaps (Switch 2) – $39.99. Call of Duty: Modern Warfare 4 (PS5) – $59.99. College Football 27 (PS5) – $34.99. Donkey Kong Bananza (Switch 2) – $49.99. FC27 (PS5) – $34.99. Helldivers 2 (PS5) – $29.99. It Takes Two (Switch 2) – $29.99. Just Dance: Decades of Hits (Switch 2) – $29.99. Kirby Air Riders (Switch 2) – $49.99. Lego Batman: Legacy of the Dark Knight (Switch 2) – $49.99. Lego Harry Potter Collection (Switch 2) – $34.99. Madden 27 (PS5) – $34.99. MLB The Show 26 (PS5) – $19.99. Marvel Tokon: Fighting Souls (PS5) – $39.99. Marvel’s Spider-Man 2 (PS5) – $29.99. Marvel’s Wolverine (PS5) – $49.99. NBA 2K27 (PS5) – $29.99. Star Wars Zero Company (PS5) – $44.99. Super Mario Galaxy 1 & 2 (Switch) – $49.99. Super Mario Party Jamboree (Switch 2) – $39.99. Warrior Cats: Clans of the Forest Feral Edition (Switch 2) – $29.99. WWE 2K26 (PS5) – $24.99. As for the accessory deals, here are some of the most notable and affordable controller price drops for the Switch 2 and PS5. DualSense PS5 controller – $64.99. DualSense Edge PS5 controller – $169.99. Nova Pink DualSense for PS5 – $54.99. Pulse Elite PS5 headset or earbuds – $129.99. Switch 2 controller and case bundles – $69.99. Aside from the Switch 2 Black Friday 2026 bundle with game, there is also a Meta Quest S3 sale at Target this season. It will be $297.49 for the VR headset, and people will get a $50 gift card for the store with it. The normal price is $49.99. The Target Black Friday 2026 ad is live now and sales on Switch 2 and PS5 games and accessories may start as soon as November 22, 2026.",
       "title": "Target Black Friday 2026 Ad Highlights Switch 2 and PS5 Game Sales",
@@ -1080,13 +1108,17 @@
       "url": "https://www.nintendo.com/jp/topics/article/ca36364e-5117-4881-9688-ea2d023a7b45"
     },
     "b210d4d8facaa8735961": {
+      "analysis_status": "full_text",
+      "candidate_count": 0,
+      "extractor_version": "horizon-inspired-article-v4",
       "first_seen": "2026-11-19T00:31:29+00:00",
-      "image_type": "feed_preview",
-      "image_url": null,
+      "image_type": "official_article_preview",
+      "image_url": "https://www.siliconera.com/wp-content/uploads/2026/11/screen-shot-2026-11-17-at-103948-am.png",
       "kind": "press",
       "news_category": "gaming",
       "news_interest": 2,
       "published_at": "2026-11-17T21:00:00+00:00",
+      "reviewed_at": "2026-11-19T00:33:10+00:00",
       "source": "siliconera",
       "summary": "Spike Chunsoft shared more insight into what to expect from the Danganronpa 2 x 2 remake by sharing a gameplay trailer that focuses on how investigations and trials will work during the two phases of the game. While things work as usual for the most part, some updates from entries like Danganronpa V3 like the Debate Scrum appear. The video also serves as a means to hear the English voice actors for Monokuma and Monomi. The video begins with a look at the investigation phase of the game. Monokuma announces that a body has been discovered. We then see how we can explore areas, interact with characters, and check certain items to look for clues. These give us data which we can then take into the trials in Danganronpa 2 x 2 . That portion of the trailer is a bit more detailed, as it shows off different phases and mechanics. It starts by showing how we prepare for court by equipping Hajime Hinata with Skills that could help him during debates and confrontations. From there, the video shows the Nonstop Debate, Rebuttal Showdown, Logic Dive, Akimbo Consensus, and Debate Scrum portions of these discussions. Go Ad-Free With Siliconera+ View the site with no ads, be able to provide direct feedback about what we cover, and be automatically entered into our monthly PC game giveaway. Join Siliconera+ Here’s the full Danganronpa 2 x 2 system trailer from YouTube showing the investigation and trial gameplay. This does seem to focus on the original game and might not show everything in the new Slayhem mode . Danganronpa 2 x 2 will come to the Switch, Switch 2, PS5, Xbox Series X, and PC on January 14, 2027. Standard and $139.99 Collector’s Editions will appear. The original Danganronpa 2: Goodbye Despair first appeared on the PSP in Japan before showing up on platforms like the Switch, PS4, Vita, Xbox One, PC, and mobile devices worldwide. We may earn a commission if you purchase from certain links. Learn more here .",
       "title": "Danganronpa 2 x 2 Gameplay Trailer Shows Investigations and Trials",
@@ -1364,13 +1396,17 @@
       "url": "https://news.xbox.com/en-us/2026/11/17/the-game-awards-2026-nominees-on-xbox/"
     },
     "eb10d4b35b259a0f19a7": {
+      "analysis_status": "full_text",
+      "candidate_count": 0,
+      "extractor_version": "horizon-inspired-article-v4",
       "first_seen": "2026-11-19T00:31:30+00:00",
-      "image_type": "feed_preview",
-      "image_url": null,
+      "image_type": "official_article_preview",
+      "image_url": "https://www.gematsu.com/wp-content/uploads/2026/11/Homura-Hime-PS5-Ann_11-18-26.jpg",
       "kind": "press",
       "news_category": "other",
       "news_interest": 1,
       "published_at": "2026-11-18T20:05:22+00:00",
+      "reviewed_at": "2026-11-19T00:33:12+00:00",
       "source": "gematsu",
       "summary": "Publisher PLAYISM and developer Crimson Dusk will release 3D bullet hell action game Homura Hime … Source",
       "title": "Homura Hime coming to PS5 in 2027",
@@ -1410,13 +1446,17 @@
       "url": "https://www.nintendolife.com/news/2026/11/sea-of-stars-is-getting-a-sunset-edition-switch-2-physical-and-a-gorgeous-final-merch-drop"
     },
     "efc6f85ad4da590f67ce": {
+      "analysis_status": "full_text",
+      "candidate_count": 0,
+      "extractor_version": "horizon-inspired-article-v4",
       "first_seen": "2026-11-19T00:31:30+00:00",
-      "image_type": "feed_preview",
-      "image_url": "https://images.nintendolife.com/ac259145e3bf1/small.jpg",
+      "image_type": "official_article_preview",
+      "image_url": "https://images.nintendolife.com/ac259145e3bf1/1280x720.jpg",
       "kind": "press",
       "news_category": "gaming",
       "news_interest": 2,
       "published_at": "2026-11-17T18:30:00+00:00",
+      "reviewed_at": "2026-11-19T00:33:10+00:00",
       "source": "nintendo_life",
       "summary": "Cases closed. With the holiday season rapidly approaching, we'd wager that you likely have a long journey or two to make in the coming weeks — we know we sure do! Switch 2 remains our console of choice for lengthy travels like these, natch, but over the last year and a half, we have begun accumulating a handful of accessories that make the experience that bit less painful. Above, the ever-lovely Alex Olney showcases some of his favourite Switch 2 travel accessories that he has found so far. This includes everything from cases to headphones, portable docks to AR glasses (yes, really). Read the full article on nintendolife.com",
       "title": "Video: Long Journey Coming Up? Here Are Our Favourite Switch 2 Travel Accessories",
@@ -1499,26 +1539,34 @@
       "url": "https://www.siliconera.com/dragon-quest-nissin-crossover-results-in-metal-slime-blanket/"
     },
     "fb4cd2491d0efce4ce87": {
+      "analysis_status": "full_text",
+      "candidate_count": 0,
+      "extractor_version": "horizon-inspired-article-v4",
       "first_seen": "2026-11-19T00:31:30+00:00",
-      "image_type": "feed_preview",
-      "image_url": null,
+      "image_type": "official_article_preview",
+      "image_url": "https://www.gematsu.com/wp-content/uploads/2026/11/Burning-Sword_11-18-26.jpg",
       "kind": "press",
       "news_category": "other",
       "news_interest": 1,
       "published_at": "2026-11-18T23:00:14+00:00",
+      "reviewed_at": "2026-11-19T00:33:11+00:00",
       "source": "gematsu",
       "summary": "Wuxia hack-and-slash action game Burning Sword: Death Sun is now available in Early Access for … Source",
       "title": "Burning Sword: Death Sun now available in Early Access",
       "url": "https://www.gematsu.com/2026/11/burning-sword-death-sun-now-available-in-early-access"
     },
     "fc24cc02a739fefacf2a": {
+      "analysis_status": "full_text",
+      "candidate_count": 0,
+      "extractor_version": "horizon-inspired-article-v4",
       "first_seen": "2026-11-19T00:31:30+00:00",
-      "image_type": "feed_preview",
-      "image_url": "https://images.nintendolife.com/2c7b8f7e82b01/small.jpg",
+      "image_type": "official_article_preview",
+      "image_url": "https://images.nintendolife.com/2c7b8f7e82b01/1280x720.jpg",
       "kind": "press",
       "news_category": "other",
       "news_interest": 1,
       "published_at": "2026-11-18T18:15:00+00:00",
+      "reviewed_at": "2026-11-19T00:33:12+00:00",
       "source": "nintendo_life",
       "summary": "Ocarina of Times they are a-changin'. Now yes, things have been a little Vice City-focused today, haven't they? The GTA 6 reviews are out, and it is, by all accounts, bloody brilliant. But you know what else is brilliant? The Legend of Zelda: Ocarina of Time . Read the full article on nintendolife.com",
       "title": "Video: Need A Break Between GTA Reviews? Watch Us Rave About Zelda's Switch 2 Changes",
@@ -1656,7 +1704,19 @@
     "07ab31590aa11d4a13bf": {
       "aliases": [],
       "competition": {
-        "status": "not_checked"
+        "checked_at": "2026-11-19T00:33:17+00:00",
+        "contextual_name_candidates": 0,
+        "coverage": "search_sample_only",
+        "listings": [],
+        "name_only_candidates": 0,
+        "query": "flocked figures",
+        "sample_limit": 20,
+        "sample_size": 8,
+        "schema_version": 2,
+        "search_total": 8,
+        "similar_name_candidates": 0,
+        "status": "sampled",
+        "verified_exact_count": null
       },
       "demand_evidence": [],
       "discovery_date": "2026-11-19T00:31:30+00:00",
@@ -1683,7 +1743,7 @@
       "region": "japan_global",
       "rights_status": "unverified",
       "score": {
-        "confidence": 35,
+        "confidence": 49,
         "decision": "WATCH",
         "lower": 24.5,
         "missing_factors": [
@@ -1697,6 +1757,23 @@
         "upper": 89.5,
         "window": "WATCH"
       },
+      "score_history": [
+        {
+          "confidence": 35,
+          "decision": "WATCH",
+          "lower": 24.5,
+          "missing_factors": [
+            "demand",
+            "gap",
+            "scarcity",
+            "timing"
+          ],
+          "notes": "Search sample is unverified; visual competition, buying demand and rights review required.",
+          "score_version": "MVP-2",
+          "upper": 89.5,
+          "window": "WATCH"
+        }
+      ],
       "source_kind": "press"
     },
     "089b7956a26f4ab46e3b": {
@@ -1854,7 +1931,19 @@
     "396d0bc46be8fb99dd5a": {
       "aliases": [],
       "competition": {
-        "status": "not_checked"
+        "checked_at": "2026-11-19T00:33:19+00:00",
+        "contextual_name_candidates": 0,
+        "coverage": "search_sample_only",
+        "listings": [],
+        "name_only_candidates": 0,
+        "query": "Puffy Sanrio Santa version figures",
+        "sample_limit": 20,
+        "sample_size": 1,
+        "schema_version": 2,
+        "search_total": 1,
+        "similar_name_candidates": 0,
+        "status": "sampled",
+        "verified_exact_count": null
       },
       "demand_evidence": [],
       "discovery_date": "2026-11-19T00:31:30+00:00",
@@ -1881,7 +1970,7 @@
       "region": "japan_global",
       "rights_status": "unverified",
       "score": {
-        "confidence": 35,
+        "confidence": 49,
         "decision": "WATCH",
         "lower": 24.5,
         "missing_factors": [
@@ -1895,6 +1984,23 @@
         "upper": 89.5,
         "window": "WATCH"
       },
+      "score_history": [
+        {
+          "confidence": 35,
+          "decision": "WATCH",
+          "lower": 24.5,
+          "missing_factors": [
+            "demand",
+            "gap",
+            "scarcity",
+            "timing"
+          ],
+          "notes": "Search sample is unverified; visual competition, buying demand and rights review required.",
+          "score_version": "MVP-2",
+          "upper": 89.5,
+          "window": "WATCH"
+        }
+      ],
       "source_kind": "press"
     },
     "3b0c6c017b03b195b03b": {
@@ -2138,6 +2244,64 @@
       "status": "superseded",
       "superseded_reason": "Merged or removed by object extraction v3"
     },
+    "6086541b24940075c265": {
+      "aliases": [],
+      "competition": {
+        "checked_at": "2026-11-19T00:33:16+00:00",
+        "contextual_name_candidates": 0,
+        "coverage": "search_sample_only",
+        "listings": [],
+        "name_only_candidates": 0,
+        "query": "Animal Crossing Choco Egg figure",
+        "sample_limit": 20,
+        "sample_size": 2,
+        "schema_version": 2,
+        "search_total": 2,
+        "similar_name_candidates": 0,
+        "status": "sampled",
+        "verified_exact_count": null
+      },
+      "demand_evidence": [],
+      "discovery_date": "2026-11-19T00:33:10+00:00",
+      "discovery_note": "Discovered during article analysis",
+      "document_first_seen": "2026-11-19T00:31:29+00:00",
+      "evidence": [
+        {
+          "excerpt": "Games !] As this is a rerun, we’re already aware of which characters are part of the Furuta Animal Crossing Choco Egg figure collection. There are 18 “known” individuals and two “secret",
+          "extraction_confidence": 0.6,
+          "extraction_method": "named_object_in_source",
+          "type": "press_article",
+          "url": "https://www.siliconera.com/furuta-animal-crossing-choco-egg-candy-with-figures-returns/"
+        }
+      ],
+      "first_signal_date": "2026-11-17T22:00:00+00:00",
+      "id": "6086541b24940075c265",
+      "image_type": "official_article_preview",
+      "image_url": "https://www.siliconera.com/wp-content/uploads/2026/11/furuta-animal-crossing-choco-egg-candy-with-figures-returns.jpg",
+      "kind": "figurine",
+      "language": "en",
+      "last_changed": "2026-11-19T00:33:10+00:00",
+      "name": "Animal Crossing Choco Egg figure",
+      "origin": "Furuta Animal Crossing Choco Egg Candy With Figures Returns",
+      "region": "japan_global",
+      "rights_status": "unverified",
+      "score": {
+        "confidence": 49,
+        "decision": "WATCH",
+        "lower": 21.5,
+        "missing_factors": [
+          "demand",
+          "gap",
+          "scarcity",
+          "timing"
+        ],
+        "notes": "Search sample is unverified; visual competition, buying demand and rights review required.",
+        "score_version": "MVP-2",
+        "upper": 86.5,
+        "window": "WATCH"
+      },
+      "source_kind": "press"
+    },
     "68021828fd188ffe3828": {
       "competition": {
         "reason": "missing_api_credentials",
@@ -2185,10 +2349,195 @@
       "status": "superseded",
       "superseded_reason": "Merged or removed by object extraction v3"
     },
+    "76ec474ad75778729db2": {
+      "aliases": [
+        "Figures"
+      ],
+      "competition": {
+        "checked_at": "2026-11-19T00:33:17+00:00",
+        "contextual_name_candidates": 0,
+        "coverage": "search_sample_only",
+        "listings": [
+          {
+            "currency": "EUR",
+            "match": "name_only_candidate",
+            "name": "11 Vietnam War Rural Character Figures Collection",
+            "price": 5.0,
+            "published_at": "2026-09-18T05:40:43Z",
+            "url": "https://cults3d.com/:4928915"
+          },
+          {
+            "currency": "EUR",
+            "match": "name_only_candidate",
+            "name": "Modern US Signals crew 1/96 scale X 3 individual character figures",
+            "price": 1.2,
+            "published_at": "2026-11-04T14:40:08Z",
+            "url": "https://cults3d.com/:5171796"
+          },
+          {
+            "currency": "EUR",
+            "match": "name_only_candidate",
+            "name": "Aliens Vol 2 - 30 STL Character Figures for 3D Printing",
+            "price": 5.09,
+            "published_at": "2026-11-06T14:25:47Z",
+            "url": "https://cults3d.com/:5184876"
+          },
+          {
+            "currency": "EUR",
+            "match": "name_only_candidate",
+            "name": "The Amazing Digital Circus Collection – Complete Set of 10 Collectible Character Figures",
+            "price": 10.0,
+            "published_at": "2026-05-20T21:42:00Z",
+            "url": "https://cults3d.com/:4462585"
+          },
+          {
+            "currency": "EUR",
+            "match": "name_only_candidate",
+            "name": "Cute & Weird Creatures Vol 2 - 30 STL Character Figures for 3D Printing",
+            "price": 5.09,
+            "published_at": "2026-11-06T16:13:48Z",
+            "url": "https://cults3d.com/:5185446"
+          },
+          {
+            "currency": "EUR",
+            "match": "name_only_candidate",
+            "name": "Cute & Weird Creatures Vol 1 - 32 STL Character Figures for 3D Printing",
+            "price": 5.09,
+            "published_at": "2026-11-06T16:11:56Z",
+            "url": "https://cults3d.com/:5185434"
+          },
+          {
+            "currency": "EUR",
+            "match": "name_only_candidate",
+            "name": "Demons & Horned Fantasy Characters - 20 STL Character Figures for 3D Printing",
+            "price": 5.09,
+            "published_at": "2026-11-06T16:10:39Z",
+            "url": "https://cults3d.com/:5185426"
+          },
+          {
+            "currency": "EUR",
+            "match": "name_only_candidate",
+            "name": "Creepy Monsters Vol 2 - 30 STL Character Figures for 3D Printing",
+            "price": 5.09,
+            "published_at": "2026-11-06T16:17:57Z",
+            "url": "https://cults3d.com/:5185466"
+          },
+          {
+            "currency": "EUR",
+            "match": "name_only_candidate",
+            "name": "Creepy Monsters Vol 5 - 25 STL Character Figures for 3D Printing",
+            "price": 5.09,
+            "published_at": "2026-11-06T16:21:12Z",
+            "url": "https://cults3d.com/:5185477"
+          },
+          {
+            "currency": "EUR",
+            "match": "name_only_candidate",
+            "name": "Creepy Monsters Vol 1 - 24 STL Character Figures for 3D Printing",
+            "price": 5.09,
+            "published_at": "2026-11-06T16:16:24Z",
+            "url": "https://cults3d.com/:5185459"
+          },
+          {
+            "currency": "EUR",
+            "match": "name_only_candidate",
+            "name": "Creepy Monsters Vol 3 - 29 STL Character Figures for 3D Printing",
+            "price": 5.09,
+            "published_at": "2026-11-06T16:19:04Z",
+            "url": "https://cults3d.com/:5185469"
+          },
+          {
+            "currency": "EUR",
+            "match": "name_only_candidate",
+            "name": "Sci-Fi & Fantasy Humanoids Vol 6 - 26 STL Character Figures for 3D Printing",
+            "price": 5.09,
+            "published_at": "2026-11-06T16:09:42Z",
+            "url": "https://cults3d.com/:5185421"
+          },
+          {
+            "currency": "EUR",
+            "match": "name_only_candidate",
+            "name": "Sci-Fi Armor Suits & Robots - 25 STL Character Figures for 3D Printing",
+            "price": 5.09,
+            "published_at": "2026-11-06T16:15:22Z",
+            "url": "https://cults3d.com/:5185456"
+          },
+          {
+            "currency": "EUR",
+            "match": "name_only_candidate",
+            "name": "Creepy Monsters Vol 4 - 30 STL Character Figures for 3D Printing",
+            "price": 5.09,
+            "published_at": "2026-11-06T16:20:11Z",
+            "url": "https://cults3d.com/:5185475"
+          }
+        ],
+        "name_only_candidates": 14,
+        "query": "character figures",
+        "sample_limit": 20,
+        "sample_size": 20,
+        "schema_version": 2,
+        "search_total": 41941,
+        "similar_name_candidates": 0,
+        "status": "sampled",
+        "verified_exact_count": null
+      },
+      "demand_evidence": [],
+      "discovery_date": "2026-11-19T00:33:10+00:00",
+      "discovery_note": "Discovered during article analysis",
+      "document_first_seen": "2026-11-19T00:31:29+00:00",
+      "evidence": [
+        {
+          "excerpt": "hich involve dioramas of characters inside rooms you can decorate. The Furuta Animal Crossing Choco Egg with character figures will be back in Japan on December 7, 2026. Animal Crossing",
+          "extraction_confidence": 0.6,
+          "extraction_method": "named_object_in_source",
+          "type": "press_article",
+          "url": "https://www.siliconera.com/furuta-animal-crossing-choco-egg-candy-with-figures-returns/"
+        }
+      ],
+      "first_signal_date": "2026-11-17T22:00:00+00:00",
+      "id": "76ec474ad75778729db2",
+      "image_type": "official_article_preview",
+      "image_url": "https://www.siliconera.com/wp-content/uploads/2026/11/furuta-animal-crossing-choco-egg-candy-with-figures-returns.jpg",
+      "kind": "figurine",
+      "language": "en",
+      "last_changed": "2026-11-19T00:33:10+00:00",
+      "name": "character figures",
+      "origin": "Furuta Animal Crossing Choco Egg Candy With Figures Returns",
+      "region": "japan_global",
+      "rights_status": "unverified",
+      "score": {
+        "confidence": 49,
+        "decision": "WATCH",
+        "lower": 21.5,
+        "missing_factors": [
+          "demand",
+          "gap",
+          "scarcity",
+          "timing"
+        ],
+        "notes": "Search sample is unverified; visual competition, buying demand and rights review required.",
+        "score_version": "MVP-2",
+        "upper": 86.5,
+        "window": "WATCH"
+      },
+      "source_kind": "press"
+    },
     "795c26b81be712cbfe03": {
       "aliases": [],
       "competition": {
-        "status": "not_checked"
+        "checked_at": "2026-11-19T00:33:22+00:00",
+        "contextual_name_candidates": 0,
+        "coverage": "search_sample_only",
+        "listings": [],
+        "name_only_candidates": 0,
+        "query": "in Japan as prize figures",
+        "sample_limit": 20,
+        "sample_size": 1,
+        "schema_version": 2,
+        "search_total": 1,
+        "similar_name_candidates": 0,
+        "status": "sampled",
+        "verified_exact_count": null
       },
       "demand_evidence": [],
       "discovery_date": "2026-11-19T00:31:30+00:00",
@@ -2215,7 +2564,7 @@
       "region": "japan_global",
       "rights_status": "unverified",
       "score": {
-        "confidence": 35,
+        "confidence": 49,
         "decision": "WATCH",
         "lower": 24.5,
         "missing_factors": [
@@ -2229,12 +2578,50 @@
         "upper": 89.5,
         "window": "WATCH"
       },
+      "score_history": [
+        {
+          "confidence": 35,
+          "decision": "WATCH",
+          "lower": 24.5,
+          "missing_factors": [
+            "demand",
+            "gap",
+            "scarcity",
+            "timing"
+          ],
+          "notes": "Search sample is unverified; visual competition, buying demand and rights review required.",
+          "score_version": "MVP-2",
+          "upper": 89.5,
+          "window": "WATCH"
+        }
+      ],
       "source_kind": "press"
     },
     "7d579b990b78681e8560": {
       "aliases": [],
       "competition": {
-        "status": "not_checked"
+        "checked_at": "2026-11-19T00:33:24+00:00",
+        "contextual_name_candidates": 0,
+        "coverage": "search_sample_only",
+        "listings": [
+          {
+            "currency": "EUR",
+            "match": "similar_name_candidate",
+            "name": "Pochacco, Sanrio, Kuromi, My Melody, Cinnamoroll, Figures, Toys, Art, Fine Art",
+            "price": 2.06,
+            "published_at": "2023-12-03T10:33:55Z",
+            "url": "https://cults3d.com/:1618819"
+          }
+        ],
+        "name_only_candidates": 0,
+        "query": "Pochacco Figures",
+        "sample_limit": 20,
+        "sample_size": 20,
+        "schema_version": 2,
+        "search_total": 80,
+        "similar_name_candidates": 1,
+        "status": "sampled",
+        "verified_exact_count": null
       },
       "demand_evidence": [],
       "discovery_date": "2026-11-19T00:31:30+00:00",
@@ -2261,7 +2648,7 @@
       "region": "japan_global",
       "rights_status": "unverified",
       "score": {
-        "confidence": 35,
+        "confidence": 49,
         "decision": "WATCH",
         "lower": 24.5,
         "missing_factors": [
@@ -2275,6 +2662,23 @@
         "upper": 89.5,
         "window": "WATCH"
       },
+      "score_history": [
+        {
+          "confidence": 35,
+          "decision": "WATCH",
+          "lower": 24.5,
+          "missing_factors": [
+            "demand",
+            "gap",
+            "scarcity",
+            "timing"
+          ],
+          "notes": "Search sample is unverified; visual competition, buying demand and rights review required.",
+          "score_version": "MVP-2",
+          "upper": 89.5,
+          "window": "WATCH"
+        }
+      ],
       "source_kind": "press"
     },
     "83e2f239469ea5f497a4": {
@@ -2338,7 +2742,19 @@
     "898d923322050278221d": {
       "aliases": [],
       "competition": {
-        "status": "not_checked"
+        "checked_at": "2026-11-19T00:33:27+00:00",
+        "contextual_name_candidates": 0,
+        "coverage": "search_sample_only",
+        "listings": [],
+        "name_only_candidates": 0,
+        "query": "Build-a-Bear plush",
+        "sample_limit": 20,
+        "sample_size": 20,
+        "schema_version": 2,
+        "search_total": 233,
+        "similar_name_candidates": 0,
+        "status": "sampled",
+        "verified_exact_count": null
       },
       "demand_evidence": [],
       "discovery_date": "2026-11-19T00:31:30+00:00",
@@ -2365,7 +2781,7 @@
       "region": "japan_global",
       "rights_status": "unverified",
       "score": {
-        "confidence": 35,
+        "confidence": 49,
         "decision": "WATCH",
         "lower": 24.5,
         "missing_factors": [
@@ -2379,6 +2795,23 @@
         "upper": 89.5,
         "window": "WATCH"
       },
+      "score_history": [
+        {
+          "confidence": 35,
+          "decision": "WATCH",
+          "lower": 24.5,
+          "missing_factors": [
+            "demand",
+            "gap",
+            "scarcity",
+            "timing"
+          ],
+          "notes": "Search sample is unverified; visual competition, buying demand and rights review required.",
+          "score_version": "MVP-2",
+          "upper": 89.5,
+          "window": "WATCH"
+        }
+      ],
       "source_kind": "press"
     },
     "8c62b85bd646add6d71a": {
@@ -2386,7 +2819,19 @@
         "These Fluffy Puffy figures"
       ],
       "competition": {
-        "status": "not_checked"
+        "checked_at": "2026-11-19T00:33:28+00:00",
+        "contextual_name_candidates": 0,
+        "coverage": "search_sample_only",
+        "listings": [],
+        "name_only_candidates": 0,
+        "query": "Banpresto These Fluffy Puffy figures",
+        "sample_limit": 20,
+        "sample_size": 1,
+        "schema_version": 2,
+        "search_total": 1,
+        "similar_name_candidates": 0,
+        "status": "sampled",
+        "verified_exact_count": null
       },
       "demand_evidence": [],
       "discovery_date": "2026-11-19T00:31:30+00:00",
@@ -2413,7 +2858,7 @@
       "region": "japan_global",
       "rights_status": "unverified",
       "score": {
-        "confidence": 35,
+        "confidence": 49,
         "decision": "WATCH",
         "lower": 24.5,
         "missing_factors": [
@@ -2427,6 +2872,23 @@
         "upper": 89.5,
         "window": "WATCH"
       },
+      "score_history": [
+        {
+          "confidence": 35,
+          "decision": "WATCH",
+          "lower": 24.5,
+          "missing_factors": [
+            "demand",
+            "gap",
+            "scarcity",
+            "timing"
+          ],
+          "notes": "Search sample is unverified; visual competition, buying demand and rights review required.",
+          "score_version": "MVP-2",
+          "upper": 89.5,
+          "window": "WATCH"
+        }
+      ],
       "source_kind": "press"
     },
     "900961560b963664e9c5": {
@@ -3259,7 +3721,7 @@
   "source_health": {
     "community_placeholder": {
       "kind": "community",
-      "last_checked": "2026-11-19T00:31:30+00:00",
+      "last_checked": "2026-11-19T00:33:10+00:00",
       "source_name": "Authorized community feed (configure before enabling)",
       "status": "disabled"
     },
@@ -3268,31 +3730,31 @@
       "etag": "W/\"410d647873a2839bdb0bd82e429a9f38\"",
       "items_seen": 20,
       "kind": "press",
-      "last_checked": "2026-11-19T00:31:29+00:00",
+      "last_checked": "2026-11-19T00:33:09+00:00",
       "last_modified": "Wed, 18 Nov 2026 23:05:52 GMT",
-      "last_success": "2026-11-19T00:31:30+00:00",
+      "last_success": "2026-11-19T00:33:09+00:00",
       "source_name": "Gematsu - Japanese Gaming Announcements",
-      "status": "ok"
+      "status": "ok_not_modified"
     },
     "nintendo_jp": {
       "error": null,
       "etag": null,
       "items_seen": 25,
       "kind": "official",
-      "last_checked": "2026-11-19T00:31:28+00:00",
+      "last_checked": "2026-11-19T00:33:08+00:00",
       "last_modified": "Thu, 19 Nov 2026 00:30:09 GMT",
-      "last_success": "2026-11-19T00:31:29+00:00",
+      "last_success": "2026-11-19T00:33:09+00:00",
       "source_name": "Nintendo Japan",
-      "status": "ok"
+      "status": "ok_not_modified"
     },
     "nintendo_life": {
       "error": null,
       "etag": null,
       "items_seen": 25,
       "kind": "press",
-      "last_checked": "2026-11-19T00:31:30+00:00",
+      "last_checked": "2026-11-19T00:33:09+00:00",
       "last_modified": null,
-      "last_success": "2026-11-19T00:31:30+00:00",
+      "last_success": "2026-11-19T00:33:10+00:00",
       "source_name": "Nintendo Life - Games and Merchandise",
       "status": "ok"
     },
@@ -3301,9 +3763,9 @@
       "etag": "\"6060d952211bfc153b77d4b32c7bebf9\"",
       "items_seen": 10,
       "kind": "official",
-      "last_checked": "2026-11-19T00:31:28+00:00",
+      "last_checked": "2026-11-19T00:33:07+00:00",
       "last_modified": "Wed, 18 Nov 2026 17:35:01 GMT",
-      "last_success": "2026-11-19T00:31:28+00:00",
+      "last_success": "2026-11-19T00:33:07+00:00",
       "source_name": "PlayStation Blog",
       "status": "ok_not_modified"
     },
@@ -3312,20 +3774,20 @@
       "etag": "W/\"fa56c5c9a05038086040757f04713396\"",
       "items_seen": 15,
       "kind": "press",
-      "last_checked": "2026-11-19T00:31:29+00:00",
+      "last_checked": "2026-11-19T00:33:09+00:00",
       "last_modified": "Wed, 18 Nov 2026 20:19:28 GMT",
-      "last_success": "2026-11-19T00:31:29+00:00",
+      "last_success": "2026-11-19T00:33:09+00:00",
       "source_name": "Siliconera - Japanese Gaming and Merchandise",
-      "status": "ok"
+      "status": "ok_not_modified"
     },
     "xbox_wire": {
       "error": null,
       "etag": "W/\"eb5e212df74d30663b09bd5fe862adb0\"",
       "items_seen": 10,
       "kind": "official",
-      "last_checked": "2026-11-19T00:31:28+00:00",
+      "last_checked": "2026-11-19T00:33:07+00:00",
       "last_modified": "Wed, 18 Nov 2026 00:07:58 GMT",
-      "last_success": "2026-11-19T00:31:28+00:00",
+      "last_success": "2026-11-19T00:33:08+00:00",
       "source_name": "Xbox Wire",
       "status": "ok_not_modified"
     }
