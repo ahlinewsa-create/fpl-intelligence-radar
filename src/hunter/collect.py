@@ -190,6 +190,7 @@ def review_documents(
                 "id": oid, "name": obj["name"], "kind": obj["kind"],
                 "aliases": obj.get("aliases", []),
                 "origin": title,
+                "source_kind": source.get("kind", "official"),
                 "region": source.get("region", "unknown"),
                 "language": source.get("language", "unknown"),
                 "first_signal_date": document.get("published_at"),
@@ -203,7 +204,11 @@ def review_documents(
                 "image_url": document.get("image_url"),
                 "image_type": document.get("image_type"),
                 "evidence": [{
-                    "type": "official_article" if full else "official_feed",
+                    "type": (
+                        "official_article" if full else "official_feed"
+                    ) if source.get("kind") == "official" else (
+                        "press_article" if full else "press_feed"
+                    ),
                     "url": url, "excerpt": obj["excerpt"],
                     "extraction_method": obj.get("extraction_method"),
                     "extraction_confidence": obj["extraction_confidence"],
