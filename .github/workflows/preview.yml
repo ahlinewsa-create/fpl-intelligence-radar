@@ -28,6 +28,7 @@ jobs:
           set -o pipefail
           python -m pip install -e ".[test]" > /tmp/tal3d-install.log 2>&1 || { tail -n 35 /tmp/tal3d-install.log; exit 1; }
           python -m pytest -q > /tmp/tal3d-tests.log 2>&1 || { cat /tmp/tal3d-tests.log; exit 1; }
+          HUNTER_REPORT_MODE=manual python -m pytest -q >> /tmp/tal3d-tests.log 2>&1 || { cat /tmp/tal3d-tests.log; exit 1; }
           cat /tmp/tal3d-tests.log
       - name: Collect and re-analyze older news
         id: collect
