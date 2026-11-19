@@ -93,6 +93,7 @@
       "published_at": "2026-11-17T23:00:00+00:00",
       "reviewed_at": "2026-11-18T23:23:21+00:00",
       "source": "xbox_wire",
+      "summary": "Summary Online co-op comedy horror game for up to four players. Out now in XBOX Game Preview with Steam crossplay. The story of how it got here and what’s next. Ahoy, pirates! We’re RetroStyle Games, a team from Kyiv, Ukraine, and our online co-op horror game Last Pirates: Die Together is out today in XBOX Game Preview on XBOX Series X|S and PC. It has crossplay with Steam! So, a lobby can be half on console and half on PC and still lose their butts together. Up to four pirates land on a cursed island, grab treasure with stretchy arms and drag it back to the ship before the captain’s quota runs out. In practice monsters flip the cart, a monkey begs for coins (bro, we’re broke too), and somebody always wants to tear off a friend’s booty and slap it. Honestly, we had no idea what to write here. We’ve never done anything like this before. Making a game is a thousand small stories, and they won’t fit into 1,000 words. We could just write “butt” a thousand times, but we’d rather share a few favorites, so you get to know the crew behind the booty. Story 1: The Game Jam that Got out of Hand After Ocean Keeper , our pretty serious roguelike, we wanted something much lighter, so in January, 2026 we ran a game jam inside the studio. Once the pirate prototype was playable, the office never got quiet again. Why pirates? Yarr, who doesn’t love pirates?! Loot first, questions later. Every coin counts toward the captain’s quota. Story 2: The Playtest Where the Butt Came off We wanted our pirates to be breakable, so at zero health they snap in half. In one playtest everybody kept trying to stick the bottom half back on, so we coded it, and the revive worked better than anything we had planned. Now monsters bite butts off, crewmates steal them, and a downed pirate comes back when a friend slaps a spare booty onto them. For Steam Next Fest in June we put a giant butt on the beach and asked players to slap it a million times to unlock an update. An average pirate lands about 1,000 slaps in five hours, so we expected it to take a while. But(t)… one crew of four did it alone in seven hours. We were not prepared. Our crew, showing off their best side. Story 3: The Mimic Learns to Talk For a long time the Mimic was our most boring monster: it only copied how a player looked, and we could spot it every time. Then streamers walked straight up to it, sure it was their buddy. Okay, the Mimic works. Time to make it worse. Now each Mimic picks any player in the lobby, copies their skin and borrows short shouts from their voice chat. Two Mimics on the map? Two pirates in the crew have evil twins. Today it’s our favorite monster (not counting the muscle-mice, they’re number one). When the lights go out, hide. Then hide better. Story 4: Our Favorite Bug, and Other Things Players Found that we Never Made Every streamer we’ve played with does the same two things on their first spawn: slaps a butt, then climbs into the cauldron and flies off the map, thanks to a bug they all find within seconds. Maybe we were all witches in a past life. The cauldron still flies, and we’re keeping it. Then a group on YouTube snuck up behind our monster who only moves when nobody’s looking (we c",
       "title": "Millions of Butt Slaps: Last Pirates Sails into XBOX Game Preview",
       "url": "https://news.xbox.com/en-us/2026/11/17/millions-of-butt-slaps-last-pirates/"
     },
@@ -223,8 +224,26 @@
       "published_at": "2026-11-17T21:10:49+00:00",
       "reviewed_at": "2026-11-18T23:23:21+00:00",
       "source": "xbox_wire",
+      "summary": "This past weekend, the National Atomic Testing Museum in Las Vegas, Nevada (aka, “Old Vegas”) doubled the size of its “World of Fallout” exhibit, which has been open to the public since November 2025. The exhibit juxtaposes recreated objects from the Fallout universe with the real-life artifacts from the nuclear era that inspired the game’s design. Playfully dark satire of Atomic Age retrofuturism and Cold War paranoia has always been a central pillar of the Fallout franchise, making the Atomic Museum a uniquely fitting place to explore the relationship between the games, and now the Prime Video series, and the real-world history that inspired them. One year after its launch, the exhibit has now doubled its footprint with two new galleries, featuring an interactive Overseer’s Desk, a fan-made, full-size Mister Handy robot, on-camera costumes from Season 2 of Prime Video’s “Fallout,” and more. Below are some tips for what to check out in the newly expanded exhibit, and some of our favorite easter eggs tying together the Fallout universe with real-world history. Always Be Scavenging Just like playing a Fallout game, the best way to experience the exhibit is to take your time and pay attention to the little things. Even before reaching the World of Fallout galleries, you can take part in a Fallout Finds, an interactive scavenger hunt throughout the museum that encourages you to track down Fallout-themed items and scan their QR codes. Once you’re in the World of Fallout, be sure to keep scavenging, hidden historical artifacts and supply caches to be found tucked away in certain drawers and cabinets. The Perks of Being a Hacker Again, just like in the games, there are terminals to hack at the new Overseer’s Desk. Succeed, and you’ll get to read strange and spooky real-life anecdotes from the long history of the Nevada Test Site. Even if you’re a Fallout hacking master and have no trouble cracking the code, be sure to fail deliberately … you’ll want to see the warning that pops up Signed Work The exhibit features replicas of the in-game signs for New Vegas and the Lucky 38 casino, complete with classic Vegas neon. These were created in partnership with the University of Nevada, Las Vegas by students and staff in its Entertainment, Engineering, and Design program, providing what was no doubt a fun and valuable hands-on learning experience. Fact or Fiction One of the exhibit’s main elements juxtaposes real historical objects, like posters and pulp books, with their fictional Fallout equivalents. You might be surprised at how little Fallout exaggerates some parts of ’50s material culture. Hands Off Mister Handy Visitors to the exhibit are greeted by a life-size Mister Handy robot replica, created by fan fabricator, Dragonfoot3D, who also made the Deathclaw and terminal replicas.. Unlike some other parts of the exhibit, this unique museum piece is not to be touched, and his eyes will react threateningly if you get too close, to underline the point. Photo Bombers Pay particular attention to photos around the exhibit for some fun cameos. The Vault features an autographed photo of Edward Teller, father of the hydrogen bomb (memorably played by Benny Safdi",
       "title": "World of Fallout Exhibit at the Las Vegas Atomic Museum Expands – and It’s Full of Easter Eggs for Fans",
       "url": "https://news.xbox.com/en-us/2026/11/17/world-of-fallout-expansion/"
+    },
+    "1786cc2fe0d26101b900": {
+      "analysis_status": "full_text",
+      "candidate_count": 0,
+      "extractor_version": "horizon-inspired-article-v4",
+      "first_seen": "2026-11-19T14:27:53+00:00",
+      "image_type": "official_article_preview",
+      "image_url": "https://www.gematsu.com/wp-content/uploads/2026/11/Fate-Extra-PV_11-19-26.jpg",
+      "kind": "press",
+      "news_category": "gaming",
+      "news_interest": 2,
+      "published_at": "2026-11-19T11:05:35+00:00",
+      "reviewed_at": "2026-11-19T14:27:55+00:00",
+      "source": "gematsu",
+      "summary": "Publisher Aniplex and developers Meteorise and TYPE-MOON have released a new trailer for Fate/EXTRA Record… Source",
+      "title": "Fate/EXTRA Record characters trailer – Dan Faction",
+      "url": "https://www.gematsu.com/2026/11/fate-extra-record-characters-trailer-dan-faction"
     },
     "17fe7690814c2f01f736": {
       "analysis_status": "full_text",
@@ -363,6 +382,7 @@
       "published_at": "2026-11-17T21:00:00+00:00",
       "reviewed_at": "2026-11-18T23:23:21+00:00",
       "source": "xbox_wire",
+      "summary": "In Ice Cream Simulator , you can leave a customer waiting, go away for an hour, and come back to find them still standing there, ready to order. They have nowhere more important to be. They have chosen ice cream. We respect that. Their infinite patience is one of our most deliberate design decisions. We wanted to capture the pleasure of running your own ice cream shop while giving you time to enjoy it. Real life already supplies plenty of deadlines. We didn’t feel the need to put another one on a cone. It Started with a Scoop Our inspiration was simple: we love ice cream. We also hadn’t seen many games explore running an ice cream shop in the way we imagined. We wanted to create something cozy and hands-on, where you could turn your love of dessert into a business of your own. The design challenge was giving that simple idea enough depth to keep you interested, while protecting the relaxed atmosphere that made us want to build it. Hold the Stress We built the shop around a daily rhythm. During the day, you serve ice cream with different toppings and sauces, along with milkshakes. At night, you prepare for the days ahead. That rhythm gives you both sides of the experience: the satisfaction of serving an order and the preparation that makes tomorrow’s orders possible. But serving customers can easily become a game about speed. We wanted you to settle into the routine, so we gave customers unlimited patience. Take your time with an order. Step away if you need to. Your customer will remain impressively committed to dessert. For us, this was a way to put the emphasis on decisions about the business. You have time to think about what you are building, which leads to the question at the heart of the game: what kind of shop do you want to run? Three Customers, Three Priorities We designed three customer groups to give that question a meaningful answer. Elite customers want the best ice cream and don’t care about the price. They are here for quality, and your ingredient budget is about to hear about it. Office customers look for a balance between price and quality. They appreciate good ice cream, but they would also appreciate the numbers making sense. Casual customers care most about affordability. Premium ingredients are not the selling point for them. A reasonably priced ice cream is. Those differences are why we wanted you to choose between cheaper and more premium ingredients. Keeping costs low can support a shop aimed at casual customers. Spending more on quality can support one designed to attract elite customers. We wanted both approaches to have a purpose. Buying the most expensive ingredients should be a decision that fits your business, rather than an automatic answer to every problem. Your Shop, Your Style Once you start thinking about your audience, the walls become surprisingly relevant. Our attractiveness attribute connects the appearance of your shop with the customers it attracts. Renovating the floors, walls, and ceiling becomes part of your business strategy. This means staring at flooring options counts as a business meeting. You’re the owner. You make the rules. With renovation choices ranging up to premium options, you can shape",
       "title": "Ice Cream Simulator: Why We Gave Our Customers Infinite Patience",
       "url": "https://news.xbox.com/en-us/2026/11/17/ice-cream-simulator/"
     },
@@ -396,6 +416,7 @@
       "published_at": "2026-11-13T14:00:16+00:00",
       "reviewed_at": "2026-11-18T23:27:07+00:00",
       "source": "playstation_blog",
+      "summary": "Six years after launch, PlayStation 5 is still getting better. Last month, we introduced Quick Spectral Super Resolution (QSSR), bringing AI-guided upscaling to the console you already own. Since then, there’s been a lot of interest from developers eager to try it out. We’re happy to announce that the next set of games is on the way, with updates rolling out over the coming weeks. Built on the same foundation as PlayStation Spectral Super Resolution (PSSR) on PS5 Pro, QSSR can deliver sharper details, cleaner edges, and more stable images than traditional upscalers. And because it shares its interface with PSSR, it’s a natural fit for games that already support PSSR. Here’s what the developers have to say about it. View and download image Download the image Close Download this image Marvel’s Spider-Man 2 featuring QSSR upscaling Insomniac Games “Having seen great results integrating QSSR in Marvel’s Wolverine, our team decided to bring it to Marvel’s Spider-Man 2 as well, in an update that’s live now! We’re excited for players to swing back into our 2023 title and see QSSR’s exciting image stability and sharpness benefits in both Fidelity and Performance modes.” - Mike Fitzgerald, Head of Technology, Insomniac Games Play Video Control Resonant featuring QSSR upscaling Remedy Entertainment Remedy Entertainment is bringing QSSR to Control Resonant on PS5, with noticeable improvements in image stability and fine detail. “It’s great to see PlayStation bringing the same kind of leap on the PS5 that PSSR brought to PS5 Pro. QSSR gives Control Resonant a much more stable and detailed image, and we’ve worked closely with Sony to have it ready in an update coming in December.” – Erik Jansson, Senior Graphics Programmer, Remedy Entertainment Play Video The Finals and Arc Raiders featuring QSSR upscaling Embark Studios “With the new QSSR coming soon to Arc Raiders and The Finals, we can deliver increased sharpness, better environmental clarity and overall visual improvements to even more PlayStation players. We are very happy to see Sony’s continued investment in PlayStation technology translate into meaningful improvements for all players, bringing more immersive experiences across the PlayStation ecosystem.” – Mikael Linderholm, Technical Art Director, Embark Studios Play Video No Man’s Sky featuring QSSR upscaling Hello Games “No Man’s Sky gives players an infinite procedural universe to explore. When every star in the night sky is a real solar system players can visit, we care a great deal about the quality of every pixel. The team has always been passionate about pushing the boundaries of technology on PlayStation. QSSR (Quick Spectral Super Resolution) allows us to render the universe in sharper, cleaner and more beautiful detail, while delivering the best possible framerate. Look for it in the next few weeks. It’s another step towards making the universe of No Man’s Sky even more immersive to explore.” – Sean Murray, Founder, Hello Games Play Video Hell Let Loose: Vietnam featuring QSSR upscaling Expression Games “We’re delighted to confirm that we are adding QSSR to Hell Let Loose: Vietnam on PlayStation 5 through an upcoming update. Console vis",
       "title": "QSSR arrives in Marvel’s Spider-Man 2, Control Resonant, The Finals, Arc Raiders, No Man’s Sky, and Hell Let Loose: Vietnam",
       "url": "https://blog.playstation.com/2026/11/13/qssr-arrives-in-marvels-spider-man-2-control-resonant-the-finals-arc-raiders-and-hell-let-loose-vietnam/"
     },
@@ -459,6 +480,7 @@
       "published_at": "2026-11-17T14:00:23+00:00",
       "reviewed_at": "2026-11-18T23:27:07+00:00",
       "source": "playstation_blog",
+      "summary": "Before we dive into new information on MLB The Show 27, let’s take a look back. As we reflect on 2026, two things stand out above everything else: the incredible passion and support of the MLB The Show community, and our need to better communicate and react to community feedback going forward. Whether you’ve been playing for decades or joined us for the first time this year, you’ve helped make this another special chapter in our franchise’s history. Community stats from MLB The Show 26 While we’re proud of what our team accomplished this year, we recognize that the heart of MLB The Show has always been its community. Since launch, you’ve hit an astonishing: 1,058,402,460 home runs 55,168,197 triples 1,639,448,296 singles You’ve also drawn 123,300,616 walks and racked up a staggering 2,130,551,161 strikeouts. It seems we have some work to do on our collective plate discipline and pitch recognition! But it’s not all strikeouts. You’ve also recorded 18,666,758 Perfect-Perfect hits and scored an incredible 2,506,757,548 runs. And if those numbers weren’t impressive enough, the community collectively spent the equivalent of 31,541 years playing MLB The Show this year. This year was not without some issues and hopefully over the next few months we’ll show you how we’ve made improvements in a host of areas.Your stories, feedback, creativity, and passion remind us why we do what we do. We don’t take your time, trust, or support for granted, and we’re incredibly fortunate to have a community that cares so deeply about the game. From all of us at San Diego Studio, thank you for another unforgettable year. We’re excited about what lies ahead and look forward to continuing this journey together. Get ready for MLB The Show 27 So, what lies ahead? We’re eager to share the exciting new features and improvements coming to MLB The Show 27, but it’s still a little too early to reveal what’s in store. However, there’s one announcement we can’t wait to make: The Tech Test is officially returning for MLB The Show 27. Tech Tests are invaluable to the development process. They help our team identify bugs, evaluate performance, and gather meaningful feedback from the community before the game officially launches. Now, you might be wondering: If Tech Tests are so important, why haven’t we held one since MLB The Show 23? That’s a fair question. Game development is challenging, and each year brings its own set of difficult decisions and competing priorities. Some of those decisions resulted in us not holding Tech Tests for the past few years. We appreciate your patience, passion, and continued support, and we’re looking forward to having you be part of the process again. We will provide more details on the Tech Test in the new year. Now & Later Packs return, so keep playing MLB The Show 26 There is still more ahead for MLB The Show 26 , and the time you spend playing can give you a head start in MLB The Show 27. Now & Later packs are coming back. Now & Later Packs contain items you can use now in MLB The Show 26, with the added bonus of allowing you to redeem The Show Packs “later” in MLB The Show 27 at no additional cost. Each Now & Later Pack you earn playing Diamond",
       "title": "First details on MLB The Show 27",
       "url": "https://blog.playstation.com/2026/11/17/first-details-on-mlb-the-show-27/"
     },
@@ -495,6 +517,23 @@
       "summary": "Publisher Koei Tecmo and developer Kou Shibusawa have canceled the previously announced Switch version of … Source",
       "title": "Nobunaga’s Ambition: Hishou for Switch canceled",
       "url": "https://www.gematsu.com/2026/11/nobunagas-ambition-hishou-for-switch-canceled"
+    },
+    "3d4b08e8cf861b0abf84": {
+      "analysis_status": "full_text",
+      "candidate_count": 0,
+      "extractor_version": "horizon-inspired-article-v4",
+      "first_seen": "2026-11-19T14:27:54+00:00",
+      "image_type": "official_article_preview",
+      "image_url": "https://images.nintendolife.com/f82601f2ac790/1280x720.jpg",
+      "kind": "press",
+      "news_category": "other",
+      "news_interest": 1,
+      "published_at": "2026-11-19T13:45:00+00:00",
+      "reviewed_at": "2026-11-19T14:27:57+00:00",
+      "source": "nintendo_life",
+      "summary": "Oli-marred. The latest Japanese charts data is in, and The Legend of Zelda: Ocarina of Time has comfortably maintained its lead with another 86,097 sales. Next in line is Metaphor: ReFantazio as its hits the Switch 2, shifting a total of 11,167 units. Pikmin 4 - Nintendo Switch 2 Edition + Dandori Academy also made its debut, selling just 2,854 copies to land at number 9. Now, it's important to note that many owners of the game on Switch 1 will have simply bought the upgrade pack, which won't count toward this total, however the game has also seen its fair share of controversy soon after release. Read the full article on nintendolife.com",
+      "title": "Japanese Charts: Pikmin 4 Makes A Lukewarm Debut On Switch 2 As Zelda Dominates",
+      "url": "https://www.nintendolife.com/news/2026/11/japanese-charts-pikmin-4-makes-a-lukewarm-debut-on-switch-2-as-zelda-dominates"
     },
     "3d7038cabe20b923c9c0": {
       "first_seen": "2026-11-19T00:31:30+00:00",
@@ -538,6 +577,19 @@
       "summary": "Tell us how you really feel. Pikmin 4 - Nintendo Switch 2 Edition + Dandori Academy is out now, bringing 4K visuals to the 2023 title along with the new Dandori Academy mode and some neat little extras like voice commands. We awarded it a score of 7/10 in our review. It's still good – hell, the main Pikmin 4 campaign is possibly the best of the bunch – yet we can't deny our disappointment at the lack of mouse controls and 60fps performance. Read the full article on nintendolife.com",
       "title": "\"Essentially Worthless\" - Disgruntled Fans Are Review Bombing Pikmin 4 On Switch 2",
       "url": "https://www.nintendolife.com/news/2026/11/essentially-worthless-disgruntled-fans-are-review-bombing-pikmin-4-on-switch-2"
+    },
+    "46eb814c241bad9fbb69": {
+      "first_seen": "2026-11-19T14:27:54+00:00",
+      "image_type": "feed_preview",
+      "image_url": "https://images.nintendolife.com/416335a352022/small.jpg",
+      "kind": "press",
+      "news_category": "other",
+      "news_interest": 1,
+      "published_at": "2026-11-19T02:55:00+00:00",
+      "source": "nintendo_life",
+      "summary": "Update: Release date confirmed! : Here on Nintendo Life, we first heard about the laid-back co-op farming sim Coral Island back in 2021, when it successfully hit its Kickstarter goal . Now, after overcoming some roadblocks , it seems it's finally getting a Nintendo release. Read the full article on nintendolife.com",
+      "title": "The Cosy Coastal Farming Sim Coral Island Is Officially On Its Way To Switch 2 This December",
+      "url": "https://www.nintendolife.com/news/2026/11/the-cosy-coastal-farming-sim-coral-island-is-officially-on-its-way-to-switch-2-this-december"
     },
     "4c2c4e2869a402a6486c": {
       "analysis_status": "full_text",
@@ -671,6 +723,53 @@
       "title": "『スーパー マリオパーティ ジャンボリー Nintendo Switch 2 Edition ＋ ジャンボリーTV』が無料アップデート。ソフトが1本あれば、オンラインで、みんなでスゴロクができるように。",
       "url": "https://www.nintendo.com/jp/topics/article/1f0dba7a-c553-4ae7-bb75-a6586db1d824"
     },
+    "5cd7ab0c2d9265ec1e90": {
+      "analysis_status": "full_text",
+      "candidate_count": 0,
+      "extractor_version": "horizon-inspired-article-v4",
+      "first_seen": "2026-11-19T14:27:53+00:00",
+      "image_type": "official_article_preview",
+      "image_url": "https://assets.topics.apps-jp.nintendo.com/image/2026/11/09070013356241/1280/7e6cb51b17f7413ab1f6d1c0132a6a21.jpg",
+      "kind": "official",
+      "news_category": "gaming",
+      "news_interest": 2,
+      "published_at": "2026-11-19T01:13:41+00:00",
+      "reviewed_at": "2026-11-19T14:27:56+00:00",
+      "source": "nintendo_jp",
+      "summary": "",
+      "title": "『カラオケJOYSOUND for Nintendo Switch』のNintendo Switch 2 向け無料アップデートを本日より配信。本体の内蔵マイクで、別売のマイクがなくてもカラオケが楽しめる。",
+      "url": "https://www.nintendo.com/jp/topics/article/9e9fce02-b4d6-4f31-a6ad-efced93a24d7"
+    },
+    "645e3737bb61390c680c": {
+      "analysis_status": "full_text",
+      "candidate_count": 0,
+      "extractor_version": "horizon-inspired-article-v4",
+      "first_seen": "2026-11-19T14:27:52+00:00",
+      "image_type": "official_article_preview",
+      "image_url": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/06/GTA-6-Official_Cover_Art_landscape-c3e36df9ed6c80b13d50.jpg",
+      "kind": "official",
+      "news_category": "other",
+      "news_interest": 1,
+      "published_at": "2026-11-19T14:00:00+00:00",
+      "reviewed_at": "2026-11-19T14:27:56+00:00",
+      "source": "xbox_wire",
+      "summary": "The post Grand Theft Auto VI is Out Now appeared first on XBOX Wire .",
+      "title": "Grand Theft Auto VI is Out Now",
+      "url": "https://news.xbox.com/en-us/2026/11/19/grand-theft-auto-vi-is-out-now/"
+    },
+    "67ce06983a1bd60c496f": {
+      "first_seen": "2026-11-19T14:27:54+00:00",
+      "image_type": "feed_preview",
+      "image_url": "https://images.nintendolife.com/841c3570b4fb6/small.jpg",
+      "kind": "press",
+      "news_category": "other",
+      "news_interest": 0,
+      "published_at": "2026-11-19T00:55:00+00:00",
+      "source": "nintendo_life",
+      "summary": "Pauline when? We understand GTA 6 is a big deal, but Build-A-Bear Workshop has also teased some important news this week. Read the full article on nintendolife.com",
+      "title": "\"We're Going Bananas For Our Newest Furry Friend\" - Donkey Kong Is Coming Soon To Build-A-Bear Workshop",
+      "url": "https://www.nintendolife.com/news/2026/11/were-going-bananas-for-our-newest-furry-friend-donkey-kong-is-coming-soon-to-build-a-bear-workshop"
+    },
     "6a42a035f88402461b9d": {
       "analysis_status": "full_text",
       "candidate_count": 0,
@@ -752,6 +851,23 @@
       "title": "The Game Awards 2026 nominees announced",
       "url": "https://www.gematsu.com/2026/11/the-game-awards-2026-nominees-announced"
     },
+    "702ad589658d6edce853": {
+      "analysis_status": "full_text",
+      "candidate_count": 0,
+      "extractor_version": "horizon-inspired-article-v4",
+      "first_seen": "2026-11-19T14:27:54+00:00",
+      "image_type": "official_article_preview",
+      "image_url": "https://images.nintendolife.com/6184a804374d8/1280x720.jpg",
+      "kind": "press",
+      "news_category": "gaming",
+      "news_interest": 2,
+      "published_at": "2026-11-19T11:45:00+00:00",
+      "reviewed_at": "2026-11-19T14:27:55+00:00",
+      "source": "nintendo_life",
+      "summary": "Wait, there are OTHER games?? We interrupt your Grand Theft Auto 6 playtime to bring you the following announcement: there are more games launching today. Yes, while 19th November 2026 will forever be known as 'GTA 6 Day ', a handful of other games are also braving the launch window and are releasing on Switch today. Read the full article on nintendolife.com",
+      "title": "Round Up: Spare A Thought For These Games Launching On 'GTA 6 Day'",
+      "url": "https://www.nintendolife.com/news/2026/11/round-up-spare-a-thought-for-these-games-launching-on-gta-6-day"
+    },
     "712dcb0f55b570a5f0b0": {
       "first_seen": "2026-11-19T00:31:30+00:00",
       "image_type": "feed_preview",
@@ -798,6 +914,19 @@
       "summary": "For a song. Stage Tour launches on 10th December 2026 , bringing the rhythm-based musical gameplay of classics like Rock Band and Guitar Hero series back on modern consoles, including Switch 2. For those of you looking forward to shredding on a plastic axe, here's a list of all songs in Stage Tour as revealed by developer Red Octane. Read the full article on nintendolife.com",
       "title": "Guide: Stage Tour All Songs List - Full Tracklist, Every Confirmed Artist",
       "url": "https://www.nintendolife.com/guides/stage-tour-all-songs-list-full-tracklist-every-confirmed-artist"
+    },
+    "7547b5a79f1a78d7621c": {
+      "first_seen": "2026-11-19T14:27:53+00:00",
+      "image_type": "feed_preview",
+      "image_url": null,
+      "kind": "official",
+      "news_category": "other",
+      "news_interest": 1,
+      "published_at": "2026-11-19T01:02:08+00:00",
+      "source": "nintendo_jp",
+      "summary": "",
+      "title": "Nintendo Storeでホリデーキャンペーンを開催中。ダウンロードソフトを手渡しでプレゼントできる「ダウンロード版ギフトセット」も。",
+      "url": "https://www.nintendo.com/jp/topics/article/4a65892c-ff07-4760-aae5-36c23f24b7dd"
     },
     "78b20c06b6ec6acbafc1": {
       "analysis_status": "full_text",
@@ -872,6 +1001,23 @@
       "title": "Splatoon Raiders Demo Arrives With 3 Stages",
       "url": "https://www.siliconera.com/splatoon-raiders-demo-arrives-with-3-stages/"
     },
+    "8592be4d72f38c1873e9": {
+      "analysis_status": "full_text",
+      "candidate_count": 0,
+      "extractor_version": "horizon-inspired-article-v4",
+      "first_seen": "2026-11-19T14:27:54+00:00",
+      "image_type": "official_article_preview",
+      "image_url": "https://images.nintendolife.com/671c4123d79f8/1280x720.jpg",
+      "kind": "press",
+      "news_category": "gaming",
+      "news_interest": 2,
+      "published_at": "2026-11-19T01:55:00+00:00",
+      "reviewed_at": "2026-11-19T14:27:55+00:00",
+      "source": "nintendo_life",
+      "summary": "\"This nautical nemesis unleashes a typhoon of tyranny\". Capcom is bringing Mega Man: Dual Override to the Switch 1 & 2 in 2027 and to build some excitement, it's been revealing the Robot Masters you'll be facing in the game. This week it's officially announced the sixth Robot Master, 'Boat Man'. Here's the official description, along with a look ( via Rockman Corner ): Read the full article on nintendolife.com",
+      "title": "Capcom Officially Reveals Sixth Mega Man: Dual Override Robot Master",
+      "url": "https://www.nintendolife.com/news/2026/11/capcom-officially-reveals-sixth-mega-man-dual-override-robot-master"
+    },
     "895e9c464432ffd81e33": {
       "first_seen": "2026-11-19T00:31:30+00:00",
       "image_type": "feed_preview",
@@ -884,6 +1030,19 @@
       "summary": "Publisher Activision and developer Toys for Bob will share more information on Spyro: A Realm … Source",
       "title": "Spyro: A Realm Beyond teased for The Game Awards 2026",
       "url": "https://www.gematsu.com/2026/11/spyro-a-realm-beyond-teased-for-the-game-awards-2026"
+    },
+    "8a98b1195e36acf25022": {
+      "first_seen": "2026-11-19T14:27:53+00:00",
+      "image_type": "feed_preview",
+      "image_url": null,
+      "kind": "press",
+      "news_category": "other",
+      "news_interest": 1,
+      "published_at": "2026-11-19T05:27:06+00:00",
+      "source": "gematsu",
+      "summary": "Game Studio will release horror RPGs Ao Oni: The Horror of Blueberry Onsen Plus and … Source",
+      "title": "Ao Oni: The Horror of Blueberry Onsen Plus and Ao Oni 2 coming to PS5 on December 17",
+      "url": "https://www.gematsu.com/2026/11/ao-oni-the-horror-of-blueberry-onsen-plus-and-ao-oni-2-coming-to-ps5-on-december-17"
     },
     "8f7aba9950c3ce8194df": {
       "_render_category": "other",
@@ -898,8 +1057,22 @@
       "published_at": "2026-11-13T13:01:11+00:00",
       "reviewed_at": "2026-11-18T23:27:07+00:00",
       "source": "playstation_blog",
+      "summary": "We’re excited to announce that Guild Saga: Vanished Worlds is coming to PS5 in May 2027. In this story-driven tactical RPG, your first mission for the Heroes Guild takes an unexpected turn when a mysterious maelstrom leaves you stranded on an unfamiliar island. Beyond its shores lie dangerous creatures, suspicious alchemists, and a bustling town packed with people to meet, side quests to discover, and mysteries to unravel. Today, we’re sharing a new trailer and a closer look at how we’ve approached combat, companions, and exploration. Play Video Create a hero and build your party Create your hero’s appearance and choose their background, talents, and skills. We wanted character building to leave room for creativity and experimentation. The progression system lets you combine skills across disciplines freely, as opposed to a more rigid class system. Skills let you deal damage, heal allies, change the environment, reposition across the battlefield, summon creatures, and alter the turn sequence. With hundreds of items, you can shape both your character’s build and their appearance, choosing gear that suits your playstyle and the look you want. Your companions offer more opportunities to shape the party. Each brings a distinct history and personal quests, while their equipment, abilities, and attributes can be completely customized. Through dialogue and shared experiences, you’ll discover more about the companions you choose to bring along. Friendships and romance can become part of your journey, giving you connections to your party members beyond the battlefield. Make each turn count Guild Saga: Vanished Worlds features tactical turn-based combat with approximately 200 skills across ten disciplines. Express your tactical creativity by exploring how skills across different schools work together and with the environment around you. Surface interactions and weather are an important consideration in combat. Players will need to be mindful of how surfaces interact, how weather affects the battle, and how those conditions might alter their skills. For example, a party member with points invested in Geomancer may summon a mandrake to join the fight. A companion with Hydromancer skills can then make it rain, watering the mandrake and causing it to grow into a more formidable force. A party member with Aeromancer skills may then use lightning to electrify the puddles, paralyzing anyone standing in them. Across three disciplines, you’ve summoned an ally, strengthened it through the weather, and turned the resulting surfaces into a tactical advantage. We want players to discover combinations like this and experiment with how their party’s abilities work together. Preparation matters too. Looting, mining, and gathering herbs provide materials you can craft into weapons, equipment, arrows, potions, and food. Whether you’re replenishing supplies or crafting new gear for a companion, taking time to explore and gather resources can help your party prepare for the next battle. Follow your curiosity When designing exploration, we wanted players to feel that taking their time could lead to something worth finding. The main quest gives your journey direction, but t",
       "title": "Guild Saga: Vanished Worlds brings tactical adventure to PS5 in May 2027",
       "url": "https://blog.playstation.com/2026/11/13/guild-saga-vanished-worlds-brings-tactical-adventure-to-ps5-in-may-2027/"
+    },
+    "915fe36586c4a2a57b02": {
+      "first_seen": "2026-11-19T14:27:53+00:00",
+      "image_type": "feed_preview",
+      "image_url": null,
+      "kind": "press",
+      "news_category": "other",
+      "news_interest": 1,
+      "published_at": "2026-11-19T05:45:44+00:00",
+      "source": "gematsu",
+      "summary": "DIRGA will release dungeon crawler RPG THYSIASTERY for PlayStation 5, Xbox Series, PlayStation 4, Xbox … Source",
+      "title": "THYSIASTERY coming to PS5, Xbox Series, PS4, Xbox One, and Switch on December 3",
+      "url": "https://www.gematsu.com/2026/11/thysiastery-coming-to-ps5-xbox-series-ps4-xbox-one-and-switch-on-december-3"
     },
     "943bac84562d894fc267": {
       "_render_category": "other",
@@ -960,6 +1133,23 @@
       "title": "Hakoniwa Electric launches November 30",
       "url": "https://www.gematsu.com/2026/11/hakoniwa-electric-launches-november-30"
     },
+    "96deed6133eba7738907": {
+      "analysis_status": "full_text",
+      "candidate_count": 0,
+      "extractor_version": "horizon-inspired-article-v4",
+      "first_seen": "2026-11-19T14:27:53+00:00",
+      "image_type": "official_article_preview",
+      "image_url": "https://www.gematsu.com/wp-content/uploads/2026/11/Famitsu-Sales_11-19-26.jpg",
+      "kind": "press",
+      "news_category": "other",
+      "news_interest": 1,
+      "published_at": "2026-11-19T13:11:58+00:00",
+      "reviewed_at": "2026-11-19T14:27:57+00:00",
+      "source": "gematsu",
+      "summary": "Famitsu has published its estimated physical game software data for Japan for the week of … Source",
+      "title": "Famitsu Sales: 11/9/26 – 11/15/26",
+      "url": "https://www.gematsu.com/2026/11/famitsu-sales-11-9-26-11-15-26"
+    },
     "97e4c5dc9cfe2dd84f68": {
       "analysis_status": "full_text",
       "candidate_count": 0,
@@ -990,8 +1180,26 @@
       "published_at": "2026-11-13T17:00:13+00:00",
       "reviewed_at": "2026-11-18T23:27:07+00:00",
       "source": "playstation_blog",
+      "summary": "Last week, we asked you to shine a light in games your love using #PSshare #PSBlog. Here are this week’s highlights: rorottino shared Sam holding his hands out to a ray of light in Death Stranding 2: On The Beach Leumir4 shared a lit flame in Red Dead Redemption 2 JarrinWasHere shared Aloy taking in a sunset in Horizon Forbidden West artenpixels_ shared Arjun underneath the eclipse in Saros DanielMoreira54 shares Amicia and Hugo lit by firelight in A Plague Tale: Innocence raphxander_ shares Jin framed by the sun in Ghost of Tsushima Search #PSshare #PSBlog on Twitter or Instagram to see more entries to this week’s theme, or be inspired by other great games featuring Photo Mode . Want to be featured in the next Share of the Week? THEME: Texture SUBMIT BY: 11:59 PM PT on November 18, 2026 Next week, share interesting textures from the game of your choice using #PSshare #PSBlog for a chance to be featured.",
       "title": "Share of the Week: Lights",
       "url": "https://blog.playstation.com/2026/11/13/share-of-the-week-lights/"
+    },
+    "9c708ab4b9ac842295da": {
+      "analysis_status": "full_text",
+      "candidate_count": 0,
+      "extractor_version": "horizon-inspired-article-v4",
+      "first_seen": "2026-11-19T14:27:54+00:00",
+      "image_type": "official_article_preview",
+      "image_url": "https://images.nintendolife.com/5e2a74e6d1bf7/1280x720.jpg",
+      "kind": "press",
+      "news_category": "other",
+      "news_interest": 1,
+      "published_at": "2026-11-19T06:55:00+00:00",
+      "reviewed_at": "2026-11-19T14:27:58+00:00",
+      "source": "nintendo_life",
+      "summary": "Available in the 1st and 2nd Chapters. Trails in the Sky 1st Chapter has rolled out a new update this week, bumping it up to Version 1.0.8 on the Switch and Switch 2. It comes with several fixes and improvements for both versions of the game. As noted on the official patch notes page , in the graphics and performance settings, there's now to lock the graphics mode at 30fps on the Switch 2. Read the full article on nintendolife.com",
+      "title": "Trails In The Sky Switch 2 Updates Add 30fps Lock Option In Graphics Mode",
+      "url": "https://www.nintendolife.com/news/2026/11/trails-in-the-sky-switch-2-updates-add-30fps-lock-option-in-graphics-mode"
     },
     "9e5008673bf41d792f05": {
       "analysis_status": "full_text",
@@ -1053,6 +1261,7 @@
       "published_at": "2026-11-12T23:00:19+00:00",
       "reviewed_at": "2026-11-18T19:37:54+00:00",
       "source": "playstation_blog",
+      "summary": "What if a sky-spanning Colossus didn’t just loom overhead as a static backdrop, but actively listened and responded to your every gunshot? That’s the core question driving our upcoming fifth season, Dissonant Resonance, free to play and launching globally on November 18. Today, I want to take you behind the scenes to share how we are turning sound and emotion into your greatest weapons – and your biggest threats. New weird meets a symphony of dread Once Human thrives on the New Weird design philosophy – taking the familiar and twisting it into a nightmare. For Season 5, we wanted to apply this philosophy not just to the visuals, but to the audio itself. As we realized players always take background music for granted, we decided to weaponize it. Inspired by the cathedral pipe organ, a human symbol of sanctity and solemnity, and through the lens of the New Weird, we distorted this familiar object into a cosmic, biomechanical monstrosity: What if the music wasn’t just playing in your headset, but was the literal breathing and judgment of a cosmic monstrosity watching your every move? This idea birthed the Sky Living-Machine Colossus. By merging the sacred with the grotesque, this massive pipe-organ titan transforms the very rhythm of the world into an active, weaponized mechanic. Emotion zones & rhythmic gunplay To ground this massive concept in actual gameplay, we’ve warped the open world with four distinct Emotion Zones: Joy, Anger, Sorrow, and Fear. In these erratic regions, your arsenal becomes an instrument. Defeating enemies scatters musical notes across the battlefield. By shooting these notes, you not only trigger pitch-tuned audio to improvise your own battle rhythms, but also collect them to purify dissonant, corrupted scores. Once these notes are rearranged into harmonious melodies, the scores grant your squad powerful rewards. And as you perform these deadly battle rhythms, the Sky Colossus above will react dynamically, shifting its visual expressions in real-time. Once the Sky Colossus descends and lingers long enough, the world itself splits open—a rift portal emerges, daring your squad to step through and face the music directly. Conducting the Colossus & a new companion Stepping through that portal initiates a high-stakes, four-player co-op Colossus Raid. But this is no traditional boss fight. Taking center stage, the titan becomes a maestro of destruction, dynamically shifting the battlefield’s combat score. As the boss and the arena pulse to a new rhythm, your squad must adapt on the fly. You need to sprint to silence glowing resonating pipes in a ruined cathedral, and disrupt the melody before the deadly track concludes. You aren’t just surviving a boss fight – you are conducting it. To help you survive this apocalyptic symphony, we are also introducing the brand-new Deviant, Silent Statue. Appearing initially as a shattered, gray monument, it silently absorbs the elemental chaos of your firefights. For those who can unlock its true potential, the ruins will mend and spread brilliant golden wings—bestowing a massive elemental blessing across the squad. Gear up, tune your weapons, and get ready to conduct the apocalypse when On",
       "title": "Once Human: Season 5 gameplay showcases co-op Colossus boss battle, live November 18",
       "url": "https://blog.playstation.com/2026/11/12/once-human-season-5-gameplay-showcases-co-op-colossus-boss-battle-live-november-18/"
     },
@@ -1082,6 +1291,7 @@
       "published_at": "2026-11-16T23:57:43+00:00",
       "reviewed_at": "2026-11-18T23:27:07+00:00",
       "source": "xbox_wire",
+      "summary": "The best time to grab a gift for gamers is launching on November 19 at 9 PM PST. During our Black Friday sale, save up to 80% on select XBOX and PC games, and check out discounts on select XBOX accessories. Save on a custom controller and get a free engraving with XBOX Design Lab. Whether you’re checking off your list or starting a new adventure, now is the time to play more and spend less. Don’t miss it. Please Note: Discounts in this article are US-only – please check your local version of XBOX.com or Microsoft Store for deals in your region. Offers will vary by market and by retailer. Black Friday Games Deals Level up your gift list with more than 2,000 games on sale and save on favorites like Forza Horizon 6, Gears of War: E-Day, Madden NFL 27 and NBA 2K27 . Our Black Friday Deals kick off on November 19 and run through December 2. Come back and check for additional offers starting on November 23. Explore discounts on recently released games Save 30% on Gears of War: E-Day Premium Edition Save 25% on Forza Horizon 6 Premium Edition Save 55% on NBA 2K27 Save 50% on Madden NFL 27 And thousands more… Browse great discounts on fan favorites Save 20% on Crimson Desert Enhanced Save 20% on Halo: Campaign Evolved – Premium Edition Save 80% on Final Fantasy VII Remake Intergrade Save 20% on Grounded 2 Founder’s Edition Save 20% on The Blood Of Dawnwalker And thousands more… Black Friday Accessories Discounts Save on XBOX Accessories this Holiday: Grab holiday savings and gift the joy of gaming with XBOX wireless controllers. Add bold color, sleek style, and immersive gameplay to any setup with XBOX Wireless Controllers. Save now on select XBOX wireless accessories From November 19 through December 2: Bring your vision to life and get up to 15% off your new controller with XBOX Design Lab, plus free engraving. Create your own unique design with endless customization and upgrade options. Create one to match your setup or give as a gift. It’s the best time to personalize your controller and save! Free engraving & up to 15% off on all controller purchases with XBOX Design Lab Samsung offer available through January 17: Purchase an eligible Samsung TV and receive an XBOX Nano Controller , plus two months of XBOX Game Pass Ultimate for new members. The XBOX Nano Controller makes it easy to fit more play into your everyday, with a compact design that’s ready for gaming on your new screen through the XBOX app in Samsung Gaming Hub. Available at participating US retailers while supplies last. Samsung offer terms, eligibility and availability apply. XBOX Game Pass offer: For new members only. Valid payment method required. Subscription continues automatically at regular monthly price unless cancelled. Game Pass Ultimate includes 15 hours of cloud playtime per month. Game library and benefits vary over time, by region, device, and plan. Explore the Samsung Holiday Gaming Bundle with XBOX Browse all deals during the sale Enjoy thousands of games and add-ons on sale during Black Friday and beyond. You can always find great discounts at XBOX so come back often and check what’s currently on sale. And remember to follow our social handles for even more announcem",
       "title": "XBOX Black Friday Sale Starts November 19 with Our Biggest Sale of the Year on Games, Accessories and More!",
       "url": "https://news.xbox.com/en-us/2026/11/16/xbox-black-friday-sale-2026/"
     },
@@ -1098,6 +1308,7 @@
       "published_at": "2026-11-17T15:00:56+00:00",
       "reviewed_at": "2026-11-18T23:27:07+00:00",
       "source": "playstation_blog",
+      "summary": "Hey PlayStation community! We’ve been keeping a secret under wraps at Imprnt Studios and Silver Lining Interactive, and we can finally let the dog out of the bag: Hounded is heading to PS5 in 2027. Get ready to step into the paws of a brave (and incredibly adorable) Border Collie, Duke, as you help him search for his lost master in an epic journey across the conflict-torn world of Anglodia. Hounded has been in development for just over two years, and in that time we’ve been hard at work developing our very own Motion Matching system for our main character. Along with this exciting announcement, we wanted to show you what making our passion project actually looks like behind the scenes. So, we put together our very first dev diary with a full look into how the sausage (or kibble?) gets made. Have you ever wondered how you make a dog communicate through animation? Or what a realistic quadruped animation made from scratch looks like before it lands on your screen? We’re tackling all of that and more, while introducing the little guy who started this entire journey: Duke. Check it out. Play Video A dog story – who is Duke? Duke is a young, clumsy, yet loyal Border Collie. He lives in the world of Anglodia – a flintlock fantasy inspired Britain in the late 18th century. It is a beautiful and mythical land filled with mysterious technology that is coming apart at the seams under tyrannical rule. However, Duke’s interests lie outside of politics and the brewing rebellion against the crown… His master, Artemys Fletcher – a secretive key player in the resistance, has vanished. Duke’s home has been torn apart by the regime and the only thing that matters now is finding his master. Building a border collie from the paws up Here’s the thing about four-legged protagonists: you can’t just reskin a two-legged skeleton and call it a day. In our earliest test builds, Duke moved like a clunky wooden table with paws. It felt terrible—Border Collies have this iconic, low-slung energy that looks like they are about to run at all times. To bring this into reality in Unreal Engine, we decided to animate all of Duke’s movement by hand, using a handcrafted Motion Matching system. Eventually, we were able to set it up so that it pulls from a library of animations based on real-world references, selects the most appropriate animation for the movement, and smooths out the whole process (for the dev team and for the players). What does the dog say? Giving Duke a good expressive range has easily been one of the biggest creative mountains our narrative and animation teams had to climb. While humans rely on words, smirks, and raised eyebrows, Duke has muzzle twitches, ear pivots, and whiskers. We spent a while studying canine expressions and famous animated dogs (shout out to Dug) to make sure Duke could hold his own in cinematic story moments. Every movement, every sad face, and every happy snout you will see in the game is handcrafted by our incredible animation team. More than just a good boy – Magic of The Tide As adorable as he looks, Duke is far from an ordinary dog. Beneath the soil of Anglodia hums an ancient, strange magic known as The Tide, and Duke is one of its ",
       "title": "Introducing Hounded: Crafting the dog adventure coming to PS5 in 2027",
       "url": "https://blog.playstation.com/2026/11/17/introducing-hounded-crafting-the-dog-adventure-coming-to-ps5-in-2027/"
     },
@@ -1195,8 +1406,26 @@
       "published_at": "2026-11-10T18:00:31+00:00",
       "reviewed_at": "2026-11-18T23:30:56+00:00",
       "source": "playstation_blog",
+      "summary": "The time has come to expand on the experience for The Outer Worlds 2 with the first of a two-part story expansion, Side Effects Guaranteed, arriving on December 2. After a distress signal from a derelict ship is picked up, you and your crew quickly get embroiled into the story of an abandoned settlement, a power struggle for the future of the Sub Rosa criminal organization, and the fate of a team who has been subjected to something that will cause them all to die from explosive cell death. Really, it’s more a liquefaction than explosion, but it means death nonetheless. Play Video A brand new story filled with moral quandaries and consequences big and small isn’t the only thing you’ll experience in the first DLC. An Earth Directorate Commander should always be sure to have a weapon at their side, and there are five new weapons to add to the arsenal. Such as the Immobilizer. Think of it like a gun that makes gravity forget to exist around its target, allowing them to float in the air, so you can switch to another weapon and pick them off as you like. Great for combining with grenades for anti-gravity explosions or the Tactical Time Dilation device for slowing down time and getting some critical shots in. There is also the 1/6 Resolver that allows every sixth bullet that is fired from it to pack an extra special punch. For those who built their characters just right, they won’t have to empty the gun every time to get that critical hit, either. Other weapons include a weapon that does additional damage to creatures, a special Tossball Stick, and a new plasma weapon for some energy fun. Yet it isn’t all about the weapons. Side Effects Guaranteed will also bring with it a level cap increase up to 36, new perks, new flaws, and a new Sub Rosa radio station with 20 new songs. There is also the all-new region of Elysium Valley to explore with unique quests and new facilities to make your way through. That’s a lot of new! While the events of the DLC do trigger right before the point of no return in the main game, there is also a way to jump easily into the action. From the main menu if you start a new game, you will see an option to start Side Effects Guaranteed directly. This will load a pre-made character at level 27 that you can assign skill points and perks to so you can experience the DLC however you’d like and get started right away. Not happy with the character you made (or the one you already have)? Coming to everyone at the same time as the release of Side Effects Guaranteed is a new update that will allow players to respec their character at any time. And for those who want more skills to play around with, a new addition to the custom game options allows you to adjust how many skill points you get per level. Find the balance that is right for you. Or become an Earth Director demi-god. Your worlds, your way. But remember, however you decide to deal with Sub Rosa or the subjects of Elysium Valley will have consequences. Side effects, some might say, that will lead directly into the next installment of The Outer Worlds 2 two-part story expansion when it releases in the spring of 2027. Until then, may skill catch you where fortune fails. Side Effe",
       "title": "The Outer Worlds 2’s first DLC arrives December 2",
       "url": "https://blog.playstation.com/2026/11/10/the-outer-worlds-2s-first-dlc-arrives-december-2/"
+    },
+    "be7cf07d21ca646a567a": {
+      "analysis_status": "full_text",
+      "candidate_count": 0,
+      "extractor_version": "horizon-inspired-article-v4",
+      "first_seen": "2026-11-19T14:27:53+00:00",
+      "image_type": "official_article_preview",
+      "image_url": "https://www.gematsu.com/wp-content/uploads/2026/11/Expelled-Paradise-Game_11-18-26.jpg",
+      "kind": "press",
+      "news_category": "gaming",
+      "news_interest": 2,
+      "published_at": "2026-11-19T03:06:40+00:00",
+      "reviewed_at": "2026-11-19T14:27:55+00:00",
+      "source": "gematsu",
+      "summary": "Publisher Toei Animation and developer Studio51 have released the first 40 minutes of gameplay from … Source",
+      "title": "Expelled from Paradise: The Stellar Angel – first 40 minutes of gameplay",
+      "url": "https://www.gematsu.com/2026/11/expelled-from-paradise-the-stellar-angel-first-40-minutes-of-gameplay"
     },
     "bf5263c764e2cd2e5bff": {
       "analysis_status": "full_text",
@@ -1245,8 +1474,26 @@
       "published_at": "2026-11-17T17:00:00+00:00",
       "reviewed_at": "2026-11-18T23:23:21+00:00",
       "source": "xbox_wire",
+      "summary": "Gather around, gamers! We’ve got more games coming your way, and there’s a little something for everyone. In the mood for a little magic? Terrifying trials? High-stakes sniper missions? We’ve got it all. So, let’s get right into the games! Available Today Paw Patrol: Dino World (Cloud, Console, and PC) Game Pass Ultimate, Game Pass Premium, PC Game Pass Embark on a dino-sized action adventure in Paw Patrol Dino World ! Explore Dino Island, rescue dinosaurs, overcome obstacles using the Pups’ unique skills and put a stop to Mayor Humdinger’s chaos. Take on the adventure solo or team up with a friend in two-player co-op. Coming Soon Call of the Elder Gods (Cloud, XBOX Series X|S, Handheld, and PC) – November 18 Now with Game Pass Premium; joining Game Pass Ultimate and PC Game Pass Journey to the far corners of the Earth and unearth ancient horrors in this Lovecraftian narrative puzzle adventure and sequel to 2020’s critically acclaimed Call of the Sea . High on Life 2 (Cloud, XBOX Series X|S, Handheld, and PC) – November 18 Now with Game Pass Premium; joining Game Pass Ultimate and PC Game Pass An intergalactic conspiracy threatens the fate of humanity! Team up with a wide cast of talking alien guns as you shoot, stab, and skate your way through exotic locales across the galaxy to take down the bad guys and save your favorite species (humans)! Roadside Research (Game Preview) (Cloud, XBOX Series X|S, Handheld, and PC) – November 18 Now with Game Pass Premium; joining Game Pass Ultimate and PC Game Pass Aliens have landed on Earth… to run a gas station. Play solo or up to 4 players doing human tasks to blend in. Scan, steal, and test various methods on customers while they stop by the gas station. Gather all data you can from humans without raising the suspicion meter too high, risk a visit from government officials. Black Jacket (Cloud, XBOX Series X|S, Handheld, and PC) – November 19 Now with Game Pass Premium; joining Game Pass Ultimate and PC Game Pass 21 or eternity? Black Jacket drops you into a purgatorial card game where restless souls wager their coins, and the ferryman waits for his cut. From Mi’pu’mi Games and Skystone Games ( Tiny Bookshop ) — a painterly, pitch-black spin on blackjack awaits. Cheating fully encouraged. Motorslice (Cloud, XBOX Series X|S, Handheld, and PC) – November 24 Now with Game Pass Premium; joining Game Pass Ultimate and PC Game Pass Play as the skilled (but seemingly ever-sleepy) slicer, P, and parkour through the ruins of a brutalist megastructure, climb massive bosses, and hunt down every piece of living construction equipment in this slice of life action-adventure with immaculate vibes. Sniper Ghost Warrior Contracts 2 (Cloud, Console, Handheld, and PC) – November 24 Game Pass Ultimate, Game Pass Premium, PC Game Pass Sniper Ghost Warrior Contracts 2 is a modern warfare shooter set in the Middle East. Play as Raven, contract sniper assassin, as you take out a series of targets across a dramatic single-player campaign. With extreme-range shots exceeding 1000m, gear up for the most challenging entry to the series yet. Arkheron (Game Preview) (Cloud, XBOX Series X|S, and PC) – November 27 Game Pass Ultimate,",
       "title": "Coming to XBOX Game Pass: Hela: of Mice & Magic, The Outlast Trials, Sniper Ghost Warrior Contracts 2, and More",
       "url": "https://news.xbox.com/en-us/2026/11/17/xbox-game-pass-november-2026-wave-2/"
+    },
+    "c8b9eea160e6f789495e": {
+      "analysis_status": "full_text",
+      "candidate_count": 0,
+      "extractor_version": "horizon-inspired-article-v4",
+      "first_seen": "2026-11-19T14:27:54+00:00",
+      "image_type": "official_article_preview",
+      "image_url": "https://images.nintendolife.com/311f8ca8d5477/1280x720.jpg",
+      "kind": "press",
+      "news_category": "other",
+      "news_interest": 1,
+      "published_at": "2026-11-19T10:00:00+00:00",
+      "reviewed_at": "2026-11-19T14:27:57+00:00",
+      "source": "nintendo_life",
+      "summary": "Our guide to the best games on Wii. 19th November 2026 marks the 20th anniversary of Wii's Japanese launch, so it's the perfect time to revisit our list of the best games on the system. Keep an eye out for more Revolution-ary features coming later today and over the weekend! Nintendo changed the game with Wii, the little motion-controlled console which broke away from the competition and started a revolution. Its brilliantly compact design (the size of three DVD boxes, remember? ) and approachable controller helped it open up gaming to a whole new audience, young and old alike. Read the full article on nintendolife.com",
+      "title": "Guide: 50 Best Wii Games Of All Time",
+      "url": "https://www.nintendolife.com/guides/50-best-wii-games-of-all-time"
     },
     "d5aa67b9d551b0a5649b": {
       "first_seen": "2026-11-19T00:31:30+00:00",
@@ -1287,6 +1534,7 @@
       "published_at": "2026-11-17T21:30:00+00:00",
       "reviewed_at": "2026-11-18T19:37:51+00:00",
       "source": "xbox_wire",
+      "summary": "The post Carenado Releases a Microsoft Flight Simulator Marketplace Exclusive: The DO228-200 appeared first on XBOX Wire .",
       "title": "Carenado Releases a Microsoft Flight Simulator Marketplace Exclusive: The DO228-200",
       "url": "https://news.xbox.com/en-us/2026/11/17/carenado-releases-a-microsoft-flight-simulator-marketplace-exclusive-the-do228-200/"
     },
@@ -1303,6 +1551,7 @@
       "published_at": "2026-11-10T16:30:03+00:00",
       "reviewed_at": "2026-11-18T23:30:56+00:00",
       "source": "playstation_blog",
+      "summary": "This month, embark on an inspiring mission of human connection in Death Stranding 2: On the Beach, assemble a one-of-a-kind crew as you explore the open sea in Like a Dragon: Pirate Yakuza in Hawaii, navigate the cult-controlled ruins, natural caves, and nuclear bunkers of a green and unpleasant British countryside in Atomfall, or explore a vast world map with an abundance of captivating locations in Dragon Quest III HD-2D Remake. All these titles and more are available in November’s PlayStation Plus Game Catalog lineup*. Meanwhile, Soul Reaver 2 and Freedom Wars Remastered land into PlayStation Plus Premium. The full lineup will be available to play from November 17, unless otherwise noted. PlayStation Plus Extra and Premium | Game Catalog View and download image Download the image Close Download this image Death Stranding 2: On the Beach | PS5 Embark on an inspiring mission of human connection beyond the UCA. Join Sam for the next chapter of his journey as he attempts to connect Australia to the Chiral Network. Navigate a living environment through day and night cycles, natural disasters including earthquakes, sandstorms and forest fires, and Timefall – a rain that instantly ages everything it touches. To traverse this dangerous landscape, you’ll need to build new types of infrastructure, master specialised equipment, and confront (or evade) the otherworldly creatures that roam the fractured world. View and download image Download the image Close Download this image Like a Dragon: Pirate Yakuza in Hawaii | PS5, PS4 A new legend begins as you step into the steel toe boots of Goro Majima, a man who has lost his memory and reinvents himself as a pirate on the open sea. Embark on an over-the-top, modern-day pirate adventure with an ex-yakuza, now pirate captain and his crew as they engage in exhilarating combat on land and sea in the hunt for lost memories and a legendary treasure. Like a Dragon: Pirate Yakuza in Hawaii will be available November 24 in the US, the UK and Japan. View and download image Download the image Close Download this image Atomfall | PS5, PS4 A survival-action game inspired by real-life events, Atomfall is set five years after the Windscale nuclear disaster in Northern England. Explore the fictional quarantine zone, scavenge, craft, barter, fight and talk your way through a British countryside setting filled with bizarre characters, mysticism, cults, and rogue government agencies. From Rebellion, the studio behind Sniper Elite and Zombie Army, Atomfall will challenge you to solve the dark mystery of what really happened. View and download image Download the image Close Download this image Dragon Quest III HD-2D Remake | PS5 A stunning reimagining of the beloved RPG masterpiece and narrative beginning to The Erdrick Trilogy. Years ago, the great hero Ortega bid farewell to his wife and child as he set off on a quest to defeat the villainous Archfiend, Baramos. Ortega failed his quest, and Baramos still threatens the world. Now, on their 16th birthday, Ortega’s only child is summoned by the king of Aliahan and entrusted with a mission of the highest import: to take on Ortega’s quest, vanquish Baramos and save the world. Vie",
       "title": "PlayStation Plus Game Catalog for November: Death Stranding 2: On the Beach, Like a Dragon: Pirate Yakuza in Hawaii, Atomfall, Dragon Quest III HD-2D Remake and more",
       "url": "https://blog.playstation.com/2026/11/10/playstation-plus-game-catalog-for-november-death-stranding-2-on-the-beach-like-a-dragon-pirate-yakuza-in-hawaii-atomfall-dragon-quest-iii-hd-2d-remake-and-more/"
     },
@@ -1323,6 +1572,36 @@
       "title": "『ピクミン4 Nintendo Switch 2 Edition + だれでもチャレンジ! ダンドリ検定』は本日発売。小芝風花さんがダンドリ検定に挑む長編映像も公開中。",
       "url": "https://www.nintendo.com/jp/topics/article/b852fe50-71bf-4c1a-a338-5b75951d040d"
     },
+    "dd83bf87b56a7b16c286": {
+      "first_seen": "2026-11-19T14:27:53+00:00",
+      "image_type": "feed_preview",
+      "image_url": null,
+      "kind": "press",
+      "news_category": "other",
+      "news_interest": 1,
+      "published_at": "2026-11-19T03:00:09+00:00",
+      "source": "gematsu",
+      "summary": "Mystery adventure game The Detective Is Already Dead will launch for Switch in 2027 in … Source",
+      "title": "The Detective Is Already Dead game launches in 2027 in Japan",
+      "url": "https://www.gematsu.com/2026/11/the-detective-is-already-dead-game-launches-in-2027-in-japan"
+    },
+    "ddf2e4206583777f375f": {
+      "analysis_status": "full_text",
+      "candidate_count": 1,
+      "extractor_version": "horizon-inspired-article-v4",
+      "first_seen": "2026-11-19T14:27:53+00:00",
+      "image_type": "official_article_preview",
+      "image_url": "https://www.siliconera.com/wp-content/uploads/2026/11/screen-shot-2026-11-03-at-122023-pm.png",
+      "kind": "press",
+      "news_category": "gaming",
+      "news_interest": 2,
+      "published_at": "2026-11-19T14:00:00+00:00",
+      "reviewed_at": "2026-11-19T14:27:54+00:00",
+      "source": "siliconera",
+      "summary": "There are dozens of Sanrio characters, but for various reasons we all tend to only see mainstays like Hello Kitty, My Melody, Kuromi, Cinnamoroll, Pompompurin, Badtz Maru, Pochacco, Gudetama, Little Twin Stars, Keroppi, Aggretsuko, Chococat, Tuxedosam, and Hangyodan get time in the spotlight. Games like Hello Kitty Island Adventure helped, given how many show up as island residents and visitors. With Hello Kitty Party Land, a Mario Party style party game with minigames that dig into the archives, we see a lot more variety. However, while it’s nice to see such a large cast, the game itself is geared more towards kids under the age of 10 and leaves older fans out. While I do believe Hello Kitty Party Land is both overly easy and simplistic in general, there’s significant effort put in to making it feel unique and offer more than just games to play. When it begins, you get to create a custom avatar and deck them out in clothes inspired by Sanrio characters and their aesthetics. You start with 1000 gold, enough to pull together a solid outfit, with more rewarded for playing. Once you decide to start a game, there are quite a few options too. Between one and four players can play locally solo, and there is an online option for two to four people. (The connection seemed solid both times I tried.) It is also possible to choose from minigame difficulty levels ranging from Easy to Super Hard, though if everyone playing is at or over the age of 10 I think I’d recommend considering Super Hard to start. Especially since a big part of the overall experience involves working together to win. As for playing games, there are essentially two options to jump into things in the Game Park section of Hello Kitty Party Land . One is to head to Minigame Corner. That’s where you can specifically play the 45 minigames piecemeal outside of the board games included in the collection. The receptionist lets you go through the Blooming Flower Festival, Sparkling Neon Night, and Tropical Twilight board games. These are the short, Mario Party style boards in Hello Kitty Party Land that involve collecting flowers, sparks, or droplets to help characters with events tied to each one. These are quite short and usually last under an hour, with Petit Game Shop Spaces, Petit Game Challenge Spaces, Minigame Spaces, Item Spaces, and Delivery Spaces to land on. The good part of these boards in Hello Kitty Party Land is each one features one of the Sanrio characters we might not know as well as the star. Blooming Flower Festival involves Marron Cream the bunny trying to prepare an event. Sparkling Neon Night’s stars are the three Oni kids Goropikadon who can’t perform without enough electricity. Tropical Twilight tags in WeAreDinosaurs’ Tiran the T-rex gathering water to grow fruit for friends. That, paired with all boards being short, is handy for younger kids with attention spans that might not withstand Mario Party ’s lengthy games or more bloodthirsty minigames. The downside is, there’s not much variety. All the Hello Kitty Party Land board games are rather short and play the same way. There aren’t the same sort of detailed gimmicks as in Mario Party. There are also only the three",
+      "title": "Review: Hello Kitty Party Land Is a Gentle Mario Party Style Game",
+      "url": "https://www.siliconera.com/review-hello-kitty-party-land-is-a-gentle-mario-party-style-game/"
+    },
     "de96b5858e41b3c07d9f": {
       "first_seen": "2026-11-19T00:31:30+00:00",
       "image_type": "feed_preview",
@@ -1335,6 +1614,19 @@
       "summary": "\"The end of physical media was declared many years ago\". Amongst the Switch 2's many Game-Key Card physical releases in its first year, Marvelous USA/XSEED has stood firm as one of the few third-party publishers consistently offering complete-on-card releases. Nintendo's new smaller cart option may entice more studios to follow suit, but XSEED CEO Ken Berry can't see the format going away any time soon. In a new RPG Site interview all about the state of physical media in 2026, Berry admitted that it's actually \"getting harder\" for publishers to bring 'proper' physical releases to Switch 2, as GKCs are \"getting more and more accepted,\" leading to a growing \"pressure to go for the cheaper option\". Read the full article on nintendolife.com",
       "title": "\"Pressure To Go For The Cheaper Option Grows\" - XSEED Reckons Game-Key Cards Are Here To Stay",
       "url": "https://www.nintendolife.com/news/2026/11/pressure-to-go-for-the-cheaper-option-grows-xseed-reckons-game-key-cards-are-here-to-stay"
+    },
+    "e364e2704caca594d78e": {
+      "first_seen": "2026-11-19T14:27:54+00:00",
+      "image_type": "feed_preview",
+      "image_url": "https://images.nintendolife.com/c542639839ff9/small.jpg",
+      "kind": "press",
+      "news_category": "other",
+      "news_interest": 1,
+      "published_at": "2026-11-19T05:45:00+00:00",
+      "source": "nintendo_life",
+      "summary": "Ocarina's remake arrived a week before Tanuki: Pon's Summer. November is a huge month for video games, with not only the release of the Ocarina of Time remake but also the long-awaited (and highly anticipated) arrival of GTA 6 this week. While most games decided to avoid this month, one other title that has been released over the past week is TANUKI: Pon's Summer . If you are wondering why a game starring a BMX-riding tanuki decided to go up against these two juggernauts, it seems the Zelda news caught it by surprise. Read the full article on nintendolife.com",
+      "title": "\"BMXing Tanuki Game\" Was Prepared For GTA 6's Launch, But Wasn't Expecting Zelda",
+      "url": "https://www.nintendolife.com/news/2026/11/bmxing-tanuki-game-was-prepared-for-gta-6s-launch-but-wasnt-expecting-zelda"
     },
     "e45d1c2f8fc9c018b23f": {
       "analysis_status": "full_text",
@@ -1366,6 +1658,7 @@
       "published_at": "2026-11-18T16:00:23+00:00",
       "reviewed_at": "2026-11-18T23:23:20+00:00",
       "source": "playstation_blog",
+      "summary": "Jason and Lucia have always known the deck is stacked against them. But when an easy score goes wrong, they find themselves on the darkest side of the sunniest place in America, in the middle of a criminal conspiracy stretching across the state of Leonida — forced to rely on each other more than ever if they want to make it out alive. Grand Theft Auto VI arrives on PlayStation 5 Thursday, November 19, available at PlayStation Store. When the sun fades and the neon glows, everyone has something to gain — and more to lose The game is set in the state of Leonida, home to the neon-soaked streets of Vice City and beyond in the biggest, most immersive evolution of the series yet. Jason Duval Jason grew up around grifters and crooks. After a stint in the Army trying to shake off his troubled teens, he found himself in the Keys doing what he knows best, working for local drug runners. Meeting Lucia could be the best or worst thing to ever happen to him. Jason knows how he’d like it to turn out but right now, it’s hard to tell. Lucia Caminos Lucia’s father taught her to fight as soon as she could walk, and life has been coming at her swinging ever since. Fighting for her family landed her in the Leonida Penitentiary. Sheer luck got her out but now more than anything, Lucia wants the good life her mom has dreamed of since their days in Liberty City. Instead of half-baked fantasies, Lucia is prepared to take matters into her own hands. The sprawling state of Leonida Leonida is made up of six regions: Vice City, the Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia, and Mount Kalaga. Here’s a closer look at what makes each region unique. Vice City The glamour, hustle, and greed of America captured in a single city. Each neighborhood has something to offer, from the pastel art deco hotels and bright white sands of Ocean Beach, to the bustling panaderías of Little Cuba and the bootleg brands of the Tisha-Wocka flea market, out to the VC Port, the cruise ship capital of the world. We’re a long way from the ’80s, but Vice City is still the sun and fun capital of America Leonida Keys Life in this tropical archipelago isn’t flashy but it’s easy. Get your buzz on and pull up a deck chair but look out — you are right on the doorstep of some of the most beautiful and dangerous waters in all of America. Grassrivers You never know what lies beneath the surface of this primordial expanse. The gators may be the most famous attraction, but there are far deadlier predators and weirder discoveries among the mangroves. Port Gellhorn Cheap motels, shut-down attractions, and empty strip malls won’t bring the tourists back, but there’s a new economy in this once-popular vacation spot. It’s fueled by malt liquor, painkillers, and truck stop energy drinks. Ambrosia In the heart of Leonida, American industry and old school values still reign supreme — whatever the cost. The Allied Crystal sugar refinery provides the jobs, while the local biker gang provides almost everything else. Mount Kalaga A national landmark up against the state’s northern border, Mount Kalaga offers prime hunting, fishing, and off-road trails. In the lush surrounding backwoods, hillbilly mystics and par",
       "title": "Grand Theft Auto VI launches tomorrow, November 19",
       "url": "https://blog.playstation.com/2026/11/18/grand-theft-auto-vi-launches-tomorrow-november-19/"
     },
@@ -1386,6 +1679,23 @@
       "title": "「Nintendo Switch Sports ゲーム運動会 シニアボウリングトーナメント2026」のページを更新しました。 全国から集った16団体の頂点をかけ、「広川町ゲームサポーター」と「けっぱれ！青森県」が決勝戦に臨みます。 これまでの全試合の様子も公開しています。",
       "url": "https://www.nintendo.com/jp/switch/as8sa/senior-bowling-2026/index.html"
     },
+    "e87ef8039e4c6c5c32ed": {
+      "analysis_status": "full_text",
+      "candidate_count": 0,
+      "extractor_version": "horizon-inspired-article-v4",
+      "first_seen": "2026-11-19T14:27:54+00:00",
+      "image_type": "official_article_preview",
+      "image_url": "https://images.nintendolife.com/9405dccb5572d/1280x720.jpg",
+      "kind": "press",
+      "news_category": "collector",
+      "news_interest": 5,
+      "published_at": "2026-11-19T13:00:00+00:00",
+      "reviewed_at": "2026-11-19T14:27:54+00:00",
+      "source": "nintendo_life",
+      "summary": "Ripe for rediscovery. Somehow, someway, it's been two whole decades since the Revolution began and an elderly relative who had never played a video game in their life somehow, someway, thrashed you at Wii Sports bowling. Read the full article on nintendolife.com",
+      "title": "Feature: 20 Wii Exclusives You Should Track Down While You Still Can",
+      "url": "https://www.nintendolife.com/features/20-wii-exclusives-you-should-track-down-while-you-still-can"
+    },
     "e9aaf2a32855b46a3165": {
       "_render_category": "other",
       "_render_rank": 1,
@@ -1399,8 +1709,22 @@
       "published_at": "2026-11-12T13:07:48+00:00",
       "reviewed_at": "2026-11-18T23:27:08+00:00",
       "source": "playstation_blog",
+      "summary": "Hello, PlayStation players. I’m Dongseok Oh, lead director of the high-octane action-RPG Vindictus: Defying Fate . Our team is building a medieval fantasy adventure where heroes must stand against colossal foes in a world inspired by Celtic mythology and, today, we’re officially revealing that Vindictus: Defying Fate is coming to PS5. I’m honored to have this opportunity to introduce the core gameplay and world to the PlayStation community. Play Video Fight beautifully Visceral, engaging combat is key to the Vindictus: Defying Fate experience. So much so, that weapons are the first step when we conceptualize our heroes. We carefully consider a wide range of weapons, from familiar ones players expect to see to more unconventional options that offer unique and exciting combat possibilities, and choose one as the foundation. Our teams behind narrative, combat actions, and appearance are given freedom to explore their own designs and express their creativity before the overall direction is established, crafting a hero with a distinct combat style. Who you choose to play will yield an entirely different experience. You can devote yourself to the one hero who captures your heart, or develop several heroes and choose the right one as the situation demands. Lann: Relies on dodging rather than guarding. Chain dodges to avoid attacks, then close in for a strike immediately after landing a hit. Fiona: Uses her shield to block and counterattack, balancing offense and defense. Deflect an enemy attack with precise timing to continue your own attack without interruption. If you hope to withstand combat in this harsh world, you will need intense focus and precise control. Survival means learning how your enemies move. Depending on your chosen hero’s abilities, you can parry a crushing blow, block a brutal barrage of attacks, or dodge at just the right moment. The key is to create an opening and strike back with a heavy counterattack. Delia: Builds up power to unleash a devastating blow. She can also evade attacks by piercing through an enemy as she strikes. Karok: Absorbs the impact of incoming attacks to stand his ground. Time your response to a powerful enemy attack to enter a contest of strength. You also craft your own weapons, customizing your outfits and appearance to make your hero uniquely yours. Prophecy and the mercenaries “The gates of paradise shall open when one race eradicates the other.” Ruled by this fateful prophecy, the Humans and Fomors of Taranúil have long soaked the land in each other’s blood. You must face your fate as a new recruit of the Kalbram Mercenaries, working under the Rocheste Order. As you set out on your journey, you’ll uncover a shadowy plot hiding beneath old conflicts. As you explore the world of Vindictus, you’ll encounter breathtaking lands still touched by the breath of ancient gods, and thriving centers of human culture that have blossomed even amid war. Every step across this uncharted continent reveals a new landscape, yet the same reality awaits: war against the Fomors. From Fomors hostile to humankind to ferocious beasts, all manner of enemies lie in wait. Colhen: A small farming village on the front line, where ",
       "title": "Vindictus: Defying Fate comes to PS5 next year",
       "url": "https://blog.playstation.com/2026/11/12/vindictus-defying-fate-comes-to-ps5-next-year/"
+    },
+    "e9f484e9c63d6d78a0a2": {
+      "first_seen": "2026-11-19T14:27:53+00:00",
+      "image_type": "feed_preview",
+      "image_url": null,
+      "kind": "press",
+      "news_category": "other",
+      "news_interest": 1,
+      "published_at": "2026-11-19T05:15:51+00:00",
+      "source": "gematsu",
+      "summary": "Girls’ Frontline: The Lunasia Covenant, the May-announced player-versus-environment game that blends third-person shooter action with … Source",
+      "title": "Girls’ Frontline: The Lunasia Covenant launches in 2027",
+      "url": "https://www.gematsu.com/2026/11/girls-frontline-the-lunasia-covenant-launches-in-2027"
     },
     "ea69f60d6ea5b117fae9": {
       "_render_category": "gaming",
@@ -1432,6 +1756,7 @@
       "published_at": "2026-11-17T19:30:00+00:00",
       "reviewed_at": "2026-11-18T23:23:21+00:00",
       "source": "xbox_wire",
+      "summary": "For 25 years, XBOX has remained focused on building games players love, and our anniversary year has been a particularly strong example. From Gears of War: E-Day , Forza Horizon 6 , and Call of Duty: Modern Warfare 4 , to hugely anticipated games like Fable , players have more great games to play on XBOX than ever. Today, The Game Awards has announced this year’s list of nominees and titles across XBOX’s creative teams have earned eight nominations across multiple categories. Outside of gaming, Prime Video’s ‘Fallout’ has been nominated for Best Adaptation. Thank you to all of the teams that brought these great games to players. Voting is now open on The Game Awards’ official site – tune into The Game Awards on December 10 to see if your favorite games from 2026 take home an award. Our publishing partners also received nominations across a range of categories, with many games available to play today with Game Pass. 007 First Light and CONTROL Resonant are both nominated for Game of the Year and playable across devices with XBOX Play Anywhere. Game Pass subscribers can play nominees like Gears of War: E-Day , Forza Horizon 6 , No Man’s Sky , and more. See below for the full list of nominees playable on XBOX, including Call of Duty: Modern Warfare 4 , and remember you can vote for your favorites right now over at TheGameAwards.com . In the meantime, many of these titles will be available at their lowest prices yet with XBOX’s Black Friday sale, starting November 19 – find out more here . Congratulations to this year’s incredible nominees! 007 First Light IO Interactive A/S ☆ ☆ ☆ ☆ ☆ 1465 ★ ★ ★ ★ ★ Get it now Nominated for: Best Action/Adventure Best Narrative Best Performance (Patrick Gibson) Game of the Year 2XKO Riot Games ☆ ☆ ☆ ☆ ☆ 735 ★ ★ ★ ★ ★ Get it now Nominated for: Best Fighting Game ACE COMBAT 8: WINGS OF THEVE Bandai Namco Entertainment America Inc. ☆ ☆ ☆ ☆ ☆ 484 ★ ★ ★ ★ ★ $69.99 Get it now Nominated for: Best Action Game Best Audio Design Best Score & Music ARC Raiders Embark Studios ☆ ☆ ☆ ☆ ☆ 12401 ★ ★ ★ ★ ★ $39.99 Get it now Nominated for: Best Ongoing Game Assassin's Creed Black Flag Resynced Ubisoft ☆ ☆ ☆ ☆ ☆ 1953 ★ ★ ★ ★ ★ $59.99 $47.99 Get it now Nominated for: Innovation in Accessibility Avatar Legends: The Fighting Game PM-Studios, Inc. ☆ ☆ ☆ ☆ ☆ 67 ★ ★ ★ ★ ★ $29.99 Get it now Nominated for: Best Fighting Game Baldur's Gate 3 Larian Studios ☆ ☆ ☆ ☆ ☆ 8888 ★ ★ ★ ★ ★ $69.99 Get it now Nominated for: Best User Creation “A Dream of Silence Revamped” The Blood of Dawnwalker Bandai Namco Entertainment Europe S.A.S. ☆ ☆ ☆ ☆ ☆ 1272 ★ ★ ★ ★ ★ $69.99 Get it now Nominated for: Best Narrative Best Roleplaying Game Call of Duty®: Modern Warfare® 4 Activision Publishing Inc. ☆ ☆ ☆ ☆ ☆ 114 ★ ★ ★ ★ ★ $69.99 Get it now Nominated for: Best Multiplayer Game Crimson Desert Enhanced Pearl Abyss ☆ ☆ ☆ ☆ ☆ 4424 ★ ★ ★ ★ ★ $69.99 Get it now Nominated for: Best Community Support CONTROL Resonant Remedy Entertainment ☆ ☆ ☆ ☆ ☆ 565 ★ ★ ★ ★ ★ $59.99 Get it now Free Trial Nominated for: Best Action/Adventure Best Art Direction Best Audio Design Best Game Direction Best Narrative Game of the Year Denshattack! Fireshine Games ☆ ☆ ☆ ☆ ☆ 242 ★ ★ ★ ★ ★ $19.99",
       "title": "The Game Awards 2026 Nominees – Play Gears of War: E-Day, Grand Theft Auto VI, Resident Evil Requiem, and More on XBOX",
       "url": "https://news.xbox.com/en-us/2026/11/17/the-game-awards-2026-nominees-on-xbox/"
     },
@@ -1562,6 +1887,7 @@
       "published_at": "2026-11-18T00:00:00+00:00",
       "reviewed_at": "2026-11-18T23:23:20+00:00",
       "source": "xbox_wire",
+      "summary": "November 19, 2026, has long been circled on your calendar. Birthdays, anniversaries, and holidays have come and gone, but this day belongs to you and your XBOX console. We can hardly believe it’s almost here, either. Once midnight strikes, you want to be locked in the action, so to help you prepare, we created a checklist to ensure distractions are put to bed so you can settle in for a season of gaming like nothing you’ve ever experienced before. Make Some Hard (Drive) Choices 2026 has been full of some absolute bangers: Gears of War E-Day, Call of Duty: Modern Warfare 4, Forza Horizon 6, Halo: Campaign Evolved, Minecraft Dungeons II, Diablo 4: Lord of Hatred , Control Resonant , Mixtape , Pragmata , The Blood of Dawnwalker , Star Wars: Galactic Racer , 007 First Light , Ace Combat 8: Wings of Theve … seriously, all these games came out this year . That also means you might have a hard drive that is nearing capacity. And you will be faced with some hard choices to free up approximately 212GB of space on your XBOX Series X|S before November 19. You could always upgrade the capacity of your console to keep all your games at the ready, using the storage expansion slot on the back of the console. Otherwise, you’ll have a hard choice to make which we do not envy. But know that you’re in good company – we had to find a way to make room too. Connect to the Cloud XBOX Cloud Gaming means that you don’t need to own an XBOX Series X|S console to experience the latest games (or use up that hard drive space) – you can stream directly from the cloud to your XBOX One console. Game Pass subscribers receive an allotment of hours per month as part of their plans, but you can also purchase blocks of time . Certain upcoming major releases have been confirmed as cloud-ready on day one , so even if you don’t own a current gen console, your latest obsession isn’t out of reach. Ready Your Console You never want to settle in for a long gaming session only to immediately get hit with an update download. If you haven’t used your XBOX Series X|S or XBOX One in a minute, be sure to power up and connect to the internet beforehand and make sure you’re all set with the latest system updates. You can also install any upcoming releases you may have pre-ordered, while you’re at it. Call in Sick If you’re feeling a gaming flu coming on (and there’s a lot of that going around right now), then take a sick day, rather than risk infecting your coworkers or classmates. Sometimes you just need to listen to your body’s needs, relax, and let the fever run its course. Miami’s own DJ Khaled, aka Dr. XBOX will write you a personalized note to help explain the situation. If this thing is really serious, you may even need the whole week to recover – it’s the responsible thing to do. Hire a Dog Walker We all have responsibilities. Some of them come with four legs and a suspect bladder. Don’t let Rufus ruin your gaming fun. Get ahold of a local dog walker to take them outside so you can enjoy the big day uninterrupted. Or drop them off at doggie daycare for a day (or week) to get them out of your hair. Reconsider Placement of Your XBOX Is your XBOX in an area of the house that is easily acces",
       "title": "How to Get Ready for November 19",
       "url": "https://news.xbox.com/en-us/2026/11/17/how-to-get-ready-for-november-19/"
     },
@@ -1646,6 +1972,7 @@
       "published_at": "2026-11-16T14:00:00+00:00",
       "reviewed_at": "2026-11-18T23:27:07+00:00",
       "source": "xbox_wire",
+      "summary": "Some may know me as DJ Khaled. Some may know me as a hitmaker, a major key provider. But today, I want you to call me Dr. XBOX. Why? Because I’ve been seeing something out there. And the symptoms? They are REAL. I’m talking twitchy thumbs. Controller cramps. Late-night gaming dreams. Uncontrollable excitement every time a new game drops. And don’t even get me started on release-date restlessness. MAJOR. After extensive research (and a whole lot of gaming), I’ve come to one conclusion: there’s a serious case of Vitamin G deficiency around the world. And I’m here to tell you that the cure is simple. Take. The. Day. Off. That’s right. A BIG week in gaming is coming, and I don’t want anybody missing a single moment. We’ve got games to play, worlds to explore, achievements to unlock and victories to celebrate. This is not the week to be distracted by emails, meetings or somebody asking you to do something that isn’t gaming. You have to prioritize YOU. And by YOU, I mean your XBOX. Now, I know what you’re thinking. “Dr. XBOX, how can I possibly get the day off?” Don’t worry. I’ve got the MAJOR KEY. I’m officially prescribing a day dedicated to doing what you love: staying home, picking up that controller and playing XBOX. No distractions. No interruptions. Just you, your favorite games and the freedom to experience the biggest week in gaming the way it was meant to be experienced. And because I believe in taking care of my people, I’ve made it official. Head over to DrXBOX.com to get your very own personalized doctor’s note, from the sunny shores of tropical Miami. That’s right. Your very own prescription for more gaming. Put it on your fridge. Show your boss. Send it to your group chat. Let the people know that Dr. XBOX has spoken. Now, before anybody asks, is this doctor’s note* medically certified? Let’s be clear. My degree from XBOX University may be unofficial, my medical credentials may be questionable, but one thing is undeniable: gaming is MAJOR. The diagnosis is in. The prescription is written. The only thing left to do is take the day off. ANOTHER ONE! *Doctor’s note is not real. XBOX is not responsible if your employer doesn’t have a sense of humor. Please game responsibly. The post A Message From Dr. XBOX: It’s Time to Take the Day Off and Play XBOX appeared first on XBOX Wire .",
       "title": "A Message From Dr. XBOX: It’s Time to Take the Day Off and Play XBOX",
       "url": "https://news.xbox.com/en-us/2026/11/16/dr-xbox-its-time-to-take-the-day-off-and-play-xbox/"
     },
@@ -2107,7 +2434,7 @@
       "score": {
         "confidence": 49,
         "decision": "WATCH",
-        "lower": 17.0,
+        "lower": 12.5,
         "missing_factors": [
           "demand",
           "gap",
@@ -2116,7 +2443,7 @@
         ],
         "notes": "Search sample is unverified; visual competition, buying demand and rights review required.",
         "score_version": "MVP-2",
-        "upper": 82.0,
+        "upper": 77.5,
         "window": "WATCH"
       },
       "score_history": [
@@ -2147,6 +2474,21 @@
           "notes": "Provisional candidate; image/rights review and demand evidence required.",
           "score_version": "MVP-1",
           "upper": 79.0,
+          "window": "WATCH"
+        },
+        {
+          "confidence": 49,
+          "decision": "WATCH",
+          "lower": 17.0,
+          "missing_factors": [
+            "demand",
+            "gap",
+            "scarcity",
+            "timing"
+          ],
+          "notes": "Search sample is unverified; visual competition, buying demand and rights review required.",
+          "score_version": "MVP-2",
+          "upper": 82.0,
           "window": "WATCH"
         }
       ]
@@ -3249,7 +3591,7 @@
       "score": {
         "confidence": 49,
         "decision": "WATCH",
-        "lower": 17.0,
+        "lower": 12.5,
         "missing_factors": [
           "demand",
           "gap",
@@ -3258,7 +3600,7 @@
         ],
         "notes": "Search sample is unverified; visual competition, buying demand and rights review required.",
         "score_version": "MVP-2",
-        "upper": 82.0,
+        "upper": 77.5,
         "window": "WATCH"
       },
       "score_history": [
@@ -3290,8 +3632,81 @@
           "score_version": "MVP-1",
           "upper": 79.0,
           "window": "WATCH"
+        },
+        {
+          "confidence": 49,
+          "decision": "WATCH",
+          "lower": 17.0,
+          "missing_factors": [
+            "demand",
+            "gap",
+            "scarcity",
+            "timing"
+          ],
+          "notes": "Search sample is unverified; visual competition, buying demand and rights review required.",
+          "score_version": "MVP-2",
+          "upper": 82.0,
+          "window": "WATCH"
         }
       ]
+    },
+    "a71d81ec42e1c68d48a8": {
+      "aliases": [],
+      "competition": {
+        "checked_at": "2026-11-19T14:27:58+00:00",
+        "contextual_name_candidates": 0,
+        "coverage": "search_sample_only",
+        "listings": [],
+        "name_only_candidates": 0,
+        "query": "All Sanrio mascots",
+        "sample_limit": 20,
+        "sample_size": 1,
+        "schema_version": 2,
+        "search_total": 1,
+        "similar_name_candidates": 0,
+        "status": "sampled",
+        "verified_exact_count": null
+      },
+      "demand_evidence": [],
+      "discovery_date": "2026-11-19T14:27:54+00:00",
+      "discovery_note": "Discovered during article analysis",
+      "document_first_seen": "2026-11-19T14:27:53+00:00",
+      "evidence": [
+        {
+          "excerpt": " toward folks just getting started with games, rather than more experienced players. All Sanrio mascots have friendship levels, and reaching three stars with them gets you clothing or s",
+          "extraction_confidence": 0.6,
+          "extraction_method": "named_object_in_source",
+          "type": "press_article",
+          "url": "https://www.siliconera.com/review-hello-kitty-party-land-is-a-gentle-mario-party-style-game/"
+        }
+      ],
+      "first_signal_date": "2026-11-19T14:00:00+00:00",
+      "id": "a71d81ec42e1c68d48a8",
+      "image_type": "official_article_preview",
+      "image_url": "https://www.siliconera.com/wp-content/uploads/2026/11/screen-shot-2026-11-03-at-122023-pm.png",
+      "kind": "mascot",
+      "language": "en",
+      "last_changed": "2026-11-19T14:27:54+00:00",
+      "name": "All Sanrio mascots",
+      "origin": "Review: Hello Kitty Party Land Is a Gentle Mario Party Style Game",
+      "region": "japan_global",
+      "rights_status": "unverified",
+      "score": {
+        "confidence": 49,
+        "decision": "WATCH",
+        "lower": 24.5,
+        "missing_factors": [
+          "demand",
+          "gap",
+          "scarcity",
+          "timing"
+        ],
+        "notes": "Search sample is unverified; visual competition, buying demand and rights review required.",
+        "score_version": "MVP-2",
+        "upper": 89.5,
+        "window": "WATCH"
+      },
+      "source_kind": "press"
     },
     "acb58cffa60a68b7cd6c": {
       "competition": {
@@ -3784,29 +4199,29 @@
   "source_health": {
     "community_placeholder": {
       "kind": "community",
-      "last_checked": "2026-11-19T00:46:19+00:00",
+      "last_checked": "2026-11-19T14:27:54+00:00",
       "source_name": "Authorized community feed (configure before enabling)",
       "status": "disabled"
     },
     "gematsu": {
       "error": null,
-      "etag": "W/\"410d647873a2839bdb0bd82e429a9f38\"",
+      "etag": "W/\"81154fb919f71d7994f7f5ee3944b543\"",
       "items_seen": 20,
       "kind": "press",
-      "last_checked": "2026-11-19T00:46:18+00:00",
-      "last_modified": "Wed, 18 Nov 2026 23:05:52 GMT",
-      "last_success": "2026-11-19T00:46:18+00:00",
+      "last_checked": "2026-11-19T14:27:53+00:00",
+      "last_modified": "Thu, 19 Nov 2026 13:51:58 GMT",
+      "last_success": "2026-11-19T14:27:53+00:00",
       "source_name": "Gematsu - Japanese Gaming Announcements",
-      "status": "ok_not_modified"
+      "status": "ok"
     },
     "nintendo_jp": {
       "error": null,
       "etag": null,
       "items_seen": 25,
       "kind": "official",
-      "last_checked": "2026-11-19T00:46:18+00:00",
-      "last_modified": "Thu, 19 Nov 2026 00:45:08 GMT",
-      "last_success": "2026-11-19T00:46:18+00:00",
+      "last_checked": "2026-11-19T14:27:52+00:00",
+      "last_modified": "Thu, 19 Nov 2026 14:15:08 GMT",
+      "last_success": "2026-11-19T14:27:53+00:00",
       "source_name": "Nintendo Japan",
       "status": "ok"
     },
@@ -3815,44 +4230,44 @@
       "etag": null,
       "items_seen": 25,
       "kind": "press",
-      "last_checked": "2026-11-19T00:46:18+00:00",
+      "last_checked": "2026-11-19T14:27:53+00:00",
       "last_modified": null,
-      "last_success": "2026-11-19T00:46:19+00:00",
+      "last_success": "2026-11-19T14:27:54+00:00",
       "source_name": "Nintendo Life - Games and Merchandise",
       "status": "ok"
     },
     "playstation_blog": {
       "error": null,
-      "etag": "\"6060d952211bfc153b77d4b32c7bebf9\"",
+      "etag": "\"0ffc578b8e14957492847ee807c22cca\"",
       "items_seen": 10,
       "kind": "official",
-      "last_checked": "2026-11-19T00:46:17+00:00",
-      "last_modified": "Wed, 18 Nov 2026 17:35:01 GMT",
-      "last_success": "2026-11-19T00:46:18+00:00",
+      "last_checked": "2026-11-19T14:27:51+00:00",
+      "last_modified": "Thu, 19 Nov 2026 09:23:24 GMT",
+      "last_success": "2026-11-19T14:27:52+00:00",
       "source_name": "PlayStation Blog",
-      "status": "ok_not_modified"
+      "status": "ok"
     },
     "siliconera": {
       "error": null,
-      "etag": "W/\"fa56c5c9a05038086040757f04713396\"",
+      "etag": "W/\"49b5028b070b273f3e5454a4f9a599ae\"",
       "items_seen": 15,
       "kind": "press",
-      "last_checked": "2026-11-19T00:46:18+00:00",
-      "last_modified": "Wed, 18 Nov 2026 20:19:28 GMT",
-      "last_success": "2026-11-19T00:46:18+00:00",
+      "last_checked": "2026-11-19T14:27:53+00:00",
+      "last_modified": "Wed, 18 Nov 2026 21:29:57 GMT",
+      "last_success": "2026-11-19T14:27:53+00:00",
       "source_name": "Siliconera - Japanese Gaming and Merchandise",
-      "status": "ok_not_modified"
+      "status": "ok"
     },
     "xbox_wire": {
       "error": null,
-      "etag": "W/\"eb5e212df74d30663b09bd5fe862adb0\"",
+      "etag": "W/\"9e3a47467d47404abe2c36668c7d24a7\"",
       "items_seen": 10,
       "kind": "official",
-      "last_checked": "2026-11-19T00:46:18+00:00",
-      "last_modified": "Wed, 18 Nov 2026 00:07:58 GMT",
-      "last_success": "2026-11-19T00:46:18+00:00",
+      "last_checked": "2026-11-19T14:27:52+00:00",
+      "last_modified": "Thu, 19 Nov 2026 14:00:00 GMT",
+      "last_success": "2026-11-19T14:27:52+00:00",
       "source_name": "Xbox Wire",
-      "status": "ok_not_modified"
+      "status": "ok"
     }
   }
 }
