@@ -5,7 +5,7 @@ import smtplib
 from email.message import EmailMessage
 import httpx
 
-def send_report(html: str, date: str) -> str:
+def send_report(html: str, date: str, manual: bool = False) -> str:
     channel = os.getenv("HUNTER_NOTIFY_CHANNEL", "email").strip().lower()
     if channel == "email":
         sender = os.environ["GMAIL_USER"]
@@ -14,8 +14,8 @@ def send_report(html: str, date: str) -> str:
         msg = EmailMessage()
         msg["From"] = sender
         msg["To"] = recipient
-        msg["Subject"] = f"TaL3D | Global Hunter | {date}"
-        msg.set_content("تقرير TaL3D العربي متاح داخل الرسالة.")
+        msg["Subject"] = f"TaL3D | Global Hunter | {date}" + (" | تشغيل يدوي" if manual else "")
+        msg.set_content("تقرير TaL3D العربي متاح داخل الرسالة." + (" هذه نسخة تشغيل يدوي جديدة." if manual else ""))
         msg.add_alternative(html, subtype="html")
         with smtplib.SMTP_SSL("smtp.gmail.com", 465, timeout=25) as smtp:
             smtp.login(sender, password)
