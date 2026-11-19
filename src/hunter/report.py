@@ -253,7 +253,7 @@ def stat_cell(value: str | int, title: str) -> str:
     )
 
 
-def render(state: dict, date: str) -> str:
+def render(state: dict, date: str, manual: bool = False) -> str:
     docs = state.get("documents") or {}
     ops = [
         op for op in (state.get("opportunities") or {}).values()
@@ -323,7 +323,7 @@ border-radius:14px;padding:19px 12px;text-align:center">
 THE FIRST-MOVER INTELLIGENCE SYSTEM</div>
 <div style="font-size:24px;color:{PURPLE};font-weight:800;
 padding:4px 0">📡 TaL3D — Global Hunter</div>
-<div style="font-size:13px;color:{MUTED}">التقرير اليومي • {h(date)}
+<div style="font-size:13px;color:{MUTED}">{"تقرير يدوي جديد" if manual else "التقرير اليومي"} • {h(date)}
 • توقيت الرياض</div></td></tr>
 <tr><td style="padding:12px 0">
 <table role="presentation" cellpadding="0" cellspacing="0"
