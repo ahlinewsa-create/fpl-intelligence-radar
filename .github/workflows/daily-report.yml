@@ -16,6 +16,10 @@ concurrency:
   cancel-in-progress: false
 jobs:
   report:
+    # A user-started action or trigger-file push is a distinct delivery.
+    # The UTC scheduled run still has only one primary message per date.
+    env:
+      HUNTER_REPORT_MODE: ${{ github.event_name == 'schedule' && 'scheduled' || 'manual' }}
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
