@@ -44,7 +44,7 @@ def test_report_does_not_hide_original_news_if_no_objects():
         "summary": "Physical boxed game launch.",
     }
     html = render(state, "2026-11-18")
-    assert "أهم الأخبار والإشارات" in html
+    assert "أخبار حديثة تستحق المتابعة" in html
     assert "New Collector" in html
     assert "غير مفحوص" in html or "لم يُستخرج" in html
     assert "الرابط" not in html or "فتح الخبر الأصلي" in html
