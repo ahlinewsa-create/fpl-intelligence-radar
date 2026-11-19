@@ -12,3 +12,5 @@ Contextual Japanese merchandise test: wrapping bag vs actual amiibo, no email.
 Cults3D authorized-key verification test, no email; 2026-11-19.
 
 Recheck Cults3D competition name and context classification v2, no email (2026-11-19).
+
+Daily email signal triage preview: group objects by original event, distinguish unmet demand evidence, filter old/irrelevant news. 2026-11-19. No mail.
