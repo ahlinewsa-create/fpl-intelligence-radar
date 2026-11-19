@@ -9,7 +9,7 @@ tests/test_article.py::test_full_article_extraction_and_image_from_html
     warnings.warn(
 
 -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
-35 passed, 1 warning in 0.69s
+35 passed, 1 warning in 0.61s
 ...................................                                      [100%]
 =============================== warnings summary ===============================
 tests/test_article.py::test_full_article_extraction_and_image_from_html
@@ -17,4 +17,4 @@ tests/test_article.py::test_full_article_extraction_and_image_from_html
     warnings.warn(
 
 -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
-35 passed, 1 warning in 0.28s
+35 passed, 1 warning in 0.40s
