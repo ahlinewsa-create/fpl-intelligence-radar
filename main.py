@@ -40,18 +40,49 @@ def run_collect(state: dict) -> dict:
     return summary
 
 
+def is_manual_mode() -> bool:
+    # Both workflow_dispatch and the mobile-friendly trigger-file push are
+    # explicit manual runs. Scheduled jobs retain their daily primary key.
+    return os.getenv("HUNTER_REPORT_MODE", "scheduled").strip().lower() == "manual"
+
+
+def report_record_key(date: str) -> str:
+    if is_manual_mode():
+        return f"manual:{date}:{run_token()}"
+    return date
+
+
+def outbox_key(date: str) -> str:
+    if is_manual_mode():
+        return f"tal3d-hunter:{date}:Asia-Riyadh:manual:{run_token()}"
+    return f"tal3d-hunter:{date}:Asia-Riyadh:primary"
+
+
+def report_file_path(date: str, dry_run: bool = False) -> Path:
+    if dry_run:
+        return Path("reports/preview.html")
+    if is_manual_mode():
+        # A digest prevents external run-token text from becoming a file path.
+        token_hash = hashlib.sha256(run_token().encode("utf-8")).hexdigest()[:16]
+        return Path("reports") / f"manual-{date}-{token_hash}.html"
+    return report_path(date)
+
+
 def generate(state: dict, date: str, dry_run: bool = False) -> str:
     refresh_scores(state)
-    path = Path("reports/preview.html") if dry_run else report_path(date)
-    if not dry_run and date in state["reports"] and path.exists():
+    path = report_file_path(date, dry_run=dry_run)
+    key = report_record_key(date)
+    if not dry_run and key in state["reports"] and path.exists():
+        # Never overwrite a report after it has been claimed for delivery.
         return str(path)
-    html = render(state, date)
+    html = render(state, date, manual=is_manual_mode() and not dry_run)
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(html, encoding="utf-8")
     if not dry_run:
-        state["reports"][date] = {
+        state["reports"][key] = {
             "sha256": hashlib.sha256(html.encode("utf-8")).hexdigest(),
             "created_at": now_utc(), "path": str(path), "status": "saved",
+            "mode": "manual" if is_manual_mode() else "scheduled",
         }
     return str(path)
 
@@ -73,11 +104,12 @@ def run_token() -> str:
 def claim(state: dict, date: str) -> str:
     if os.getenv("HUNTER_NOTIFICATIONS_ENABLED", "0") != "1":
         return "disabled"
-    if date not in state["reports"]:
+    report_key = report_record_key(date)
+    if report_key not in state["reports"]:
         return "no_report"
     if not email_ready():
         return "not_configured"
-    key = f"tal3d-hunter:{date}:Asia-Riyadh:primary"
+    key = outbox_key(date)
     if key in state["outbox"]:
         return state["outbox"][key]["status"]
     # Persist this claim to GitHub BEFORE initiating any email network call.
@@ -85,24 +117,24 @@ def claim(state: dict, date: str) -> str:
     state["outbox"][key] = {
         "status": "ATTEMPTING", "token": run_token(),
         "claimed_at": now_utc(),
-        "report_sha256": state["reports"][date]["sha256"],
+        "report_sha256": state["reports"][report_key]["sha256"],
     }
     return "ATTEMPTING"
 
 
 def dispatch(state: dict, date: str) -> str:
-    key = f"tal3d-hunter:{date}:Asia-Riyadh:primary"
+    key = outbox_key(date)
     msg = state["outbox"].get(key)
     if not msg or msg.get("status") != "ATTEMPTING":
         return "not_claimed"
     if msg.get("token") != run_token():
         return "already_attempted_by_another_run"
-    html = report_path(date).read_text(encoding="utf-8")
+    html = report_file_path(date).read_text(encoding="utf-8")
     if hashlib.sha256(html.encode("utf-8")).hexdigest() != msg["report_sha256"]:
         msg.update({"status": "UNKNOWN", "reason": "report_checksum_mismatch"})
         return "UNKNOWN"
     try:
-        provider_reference = send_report(html, date)
+        provider_reference = send_report(html, date, manual=is_manual_mode())
     except Exception as exc:
         # The provider may have accepted a message even if our connection failed.
         # Never silently retry uncertain sends.
