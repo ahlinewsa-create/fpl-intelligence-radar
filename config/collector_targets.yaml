@@ -1,0 +1,67 @@
+# High-value object-first sources. These are research targets, NOT enabled RSS.
+# Never present a target as successfully scanned until a compliant adapter
+# has passed live collection tests and written source_health=ok.
+collector_targets:
+  - id: good_smile
+    name: Good Smile Company
+    url: https://www.goodsmile.com/
+    region: japan_global
+    focus: [nendoroid, figma, preorders, exclusive_figures]
+    collection_status: adapter_pending
+    priority: critical
+  - id: sideshow
+    name: Sideshow Collectibles
+    url: https://www.sideshow.com/
+    region: north_america_global
+    focus: [premium_statues, limited_editions, sixth_scale_collectibles]
+    collection_status: adapter_pending
+    priority: critical
+  - id: limited_run
+    name: Limited Run Games
+    url: https://limitedrungames.com/blogs/news
+    region: global
+    focus: [collectors_editions, boxes, standalone_inserts, scarcity]
+    collection_status: adapter_pending
+    priority: critical
+  - id: fangamer
+    name: Fangamer
+    url: https://www.fangamer.com/collections/new
+    region: global
+    focus: [game_merchandise, plushes, keychains, figures]
+    collection_status: adapter_pending
+    priority: critical
+  - id: kotobukiya
+    name: Kotobukiya
+    url: https://www.kotobukiya.co.jp/
+    region: japan_global
+    focus: [figures, exclusive_statues, collector_merch]
+    collection_status: adapter_pending
+    priority: high
+  - id: tamashii_nations
+    name: Tamashii Nations
+    url: https://tamashiiweb.com/
+    region: japan_global
+    focus: [figures, exclusives, robots, collectibles]
+    collection_status: adapter_pending
+    priority: high
+  - id: hobby_dengeki
+    name: Dengeki Hobby Web
+    url: https://hobby.dengeki.com/
+    region: japan
+    focus: [japanese_figures, models, preorder_announcements]
+    collection_status: adapter_pending
+    priority: critical
+  - id: pop_insider
+    name: The Pop Insider
+    url: https://thepopinsider.com/
+    region: global
+    focus: [collectibles, pop_culture_merchandise, toys]
+    collection_status: adapter_pending
+    priority: high
+  - id: toyark
+    name: The Toyark
+    url: https://news.toyark.com/
+    region: global
+    focus: [action_figures, collectibles, exclusive_releases]
+    collection_status: adapter_pending
+    priority: high
