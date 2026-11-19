@@ -1,3 +1,5 @@
 TaL3D one-off manual test trigger
 Triggered by a dedicated commit to this file instead of the mobile Run workflow button.
 Date: 2026-11-18 Asia/Riyadh
+
+Manual resend requested by owner after successful 35/35 regression tests; 2026-11-19 run once.
