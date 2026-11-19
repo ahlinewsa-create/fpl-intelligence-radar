@@ -1658,13 +1658,20 @@
       "path": "reports/2026-11-19.html",
       "sha256": "a9a72e95c44f2f4598f9b65d3b2cda66854a4b799394dcd67265e715284e76e5",
       "status": "saved"
+    },
+    "manual:2026-11-19:44428789206:1": {
+      "created_at": "2026-11-19T00:25:07+00:00",
+      "mode": "manual",
+      "path": "reports/manual-2026-11-19-e81e78f7952ba367.html",
+      "sha256": "b6ae76f41387a38ca5dd1bc6234ab3e3a28793503d806c77c566a5f204cd6a15",
+      "status": "saved"
     }
   },
   "schema_version": 1,
   "source_health": {
     "community_placeholder": {
       "kind": "community",
-      "last_checked": "2026-11-19T00:24:25+00:00",
+      "last_checked": "2026-11-19T00:25:06+00:00",
       "source_name": "Authorized community feed (configure before enabling)",
       "status": "disabled"
     },
@@ -1673,9 +1680,9 @@
       "etag": null,
       "items_seen": 25,
       "kind": "official",
-      "last_checked": "2026-11-19T00:24:25+00:00",
+      "last_checked": "2026-11-19T00:25:06+00:00",
       "last_modified": "Thu, 19 Nov 2026 00:15:09 GMT",
-      "last_success": "2026-11-19T00:24:25+00:00",
+      "last_success": "2026-11-19T00:25:06+00:00",
       "source_name": "Nintendo Japan",
       "status": "ok_not_modified"
     },
@@ -1684,9 +1691,9 @@
       "etag": "\"6060d952211bfc153b77d4b32c7bebf9\"",
       "items_seen": 10,
       "kind": "official",
-      "last_checked": "2026-11-19T00:24:25+00:00",
+      "last_checked": "2026-11-19T00:25:05+00:00",
       "last_modified": "Wed, 18 Nov 2026 17:35:01 GMT",
-      "last_success": "2026-11-19T00:24:25+00:00",
+      "last_success": "2026-11-19T00:25:06+00:00",
       "source_name": "PlayStation Blog",
       "status": "ok_not_modified"
     },
@@ -1695,9 +1702,9 @@
       "etag": "W/\"eb5e212df74d30663b09bd5fe862adb0\"",
       "items_seen": 10,
       "kind": "official",
-      "last_checked": "2026-11-19T00:24:25+00:00",
+      "last_checked": "2026-11-19T00:25:06+00:00",
       "last_modified": "Wed, 18 Nov 2026 00:07:58 GMT",
-      "last_success": "2026-11-19T00:24:25+00:00",
+      "last_success": "2026-11-19T00:25:06+00:00",
       "source_name": "Xbox Wire",
       "status": "ok_not_modified"
     }
