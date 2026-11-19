@@ -268,9 +268,13 @@ def render(state: dict, date: str, manual: bool = False) -> str:
         state, date, max_items=3, excluded_event_keys=excluded,
     )
     health = state.get("source_health") or {}
-    official = [item for item in health.values() if item.get("kind") == "official"]
+    news_sources = [
+        item for item in health.values()
+        if item.get("kind") in ("official", "press")
+        and item.get("status") != "disabled"
+    ]
     healthy = sum(
-        str(item.get("status", "")).startswith("ok") for item in official
+        str(item.get("status", "")).startswith("ok") for item in news_sources
     )
     reviewed = sum(bool(d.get("reviewed_at")) for d in docs.values())
     full = sum(d.get("analysis_status") == "full_text" for d in docs.values())
@@ -332,7 +336,7 @@ border-radius:12px"><tr>
 {stat_cell(len(docs), "أخبار محفوظة")}
 {stat_cell(full, "مقالات كاملة")}
 {stat_cell(active_op_count, "عناصر في السجل")}
-{stat_cell(f"{healthy}/{len(official)}", "مصادر سليمة")}
+{stat_cell(f"{healthy}/{len(news_sources)}", "مصادر أخبار سليمة")}
 </tr></table></td></tr>
 <tr><td>
 {card(f'<div style="font-size:17px;color:{PURPLE};font-weight:800">🎯 القرار اليوم</div><p style="font-size:13px;line-height:1.85">{h(decision)}</p><div style="font-size:12px;color:{MUTED}">{len(recent_events)} أحداث مرشحة حديثة • {reviewed} خبرًا روجع نصيًا • {h(covered)}</div>')}
