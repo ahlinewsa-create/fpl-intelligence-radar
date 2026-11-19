@@ -18,3 +18,5 @@ Daily email signal triage preview: group objects by original event, distinguish 
 Regression: separate manual email from once-daily schedule; preview-only, no outgoing mail (2026-11-19).
 
 Validate both HUNTER_REPORT_MODE=scheduled and manual after fixing preflight; no email. 2026-11-19.
+
+No-email source expansion verification: Siliconera, Gematsu, Nintendo Life (press only); collector shops in pending adapter registry, 2026-11-19.
