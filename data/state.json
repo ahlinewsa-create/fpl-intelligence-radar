@@ -1638,9 +1638,11 @@
       "token": "44365656892:1"
     },
     "tal3d-hunter:2026-11-19:Asia-Riyadh:manual:44428789206:1": {
+      "accepted_at": "2026-11-19T00:25:11+00:00",
       "claimed_at": "2026-11-19T00:25:08+00:00",
+      "provider_reference": "smtp_accepted",
       "report_sha256": "b6ae76f41387a38ca5dd1bc6234ab3e3a28793503d806c77c566a5f204cd6a15",
-      "status": "ATTEMPTING",
+      "status": "SENT",
       "token": "44428789206:1"
     },
     "tal3d-hunter:2026-11-19:Asia-Riyadh:primary": {
