@@ -11,5 +11,3 @@ mode: economy
 notifications_enabled: false
 # Enable through HUNTER_NOTIFICATIONS_ENABLED=1 only after testing.
 
-# Opt-in only: requires HUNTER_YOUTUBE_SHADOW=1 and YOUTUBE_API_KEY.
-youtube_shadow_scans_per_run: 2
