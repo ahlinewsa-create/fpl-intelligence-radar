@@ -154,7 +154,7 @@ def extract_objects(text: str) -> list[dict]:
         # 'Aurora Mascot figurine' can stop at 'Mascot' because both words
         # are object nouns. Keep the complete adjacent noun compound.
         extension = re.match(
-            rf"\\s+(?:{NOUNS})s?\\b", clean[match.end():], re.I
+            rf"\s+(?:{NOUNS})s?\b", clean[match.end():], re.I
         )
         if extension:
             raw_span += extension.group(0)
