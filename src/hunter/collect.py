@@ -172,6 +172,16 @@ def review_documents(
         summary = document.get("summary", "")
         output = fetch_article(client, url, allowed_hosts)
         full = output.get("text", "")
+        # A failed fetch must not erase identities previously extracted from
+        # a complete article. Retry in a future run; the quality gate already
+        # excludes legacy fragments from the live report.
+        if document.get("analysis_status") == "full_text" and not full:
+            document["last_reanalysis_attempt"] = now_utc()
+            document["last_reanalysis_error"] = output.get("status", "failed")
+            results["article_retries_deferred"] = (
+                results.get("article_retries_deferred", 0) + 1
+            )
+            continue
         if full:
             results["article_full_text"] += 1
         if output.get("image_url"):
