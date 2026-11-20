@@ -13,6 +13,7 @@ from urllib.parse import urlsplit
 from zoneinfo import ZoneInfo
 
 from .state import now_utc
+from .trend_history import change_since, followup_due
 from .triage import demand_coverage, event_key, group_events, select_news
 
 ZONE = ZoneInfo("Asia/Riyadh")
@@ -130,7 +131,8 @@ def next_research_step(op: dict) -> str:
     return "تقييم ملاءمة الفكرة للطباعة FDM بمراجعة هندسية أولية"
 
 
-def object_detail(op: dict, communities_checked: bool) -> str:
+def object_detail(op: dict, communities_checked: bool,
+                  state: dict | None = None, report_date: str | None = None) -> str:
     name = op.get("name", "عنصر دون اسم")
     score = op.get("score") or {}
     comp = op.get("competition") or {}
@@ -148,6 +150,11 @@ def object_detail(op: dict, communities_checked: bool) -> str:
     timing = op.get("timing_precheck") or {}
     external = op.get("external_competition") or []
     release = op.get("release_calendar") or {}
+    physical = op.get("physical_market_evidence") or []
+    trends = op.get("external_trend_signals") or []
+    trend_delta = change_since(state or {}, op.get("product_id", ""),
+                               report_date, 7) if report_date else {"status": "not_checked"}
+    followup = followup_due(op, report_date) if report_date else {"status": "unknown_date"}
     demand_state = (dimensions.get("demand") or {}).get("status", "not_checked")
     evidence_detail = (
         f'<div style="font-size:12px;line-height:1.85"><b>تغطية الأدلة:</b> '
@@ -166,6 +173,13 @@ def object_detail(op: dict, communities_checked: bool) -> str:
         '</div>'
         f'<div style="font-size:12px;line-height:1.85"><b>منصات STL الأخرى:</b> '
         f'{len(external)} روابط راجعها مستخدم؛ لا تمثل مسحًا شاملًا</div>'
+        f'<div style="font-size:12px;line-height:1.85"><b>مؤشرات المنتجات الفعلية:</b> '
+        f'{len(physical)} روابط متاجر • <b>اتجاهات نسبية:</b> {len(trends)} أدلة '
+        '(لا تثبت مبيعات STL)</div>'
+        f'<div style="font-size:12px;line-height:1.85"><b>التغير خلال 7 أيام:</b> '
+        f'{h(str(trend_delta.get("new_evidence_links", "بيانات غير كافية"))) } '
+        f'• <b>مراجعات مؤجلة:</b> '
+        f'{h(str(followup.get("checkpoints_due", []))) if followup.get("status") == "due" else "لا توجد"}</div>'
     )
     body = (
         '<div style="border-top:1px solid #ece8f2;padding:11px 0 4px">'
@@ -198,7 +212,8 @@ def object_detail(op: dict, communities_checked: bool) -> str:
     return body
 
 
-def opportunity_group_card(group: dict, communities_checked: bool) -> str:
+def opportunity_group_card(group: dict, communities_checked: bool,
+                           state: dict | None = None, report_date: str | None = None) -> str:
     primary = group["primary"]
     evidence = (primary.get("evidence") or [{}])[0]
     kind = group["type"]
@@ -236,7 +251,7 @@ def opportunity_group_card(group: dict, communities_checked: bool) -> str:
         + h(caveat) + '</div>'
     )
     for member in group["members"][:3]:
-        body += object_detail(member, communities_checked)
+        body += object_detail(member, communities_checked, state, report_date)
     hidden = len(group["members"]) - 3
     if hidden > 0:
         body += (
@@ -323,7 +338,7 @@ def render(state: dict, date: str, manual: bool = False) -> str:
     active_op_count = len(ops)
     if recent_events:
         opportunities = "".join(
-            opportunity_group_card(group, checked) for group in recent_events
+            opportunity_group_card(group, checked, state, date) for group in recent_events
         )
     else:
         opportunities = card(
