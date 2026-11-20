@@ -16,6 +16,7 @@ from src.hunter.intelligence import enrich_state
 from src.hunter.evidence import load_reviewed_evidence
 from src.hunter.external_market import load_external_market
 from src.hunter.calendar_intel import load_release_calendar
+from src.hunter.feedback import apply_feedback
 from src.hunter.market import update_market
 from src.hunter.notifications import send_report
 from src.hunter.report import render, report_path
@@ -40,6 +41,7 @@ def run_collect(state: dict) -> dict:
     summary["reviewed_demand"] = load_reviewed_evidence(state)
     summary["external_market"] = load_external_market(state)
     summary["release_calendar"] = load_release_calendar(state, today())
+    summary["reviewer_feedback"] = apply_feedback(state)
     summary["market_scans"] = update_market(
         state, int(settings.get("max_market_scans_per_run", 8)),
         int(settings.get("market_sample_limit", 20)),
