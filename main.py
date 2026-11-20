@@ -12,6 +12,10 @@ from zoneinfo import ZoneInfo
 import yaml
 
 from src.hunter.collect import collect
+from src.hunter.intelligence import enrich_state
+from src.hunter.evidence import load_reviewed_evidence
+from src.hunter.external_market import load_external_market
+from src.hunter.calendar_intel import load_release_calendar
 from src.hunter.market import update_market
 from src.hunter.notifications import send_report
 from src.hunter.report import render, report_path
@@ -32,9 +36,14 @@ def run_collect(state: dict) -> dict:
     settings = config("config/settings.yaml")
     sources = config("config/sources.yaml").get("sources", [])
     summary = collect(state, sources, settings)
+    summary.update(enrich_state(state, today()))
+    summary["reviewed_demand"] = load_reviewed_evidence(state)
+    summary["external_market"] = load_external_market(state)
+    summary["release_calendar"] = load_release_calendar(state, today())
     summary["market_scans"] = update_market(
         state, int(settings.get("max_market_scans_per_run", 8)),
         int(settings.get("market_sample_limit", 20)),
+        int(settings.get("market_query_variants", 2)),
     )
     refresh_scores(state)
     return summary
@@ -69,6 +78,7 @@ def report_file_path(date: str, dry_run: bool = False) -> Path:
 
 
 def generate(state: dict, date: str, dry_run: bool = False) -> str:
+    enrich_state(state, date)
     refresh_scores(state)
     path = report_file_path(date, dry_run=dry_run)
     key = report_record_key(date)
