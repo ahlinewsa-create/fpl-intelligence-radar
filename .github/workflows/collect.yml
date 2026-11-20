@@ -13,7 +13,6 @@ on:
       timezone: Asia/Riyadh
     - cron: "19 22 * * *"
       timezone: Asia/Riyadh
-  workflow_dispatch:
 permissions:
   contents: write
 concurrency:
@@ -21,7 +20,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   collect:
-    if: github.event_name == 'workflow_dispatch' || github.event.schedule == '19 8 * * *' || vars.HUNTER_MODE == 'early'
+    if: github.event.schedule == '19 8 * * *' || vars.HUNTER_MODE == 'early'
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:

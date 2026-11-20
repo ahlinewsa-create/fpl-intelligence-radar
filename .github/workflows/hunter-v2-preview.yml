@@ -8,7 +8,6 @@ on:
       - "config/settings.yaml"
       - "tests/**"
       - ".github/workflows/hunter-v2-preview.yml"
-  workflow_dispatch:
 permissions:
   contents: read
 jobs:

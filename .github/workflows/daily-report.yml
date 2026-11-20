@@ -1,4 +1,4 @@
-name: TaL3D - Daily Arabic Report
+name: TaL3D - Daily Report (RUN ALL)
 on:
   push:
     branches: [main]
@@ -36,7 +36,22 @@ jobs:
           TMDB_READ_TOKEN: ${{ secrets.TMDB_READ_TOKEN }}
           HUNTER_TMDB_SHADOW: ${{ vars.HUNTER_TMDB_SHADOW || '0' }}
         run: python main.py collect
-      - name: Render report
+      # The only user-facing manual entry point runs the complete pipeline.
+      # This smoke preview is deliberately read-only and sends no email.
+      - name: Verify combined analysis preview (NO EMAIL)
+        env:
+          HUNTER_NOTIFICATIONS_ENABLED: "0"
+        run: |
+          python main.py dry-run
+          python - <<'PY'
+          from pathlib import Path
+          html = Path("reports/preview.html").read_text(encoding="utf-8")
+          assert "TaL3D" in html, "Missing report header"
+          assert "القرار اليوم" in html, "Missing daily decision section"
+          assert "صحة المصادر" in html, "Missing sources section"
+          print("Combined report preview verified; proceeding to archive and deliver.")
+          PY
+      - name: Render final daily report
         run: python main.py report
       - name: Persist report BEFORE sending
         run: |
@@ -81,6 +96,15 @@ jobs:
             git commit -m "hunter: record notification status"
             git push origin HEAD:main
           fi
+      - name: Show all-in-one run summary
+        if: always()
+        run: |
+          {
+            echo "## TaL3D — Global Hunter | Full Daily Report"
+            echo "Single manual entry point: tests → collect/analyze → safe preview → final report → archive → email."
+            echo "Execution details and delivery status are recorded in the step logs and state ledger."
+            echo "Files and HTML preview, if generated, are in the run artifacts."
+          } >> "$GITHUB_STEP_SUMMARY"
       - name: Upload report backup
         if: always()
         uses: actions/upload-artifact@v4
