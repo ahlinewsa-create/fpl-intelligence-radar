@@ -95,6 +95,18 @@ def english_entity_name(window: str) -> str:
         words.pop(0)
     if len(words) < 2:
         return ""
+    # Avoid manufacturer/production-line labels posing as standalone figures.
+    if len(words) == 2 and words[0].casefold() in {
+        "luminasta", "figurizma", "banpresto", "sanrio", "prize",
+    }:
+        return ""
+    # Descriptions of entire ranges are not individually identified products.
+    if (len(words) <= 4 and "of" in [w.casefold() for w in words[1:-1]]
+            and words[-1].casefold() in {"figures", "figurines", "mascots"}):
+        return ""
+    if any(w.casefold() in {"these", "those", "this", "that", "version"}
+           for w in words[1:-1]):
+        return ""
     # Explanatory clauses and comparative references are not product names.
     if any(word.casefold() in {"like", "other", "such", "as", "because", "since"}
            for word in words[:-1]):
