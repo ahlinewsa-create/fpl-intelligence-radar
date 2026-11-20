@@ -17,7 +17,6 @@ from src.hunter.notifications import send_report
 from src.hunter.report import render, report_path
 from src.hunter.scoring import refresh_scores
 from src.hunter.state import load_state, now_utc, save_state
-from src.hunter.youtube import update_youtube
 
 
 def today() -> str:
@@ -36,10 +35,6 @@ def run_collect(state: dict) -> dict:
     summary["market_scans"] = update_market(
         state, int(settings.get("max_market_scans_per_run", 8)),
         int(settings.get("market_sample_limit", 20)),
-    )
-    # Optional YouTube research is isolated from production decisions.
-    summary["youtube_shadow_scans"] = update_youtube(
-        state, int(settings.get("youtube_shadow_scans_per_run", 2))
     )
     refresh_scores(state)
     return summary
