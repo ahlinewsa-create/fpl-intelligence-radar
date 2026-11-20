@@ -10,6 +10,9 @@ def test_dangling_article_phrases_are_not_products():
         "in Japan as prize figures",
         "Banpresto storefront like other mascots",
         "All Sanrio mascots",
+        "Banpresto These Fluffy Puffy figures",
+        "of Rebuild of Evangelion figures",
+        "A new Luminasta figure",
     ):
         assert english_entity_name(phrase) == "", phrase
 
