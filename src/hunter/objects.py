@@ -55,6 +55,53 @@ def plain_text(value: str) -> str:
     return re.sub(r"\s+", " ", soup.get_text(" ", strip=True)).strip()
 
 
+# Reject partial sentence windows before treating an English phrase as a product.
+# Keep the original matched span as auditable evidence in each candidate.
+_DISCARD_PREFIX = {
+    "the", "a", "an", "all", "any", "some", "many", "more", "new",
+    "this", "that", "these", "those", "its", "their", "his", "her",
+    "since", "because", "for", "from", "in", "on", "at", "to", "as",
+    "of", "by", "with", "without", "and", "or", "but", "also",
+    "is", "are", "was", "were", "be", "been", "will", "would",
+    "can", "could", "may", "might", "than", "like", "other",
+}
+_CLAUSE_VERBS = {
+    "includes", "include", "features", "feature", "offers", "offer",
+    "contains", "contain", "shows", "show", "reveals", "reveal",
+    "appears", "appear", "becomes", "become", "helps", "help",
+    "using", "used", "seen", "find", "found", "called",
+}
+_WEAK_LABEL = {"prize", "new", "official", "other", "generic", "many"}
+
+
+def english_entity_name(window: str) -> str:
+    """Return a source-backed noun phrase, or '' for a dangling clause.
+
+    This is a high-precision *filter*, not semantic entity recognition. It
+    deliberately abstains rather than inventing a cleaned-up product name.
+    """
+    words = window.split()
+    if not words:
+        return ""
+    # Phrases like 'all Sanrio mascots' refer to a broad collection, not an
+    # independently identified product. They remain in the source article.
+    if words[0].casefold() in {"all", "every", "various"}:
+        return ""
+    for i, word in enumerate(words[:-1]):
+        if word.casefold() in _CLAUSE_VERBS:
+            words = words[i + 1:]
+    while words and (words[0].casefold() in _DISCARD_PREFIX or
+                     not words[0][0].isupper()):
+        words.pop(0)
+    if len(words) < 2:
+        return ""
+    if any(word.casefold() in _CLAUSE_VERBS for word in words[:-1]):
+        return ""
+    if len(words) == 2 and words[0].casefold() in _WEAK_LABEL:
+        return ""
+    return " ".join(words)
+
+
 def extract_objects(text: str) -> list[dict]:
     clean = plain_text(text)[:16000]
     if not SIGNAL.search(clean):
@@ -62,7 +109,8 @@ def extract_objects(text: str) -> list[dict]:
     found: list[dict] = []
     seen: set[str] = set()
 
-    def add(name: str, kind: str, index: int, confidence: float) -> None:
+    def add(name: str, kind: str, index: int, confidence: float,
+            source_span: str | None = None) -> None:
         name = re.sub(r"\s+", " ", name).strip(" ,.:;–-")
         if len(name) < 5 or len(name) > 100 or name.casefold() in GENERIC:
             return
@@ -71,6 +119,7 @@ def extract_objects(text: str) -> list[dict]:
         seen.add(name.casefold())
         found.append({
             "name": name, "kind": kind,
+            "source_span": source_span or name,
             "excerpt": clean[max(0, index-85):index+max(100, len(name)+60)][:280],
             "extraction_method": "named_object_in_source",
             "extraction_confidence": confidence,
@@ -97,16 +146,13 @@ def extract_objects(text: str) -> list[dict]:
             add(f"{name} {keyword.group(0)}", "figurine", keyword.start(), 0.72)
 
     for match in EN_PHRASE.finditer(clean):
-        name = match.group(0).strip()
-        # Product name must be connected to the physical object, not a general release.
-        name = re.split(
-            r"\b(?:includes?|features?|reveals?|featuring|contains?|offers?|with|and|the)\s+",
-            name, flags=re.I
-        )[-1].strip()
-        if len(name.split()) > 5:
-            name = " ".join(name.split()[-5:])
+        raw_span = match.group(0).strip()
+        name = english_entity_name(raw_span)
+        if not name:
+            continue
         noun = name.split()[-1].lower().rstrip("s")
-        add(name, KINDS.get(noun, "object"), match.start(), 0.60)
+        add(name, KINDS.get(noun, "object"), match.start(), 0.60,
+            source_span=raw_span)
 
     for match in JP_COMPOUND.finditer(clean):
         add(match.group(0), KINDS.get(match.group(2), "figurine"),
