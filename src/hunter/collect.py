@@ -23,7 +23,7 @@ HEADERS = {
     "Accept": "application/rss+xml,application/atom+xml,application/xml,text/xml",
 }
 USER_CONTENT_LIMIT = 3200
-EXTRACTOR_VERSION = "horizon-inspired-article-v4"
+EXTRACTOR_VERSION = "horizon-inspired-article-v5"
 
 COLLECTOR_TERMS = re.compile(
     r"collector|limited|exclusive|merch|figurine|statue|mascot|plush|"
@@ -210,6 +210,7 @@ def review_documents(
                         "press_article" if full else "press_feed"
                     ),
                     "url": url, "excerpt": obj["excerpt"],
+                    "source_span": obj.get("source_span", obj["name"]),
                     "extraction_method": obj.get("extraction_method"),
                     "extraction_confidence": obj["extraction_confidence"],
                 }],
