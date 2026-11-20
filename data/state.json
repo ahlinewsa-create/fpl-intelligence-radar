@@ -19,7 +19,7 @@
     "005167244a318494117b": {
       "analysis_status": "full_text",
       "candidate_count": 0,
-      "extractor_version": "horizon-inspired-article-v4",
+      "extractor_version": "horizon-inspired-article-v6",
       "first_seen": "2026-11-19T00:31:30+00:00",
       "image_type": "official_article_preview",
       "image_url": "https://images.nintendolife.com/17184805286a9/1280x720.jpg",
@@ -27,7 +27,7 @@
       "news_category": "gaming",
       "news_interest": 2,
       "published_at": "2026-11-18T05:55:00+00:00",
-      "reviewed_at": "2026-11-19T00:31:33+00:00",
+      "reviewed_at": "2026-11-20T03:47:47+00:00",
       "source": "nintendo_life",
       "summary": "Taking flight next year. Earlier this year, Activision and Toys for Bob lifted the lid on Spyro: A Realm Beyond for the Switch 2 and other platforms. Following the announcement trailer in June, it seems the next look at the game might be at The Game Awards 2026, airing next month on 10th December . Read the full article on nintendolife.com",
       "title": "Spyro's New Adventure Seemingly Teased For The Game Awards 2026",
@@ -150,8 +150,8 @@
     },
     "0ccf636f0eae8a4e3b6c": {
       "analysis_status": "full_text",
-      "candidate_count": 2,
-      "extractor_version": "horizon-inspired-article-v4",
+      "candidate_count": 3,
+      "extractor_version": "horizon-inspired-article-v6",
       "first_seen": "2026-11-19T00:31:29+00:00",
       "image_type": "official_article_preview",
       "image_url": "https://www.siliconera.com/wp-content/uploads/2026/11/furuta-animal-crossing-choco-egg-candy-with-figures-returns.jpg",
@@ -159,7 +159,7 @@
       "news_category": "gaming",
       "news_interest": 2,
       "published_at": "2026-11-17T22:00:00+00:00",
-      "reviewed_at": "2026-11-19T00:33:10+00:00",
+      "reviewed_at": "2026-11-20T03:47:48+00:00",
       "source": "siliconera",
       "summary": "Furuta and Nintendo announced that Animal Crossing Choco Egg candies that feature a figure of one of the characters inside a chocolate shell will return to Japan. These will be sold again in the country on December 7, 2026. It will cost 330 yen (~$2) per egg. Due to restrictions on things like these and Kinder Eggs, we might not see these in the US. However, if they do turn up outside Japan, it will likely be at Asian grocery stores or via an online store. ( Sugoi Mart sold them in the past.) [Thanks, Inside Games !] As this is a rerun, we’re already aware of which characters are part of the Furuta Animal Crossing Choco Egg figure collection. There are 18 “known” individuals and two “secret” ones. Each of the revealed ones are NPCs and neighbors. The “hidden” ones are male and female Villager avatars. Since this is a blind box situation, you don’t know which item is inside the plastic egg inside the chocolate until you open it. Some assembly is required, as the characters come with a base they can be attached to. Here’s the full list of who is present in this set in order. The human villager avatars are the 19th and 20th ones. Isabelle Tom Nook KK Slider Mabel Timmy and Tommy Blathers Rosie Bunnie Goldie Apollo Marshall Molly Julian Hamlet Fauna Peanut Stitches Whitney Here’s the official photo showing how those will look. Images via Nintendo and Furuta In the last few years, we’ve seen a lot of Animal Crossing merchandise. One of the most notable items is the Re-Ment Happy Room series of sets , which involve dioramas of characters inside rooms you can decorate. The Furuta Animal Crossing Choco Egg with character figures will be back in Japan on December 7, 2026. Animal Crossing: New Horizons is on the Switch and Switch 2.",
       "title": "Furuta Animal Crossing Choco Egg Candy With Figures Returns",
@@ -218,7 +218,7 @@
     "105218a32a53f4071f47": {
       "analysis_status": "full_text",
       "candidate_count": 0,
-      "extractor_version": "horizon-inspired-article-v4",
+      "extractor_version": "horizon-inspired-article-v6",
       "first_seen": "2026-11-19T00:31:30+00:00",
       "image_type": "official_article_preview",
       "image_url": "https://images.nintendolife.com/45234664374fa/1280x720.jpg",
@@ -226,7 +226,7 @@
       "news_category": "gaming",
       "news_interest": 2,
       "published_at": "2026-11-18T10:30:00+00:00",
-      "reviewed_at": "2026-11-19T00:31:32+00:00",
+      "reviewed_at": "2026-11-20T03:47:47+00:00",
       "source": "nintendo_life",
       "summary": "Every game we scored 9/10 or higher, plus a personal pick. The once one-day event of 'Black Friday' seems to last for almost all of November these days. Anyway, Nintendo has kicked off its digital discounts with an eShop sale in Europe. The EU Black Friday eShop sale is now live and will be sticking around until 29th November , offering big savings on a bunch of Switch 1 and 2 bangers. Read the full article on nintendolife.com",
       "title": "Guide: 42 Switch 1 & 2 Games You Should Check Out In Nintendo's Black Friday eShop Sale (Europe)",
@@ -619,7 +619,7 @@
     "418336a5af94c51e7d3c": {
       "analysis_status": "full_text",
       "candidate_count": 0,
-      "extractor_version": "horizon-inspired-article-v4",
+      "extractor_version": "horizon-inspired-article-v6",
       "first_seen": "2026-11-19T00:31:30+00:00",
       "image_type": "official_article_preview",
       "image_url": "https://images.nintendolife.com/758e8b2543372/1280x720.jpg",
@@ -627,7 +627,7 @@
       "news_category": "gaming",
       "news_interest": 2,
       "published_at": "2026-11-18T16:00:00+00:00",
-      "reviewed_at": "2026-11-19T00:31:31+00:00",
+      "reviewed_at": "2026-11-20T03:47:46+00:00",
       "source": "nintendo_life",
       "summary": "And it's more affordable than Nintendo's. 8BitDo, known for its work in providing excellent retro-inspired controllers for modern systems, has announced the GC Bluetooth Gamepad to celebrate the GameCube's 25th anniversary. It's currently scheduled to launch on 10th December 2026 . Compatible with Switch, Switch 2, and Windows, the GC controller maintains the core shape and layout of the iconic GameCube pad, but adds in a bunch of modern upgrades like TMR sticks and Hall Effect triggers. Priced at $49.99 , it undercuts Nintendo's official offering by $20 and is available for pre-order now. Read the full article on nintendolife.com",
       "title": "8BitDo Reveals Its Own GameCube Controller For Switch 2",
@@ -871,7 +871,7 @@
     "6a42a035f88402461b9d": {
       "analysis_status": "full_text",
       "candidate_count": 0,
-      "extractor_version": "horizon-inspired-article-v4",
+      "extractor_version": "horizon-inspired-article-v6",
       "first_seen": "2026-11-19T00:31:29+00:00",
       "image_type": "official_article_preview",
       "image_url": "https://www.siliconera.com/wp-content/uploads/2026/11/genshin-varesa-escoffier-mcds-11172026.png",
@@ -879,7 +879,7 @@
       "news_category": "gaming",
       "news_interest": 2,
       "published_at": "2026-11-18T14:00:00+00:00",
-      "reviewed_at": "2026-11-19T00:31:32+00:00",
+      "reviewed_at": "2026-11-20T03:47:46+00:00",
       "source": "siliconera",
       "summary": "The second Genshin Impact collaboration event at McDonald’s in Japan will begin on November 18, 2026 and will feature Varesa and Escoffier for this run. The official social media account for the restaurant also posted a short video of the game’s loading screen to ask netizens to listen to the calming music while they wait. During the collaboration, you can order real-life food items that come in packaging that features imagery from the game and its characters. This collaboration specifically is for the Teriyaki McBurger. In-game items like a Wind Glider cosmetic and a namecard background will be doled out as part of the promotion. You will need to use the official McDonald’s app to redeem these rewards. Aside from in-game items, you can also get original smartphone wallpapers. This McDonald’s collaboration featuring Varesa and Escoffier marks the second time that HoYoVerse worked with the famous fast-food chain on a real-world Genshin Impact campaign. The first one appeared in 2024 , and that run featured Beidou and Kazuha. If someone took part in that event, they got a recipe for an in-game fod, a Wind Glider cosmetic, and a namecard background. Go Ad-Free With Siliconera+ View the site with no ads, be able to provide direct feedback about what we cover, and be automatically entered into our monthly PC game giveaway. Join Siliconera+ Other chains that have collaborated with HoYoVerse and Genshin Impact include Sushiro and KFC . Like the McDonald’s collaborations, these included real-world food items to enjoy and in-game awards to collect. Genshin Impact is available on the PS5, Xbox Series X, PC, and mobile devices. The McDonald’s event will run in Japan from November 18, 2026 to December 8, 2026.",
       "title": "Varesa and Escoffier Star in Genshin Impact McDonald’s Event",
@@ -1018,13 +1018,13 @@
       "_render_rank": 2,
       "analysis_status": "full_text",
       "candidate_count": 0,
-      "extractor_version": "horizon-inspired-article-v4",
+      "extractor_version": "horizon-inspired-article-v6",
       "first_seen": "2026-11-18T18:04:36+00:00",
       "image_type": "official_article_preview",
       "image_url": "https://assets.topics.apps-jp.nintendo.com/image/2026/11/12114112234440/1280/da7413a6a2eb4b8a9ada9419f76166b9.jpg",
       "kind": "official",
       "published_at": "2026-11-18T03:01:15+00:00",
-      "reviewed_at": "2026-11-18T19:37:53+00:00",
+      "reviewed_at": "2026-11-20T03:47:48+00:00",
       "source": "nintendo_jp",
       "summary": "",
       "title": "『スプラトゥーン3』の更新データVer.12.0.0を本日配信。さまざまなアイテムが手に入るゲームニュースも配信中。",
@@ -1033,7 +1033,7 @@
     "731c18196293c7221104": {
       "analysis_status": "full_text",
       "candidate_count": 0,
-      "extractor_version": "horizon-inspired-article-v4",
+      "extractor_version": "horizon-inspired-article-v6",
       "first_seen": "2026-11-19T00:31:30+00:00",
       "image_type": "official_article_preview",
       "image_url": "https://images.nintendolife.com/8505e1d0e1c55/1280x720.jpg",
@@ -1041,7 +1041,7 @@
       "news_category": "gaming",
       "news_interest": 2,
       "published_at": "2026-11-18T05:00:00+00:00",
-      "reviewed_at": "2026-11-19T00:31:33+00:00",
+      "reviewed_at": "2026-11-20T03:47:47+00:00",
       "source": "nintendo_life",
       "summary": "For a song. Stage Tour launches on 10th December 2026 , bringing the rhythm-based musical gameplay of classics like Rock Band and Guitar Hero series back on modern consoles, including Switch 2. For those of you looking forward to shredding on a plastic axe, here's a list of all songs in Stage Tour as revealed by developer Red Octane. Read the full article on nintendolife.com",
       "title": "Guide: Stage Tour All Songs List - Full Tracklist, Every Confirmed Artist",
@@ -1327,7 +1327,7 @@
     "97e4c5dc9cfe2dd84f68": {
       "analysis_status": "full_text",
       "candidate_count": 0,
-      "extractor_version": "horizon-inspired-article-v4",
+      "extractor_version": "horizon-inspired-article-v6",
       "first_seen": "2026-11-19T00:31:29+00:00",
       "image_type": "official_article_preview",
       "image_url": "https://www.siliconera.com/wp-content/uploads/2026/11/hxusuc7aiaezldw.jpg",
@@ -1335,7 +1335,7 @@
       "news_category": "gaming",
       "news_interest": 2,
       "published_at": "2026-11-18T18:00:00+00:00",
-      "reviewed_at": "2026-11-19T00:31:31+00:00",
+      "reviewed_at": "2026-11-20T03:47:46+00:00",
       "source": "siliconera",
       "summary": "Elementa has been introducing new Silver Palace characters regularly on social media and most recently brought up two allies named Skink and Tinsley. Skink is a man who also happens to be a humanoid lizard, while Tinsley is an inventor and student. Both are expected to appear in-game at or not long after launch. The Skink teaser and images appeared on the Silver Palace social media first . He’s described as a Crag Edgers “consultant” and “strategist.” It seems that after a death game, he found himself in Silvernia and now acts as a mediator and handler that can use charm and weapons to deal with situations. Meanwhile, Tinsley is the “star student” who manages to act as an inventor while attending classes. Her specialty is apparently tools for the mining industry, and it seems as though she’s a bit apathetic after everything happening around her. Go Ad-Free With Siliconera+ View the site with no ads, be able to provide direct feedback about what we cover, and be automatically entered into our monthly PC game giveaway. Join Siliconera+ Here are the official character art and teaser images for Skink and Tinsley in Silver Palace . Images via Elementa Pre-registration is open and it is possible for newcomers to get the four-star character Cordelia for free if 30 million people sign up. However, as of time of writing , only the 20 million milestone was hit. This means only 10 copies of The Science of All Things Volume III in-game item and 80,000 Ounces are guaranteed to be doled out. Silver Palace will show up on PCs and mobile devices on December 14, 2026 , and pre-registration is open.",
       "title": "Newest Silver Palace Characters are Tinsley the Student, Skink the Strategist",
@@ -1516,6 +1516,23 @@
       "title": "Goodbye Seoul launches in early 2027",
       "url": "https://www.gematsu.com/2026/11/goodbye-seoul-launches-in-early-2027"
     },
+    "af412817004fc3dbfcbe": {
+      "analysis_status": "full_text",
+      "candidate_count": 0,
+      "extractor_version": "horizon-inspired-article-v6",
+      "first_seen": "2026-11-20T03:47:46+00:00",
+      "image_type": "official_article_preview",
+      "image_url": "https://images.nintendolife.com/933155d0dc85a/1280x720.jpg",
+      "kind": "press",
+      "news_category": "gaming",
+      "news_interest": 2,
+      "published_at": "2026-11-20T03:15:00+00:00",
+      "reviewed_at": "2026-11-20T03:47:46+00:00",
+      "source": "nintendo_life",
+      "summary": "Get ready for the Switch 2 Edition. Ahead of the launch of Xenoblade Chronicles 3 's Switch 2 Edition on 3rd December 2026 , Nintendo and Monolith Soft have this week rolled out a new game update. This patch officially bumps the title up to Version 3.0.0 . Nothing else is mentioned and it's further noted how \"no changes\" have been made when playing the game on the Switch. Here's the rundown from Nintendo's official support page: Read the full article on nintendolife.com",
+      "title": "Xenoblade Chronicles 3 Version 3.0.0 Is Now Live, Here Are The Patch Notes",
+      "url": "https://www.nintendolife.com/news/2026/11/xenoblade-chronicles-3-version-3-0-0-is-now-live-here-are-the-patch-notes"
+    },
     "af91cbb93fbb72fcf6fc": {
       "_render_category": "other",
       "_render_rank": 1,
@@ -1596,7 +1613,7 @@
     "b210d4d8facaa8735961": {
       "analysis_status": "full_text",
       "candidate_count": 0,
-      "extractor_version": "horizon-inspired-article-v4",
+      "extractor_version": "horizon-inspired-article-v6",
       "first_seen": "2026-11-19T00:31:29+00:00",
       "image_type": "official_article_preview",
       "image_url": "https://www.siliconera.com/wp-content/uploads/2026/11/screen-shot-2026-11-17-at-103948-am.png",
@@ -1604,7 +1621,7 @@
       "news_category": "gaming",
       "news_interest": 2,
       "published_at": "2026-11-17T21:00:00+00:00",
-      "reviewed_at": "2026-11-19T00:33:10+00:00",
+      "reviewed_at": "2026-11-20T03:47:48+00:00",
       "source": "siliconera",
       "summary": "Spike Chunsoft shared more insight into what to expect from the Danganronpa 2 x 2 remake by sharing a gameplay trailer that focuses on how investigations and trials will work during the two phases of the game. While things work as usual for the most part, some updates from entries like Danganronpa V3 like the Debate Scrum appear. The video also serves as a means to hear the English voice actors for Monokuma and Monomi. The video begins with a look at the investigation phase of the game. Monokuma announces that a body has been discovered. We then see how we can explore areas, interact with characters, and check certain items to look for clues. These give us data which we can then take into the trials in Danganronpa 2 x 2 . That portion of the trailer is a bit more detailed, as it shows off different phases and mechanics. It starts by showing how we prepare for court by equipping Hajime Hinata with Skills that could help him during debates and confrontations. From there, the video shows the Nonstop Debate, Rebuttal Showdown, Logic Dive, Akimbo Consensus, and Debate Scrum portions of these discussions. Go Ad-Free With Siliconera+ View the site with no ads, be able to provide direct feedback about what we cover, and be automatically entered into our monthly PC game giveaway. Join Siliconera+ Here’s the full Danganronpa 2 x 2 system trailer from YouTube showing the investigation and trial gameplay. This does seem to focus on the original game and might not show everything in the new Slayhem mode . Danganronpa 2 x 2 will come to the Switch, Switch 2, PS5, Xbox Series X, and PC on January 14, 2027. Standard and $139.99 Collector’s Editions will appear. The original Danganronpa 2: Goodbye Despair first appeared on the PSP in Japan before showing up on platforms like the Switch, PS4, Vita, Xbox One, PC, and mobile devices worldwide. We may earn a commission if you purchase from certain links. Learn more here .",
       "title": "Danganronpa 2 x 2 Gameplay Trailer Shows Investigations and Trials",
@@ -1630,7 +1647,7 @@
     "b673d0067fc0c24d8c99": {
       "analysis_status": "full_text",
       "candidate_count": 0,
-      "extractor_version": "horizon-inspired-article-v4",
+      "extractor_version": "horizon-inspired-article-v6",
       "first_seen": "2026-11-19T00:31:30+00:00",
       "image_type": "official_article_preview",
       "image_url": "https://images.nintendolife.com/602c3d70c10a5/1280x720.jpg",
@@ -1638,7 +1655,7 @@
       "news_category": "gaming",
       "news_interest": 2,
       "published_at": "2026-11-18T03:55:00+00:00",
-      "reviewed_at": "2026-11-19T00:31:33+00:00",
+      "reviewed_at": "2026-11-20T03:47:47+00:00",
       "source": "nintendo_life",
       "summary": "Fight on! Earlier this year in July, Avatar Legends: The Fighting Game made its debut. While there were some features missing at launch on Nintendo's platforms, the situation has improved over time. This week, the development team has rolled out the \" Patch 4.5 Update \", and it comes with UI and character changes and adjustments. Read the full article on nintendolife.com",
       "title": "Avatar Fighting Game's New Update Improves Performance On Switch 2",
@@ -1728,6 +1745,19 @@
       "summary": "Wa wa Wii wa! In case you need another reminder of how old you are, the Wii has just turned 20 years old in North America (those in Europe have until 8th December to hit the milestone). To celebrate, Circana's Mat Piscatella has posted a breakdown of the top 20 best-selling Wii games of all time. For anyone clued in, the list won't be particularly surprising, but it's definitely a stark reminder of how weird the Wii generation was. It was chock full of simple, casual games that you just don't see these days – at least not to the same degree, Just Dance is still very much a thing, of course. Read the full article on nintendolife.com",
       "title": "Top 20 Best-Selling Wii Games Of All Time Revealed (US)",
       "url": "https://www.nintendolife.com/news/2026/11/top-20-best-selling-wii-games-of-all-time-revealed-us"
+    },
+    "c43abe822795ffe9d799": {
+      "first_seen": "2026-11-20T03:47:46+00:00",
+      "image_type": "feed_preview",
+      "image_url": "https://images.nintendolife.com/9fccf9e070abd/small.jpg",
+      "kind": "press",
+      "news_category": "other",
+      "news_interest": 1,
+      "published_at": "2026-11-20T02:30:00+00:00",
+      "source": "nintendo_life",
+      "summary": "The sixth chapter is \"progressing well\". Toby Fox, the creator of Deltarune (and Undertale ), has this week released his 'Fall 2026' newsletter, giving fans a \"status update\" on Chapter 6...and Chapter 7. Firstly, Chapter 6 is \"progressing well\", and the game is now a \"structurally complete draft\" that can be played from start to finish. In saying this, it will still take a \"bit longer\" to finish up some other scenes and details: Read the full article on nintendolife.com",
+      "title": "Toby Fox Shares Deltarune Chapter 6 And 7 Development Update",
+      "url": "https://www.nintendolife.com/news/2026/11/toby-fox-shares-deltarune-chapter-6-and-7-development-update"
     },
     "c74c1c02d4be1424ea95": {
       "analysis_status": "full_text",
@@ -2186,7 +2216,7 @@
     "f51e48202f16e8382348": {
       "analysis_status": "full_text",
       "candidate_count": 0,
-      "extractor_version": "horizon-inspired-article-v4",
+      "extractor_version": "horizon-inspired-article-v6",
       "first_seen": "2026-11-19T00:31:30+00:00",
       "image_type": "official_article_preview",
       "image_url": "https://images.nintendolife.com/fb499c129102d/1280x720.jpg",
@@ -2194,7 +2224,7 @@
       "news_category": "gaming",
       "news_interest": 2,
       "published_at": "2026-11-18T17:30:00+00:00",
-      "reviewed_at": "2026-11-19T00:31:31+00:00",
+      "reviewed_at": "2026-11-20T03:47:46+00:00",
       "source": "nintendo_life",
       "summary": "It's dynamite. Rayman Legends Retold , Ubisoft's upcoming remake of the ludicrously good Rayman Legends , has revealed another musical level, and it's wild. We've had tunes in the past like Black Betty by Ram Jam and Eye of the Tiger by Survivor, but this new level goes for something a little bit more modern... A lot more modern, actually. Read the full article on nintendolife.com",
       "title": "Rayman Legends Retold Reveals Another Musical Level, And Uhh... Just Watch",
@@ -2683,16 +2713,28 @@
     "068412308a3e9bdf9e35": {
       "aliases": [],
       "competition": {
-        "checked_at": "2026-11-18T23:27:11+00:00",
+        "checked_at": "2026-11-20T03:48:11+00:00",
         "contextual_name_candidates": 0,
-        "coverage": "search_sample_only",
+        "coverage": "multi_query_search_samples_only_no_visual_confirmation",
         "listings": [],
         "name_only_candidates": 0,
-        "query": "life-size Mister Handy robot replica",
+        "queries": [
+          "life-size Mister Handy robot replica"
+        ],
+        "queries_failed": 0,
+        "queries_successful": 1,
+        "query_reports": [
+          {
+            "query": "life-size Mister Handy robot replica",
+            "sample_size": 3,
+            "search_total": 3,
+            "status": "sampled"
+          }
+        ],
         "sample_limit": 20,
         "sample_size": 3,
-        "schema_version": 2,
-        "search_total": 3,
+        "schema_version": 3,
+        "search_total": null,
         "similar_name_candidates": 0,
         "status": "sampled",
         "verified_exact_count": null
@@ -2703,6 +2745,12 @@
           "note": "older name-match criteria; not comparable with v2",
           "sample_size": 3,
           "schema_version": 1
+        },
+        {
+          "checked_at": "2026-11-18T23:27:11+00:00",
+          "note": "prior search sample; comparison may differ",
+          "sample_size": 3,
+          "schema_version": 2
         }
       ],
       "demand_evidence": [],
@@ -3872,6 +3920,144 @@
         "status": "unknown"
       }
     },
+    "37126e082eaad9c4b779": {
+      "aliases": [],
+      "competition": {
+        "checked_at": "2026-11-20T03:48:08+00:00",
+        "contextual_name_candidates": 0,
+        "coverage": "multi_query_search_samples_only_no_visual_confirmation",
+        "listings": [],
+        "name_only_candidates": 0,
+        "queries": [
+          "Furuta Animal Crossing Choco Egg figure",
+          "Furuta Animal Crossing Choco Egg"
+        ],
+        "queries_failed": 0,
+        "queries_successful": 2,
+        "query_reports": [
+          {
+            "query": "Furuta Animal Crossing Choco Egg figure",
+            "sample_size": 14,
+            "search_total": 14,
+            "status": "sampled"
+          },
+          {
+            "query": "Furuta Animal Crossing Choco Egg",
+            "sample_size": 14,
+            "search_total": 14,
+            "status": "sampled"
+          }
+        ],
+        "sample_limit": 20,
+        "sample_size": 28,
+        "schema_version": 3,
+        "search_total": null,
+        "similar_name_candidates": 0,
+        "status": "sampled",
+        "verified_exact_count": null
+      },
+      "demand_evidence": [],
+      "design_hypothesis": {
+        "demand_evidence": "not_checked",
+        "derived_from_product_id": "8616eabc758813b3c069",
+        "id": "c73f8ce5605866696bb3",
+        "kind": "collectible_display_base",
+        "originality": "requires_human_review",
+        "status": "untested",
+        "title": "Original display base for collectible figurines"
+      },
+      "discovery_date": "2026-11-20T03:47:48+00:00",
+      "discovery_note": "Re-extracted from previously seen news",
+      "document_first_seen": "2026-11-19T00:31:29+00:00",
+      "event_id": "242eabe4076a52024aa4",
+      "evidence": [
+        {
+          "excerpt": "Games !] As this is a rerun, we’re already aware of which characters are part of the Furuta Animal Crossing Choco Egg figure collection. There are 18 “known” individuals and two “secret",
+          "extraction_confidence": 0.6,
+          "extraction_method": "named_object_in_source",
+          "source_span": "Furuta Animal Crossing Choco Egg figure",
+          "type": "press_article",
+          "url": "https://www.siliconera.com/furuta-animal-crossing-choco-egg-candy-with-figures-returns/"
+        }
+      ],
+      "fdm_precheck": {
+        "geometry_tested": false,
+        "reason": "hair, arms and details need real geometry",
+        "risk": "unknown",
+        "status": "preliminary_only"
+      },
+      "first_signal_date": "2026-11-17T22:00:00+00:00",
+      "id": "37126e082eaad9c4b779",
+      "image_type": "official_article_preview",
+      "image_url": "https://www.siliconera.com/wp-content/uploads/2026/11/furuta-animal-crossing-choco-egg-candy-with-figures-returns.jpg",
+      "kind": "figurine",
+      "language": "en",
+      "last_changed": "2026-11-20T03:47:48+00:00",
+      "name": "Furuta Animal Crossing Choco Egg figure",
+      "origin": "Furuta Animal Crossing Choco Egg Candy With Figures Returns",
+      "product_id": "8616eabc758813b3c069",
+      "region": "japan_global",
+      "rights_status": "unverified",
+      "score": {
+        "blockers": [
+          "demand_not_checked",
+          "fdm_geometry_not_tested",
+          "originality_not_reviewed"
+        ],
+        "confidence": 25,
+        "coverage": {
+          "checked": 2,
+          "dimensions": {
+            "competition": true,
+            "demand": false,
+            "event": true,
+            "fdm": false,
+            "timing": false
+          },
+          "total": 5
+        },
+        "decision": "WATCH",
+        "dimensions": {
+          "competition": {
+            "sampled": 28,
+            "status": "sampled",
+            "verified_exact_count": null
+          },
+          "concept": {
+            "status": "untested"
+          },
+          "demand": {
+            "independent_hosts": 0,
+            "levels": [],
+            "status": "not_checked"
+          },
+          "fdm": {
+            "geometry_tested": false,
+            "risk": "unknown",
+            "status": "preliminary_only"
+          },
+          "timing": {
+            "date_source": "not_checked",
+            "status": "unknown"
+          }
+        },
+        "lower": null,
+        "missing_factors": [
+          "gap",
+          "demand",
+          "fdm",
+          "timing"
+        ],
+        "notes": "Search samples and editorial news are not verified buying demand.",
+        "score_version": "evidence-gates-v3",
+        "upper": null
+      },
+      "source_kind": "press",
+      "timing_precheck": {
+        "date_source": "not_checked",
+        "status": "unknown"
+      }
+    },
     "396d0bc46be8fb99dd5a": {
       "aliases": [],
       "competition": {
@@ -4971,6 +5157,8 @@
         }
       ],
       "source_kind": "press",
+      "status": "superseded",
+      "superseded_reason": "Merged or removed by object extraction v3",
       "timing_precheck": {
         "date_source": "not_checked",
         "status": "unknown"
@@ -5409,7 +5597,7 @@
       ],
       "source_kind": "press",
       "status": "superseded",
-      "superseded_reason": "Invalid named product (legacy quality audit)",
+      "superseded_reason": "Merged or removed by object extraction v3",
       "timing_precheck": {
         "date_source": "not_checked",
         "status": "unknown"
@@ -6534,6 +6722,144 @@
       "source_kind": "press",
       "status": "superseded",
       "superseded_reason": "Merged or removed by object extraction v3"
+    },
+    "9639b1824f68b0761d26": {
+      "aliases": [],
+      "competition": {
+        "checked_at": "2026-11-20T03:47:57+00:00",
+        "contextual_name_candidates": 0,
+        "coverage": "multi_query_search_samples_only_no_visual_confirmation",
+        "listings": [],
+        "name_only_candidates": 0,
+        "queries": [
+          "Crossing Choco Egg with character figures",
+          "Crossing Choco Egg with character"
+        ],
+        "queries_failed": 0,
+        "queries_successful": 2,
+        "query_reports": [
+          {
+            "query": "Crossing Choco Egg with character figures",
+            "sample_size": 2,
+            "search_total": 2,
+            "status": "sampled"
+          },
+          {
+            "query": "Crossing Choco Egg with character",
+            "sample_size": 2,
+            "search_total": 2,
+            "status": "sampled"
+          }
+        ],
+        "sample_limit": 20,
+        "sample_size": 4,
+        "schema_version": 3,
+        "search_total": null,
+        "similar_name_candidates": 0,
+        "status": "sampled",
+        "verified_exact_count": null
+      },
+      "demand_evidence": [],
+      "design_hypothesis": {
+        "demand_evidence": "not_checked",
+        "derived_from_product_id": "c0f7b60977f9c70f5701",
+        "id": "4ac232ce3eb0e324e932",
+        "kind": "collectible_display_base",
+        "originality": "requires_human_review",
+        "status": "untested",
+        "title": "Original display base for collectible figurines"
+      },
+      "discovery_date": "2026-11-20T03:47:48+00:00",
+      "discovery_note": "Re-extracted from previously seen news",
+      "document_first_seen": "2026-11-19T00:31:29+00:00",
+      "event_id": "242eabe4076a52024aa4",
+      "evidence": [
+        {
+          "excerpt": "hich involve dioramas of characters inside rooms you can decorate. The Furuta Animal Crossing Choco Egg with character figures will be back in Japan on December 7, 2026. Animal Crossing:",
+          "extraction_confidence": 0.6,
+          "extraction_method": "named_object_in_source",
+          "source_span": "Crossing Choco Egg with character figures",
+          "type": "press_article",
+          "url": "https://www.siliconera.com/furuta-animal-crossing-choco-egg-candy-with-figures-returns/"
+        }
+      ],
+      "fdm_precheck": {
+        "geometry_tested": false,
+        "reason": "hair, arms and details need real geometry",
+        "risk": "unknown",
+        "status": "preliminary_only"
+      },
+      "first_signal_date": "2026-11-17T22:00:00+00:00",
+      "id": "9639b1824f68b0761d26",
+      "image_type": "official_article_preview",
+      "image_url": "https://www.siliconera.com/wp-content/uploads/2026/11/furuta-animal-crossing-choco-egg-candy-with-figures-returns.jpg",
+      "kind": "figurine",
+      "language": "en",
+      "last_changed": "2026-11-20T03:47:48+00:00",
+      "name": "Crossing Choco Egg with character figures",
+      "origin": "Furuta Animal Crossing Choco Egg Candy With Figures Returns",
+      "product_id": "c0f7b60977f9c70f5701",
+      "region": "japan_global",
+      "rights_status": "unverified",
+      "score": {
+        "blockers": [
+          "demand_not_checked",
+          "fdm_geometry_not_tested",
+          "originality_not_reviewed"
+        ],
+        "confidence": 25,
+        "coverage": {
+          "checked": 2,
+          "dimensions": {
+            "competition": true,
+            "demand": false,
+            "event": true,
+            "fdm": false,
+            "timing": false
+          },
+          "total": 5
+        },
+        "decision": "WATCH",
+        "dimensions": {
+          "competition": {
+            "sampled": 4,
+            "status": "sampled",
+            "verified_exact_count": null
+          },
+          "concept": {
+            "status": "untested"
+          },
+          "demand": {
+            "independent_hosts": 0,
+            "levels": [],
+            "status": "not_checked"
+          },
+          "fdm": {
+            "geometry_tested": false,
+            "risk": "unknown",
+            "status": "preliminary_only"
+          },
+          "timing": {
+            "date_source": "not_checked",
+            "status": "unknown"
+          }
+        },
+        "lower": null,
+        "missing_factors": [
+          "gap",
+          "demand",
+          "fdm",
+          "timing"
+        ],
+        "notes": "Search samples and editorial news are not verified buying demand.",
+        "score_version": "evidence-gates-v3",
+        "upper": null
+      },
+      "source_kind": "press",
+      "timing_precheck": {
+        "date_source": "not_checked",
+        "status": "unknown"
+      }
     },
     "993527d99eee71d98a41": {
       "aliases": [
@@ -8266,6 +8592,144 @@
       "status": "superseded",
       "superseded_reason": "Merged or removed by object extraction v3"
     },
+    "e53e6928bf102defc51a": {
+      "aliases": [],
+      "competition": {
+        "checked_at": "2026-11-20T03:48:05+00:00",
+        "contextual_name_candidates": 0,
+        "coverage": "multi_query_search_samples_only_no_visual_confirmation",
+        "listings": [],
+        "name_only_candidates": 0,
+        "queries": [
+          "Crossing Choco Egg Candy With Figures",
+          "Crossing Choco Egg Candy With"
+        ],
+        "queries_failed": 0,
+        "queries_successful": 2,
+        "query_reports": [
+          {
+            "query": "Crossing Choco Egg Candy With Figures",
+            "sample_size": 2,
+            "search_total": 2,
+            "status": "sampled"
+          },
+          {
+            "query": "Crossing Choco Egg Candy With",
+            "sample_size": 2,
+            "search_total": 2,
+            "status": "sampled"
+          }
+        ],
+        "sample_limit": 20,
+        "sample_size": 4,
+        "schema_version": 3,
+        "search_total": null,
+        "similar_name_candidates": 0,
+        "status": "sampled",
+        "verified_exact_count": null
+      },
+      "demand_evidence": [],
+      "design_hypothesis": {
+        "demand_evidence": "not_checked",
+        "derived_from_product_id": "31d50d72a3f21b6a419b",
+        "id": "cb30f150197e27183968",
+        "kind": "collectible_display_base",
+        "originality": "requires_human_review",
+        "status": "untested",
+        "title": "Original display base for collectible figurines"
+      },
+      "discovery_date": "2026-11-20T03:47:48+00:00",
+      "discovery_note": "Re-extracted from previously seen news",
+      "document_first_seen": "2026-11-19T00:31:29+00:00",
+      "event_id": "242eabe4076a52024aa4",
+      "evidence": [
+        {
+          "excerpt": "Furuta Animal Crossing Choco Egg Candy With Figures Returns. Furuta and Nintendo announced that Animal Crossing Ch",
+          "extraction_confidence": 0.6,
+          "extraction_method": "named_object_in_source",
+          "source_span": "Crossing Choco Egg Candy With Figures",
+          "type": "press_article",
+          "url": "https://www.siliconera.com/furuta-animal-crossing-choco-egg-candy-with-figures-returns/"
+        }
+      ],
+      "fdm_precheck": {
+        "geometry_tested": false,
+        "reason": "hair, arms and details need real geometry",
+        "risk": "unknown",
+        "status": "preliminary_only"
+      },
+      "first_signal_date": "2026-11-17T22:00:00+00:00",
+      "id": "e53e6928bf102defc51a",
+      "image_type": "official_article_preview",
+      "image_url": "https://www.siliconera.com/wp-content/uploads/2026/11/furuta-animal-crossing-choco-egg-candy-with-figures-returns.jpg",
+      "kind": "figurine",
+      "language": "en",
+      "last_changed": "2026-11-20T03:47:48+00:00",
+      "name": "Crossing Choco Egg Candy With Figures",
+      "origin": "Furuta Animal Crossing Choco Egg Candy With Figures Returns",
+      "product_id": "31d50d72a3f21b6a419b",
+      "region": "japan_global",
+      "rights_status": "unverified",
+      "score": {
+        "blockers": [
+          "demand_not_checked",
+          "fdm_geometry_not_tested",
+          "originality_not_reviewed"
+        ],
+        "confidence": 25,
+        "coverage": {
+          "checked": 2,
+          "dimensions": {
+            "competition": true,
+            "demand": false,
+            "event": true,
+            "fdm": false,
+            "timing": false
+          },
+          "total": 5
+        },
+        "decision": "WATCH",
+        "dimensions": {
+          "competition": {
+            "sampled": 4,
+            "status": "sampled",
+            "verified_exact_count": null
+          },
+          "concept": {
+            "status": "untested"
+          },
+          "demand": {
+            "independent_hosts": 0,
+            "levels": [],
+            "status": "not_checked"
+          },
+          "fdm": {
+            "geometry_tested": false,
+            "risk": "unknown",
+            "status": "preliminary_only"
+          },
+          "timing": {
+            "date_source": "not_checked",
+            "status": "unknown"
+          }
+        },
+        "lower": null,
+        "missing_factors": [
+          "gap",
+          "demand",
+          "fdm",
+          "timing"
+        ],
+        "notes": "Search samples and editorial news are not verified buying demand.",
+        "score_version": "evidence-gates-v3",
+        "upper": null
+      },
+      "source_kind": "press",
+      "timing_precheck": {
+        "date_source": "not_checked",
+        "status": "unknown"
+      }
+    },
     "f30e084da527fa09ca39": {
       "aliases": [],
       "competition": {
@@ -8567,6 +9031,21 @@
         "3b0c6c017b03b195b03b"
       ]
     },
+    "31d50d72a3f21b6a419b": {
+      "active": true,
+      "aliases": [],
+      "event_ids": [
+        "242eabe4076a52024aa4"
+      ],
+      "evidence_status": "source_backed_only",
+      "first_seen": "2026-11-20T03:47:48+00:00",
+      "id": "31d50d72a3f21b6a419b",
+      "kind": "figurine",
+      "name": "Crossing Choco Egg Candy With Figures",
+      "opportunity_ids": [
+        "e53e6928bf102defc51a"
+      ]
+    },
     "3e93668216d642c061c5": {
       "active": true,
       "aliases": [],
@@ -8672,6 +9151,21 @@
         "2b6621fe15061c974a33"
       ]
     },
+    "8616eabc758813b3c069": {
+      "active": true,
+      "aliases": [],
+      "event_ids": [
+        "242eabe4076a52024aa4"
+      ],
+      "evidence_status": "source_backed_only",
+      "first_seen": "2026-11-20T03:47:48+00:00",
+      "id": "8616eabc758813b3c069",
+      "kind": "figurine",
+      "name": "Furuta Animal Crossing Choco Egg figure",
+      "opportunity_ids": [
+        "37126e082eaad9c4b779"
+      ]
+    },
     "88245552f3194a1b648a": {
       "active": true,
       "aliases": [],
@@ -8767,6 +9261,21 @@
         "91951158e1d4fbdbd3f3"
       ]
     },
+    "c0f7b60977f9c70f5701": {
+      "active": true,
+      "aliases": [],
+      "event_ids": [
+        "242eabe4076a52024aa4"
+      ],
+      "evidence_status": "source_backed_only",
+      "first_seen": "2026-11-20T03:47:48+00:00",
+      "id": "c0f7b60977f9c70f5701",
+      "kind": "figurine",
+      "name": "Crossing Choco Egg with character figures",
+      "opportunity_ids": [
+        "9639b1824f68b0761d26"
+      ]
+    },
     "c92f2b29d70f809962b3": {
       "active": false,
       "aliases": [],
@@ -8783,7 +9292,7 @@
       ]
     },
     "cbebb76023c61ab2484a": {
-      "active": true,
+      "active": false,
       "aliases": [],
       "event_ids": [
         "242eabe4076a52024aa4"
@@ -8929,35 +9438,42 @@
       "path": "reports/manual-2026-11-20-9019a58b0c7eec0d.html",
       "sha256": "c3e136b20d56370a367d12cbd1f761adf1671bb9b270978153fd2e71f5ee5d32",
       "status": "saved"
+    },
+    "manual:2026-11-20:44670085454:1": {
+      "created_at": "2026-11-20T03:48:11+00:00",
+      "mode": "manual",
+      "path": "reports/manual-2026-11-20-ff4303d02e33eb6a.html",
+      "sha256": "4e62c04e5458b42e3475ddf062dee43406746a621b6e556ebe5afe75ae9e43e4",
+      "status": "saved"
     }
   },
   "schema_version": 1,
   "source_health": {
     "community_placeholder": {
       "kind": "community",
-      "last_checked": "2026-11-20T02:06:54+00:00",
+      "last_checked": "2026-11-20T03:47:46+00:00",
       "source_name": "Authorized community feed (configure before enabling)",
       "status": "disabled"
     },
     "gematsu": {
       "error": null,
-      "etag": "W/\"105a84a99db045e6a39d314c3bab59fe\"",
+      "etag": "W/\"20045e8d40b15bd7ca387f8007ae39f5\"",
       "items_seen": 20,
       "kind": "press",
-      "last_checked": "2026-11-20T02:06:54+00:00",
-      "last_modified": "Fri, 20 Nov 2026 01:42:17 GMT",
-      "last_success": "2026-11-20T02:06:54+00:00",
+      "last_checked": "2026-11-20T03:47:45+00:00",
+      "last_modified": "Fri, 20 Nov 2026 02:12:18 GMT",
+      "last_success": "2026-11-20T03:47:45+00:00",
       "source_name": "Gematsu - Japanese Gaming Announcements",
-      "status": "ok_not_modified"
+      "status": "ok"
     },
     "nintendo_jp": {
       "error": null,
       "etag": null,
       "items_seen": 25,
       "kind": "official",
-      "last_checked": "2026-11-20T02:06:53+00:00",
-      "last_modified": "Fri, 20 Nov 2026 02:00:10 GMT",
-      "last_success": "2026-11-20T02:06:54+00:00",
+      "last_checked": "2026-11-20T03:47:44+00:00",
+      "last_modified": "Fri, 20 Nov 2026 03:45:08 GMT",
+      "last_success": "2026-11-20T03:47:45+00:00",
       "source_name": "Nintendo Japan",
       "status": "ok"
     },
@@ -8966,9 +9482,9 @@
       "etag": null,
       "items_seen": 25,
       "kind": "press",
-      "last_checked": "2026-11-20T02:06:54+00:00",
+      "last_checked": "2026-11-20T03:47:45+00:00",
       "last_modified": null,
-      "last_success": "2026-11-20T02:06:54+00:00",
+      "last_success": "2026-11-20T03:47:46+00:00",
       "source_name": "Nintendo Life - Games and Merchandise",
       "status": "ok"
     },
@@ -8977,9 +9493,9 @@
       "etag": "\"0ffc578b8e14957492847ee807c22cca\"",
       "items_seen": 10,
       "kind": "official",
-      "last_checked": "2026-11-20T02:06:53+00:00",
+      "last_checked": "2026-11-20T03:47:43+00:00",
       "last_modified": "Thu, 19 Nov 2026 09:23:24 GMT",
-      "last_success": "2026-11-20T02:06:53+00:00",
+      "last_success": "2026-11-20T03:47:44+00:00",
       "source_name": "PlayStation Blog",
       "status": "ok_not_modified"
     },
@@ -8988,20 +9504,20 @@
       "etag": "W/\"d820d43e2bb4be8d9d5262ce0d6966be\"",
       "items_seen": 15,
       "kind": "press",
-      "last_checked": "2026-11-20T02:06:54+00:00",
+      "last_checked": "2026-11-20T03:47:45+00:00",
       "last_modified": "Thu, 19 Nov 2026 22:13:25 GMT",
-      "last_success": "2026-11-20T02:06:54+00:00",
+      "last_success": "2026-11-20T03:47:45+00:00",
       "source_name": "Siliconera - Japanese Gaming and Merchandise",
-      "status": "ok"
+      "status": "ok_not_modified"
     },
     "xbox_wire": {
       "error": null,
       "etag": "W/\"13b30f0a2ee039cd60c74a38a09c9727\"",
       "items_seen": 10,
       "kind": "official",
-      "last_checked": "2026-11-20T02:06:53+00:00",
+      "last_checked": "2026-11-20T03:47:44+00:00",
       "last_modified": "Thu, 19 Nov 2026 22:44:31 GMT",
-      "last_success": "2026-11-20T02:06:53+00:00",
+      "last_success": "2026-11-20T03:47:44+00:00",
       "source_name": "Xbox Wire",
       "status": "ok_not_modified"
     }
@@ -9048,6 +9564,14 @@
       }
     ],
     "196668bf19d5e072c15b": [
+      {
+        "cults_samples": 1,
+        "date": "2026-11-20",
+        "direct_evidence_links": 0,
+        "distinct_events": 1
+      }
+    ],
+    "31d50d72a3f21b6a419b": [
       {
         "cults_samples": 1,
         "date": "2026-11-20",
@@ -9111,6 +9635,14 @@
         "distinct_events": 1
       }
     ],
+    "8616eabc758813b3c069": [
+      {
+        "cults_samples": 1,
+        "date": "2026-11-20",
+        "direct_evidence_links": 0,
+        "distinct_events": 1
+      }
+    ],
     "88245552f3194a1b648a": [
       {
         "cults_samples": 1,
@@ -9152,6 +9684,14 @@
       }
     ],
     "a79c81df106ec6399a20": [
+      {
+        "cults_samples": 1,
+        "date": "2026-11-20",
+        "direct_evidence_links": 0,
+        "distinct_events": 1
+      }
+    ],
+    "c0f7b60977f9c70f5701": [
       {
         "cults_samples": 1,
         "date": "2026-11-20",
