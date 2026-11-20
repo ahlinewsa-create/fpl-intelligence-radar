@@ -95,6 +95,10 @@ def english_entity_name(window: str) -> str:
         words.pop(0)
     if len(words) < 2:
         return ""
+    # Explanatory clauses and comparative references are not product names.
+    if any(word.casefold() in {"like", "other", "such", "as", "because", "since"}
+           for word in words[:-1]):
+        return ""
     if any(word.casefold() in _CLAUSE_VERBS for word in words[:-1]):
         return ""
     if len(words) == 2 and words[0].casefold() in _WEAK_LABEL:
