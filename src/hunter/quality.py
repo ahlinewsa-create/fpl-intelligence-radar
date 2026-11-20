@@ -43,7 +43,9 @@ def is_named_product(name: str | None) -> bool:
         return False
     if _EAST_ASIAN.search(name):
         return True
-    return bool(english_entity_name(name))
+    # A product name is still valid when the publisher uses lowercase.
+    # Normalize casing only *after* the explicit fragment/generic checks.
+    return bool(english_entity_name(name) or english_entity_name(name.title()))
 
 
 def is_publishable(op: dict) -> bool:
