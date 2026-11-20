@@ -133,13 +133,19 @@ def update_youtube(state: dict, max_scans: int = 2) -> int:
                 pass
         todo.append(op)
     total = 0
+    statuses = []
     with httpx.Client(timeout=12.0) as client:
         for op in todo[:max(0, min(5, int(max_scans)))]:
-            op["youtube_probe"] = probe(op["name"], client, api_key)
+            result = probe(op["name"], client, api_key)
+            op["youtube_probe"] = result
+            statuses.append(result.get("status"))
             total += 1
+    health_status = ("no_due_items" if not total else
+                     "ok" if "sampled" in statuses else
+                     "failed" if all(s == "failed" for s in statuses) else "partial")
     state.setdefault("source_health", {})["youtube_shadow"] = {
         "source_name": "YouTube Data API — shadow", "kind": "research",
-        "status": "ok" if total else "no_due_items",
+        "status": health_status,
         "last_checked": now_utc(),
     }
     return total
