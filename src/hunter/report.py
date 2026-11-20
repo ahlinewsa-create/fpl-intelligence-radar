@@ -258,9 +258,9 @@ def opportunity_group_card(group: dict, communities_checked: bool,
     if hidden > 0 or secondary > 0:
         note = []
         if hidden > 0:
-            note.append(f"{hidden} مرشحات إضافية")
+            note.append(f"تم اختصار {hidden} مرشحات إضافية")
         if secondary > 0:
-            note.append(f"{secondary} إشارات جانبية غير مرتبطة مباشرة بعنوان الخبر")
+            note.append(f"حُفظت {secondary} إشارات جانبية غير مرتبطة مباشرة بعنوان الخبر")
         body += (
             f'<div style="font-size:12px;color:{MUTED};padding:5px 0">'
             f'عناصر لم تعرض كفرص مستقلة: {h(" • ".join(note))}.</div>'
