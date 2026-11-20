@@ -118,6 +118,21 @@ def competition_text(comp: dict) -> str:
     return "غير مفحوص — لا تعني صفر منافسين"
 
 
+def next_research_step(op: dict) -> str:
+    """A concrete next check, not an invented forecast."""
+    comp = op.get("competition") or {}
+    youtube = op.get("youtube_probe") or {}
+    if comp.get("status") != "sampled":
+        return "فحص منافسة Cults3D باستعلام اسم المنتج الحقيقي وتوثيق العينة"
+    if not op.get("demand_evidence"):
+        if youtube.get("status") == "sampled":
+            return "مراجعة روابط طلب STL المحتمل، ثم البحث عن دليل مستقل آخر"
+        if youtube.get("status") == "failed":
+            return "إعادة فحص طلب STL بعد تعافي مصدر YouTube"
+        return "البحث عن طلب صريح على STL أو طباعة FDM دون استنتاج من الخبر وحده"
+    return "تقييم ملاءمة الفكرة للطباعة FDM بمراجعة هندسية أولية"
+
+
 def object_detail(op: dict, communities_checked: bool) -> str:
     name = op.get("name", "عنصر دون اسم")
     score = op.get("score") or {}
@@ -153,7 +168,9 @@ def object_detail(op: dict, communities_checked: bool) -> str:
         f'<b>الطلب:</b> {h(demand_text)}'
         '</div><div style="font-size:12px;line-height:1.8">'
         f'<b>منافسة Cults3D:</b> {h(competition_text(comp))}'
-        '</div>' + youtube_line + '</div>'
+        '</div>' + youtube_line +
+        '<div style="font-size:12px;line-height:1.8"><b>الخطوة التالية:</b> '
+        + h(next_research_step(op)) + '</div></div>'
     )
     listings = [
         l for l in (comp.get("listings") or [])[:3]
@@ -207,8 +224,14 @@ def opportunity_group_card(group: dict, communities_checked: bool) -> str:
         '<div style="font-size:12px;color:#795523;padding:8px 0 9px">'
         + h(caveat) + '</div>'
     )
-    for member in group["members"]:
+    for member in group["members"][:3]:
         body += object_detail(member, communities_checked)
+    hidden = len(group["members"]) - 3
+    if hidden > 0:
+        body += (
+            f'<div style="font-size:12px;color:{MUTED};padding:5px 0">'
+            f'تم اختصار {hidden} مرشحات إضافية في هذا الحدث لتقليل الضجيج.</div>'
+        )
     body += (
         '<div style="font-size:12px;margin-top:10px;color:#986532">'
         'القرار: WATCH فقط • الطلب ومناسبة FDM يحتاجان إلى تحقق</div>'
