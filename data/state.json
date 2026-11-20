@@ -51,13 +51,13 @@
       "_render_rank": 2,
       "analysis_status": "full_text",
       "candidate_count": 0,
-      "extractor_version": "horizon-inspired-article-v4",
+      "extractor_version": "horizon-inspired-article-v6",
       "first_seen": "2026-11-18T18:04:36+00:00",
       "image_type": "official_article_preview",
       "image_url": "https://assets.topics.apps-jp.nintendo.com/image/2026/11/13020549265480/1280/15c05113d1e1445693a2d00ae9ce75a8.jpg",
       "kind": "official",
       "published_at": "2026-11-17T03:02:40+00:00",
-      "reviewed_at": "2026-11-18T19:37:53+00:00",
+      "reviewed_at": "2026-11-20T14:03:46+00:00",
       "source": "nintendo_jp",
       "summary": "",
       "title": "Nintendo Switch 2『スプラトゥーン レイダース』の体験版を配信中。",
@@ -100,7 +100,7 @@
     "06791991d52e46446c37": {
       "analysis_status": "full_text",
       "candidate_count": 0,
-      "extractor_version": "horizon-inspired-article-v4",
+      "extractor_version": "horizon-inspired-article-v6",
       "first_seen": "2026-11-19T00:31:30+00:00",
       "image_type": "official_article_preview",
       "image_url": "https://images.nintendolife.com/86a4b44568440/1280x720.jpg",
@@ -108,7 +108,7 @@
       "news_category": "gaming",
       "news_interest": 2,
       "published_at": "2026-11-17T17:15:00+00:00",
-      "reviewed_at": "2026-11-19T00:33:11+00:00",
+      "reviewed_at": "2026-11-20T14:03:46+00:00",
       "source": "nintendo_life",
       "summary": "Grim. A new report from Bloomberg reveals that Firaxis Games, the developer behind Civilization and XCOM , has cut around one third of its staff. Meanwhile, its studio head Heather Hazen will also depart. Approximately 60 people have been laid off as work on a new XCOM stalled over the Summer, with the game reportedly missing a huge milestone. Development will continue, but it will likely be met with a pretty drastic shake-up. Read the full article on nintendolife.com",
       "title": "Civilization Developer Firaxis Games Cuts A Third Of Its Staff, Studio Head Departs",
@@ -119,17 +119,30 @@
       "_render_rank": 2,
       "analysis_status": "full_text",
       "candidate_count": 0,
-      "extractor_version": "horizon-inspired-article-v4",
+      "extractor_version": "horizon-inspired-article-v6",
       "first_seen": "2026-11-18T18:04:36+00:00",
       "image_type": "official_article_preview",
       "image_url": "https://assets.topics.apps-jp.nintendo.com/image/2026/11/04114709243154/1280/0052091b0dc34c279571488d3dcb2488.png",
       "kind": "official",
       "published_at": "2026-11-12T05:06:52+00:00",
-      "reviewed_at": "2026-11-18T19:37:55+00:00",
+      "reviewed_at": "2026-11-20T14:03:48+00:00",
       "source": "nintendo_jp",
       "summary": "",
       "title": "タブレット・スマートフォン向けアプリ「かおルイージ」、「かおピーチ」を配信開始。そのほか、「マイマリオ」の最新情報もご紹介。",
       "url": "https://www.nintendo.com/jp/topics/article/482f5918-f83f-453f-90c1-78c1cc02065c"
+    },
+    "0bcd3af9acf61df10b40": {
+      "first_seen": "2026-11-20T14:03:44+00:00",
+      "image_type": "feed_preview",
+      "image_url": null,
+      "kind": "press",
+      "news_category": "other",
+      "news_interest": 1,
+      "published_at": "2026-11-20T04:18:18+00:00",
+      "source": "gematsu",
+      "summary": "Publisher Aniplex and developer TYPE-MOON have released visual novel Witch on the Holy Night for … Source",
+      "title": "Witch on the Holy Night now available for iOS, Android in Japan",
+      "url": "https://www.gematsu.com/2026/11/witch-on-the-holy-night-now-available-for-ios-android-in-japan"
     },
     "0c3c07ee165a1e8154d9": {
       "analysis_status": "full_text",
@@ -282,7 +295,7 @@
     "17fe7690814c2f01f736": {
       "analysis_status": "full_text",
       "candidate_count": 0,
-      "extractor_version": "horizon-inspired-article-v4",
+      "extractor_version": "horizon-inspired-article-v6",
       "first_seen": "2026-11-19T00:31:30+00:00",
       "image_type": "official_article_preview",
       "image_url": "https://www.gematsu.com/wp-content/uploads/2026/11/Exodus-PV_11-17-26.jpg",
@@ -290,7 +303,7 @@
       "news_category": "gaming",
       "news_interest": 2,
       "published_at": "2026-11-17T15:54:27+00:00",
-      "reviewed_at": "2026-11-19T00:33:11+00:00",
+      "reviewed_at": "2026-11-20T14:03:46+00:00",
       "source": "gematsu",
       "summary": "Archetype Entertainment has released an eight-minute featurette for science-fiction action adventure RPG EXODUS revealing the … Source",
       "title": "EXODUS ‘Female Jun Reveal + Scrappy Salvager’ featurette",
@@ -425,13 +438,13 @@
       "_render_rank": 2,
       "analysis_status": "full_text",
       "candidate_count": 0,
-      "extractor_version": "horizon-inspired-article-v4",
+      "extractor_version": "horizon-inspired-article-v6",
       "first_seen": "2026-11-18T18:04:36+00:00",
       "image_type": "official_article_preview",
       "image_url": "https://assets.topics.apps-jp.nintendo.com/image/2026/11/12074445686606/1280/f475766f262a4543b3c578defa664d52.jpg",
       "kind": "official",
       "published_at": "2026-11-13T01:02:55+00:00",
-      "reviewed_at": "2026-11-18T19:37:54+00:00",
+      "reviewed_at": "2026-11-20T14:03:47+00:00",
       "source": "nintendo_jp",
       "summary": "",
       "title": "ニンテンドーeショップ新作ソフト情報 11/13（金）号。",
@@ -633,6 +646,19 @@
       "title": "8BitDo Reveals Its Own GameCube Controller For Switch 2",
       "url": "https://www.nintendolife.com/news/2026/11/8bitdo-reveals-its-own-gamecube-controller-for-switch-2"
     },
+    "4441edf610dd1ebb24b9": {
+      "first_seen": "2026-11-20T14:03:45+00:00",
+      "image_type": "feed_preview",
+      "image_url": "https://images.nintendolife.com/353ac63fcff76/small.jpg",
+      "kind": "press",
+      "news_category": "other",
+      "news_interest": 1,
+      "published_at": "2026-11-20T13:15:00+00:00",
+      "source": "nintendo_life",
+      "summary": "Just hold on a little while longer. If you live in the US and happened to miss out on the Zelda 40th Anniversary Switch 2 console, then good news – more is on the way. This was already kind of confirmed in a recent interview with Nintendo's Latin America Vice President and General Manager Bill van Zyll, in which he claimed Nintendo \"underestimated\" how popular the hardware would be, but promised that more would come at a later date. Read the full article on nintendolife.com",
+      "title": "Zelda Switch 2 Console Is Back In Stock Soon If You Missed Out (US)",
+      "url": "https://www.nintendolife.com/news/2026/11/zelda-switch-2-console-is-back-in-stock-soon-if-you-missed-out-us"
+    },
     "46c30fe1e9db7dff2df2": {
       "first_seen": "2026-11-19T00:31:30+00:00",
       "image_type": "feed_preview",
@@ -764,7 +790,7 @@
     "5ab39393be714e8f085e": {
       "analysis_status": "full_text",
       "candidate_count": 0,
-      "extractor_version": "horizon-inspired-article-v4",
+      "extractor_version": "horizon-inspired-article-v6",
       "first_seen": "2026-11-19T00:31:30+00:00",
       "image_type": "official_article_preview",
       "image_url": "https://www.gematsu.com/wp-content/uploads/2026/11/Calame-Release-Window_11-17-26.jpg",
@@ -772,7 +798,7 @@
       "news_category": "gaming",
       "news_interest": 2,
       "published_at": "2026-11-17T17:41:01+00:00",
-      "reviewed_at": "2026-11-19T00:33:11+00:00",
+      "reviewed_at": "2026-11-20T14:03:45+00:00",
       "source": "gematsu",
       "summary": "Calame, a single-player isometric strategy RPG that “blends deep, classic strategy with innovative reality-shifting gameplay,” …",
       "title": "Calame launches in February 2027",
@@ -1067,7 +1093,7 @@
     "78b20c06b6ec6acbafc1": {
       "analysis_status": "full_text",
       "candidate_count": 0,
-      "extractor_version": "horizon-inspired-article-v4",
+      "extractor_version": "horizon-inspired-article-v6",
       "first_seen": "2026-11-19T00:31:29+00:00",
       "image_type": "official_article_preview",
       "image_url": "https://www.siliconera.com/wp-content/uploads/2026/11/hxv6rcwbuaa-2np.jpg",
@@ -1075,7 +1101,7 @@
       "news_category": "gaming",
       "news_interest": 2,
       "published_at": "2026-11-17T18:00:00+00:00",
-      "reviewed_at": "2026-11-19T00:33:10+00:00",
+      "reviewed_at": "2026-11-20T14:03:45+00:00",
       "source": "siliconera",
       "summary": "All of the game nominees and people who could be honored at The Game Awards 2026 have been revealed. While GTA VI isn’t even out yet , the latest Grand Theft Auto entry nabbed seven nominations. This year, people will be able to watch it on December 10, 2026 on both YouTube and Disney+. Voting is now open on the official site , though as of time of writing it was a bit slammed due to demand. Here are all the categories and nominees for The Game Awards 2026. Game of the Year 2026 Nominees: 007 First Light Control Resonant Grand Theft Auto VI The Legend of Zelda: Ocarina of Time Phantom Blade Zero Resident Evil Requiem Best Action Game: Ace Combat 8: Wings of Theve Gears of War: E-Day Onimusha: Way of the Sword Phantom Blade Zero Saros Best Action-Adventure Game: 007 First Light Control Resonant Grand Theft Auto VI The Legend of Zelda: Ocarina of Time Pragmata Resident Evil Requiem Best Family Game: Big Walk Lego Batman: Legacy of the Dark Knight Nintendo Switch Sports Resort Pokemon Pokopia Yoshi and the Mysterious Book Best Fighting Game: 2XKO Avatar Legends: The Fighting Game Invincible VS Marvel Tokon: Fighting Souls My Hero Academia: All’s Justice Best RPG: The Blood of Dawnwalker Final Fantasy Resonance Fire Emblem: Fortune’s Weave Monster Hunter Stories 3: Twisted Reflection Trails in the Sky 2nd Chapter Best Sim or Strategy Game: Mewgenics Planet Zoo 2 Pokemon Pokopia Slay the Spire 2 Star Wars Zero Company Best Sports or Racing Game: EA Sports FC 27 Forza Horizon 6 Nintendo Switch Sports Resort Screamer Star Wars: Galactic Racer Best Independent Game: Big Walk Cairn Denshattack! Mewgenics Mina the Hollower Best Debut Indie Game: Dressmaker Esoteric Ebb Orbitals Replaced Silver Pines Best Mobile Game: Arknights: Endfield Monster Hunter Outlanders Neverness to Everness Pokemon Champions Where Winds Meet Best VR/AR Game: Forefront Into the Radius 2 Little Nightmares VR: Altered Echoes Teenage Mutant Ninja Turtles: Empire City Thief VR: Legacy of Shadow Best Ongoing Game: Arc Raiders Final Fantasy XIV Fortnite No Man’s Sky The Witcher 3: Wild Hunt Most Anticipated Game: Fable Final Fantasy VII: Revelation God of War Laufey Resident Evil: Veronica The Witcher 4 Best Narrative: 007 First Light The Blood of Dawnwalker Control Resonant Grand Theft Auto 6 Resident Evil Requiem Best Multiplayer: Big Walk Call of Duty: Modern Warfare 4 Gears of War: E-Day Marathon Mecca Chameleon Orbitals Best Game Direction: Control Resonant GTA VI Phantom Blade Zero Pragmata Resident Evil Requiem Best Art Direction: Control Resonant GTA VI The Legend of Zelda: Ocarina of Time Mouse P.I. For Hire Phantom Blade Zero Best Audio Design: Ace Combat 8: Wings of Theve Control Resonant GTA VI Resident Evil Requiem Star Wars: Galactic Racers Best Score and Music: Ace Combat 8: Wings of Theve GTA VI The Legend of Zelda: Ocarina of Time Mixtape Phantom Blade Zero Best User Creation: A Dream of Silence : Revamped Create Aeronautics Nopixel V Star Wars : Droid Tycoon TTK Testing Best Performance: Angela Sant’Albano for Resident Evil Requiem Liam McIntyre for Marvel’s Wolverine Manni L. Perez for GTA VI Patrick Gibson for 007 First Light Rahul Kohli for Saros Games for Impac",
       "title": "Unreleased GTA VI Leads The Game Awards 2026 Nominations",
@@ -1137,6 +1163,19 @@
       "title": "Arcade Archives TX-1 V.8 launches November 19",
       "url": "https://www.gematsu.com/2026/11/arcade-archives-tx-1-v-8-launches-november-19"
     },
+    "805cb06b17a985f33838": {
+      "first_seen": "2026-11-20T14:03:44+00:00",
+      "image_type": "feed_preview",
+      "image_url": null,
+      "kind": "press",
+      "news_category": "other",
+      "news_interest": 1,
+      "published_at": "2026-11-20T04:55:01+00:00",
+      "source": "gematsu",
+      "summary": "Mebius has announced Dual Orb Collection for Switch. It will launch on March 18, 2027 … Source",
+      "title": "Dual Orb Collection announced for Switch",
+      "url": "https://www.gematsu.com/2026/11/dual-orb-collection-announced-for-switch"
+    },
     "82621640ee50497e4231": {
       "first_seen": "2026-11-19T00:31:29+00:00",
       "image_type": "feed_preview",
@@ -1149,6 +1188,19 @@
       "summary": "Nintendo released a free Splatoon Raiders demo on the eShop that features three stages to experience. One is something of a tutorial area, while the other two feature more specific goals. The trial also allows people to test out three loadouts with different types of tanks. Progress does not carry over to the full game. Since this is a dedicated Splatoon Raiders demo and not a slice of gameplay, we don’t see any story content during this trial. It begins with an “Explore the Island” stage available to allow someone to get their bearings. That acts as a tutorial. From there, you’re able to go through other stages that let you mine crystals and see what the Sublevel areas are like. Going through those Sublevel areas also means getting to face a boss from the game too. This comes alongside another update for this spin-off entry. Nintendo and Kadokawa confirmed it will get its own art book in Japan. That will show up next year. A worldwide release isn’t confirmed, but we have seen the other books appear everywhere thanks to Dark Horse . Go Ad-Free With Siliconera+ View the site with no ads, be able to provide direct feedback about what we cover, and be automatically entered into our monthly PC game giveaway. Join Siliconera+ Splatoon Raiders and the free Switch 2 demo are available now worldwide. We may earn a commission if you purchase from certain links. Learn more here .",
       "title": "Splatoon Raiders Demo Arrives With 3 Stages",
       "url": "https://www.siliconera.com/splatoon-raiders-demo-arrives-with-3-stages/"
+    },
+    "8373ffa9bd24653b72d5": {
+      "first_seen": "2026-11-20T14:03:44+00:00",
+      "image_type": "feed_preview",
+      "image_url": null,
+      "kind": "press",
+      "news_category": "other",
+      "news_interest": 1,
+      "published_at": "2026-11-20T04:04:26+00:00",
+      "source": "gematsu",
+      "summary": "Publisher PLAYISM and developer viv have announced Saihate Station: Twilight Edition, a Switch version of … Source",
+      "title": "Saihate Station: Twilight Edition announced for Switch",
+      "url": "https://www.gematsu.com/2026/11/saihate-station-twilight-edition-announced-for-switch"
     },
     "8592be4d72f38c1873e9": {
       "analysis_status": "full_text",
@@ -1290,6 +1342,19 @@
       "title": "Next Punk Hatsune Miku Figure Is FIGURIZMα Midnight",
       "url": "https://www.siliconera.com/next-punk-hatsune-miku-figure-is-figurizm%ce%b1-midnight/"
     },
+    "9671751db164a1d6f62d": {
+      "first_seen": "2026-11-20T14:03:44+00:00",
+      "image_type": "feed_preview",
+      "image_url": null,
+      "kind": "press",
+      "news_category": "other",
+      "news_interest": 1,
+      "published_at": "2026-11-20T14:00:00+00:00",
+      "source": "siliconera",
+      "summary": "FuRyu is one of those companies where you tend to know what their games might be like before they drop as a result of the track record. They can absolutely be fun and memorable, but we know they’re more likely to be average and a little flawed than some AAA, once-in-a-lifetime, must-play. But usually about once a year or so, we’ll see an absolute banger in the roster, and CRYMELIGHT is it. It isn’t a perfect roguelike, but its Hades and Cult of the Lamb approach to dungeon-crawling combat, Poker hand approach to ability upgrades, and troubled characters combine into something worth playing. It also fits well within the established CRY series alongside CRYSTAR and CRYMACHINA . CRYMELIGHT is set in Wonderland, a purgatory where troubled sinners compete in a death game based on Lewis Carroll’s Alice’s Adventures in Wonderland for a chance at freedom if they defeat the Queen. Our adventure begins with a young woman in a blue and white dress facing that final boss. As she’s about to win, she’s defeated. Time then rewinds to a point at which we see a blue butterfly floating through the Queen’s gardens. A voice warns that if she loses her sense of self, she’ll be targeted b the Card Soldiers and eliminated. It seems she could falter until she sees another, colorless butterfly about to suffer the same fate. She defends them, then develops a body again and gains a CRYME weapon. White Rabbit then appears a a guide and declares the nameless girl, who is suffering from amnesia and now given the moniker Alice, a challenger in the death game. Though she suggests abandoning and destroying the other butterfly, Alice claims she owes her one and is her “plus one.” That girl too, who also can’t remember who she is, develops a sense of self and becomes Mary. From there, we jump into solid gameplay loop. The Tea Party Hall hub in Wonderland features a table section with March where you can unlock story scenes of the four challengers Alice, Cheshire, March, and Mad, as well as Mary, that offer insights into who they were in the past and are now. The Tailor lets you upgrade Alice’s weapons and equip accessories. At the Confessional, you can use points earned from dungeon runs to unlock/upgrade abilities (like a revival) and upgrade stats. You can also check in with Cheshire at the library to see past story scenes and segments. It’s a way to relax and prepare for runs, while also perhaps gaining more insights into individuals. Heading out through the doors to Wonderland sends you through different realms toward the Queen’s castle. In typical roguelike fashion, we’re presented with a map with nodes and shown what the “reward” might be for selecting it. This could range from things like additional cards that bolster your attacks and moveset, Skill acquisition, and currency for areas like the Tailor or Wonderland shop. Selecting nodes will send you either into a small stage with a set number of enemies or a shop run by White Rabbit. Once you defeat all of the foes, you get your reward, are sent back to the map, and continue until you reach that region’s Alice’s Adventures in Wonderland -themed boss. Defeating them nets you another important item for progression and acc",
+      "title": "Review: CRYMELIGHT Is a Good Roguelike and CRY Series Game",
+      "url": "https://www.siliconera.com/review-crymelight-is-a-good-roguelike-and-cry-series-game/"
+    },
     "9693c01a3ed84ea8a44a": {
       "analysis_status": "full_text",
       "candidate_count": 0,
@@ -1374,6 +1439,19 @@
       "summary": "Sega announced a new Rebuild of Evangelion Figurizma figure of Asuka Shikinami Langley that is based on her appearance in the movie 3.0 You Can (Not) Redo . It will first appear as a prize figure in Japan starting on November 27, 2026 . An Amazon Sega Store release will follow, just like it did for the 3.0+1.0: Thrice Upon a Time figure of her . This Asuka figure will be close to 11 inches tall (28cm). She’s posed in a way that makes it look like she is walking toward the viewer. She wears her standard red plugsuit from the movie in this outfit, as well as her jacket and cat-ear hat with accessories. She’ll come with a clear base to help her stand. Here’s how she’s expected to look when she launches. Images via Sega and Khara Sega’s released a lot of Rebuild of Evangelion figures and merchandise lately. A scarf based on the Fifth Angel from 1.0: You Are (Not) Alone will launch in Japan on December 4, 2026 . A new Luminasta figure of Kaworu Nagisa appeared there in October 2026, though that hasn’t showed up worldwide just yet. It should appear on the US Amazon storefront soon, since that figure is widely available in Japan now. We’ve also seen a lot of game crossovers with Evangelion lately. Characters from the series are headed to Sonic Racing CrossWorlds . They were in The First Descendant too. Not to mention the planned FFXIV Raid . The Rebuild of Evangelion 3.0 You Can (Not) Redo Asuka Shikinami Langley Figurizma figure will debut in Japan on November 27, 2026, then show up worldwide after. The anime can be found on Netflix, and the films are streaming on Amazon. Viz Media handled the manga release in English. We may earn a commission if you purchase from certain links. Learn more here .",
       "title": "Rebuild of Evangelion Asuka Figure Wears Her Cat Hat",
       "url": "https://www.siliconera.com/rebuild-of-evangelion-asuka-figure-wears-her-cat-hat/"
+    },
+    "9977c9abc2dabf605d98": {
+      "first_seen": "2026-11-20T14:03:45+00:00",
+      "image_type": "feed_preview",
+      "image_url": "https://images.nintendolife.com/722df72fe36b4/small.jpg",
+      "kind": "press",
+      "news_category": "other",
+      "news_interest": 1,
+      "published_at": "2026-11-20T05:30:00+00:00",
+      "source": "nintendo_life",
+      "summary": "Includes additional functionality, adjustments and bug fixes. These past few months have been packed with many exciting game releases, and one title that might be worth taking another look at is Dynasty Warriors: Complete Edition Remastered . Koei Tecmo rolled out a new update for the title earlier this week on the Switch 2 and other platforms. Version 1.1.0 features additional functionality (including a new language and the ability set two-player controls), adjustments and multiple bug fixes. Read the full article on nintendolife.com",
+      "title": "Dynasty Warriors 3: Complete Edition Remastered Gets A New Switch 2 Update",
+      "url": "https://www.nintendolife.com/news/2026/11/dynasty-warriors-3-complete-edition-remastered-gets-a-new-switch-2-update"
     },
     "9a63c2026fb96e93880c": {
       "analysis_status": "full_text",
@@ -1461,13 +1539,13 @@
       "_render_rank": 2,
       "analysis_status": "full_text",
       "candidate_count": 1,
-      "extractor_version": "horizon-inspired-article-v4",
+      "extractor_version": "horizon-inspired-article-v6",
       "first_seen": "2026-11-18T18:04:35+00:00",
       "image_type": "official_article_preview",
       "image_url": "https://blog.playstation.com/tachyon/2026/11/4307c0e946544855e38087de41e890782dd7d4bf.jpg",
       "kind": "official",
       "published_at": "2026-11-12T23:00:19+00:00",
-      "reviewed_at": "2026-11-18T19:37:54+00:00",
+      "reviewed_at": "2026-11-20T14:03:47+00:00",
       "source": "playstation_blog",
       "summary": "What if a sky-spanning Colossus didn’t just loom overhead as a static backdrop, but actively listened and responded to your every gunshot? That’s the core question driving our upcoming fifth season, Dissonant Resonance, free to play and launching globally on November 18. Today, I want to take you behind the scenes to share how we are turning sound and emotion into your greatest weapons – and your biggest threats. New weird meets a symphony of dread Once Human thrives on the New Weird design philosophy – taking the familiar and twisting it into a nightmare. For Season 5, we wanted to apply this philosophy not just to the visuals, but to the audio itself. As we realized players always take background music for granted, we decided to weaponize it. Inspired by the cathedral pipe organ, a human symbol of sanctity and solemnity, and through the lens of the New Weird, we distorted this familiar object into a cosmic, biomechanical monstrosity: What if the music wasn’t just playing in your headset, but was the literal breathing and judgment of a cosmic monstrosity watching your every move? This idea birthed the Sky Living-Machine Colossus. By merging the sacred with the grotesque, this massive pipe-organ titan transforms the very rhythm of the world into an active, weaponized mechanic. Emotion zones & rhythmic gunplay To ground this massive concept in actual gameplay, we’ve warped the open world with four distinct Emotion Zones: Joy, Anger, Sorrow, and Fear. In these erratic regions, your arsenal becomes an instrument. Defeating enemies scatters musical notes across the battlefield. By shooting these notes, you not only trigger pitch-tuned audio to improvise your own battle rhythms, but also collect them to purify dissonant, corrupted scores. Once these notes are rearranged into harmonious melodies, the scores grant your squad powerful rewards. And as you perform these deadly battle rhythms, the Sky Colossus above will react dynamically, shifting its visual expressions in real-time. Once the Sky Colossus descends and lingers long enough, the world itself splits open—a rift portal emerges, daring your squad to step through and face the music directly. Conducting the Colossus & a new companion Stepping through that portal initiates a high-stakes, four-player co-op Colossus Raid. But this is no traditional boss fight. Taking center stage, the titan becomes a maestro of destruction, dynamically shifting the battlefield’s combat score. As the boss and the arena pulse to a new rhythm, your squad must adapt on the fly. You need to sprint to silence glowing resonating pipes in a ruined cathedral, and disrupt the melody before the deadly track concludes. You aren’t just surviving a boss fight – you are conducting it. To help you survive this apocalyptic symphony, we are also introducing the brand-new Deviant, Silent Statue. Appearing initially as a shattered, gray monument, it silently absorbs the elemental chaos of your firefights. For those who can unlock its true potential, the ruins will mend and spread brilliant golden wings—bestowing a massive elemental blessing across the squad. Gear up, tune your weapons, and get ready to conduct the apocalypse when On",
       "title": "Once Human: Season 5 gameplay showcases co-op Colossus boss battle, live November 18",
@@ -1581,13 +1659,13 @@
       "_render_rank": 2,
       "analysis_status": "full_text",
       "candidate_count": 0,
-      "extractor_version": "horizon-inspired-article-v4",
+      "extractor_version": "horizon-inspired-article-v6",
       "first_seen": "2026-11-18T18:04:36+00:00",
       "image_type": "official_article_preview",
       "image_url": "https://assets.topics.apps-jp.nintendo.com/image/2026/10/28054115611340/1280/c6f668f7d0d24667ab1086c449c7d41e.jpg",
       "kind": "official",
       "published_at": "2026-11-12T01:07:59+00:00",
-      "reviewed_at": "2026-11-18T19:37:56+00:00",
+      "reviewed_at": "2026-11-20T14:03:50+00:00",
       "source": "nintendo_jp",
       "summary": "",
       "title": "幻想を超える旅が始まる。ファンタジーRPG『メタファー：リファンタジオ』がNintendo Switch 2 で本日発売。 ※本作の対象年齢は「15歳以上」です。",
@@ -1900,13 +1978,13 @@
       "_render_rank": 2,
       "analysis_status": "full_text",
       "candidate_count": 0,
-      "extractor_version": "horizon-inspired-article-v4",
+      "extractor_version": "horizon-inspired-article-v6",
       "first_seen": "2026-11-18T18:04:36+00:00",
       "image_type": "official_article_preview",
       "image_url": "https://assets.topics.apps-jp.nintendo.com/image/2026/11/06124452859443/1280/f83984a3c68a43488cdb333bc076a9a9.jpg",
       "kind": "official",
       "published_at": "2026-11-12T01:14:34+00:00",
-      "reviewed_at": "2026-11-18T19:37:55+00:00",
+      "reviewed_at": "2026-11-20T14:03:48+00:00",
       "source": "nintendo_jp",
       "summary": "",
       "title": "『ピクミン4 Nintendo Switch 2 Edition + だれでもチャレンジ! ダンドリ検定』は本日発売。小芝風花さんがダンドリ検定に挑む長編映像も公開中。",
@@ -2182,7 +2260,7 @@
     "efc6f85ad4da590f67ce": {
       "analysis_status": "full_text",
       "candidate_count": 0,
-      "extractor_version": "horizon-inspired-article-v4",
+      "extractor_version": "horizon-inspired-article-v6",
       "first_seen": "2026-11-19T00:31:30+00:00",
       "image_type": "official_article_preview",
       "image_url": "https://images.nintendolife.com/ac259145e3bf1/1280x720.jpg",
@@ -2190,7 +2268,7 @@
       "news_category": "gaming",
       "news_interest": 2,
       "published_at": "2026-11-17T18:30:00+00:00",
-      "reviewed_at": "2026-11-19T00:33:10+00:00",
+      "reviewed_at": "2026-11-20T14:03:45+00:00",
       "source": "nintendo_life",
       "summary": "Cases closed. With the holiday season rapidly approaching, we'd wager that you likely have a long journey or two to make in the coming weeks — we know we sure do! Switch 2 remains our console of choice for lengthy travels like these, natch, but over the last year and a half, we have begun accumulating a handful of accessories that make the experience that bit less painful. Above, the ever-lovely Alex Olney showcases some of his favourite Switch 2 travel accessories that he has found so far. This includes everything from cases to headphones, portable docks to AR glasses (yes, really). Read the full article on nintendolife.com",
       "title": "Video: Long Journey Coming Up? Here Are Our Favourite Switch 2 Travel Accessories",
@@ -2212,6 +2290,19 @@
       "summary": "We are the night. A new update has landed for Lego Batman: Legacy of the Dark Knight on Switch 2. It's not a massive one, all things considered, but it does add GameShare support for those who want to play online multiplayer via GameChat. We've also got a bunch of miscellaneous improvements to performance, stability, etc. Gotta love that stability. Read the full article on nintendolife.com",
       "title": "Lego Batman: Legacy Of The Dark Knight Update Adds GameShare Support",
       "url": "https://www.nintendolife.com/news/2026/11/lego-batman-legacy-of-the-dark-knight-update-adds-gameshare-support"
+    },
+    "f400c3557d8b34b27c5f": {
+      "first_seen": "2026-11-20T14:03:44+00:00",
+      "image_type": "feed_preview",
+      "image_url": null,
+      "kind": "press",
+      "news_category": "other",
+      "news_interest": 1,
+      "published_at": "2026-11-20T13:05:15+00:00",
+      "source": "gematsu",
+      "summary": "The version 3.4 update for Zenless Zone Zero, dubbed “The Finality of the Day,” will … Source",
+      "title": "Zenless Zone Zero version 3.4 update ‘The Finality of the Day’ launches December 2",
+      "url": "https://www.gematsu.com/2026/11/zenless-zone-zero-version-3-4-update-the-finality-of-the-day-launches-december-2"
     },
     "f51e48202f16e8382348": {
       "analysis_status": "full_text",
@@ -2371,13 +2462,13 @@
       "_render_rank": 2,
       "analysis_status": "full_text",
       "candidate_count": 0,
-      "extractor_version": "horizon-inspired-article-v4",
+      "extractor_version": "horizon-inspired-article-v6",
       "first_seen": "2026-11-18T18:04:36+00:00",
       "image_type": "official_article_preview",
       "image_url": "https://assets.topics.apps-jp.nintendo.com/image/2026/11/11045828091528/1280/f677ada4c577413b807f271776a883ed.jpg",
       "kind": "official",
       "published_at": "2026-11-12T01:08:55+00:00",
-      "reviewed_at": "2026-11-18T19:37:56+00:00",
+      "reviewed_at": "2026-11-20T14:03:49+00:00",
       "source": "nintendo_jp",
       "summary": "",
       "title": "プレゼントにおすすめのグッズをご紹介。『マリオカート ワールド』のラッピンググッズは本日発売。",
@@ -4157,16 +4248,35 @@
         "ハイドラ フィギュア"
       ],
       "competition": {
-        "checked_at": "2026-11-18T23:27:14+00:00",
+        "checked_at": "2026-11-20T14:03:53+00:00",
         "contextual_name_candidates": 0,
-        "coverage": "search_sample_only",
+        "coverage": "multi_query_search_samples_only_no_visual_confirmation",
         "listings": [],
         "name_only_candidates": 0,
-        "query": "ノワールデデデ&ハイドラ amiibo",
+        "queries": [
+          "ノワールデデデ&ハイドラ amiibo",
+          "ノワールデデデ&ハイドラ フィギュア"
+        ],
+        "queries_failed": 0,
+        "queries_successful": 2,
+        "query_reports": [
+          {
+            "query": "ノワールデデデ&ハイドラ amiibo",
+            "sample_size": 20,
+            "search_total": 551,
+            "status": "sampled"
+          },
+          {
+            "query": "ノワールデデデ&ハイドラ フィギュア",
+            "sample_size": 1,
+            "search_total": 1,
+            "status": "sampled"
+          }
+        ],
         "sample_limit": 20,
-        "sample_size": 20,
-        "schema_version": 2,
-        "search_total": 551,
+        "sample_size": 21,
+        "schema_version": 3,
+        "search_total": null,
         "similar_name_candidates": 0,
         "status": "sampled",
         "verified_exact_count": null
@@ -4177,6 +4287,12 @@
           "note": "older name-match criteria; not comparable with v2",
           "sample_size": 20,
           "schema_version": 1
+        },
+        {
+          "checked_at": "2026-11-18T23:27:14+00:00",
+          "note": "prior search sample; comparison may differ",
+          "sample_size": 20,
+          "schema_version": 2
         }
       ],
       "demand_evidence": [],
@@ -4241,7 +4357,7 @@
         "decision": "WATCH",
         "dimensions": {
           "competition": {
-            "sampled": 20,
+            "sampled": 21,
             "status": "sampled",
             "verified_exact_count": null
           },
@@ -4333,6 +4449,60 @@
           "score_version": "MVP-2",
           "upper": 77.5,
           "window": "WATCH"
+        },
+        {
+          "blockers": [
+            "demand_not_checked",
+            "fdm_geometry_not_tested",
+            "originality_not_reviewed"
+          ],
+          "confidence": 25,
+          "coverage": {
+            "checked": 2,
+            "dimensions": {
+              "competition": true,
+              "demand": false,
+              "event": true,
+              "fdm": false,
+              "timing": false
+            },
+            "total": 5
+          },
+          "decision": "WATCH",
+          "dimensions": {
+            "competition": {
+              "sampled": 20,
+              "status": "sampled",
+              "verified_exact_count": null
+            },
+            "concept": {
+              "status": "untested"
+            },
+            "demand": {
+              "independent_hosts": 0,
+              "levels": [],
+              "status": "not_checked"
+            },
+            "fdm": {
+              "geometry_tested": false,
+              "risk": "unknown",
+              "status": "preliminary_only"
+            },
+            "timing": {
+              "date_source": "not_checked",
+              "status": "unknown"
+            }
+          },
+          "lower": null,
+          "missing_factors": [
+            "gap",
+            "demand",
+            "fdm",
+            "timing"
+          ],
+          "notes": "Search samples and editorial news are not verified buying demand.",
+          "score_version": "evidence-gates-v3",
+          "upper": null
         }
       ],
       "timing_precheck": {
@@ -6867,16 +7037,35 @@
         "ドラグーン フィギュア"
       ],
       "competition": {
-        "checked_at": "2026-11-18T23:27:15+00:00",
+        "checked_at": "2026-11-20T14:03:55+00:00",
         "contextual_name_candidates": 0,
-        "coverage": "search_sample_only",
+        "coverage": "multi_query_search_samples_only_no_visual_confirmation",
         "listings": [],
         "name_only_candidates": 0,
-        "query": "ソードカービィ&ドラグーン amiibo",
+        "queries": [
+          "ソードカービィ&ドラグーン amiibo",
+          "ドラグーン amiibo"
+        ],
+        "queries_failed": 0,
+        "queries_successful": 2,
+        "query_reports": [
+          {
+            "query": "ソードカービィ&ドラグーン amiibo",
+            "sample_size": 20,
+            "search_total": 551,
+            "status": "sampled"
+          },
+          {
+            "query": "ドラグーン amiibo",
+            "sample_size": 1,
+            "search_total": 1,
+            "status": "sampled"
+          }
+        ],
         "sample_limit": 20,
-        "sample_size": 20,
-        "schema_version": 2,
-        "search_total": 551,
+        "sample_size": 21,
+        "schema_version": 3,
+        "search_total": null,
         "similar_name_candidates": 0,
         "status": "sampled",
         "verified_exact_count": null
@@ -6887,6 +7076,12 @@
           "note": "older name-match criteria; not comparable with v2",
           "sample_size": 20,
           "schema_version": 1
+        },
+        {
+          "checked_at": "2026-11-18T23:27:15+00:00",
+          "note": "prior search sample; comparison may differ",
+          "sample_size": 20,
+          "schema_version": 2
         }
       ],
       "demand_evidence": [],
@@ -6951,7 +7146,7 @@
         "decision": "WATCH",
         "dimensions": {
           "competition": {
-            "sampled": 20,
+            "sampled": 21,
             "status": "sampled",
             "verified_exact_count": null
           },
@@ -7043,6 +7238,60 @@
           "score_version": "MVP-2",
           "upper": 77.5,
           "window": "WATCH"
+        },
+        {
+          "blockers": [
+            "demand_not_checked",
+            "fdm_geometry_not_tested",
+            "originality_not_reviewed"
+          ],
+          "confidence": 25,
+          "coverage": {
+            "checked": 2,
+            "dimensions": {
+              "competition": true,
+              "demand": false,
+              "event": true,
+              "fdm": false,
+              "timing": false
+            },
+            "total": 5
+          },
+          "decision": "WATCH",
+          "dimensions": {
+            "competition": {
+              "sampled": 20,
+              "status": "sampled",
+              "verified_exact_count": null
+            },
+            "concept": {
+              "status": "untested"
+            },
+            "demand": {
+              "independent_hosts": 0,
+              "levels": [],
+              "status": "not_checked"
+            },
+            "fdm": {
+              "geometry_tested": false,
+              "risk": "unknown",
+              "status": "preliminary_only"
+            },
+            "timing": {
+              "date_source": "not_checked",
+              "status": "unknown"
+            }
+          },
+          "lower": null,
+          "missing_factors": [
+            "gap",
+            "demand",
+            "fdm",
+            "timing"
+          ],
+          "notes": "Search samples and editorial news are not verified buying demand.",
+          "score_version": "evidence-gates-v3",
+          "upper": null
         }
       ],
       "timing_precheck": {
@@ -8361,16 +8610,28 @@
     "e2eac6d8e4bdb8133e2b": {
       "aliases": [],
       "competition": {
-        "checked_at": "2026-11-18T23:27:12+00:00",
+        "checked_at": "2026-11-20T14:03:50+00:00",
         "contextual_name_candidates": 0,
-        "coverage": "search_sample_only",
+        "coverage": "multi_query_search_samples_only_no_visual_confirmation",
         "listings": [],
         "name_only_candidates": 0,
-        "query": "Silent Statue",
+        "queries": [
+          "Silent Statue"
+        ],
+        "queries_failed": 0,
+        "queries_successful": 1,
+        "query_reports": [
+          {
+            "query": "Silent Statue",
+            "sample_size": 20,
+            "search_total": 595,
+            "status": "sampled"
+          }
+        ],
         "sample_limit": 20,
         "sample_size": 20,
-        "schema_version": 2,
-        "search_total": 597,
+        "schema_version": 3,
+        "search_total": null,
         "similar_name_candidates": 0,
         "status": "sampled",
         "verified_exact_count": null
@@ -8381,6 +8642,12 @@
           "note": "older name-match criteria; not comparable with v2",
           "sample_size": 20,
           "schema_version": 1
+        },
+        {
+          "checked_at": "2026-11-18T23:27:12+00:00",
+          "note": "prior search sample; comparison may differ",
+          "sample_size": 20,
+          "schema_version": 2
         }
       ],
       "demand_evidence": [],
@@ -9459,18 +9726,18 @@
   "source_health": {
     "community_placeholder": {
       "kind": "community",
-      "last_checked": "2026-11-20T03:47:46+00:00",
+      "last_checked": "2026-11-20T14:03:45+00:00",
       "source_name": "Authorized community feed (configure before enabling)",
       "status": "disabled"
     },
     "gematsu": {
       "error": null,
-      "etag": "W/\"20045e8d40b15bd7ca387f8007ae39f5\"",
+      "etag": "W/\"b04c68db4f17e7dbf70169cf00341cb6\"",
       "items_seen": 20,
       "kind": "press",
-      "last_checked": "2026-11-20T03:47:45+00:00",
-      "last_modified": "Fri, 20 Nov 2026 02:12:18 GMT",
-      "last_success": "2026-11-20T03:47:45+00:00",
+      "last_checked": "2026-11-20T14:03:44+00:00",
+      "last_modified": "Fri, 20 Nov 2026 13:55:55 GMT",
+      "last_success": "2026-11-20T14:03:44+00:00",
       "source_name": "Gematsu - Japanese Gaming Announcements",
       "status": "ok"
     },
@@ -9479,9 +9746,9 @@
       "etag": null,
       "items_seen": 25,
       "kind": "official",
-      "last_checked": "2026-11-20T03:47:44+00:00",
-      "last_modified": "Fri, 20 Nov 2026 03:45:08 GMT",
-      "last_success": "2026-11-20T03:47:45+00:00",
+      "last_checked": "2026-11-20T14:03:44+00:00",
+      "last_modified": "Fri, 20 Nov 2026 14:00:10 GMT",
+      "last_success": "2026-11-20T14:03:44+00:00",
       "source_name": "Nintendo Japan",
       "status": "ok"
     },
@@ -9490,44 +9757,44 @@
       "etag": null,
       "items_seen": 25,
       "kind": "press",
-      "last_checked": "2026-11-20T03:47:45+00:00",
+      "last_checked": "2026-11-20T14:03:44+00:00",
       "last_modified": null,
-      "last_success": "2026-11-20T03:47:46+00:00",
+      "last_success": "2026-11-20T14:03:45+00:00",
       "source_name": "Nintendo Life - Games and Merchandise",
       "status": "ok"
     },
     "playstation_blog": {
       "error": null,
-      "etag": "\"0ffc578b8e14957492847ee807c22cca\"",
+      "etag": "\"626c27de3b8623b2df2fbd562b38e1c7\"",
       "items_seen": 10,
       "kind": "official",
-      "last_checked": "2026-11-20T03:47:43+00:00",
-      "last_modified": "Thu, 19 Nov 2026 09:23:24 GMT",
-      "last_success": "2026-11-20T03:47:44+00:00",
+      "last_checked": "2026-11-20T14:03:43+00:00",
+      "last_modified": "Fri, 20 Nov 2026 09:20:26 GMT",
+      "last_success": "2026-11-20T14:03:43+00:00",
       "source_name": "PlayStation Blog",
-      "status": "ok_not_modified"
+      "status": "ok"
     },
     "siliconera": {
       "error": null,
-      "etag": "W/\"d820d43e2bb4be8d9d5262ce0d6966be\"",
+      "etag": "W/\"01b0e19b7212d0843430ff0cb98795b5\"",
       "items_seen": 15,
       "kind": "press",
-      "last_checked": "2026-11-20T03:47:45+00:00",
-      "last_modified": "Thu, 19 Nov 2026 22:13:25 GMT",
-      "last_success": "2026-11-20T03:47:45+00:00",
+      "last_checked": "2026-11-20T14:03:44+00:00",
+      "last_modified": "Thu, 05 Nov 2026 21:16:07 GMT",
+      "last_success": "2026-11-20T14:03:44+00:00",
       "source_name": "Siliconera - Japanese Gaming and Merchandise",
-      "status": "ok_not_modified"
+      "status": "ok"
     },
     "xbox_wire": {
       "error": null,
-      "etag": "W/\"13b30f0a2ee039cd60c74a38a09c9727\"",
+      "etag": "W/\"d165ff77daccf2d422d000c5f79d1bed\"",
       "items_seen": 10,
       "kind": "official",
-      "last_checked": "2026-11-20T03:47:44+00:00",
-      "last_modified": "Thu, 19 Nov 2026 22:44:31 GMT",
-      "last_success": "2026-11-20T03:47:44+00:00",
+      "last_checked": "2026-11-20T14:03:43+00:00",
+      "last_modified": "Fri, 20 Nov 2026 10:28:45 GMT",
+      "last_success": "2026-11-20T14:03:44+00:00",
       "source_name": "Xbox Wire",
-      "status": "ok_not_modified"
+      "status": "ok"
     }
   },
   "trend_observations": {
