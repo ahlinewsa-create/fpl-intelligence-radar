@@ -254,10 +254,16 @@ def opportunity_group_card(group: dict, communities_checked: bool,
     for member in group["members"][:3]:
         body += object_detail(member, communities_checked, state, report_date)
     hidden = len(group["members"]) - 3
-    if hidden > 0:
+    secondary = group.get("secondary_mentions", 0)
+    if hidden > 0 or secondary > 0:
+        note = []
+        if hidden > 0:
+            note.append(f"{hidden} مرشحات إضافية")
+        if secondary > 0:
+            note.append(f"{secondary} إشارات جانبية غير مرتبطة مباشرة بعنوان الخبر")
         body += (
             f'<div style="font-size:12px;color:{MUTED};padding:5px 0">'
-            f'تم اختصار {hidden} مرشحات إضافية في هذا الحدث لتقليل الضجيج.</div>'
+            f'عناصر لم تعرض كفرص مستقلة: {h(" • ".join(note))}.</div>'
         )
     body += (
         '<div style="font-size:12px;margin-top:10px;color:#986532">'
