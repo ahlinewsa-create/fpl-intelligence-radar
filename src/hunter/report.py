@@ -101,13 +101,15 @@ def media_header(title: str, image: str | None, metadata: str) -> str:
 
 
 def competition_text(comp: dict) -> str:
-    if comp.get("status") == "sampled" and comp.get("schema_version") == 2:
+    if comp.get("status") == "sampled" and comp.get("schema_version") in (2, 3):
         size = comp.get("sample_size", 0)
         contextual = comp.get("contextual_name_candidates", 0)
         named = comp.get("name_only_candidates", 0)
         similar = comp.get("similar_name_candidates", 0)
+        attempts = comp.get("query_reports") or []
+        queries = (f" عبر {len(attempts)} استعلامات" if attempts else "")
         return (
-            f"فُحصت عينة من {size} نتيجة: {contextual} مرشح اسم وسياق، "
+            f"فُحصت عينة من {size} نتيجة{queries}: {contextual} مرشح اسم وسياق، "
             f"{named} اسم مشترك، {similar} اسم مشابه. "
             "لم يُثبت عدد الملفات المطابقة بصريًا، ولا تشبع السوق."
         )
@@ -139,6 +141,32 @@ def object_detail(op: dict, communities_checked: bool) -> str:
         demand_text = "لم تُسجل إشارة مرتبطة بالقطعة ضمن المصادر المجتمعية المفحوصة"
     else:
         demand_text = "غير مفحوص — مصادر النقاش غير مفعّلة"
+    dimensions = score.get("dimensions") or {}
+    coverage = score.get("coverage") or {}
+    hypothesis = op.get("design_hypothesis") or {}
+    fdm = op.get("fdm_precheck") or {}
+    timing = op.get("timing_precheck") or {}
+    external = op.get("external_competition") or []
+    release = op.get("release_calendar") or {}
+    demand_state = (dimensions.get("demand") or {}).get("status", "not_checked")
+    evidence_detail = (
+        f'<div style="font-size:12px;line-height:1.85"><b>تغطية الأدلة:</b> '
+        f'{h(str(coverage.get("checked", 0)))}/{h(str(coverage.get("total", 5)))} مجالات '
+        f'• طلب: {h(demand_state)} '
+        f'• قرار: {h(score.get("decision", "WATCH"))}</div>'
+        f'<div style="font-size:12px;line-height:1.85"><b>فكرة أصلية للاختبار:</b> '
+        f'{h(hypothesis.get("title", "لم تُنشأ بعد"))} '
+        f'(فرضية غير مثبتة)</div>'
+        f'<div style="font-size:12px;line-height:1.85"><b>FDM:</b> '
+        f'{h(fdm.get("risk", "غير مفحوص"))} — تقدير أولي، لم تُختبر الهندسة</div>'
+        f'<div style="font-size:12px;line-height:1.85"><b>التوقيت:</b> '
+        f'{h(timing.get("status", "غير مفحوص"))}'
+        f'{(" • ذروة موسمية تقديرية: " + h(timing["estimated_peak"])) if timing.get("estimated_peak") else ""}'
+        f'{(" • موعد إصدار موثق للمراجعة: " + h(release["release_date"])) if release.get("release_date") else ""}'
+        '</div>'
+        f'<div style="font-size:12px;line-height:1.85"><b>منصات STL الأخرى:</b> '
+        f'{len(external)} روابط راجعها مستخدم؛ لا تمثل مسحًا شاملًا</div>'
+    )
     body = (
         '<div style="border-top:1px solid #ece8f2;padding:11px 0 4px">'
         '<div style="font-size:12px;color:#81519c">🔎 عنصر مرشح للمراجعة</div>'
@@ -153,7 +181,7 @@ def object_detail(op: dict, communities_checked: bool) -> str:
         f'<b>منافسة Cults3D:</b> {h(competition_text(comp))}'
         '</div>'
         '<div style="font-size:12px;line-height:1.8"><b>الخطوة التالية:</b> '
-        + h(next_research_step(op)) + '</div></div>'
+        + h(next_research_step(op)) + '</div>' + evidence_detail + '</div>'
     )
     listings = [
         l for l in (comp.get("listings") or [])[:3]
@@ -319,9 +347,15 @@ def render(state: dict, date: str, manual: bool = False) -> str:
             f'<b>{h(item.get("source_name", sid))}</b> — {h(status)} '
             f'• آخر نجاح: {local_time(item.get("last_success"))}</div>'
         )
+    ready_count = sum((op.get("score") or {}).get("decision") == "DESIGN NOW"
+                      for op in ops)
+    validate_count = sum((op.get("score") or {}).get("decision") == "VALIDATE"
+                         for op in ops)
     decision = (
+        f"توجد {ready_count} فرضيات اجتازت بوابات التحقق المسجلة؛ راجع الأدلة قبل التصميم."
+        if ready_count else
         "لا توجد توصية DESIGN NOW مستوفية لأدلة الطلب والمنافسة والجدوى. "
-        "الإشارات التالية للمراقبة فقط؛ ولا يعني غياب دليل الطلب عدم وجوده."
+        "الإشارات الحالية للمراقبة أو التحقق؛ غياب دليل الطلب لا يعني عدم وجوده."
     )
     return f"""<!doctype html>
 <html lang="ar" dir="rtl">
@@ -353,7 +387,7 @@ border-radius:12px"><tr>
 {stat_cell(f"{healthy}/{len(news_sources)}", "مصادر أخبار سليمة")}
 </tr></table></td></tr>
 <tr><td>
-{card(f'<div style="font-size:17px;color:{PURPLE};font-weight:800">🎯 القرار اليوم</div><p style="font-size:13px;line-height:1.85">{h(decision)}</p><div style="font-size:12px;color:{MUTED}">{len(recent_events)} أحداث مرشحة حديثة • {reviewed} خبرًا روجع نصيًا • {h(covered)}</div>')}
+{card(f'<div style="font-size:17px;color:{PURPLE};font-weight:800">🎯 القرار اليوم</div><p style="font-size:13px;line-height:1.85">{h(decision)}</p><div style="font-size:12px;color:{MUTED}">{len(recent_events)} أحداث مرشحة حديثة • {validate_count} فرضيات للتحقق • {reviewed} خبرًا روجع نصيًا • {h(covered)}</div>')}
 {heading("📌 إشارات مبكرة — مجمّعة حسب الحدث")}
 {opportunities}
 {heading("📰 أخبار حديثة تستحق المتابعة")}
