@@ -201,10 +201,10 @@ def opportunity_group_card(group: dict, communities_checked: bool) -> str:
         kind_label = "مقتنيات رسمية"
         caveat = (
             "التغطية الصحفية رصد أولي؛ تحقّق من إعلان الشركة الأصلي. "
-            "ظهور القطعة لا يثبت طلب STL أو حق استنساخها."
+            "ظهور القطعة لا يثبت طلبًا على ملفات STL."
             if primary.get("source_kind") == "press" else
             "الإعلان الرسمي يشير إلى ظهور القطعة فقط؛ "
-            "لا يثبت وجود طلب STL أو حق استنساخ المنتج."
+            "لا يثبت وجود طلب على ملفات STL."
         )
     else:
         kind_label = "عنصر من لعبة أو خبر"
