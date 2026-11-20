@@ -6,6 +6,8 @@ film names from figure news. Candidate results require explicit confirmation.
 from __future__ import annotations
 
 import os
+import json
+from pathlib import Path
 from datetime import datetime, timedelta, timezone
 
 import httpx
@@ -52,12 +54,36 @@ def lookup_media(title: str, client: httpx.Client, token: str) -> dict:
                 "checked_at": now_utc(), "reason": "api_or_schema_error"}
 
 
+def load_targets(state: dict, path: str | Path = "config/tmdb_targets.json") -> int:
+    """Map explicit media titles to opportunities; never infer from merchandise."""
+    p = Path(path)
+    if not p.exists():
+        return 0
+    try:
+        targets = json.loads(p.read_text(encoding="utf-8"))
+    except (OSError, UnicodeError, ValueError):
+        return 0
+    count = 0
+    if not isinstance(targets, list):
+        return count
+    for target in targets[:50]:
+        if not isinstance(target, dict) or target.get("reviewed_by_human") is not True:
+            continue
+        op = state.get("opportunities", {}).get(target.get("opportunity_id"))
+        title = target.get("media_title")
+        if op and isinstance(title, str) and 3 <= len(title) <= 120:
+            op["media_lookup_title"] = title
+            count += 1
+    return count
+
+
 def update_tmdb(state: dict, limit: int = 2) -> dict:
     if os.getenv("HUNTER_TMDB_SHADOW", "0") != "1":
         return {"status": "disabled", "checked": 0}
     token = os.getenv("TMDB_READ_TOKEN", "").strip()
     if not token:
         return {"status": "not_configured", "checked": 0}
+    load_targets(state)
     candidates = [op for op in state.get("opportunities", {}).values()
                   if op.get("status") != "superseded"
                   and op.get("media_lookup_title")]
