@@ -13,6 +13,7 @@ from datetime import datetime, timedelta, timezone
 import httpx
 
 from .state import now_utc
+from .market import key_tokens
 
 API = "https://www.googleapis.com/youtube/v3"
 STL_REQUEST = re.compile(
@@ -59,8 +60,13 @@ def probe(name: str, client: httpx.Client, api_key: str) -> dict:
             if not isinstance(vid, str) or not re.fullmatch(r"[A-Za-z0-9_-]{11}", vid):
                 continue
             snippet = row.get("snippet") or {}
+            title = str(snippet.get("title") or "")[:180]
+            # Search rank is not proof the video concerns this product.
+            tokens = {t for t in key_tokens(name) if len(t) >= 4}
+            if tokens and not (tokens & key_tokens(title)):
+                continue
             videos.append({
-                "title": str(snippet.get("title") or "")[:180],
+                "title": title,
                 "video_url": f"https://www.youtube.com/watch?v={vid}",
                 "published_at": snippet.get("publishedAt"),
                 "video_id": vid,
