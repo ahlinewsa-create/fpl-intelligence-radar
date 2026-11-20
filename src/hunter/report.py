@@ -129,11 +129,18 @@ def object_detail(op: dict, communities_checked: bool) -> str:
         demand_text = "لم تُسجل إشارة مرتبطة بالقطعة ضمن المصادر المجتمعية المفحوصة"
     else:
         demand_text = "غير مفحوص — مصادر النقاش غير مفعّلة"
-    opportunity_score = score.get("lower")
-    score_text = (
-        f"{opportunity_score}/100"
-        if opportunity_score is not None else "غير متحقق"
-    )
+    youtube = op.get("youtube_probe") or {}
+    youtube_line = ""
+    if youtube.get("status") == "sampled":
+        youtube_line = (
+            f'<div style="font-size:12px;line-height:1.8"><b>YouTube — تجربة فقط:</b> '
+            f'{int(youtube.get("videos_sampled", 0))} فيديوهات و'
+            f'{int(youtube.get("comments_sampled", 0))} تعليقًا فُحصت؛ '
+            f'{int(youtube.get("requests_found", 0))} طلب STL محتمل. '
+            'هذه عينة غير ممثلة ولا تثبت الشراء.</div>'
+        )
+    elif youtube.get("status") == "failed":
+        youtube_line = '<div style="font-size:12px">YouTube: تعذر الفحص (ليس صفر طلب)</div>'
     body = (
         '<div style="border-top:1px solid #ece8f2;padding:11px 0 4px">'
         '<div style="font-size:12px;color:#81519c">🔎 عنصر مرشح للمراجعة</div>'
@@ -141,13 +148,12 @@ def object_detail(op: dict, communities_checked: bool) -> str:
         f'line-height:1.6;color:{PURPLE}">{h(name)}</div>'
         f'<div style="font-size:12px;line-height:1.8;color:{INK}">'
         f'نوع القطعة: {h(op.get("kind", "غير محدد"))} '
-        f'• مؤشر استكشافي أولي: {h(score_text)} '
-        f'• الثقة: {h(str(score.get("confidence", "غير متحقق")))}/100'
+        '• حالة القرار: متابعة الأدلة دون ترتيب رقمي افتراضي'
         '</div><div style="font-size:12px;line-height:1.8">'
         f'<b>الطلب:</b> {h(demand_text)}'
         '</div><div style="font-size:12px;line-height:1.8">'
         f'<b>منافسة Cults3D:</b> {h(competition_text(comp))}'
-        '</div></div>'
+        '</div>' + youtube_line + '</div>'
     )
     listings = [
         l for l in (comp.get("listings") or [])[:3]
@@ -191,7 +197,7 @@ def opportunity_group_card(group: dict, communities_checked: bool) -> str:
     meta = (
         f'{kind_label} • {primary.get("region", "غير محدد")} • '
         f'نشر المصدر: {local_time(primary.get("first_signal_date"))} '
-        f'• قطع مستقلة: {len(group["members"])}'
+        f'• مرشحات مستخرجة: {len(group["members"])}'
     )
     body = media_header(
         primary.get("origin", "خبر أصلي دون عنوان"),
@@ -205,8 +211,7 @@ def opportunity_group_card(group: dict, communities_checked: bool) -> str:
         body += object_detail(member, communities_checked)
     body += (
         '<div style="font-size:12px;margin-top:10px;color:#986532">'
-        'القرار: WATCH فقط • الطلب وحقوق الاستغلال التجاري '
-        'وقابلية FDM تحتاج مراجعة</div>'
+        'القرار: WATCH فقط • الطلب ومناسبة FDM يحتاجان إلى تحقق</div>'
         '<div style="font-size:12px;margin-top:7px">'
         + safe_link(evidence.get("url")) + '</div>'
     )
@@ -309,7 +314,7 @@ def render(state: dict, date: str, manual: bool = False) -> str:
             f'• آخر نجاح: {local_time(item.get("last_success"))}</div>'
         )
     decision = (
-        "لا توجد توصية DESIGN NOW مستوفية للأدلة وحقوق الاستخدام. "
+        "لا توجد توصية DESIGN NOW مستوفية لأدلة الطلب والمنافسة والجدوى. "
         "الإشارات التالية للمراقبة فقط؛ ولا يعني غياب دليل الطلب عدم وجوده."
     )
     return f"""<!doctype html>
@@ -352,7 +357,7 @@ border-radius:12px"><tr>
 <div style="text-align:center;color:{MUTED};font-size:11px;
 padding:12px;line-height:1.9">
 Generated {now_utc()} UTC<br>
-الصور من مصادر الأخبار؛ النتائج للاستكشاف فقط، وليست ترخيصًا للنسخ أو إثبات مبيعات.
+الصور من مصادر الأخبار؛ النتائج للاستكشاف فقط، وليست إثبات مبيعات.
 </div></td></tr>
 </table></td></tr></table>
 </body></html>"""
