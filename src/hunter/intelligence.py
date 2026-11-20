@@ -15,9 +15,9 @@ from .state import stable_id, now_utc
 _STOP = {"the", "of", "a", "an", "and", "figure", "figurine", "statue",
          "model", "3d", "stl", "printable", "new", "edition"}
 _SEASONAL = {
-    "christmas": ("winter_holiday", "2026-12-25"),
-    "santa": ("winter_holiday", "2026-12-25"),
-    "halloween": ("halloween", "2027-10-31"),
+    "christmas": ("winter_holiday", (12, 25)),
+    "santa": ("winter_holiday", (12, 25)),
+    "halloween": ("halloween", (10, 31)),
     "easter": ("easter", None),
 }
 _FDM = {
@@ -83,9 +83,9 @@ def deadline_assessment(op: dict, today: str | None = None,
     try:
         from datetime import date
         now = date.fromisoformat(today or datetime.now(timezone.utc).date().isoformat())
-        peak = date.fromisoformat(due)
+        peak = date(now.year, due[0], due[1])
         if peak < now:
-            peak = peak.replace(year=now.year + 1)
+            peak = date(now.year + 1, due[0], due[1])
         days_remaining = (peak - now).days
         return {
             "status": ("tight" if days_remaining < lead_days else "time_available"),
