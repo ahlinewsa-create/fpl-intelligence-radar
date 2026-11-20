@@ -17,6 +17,7 @@ import httpx
 from .article import fetch_article
 from .objects import extract_objects, detect_demand, plain_text
 from .evidence import classify_demand
+from .quality import is_named_product, quarantine_invalid
 from .state import now_utc, stable_id
 
 HEADERS = {
@@ -24,7 +25,7 @@ HEADERS = {
     "Accept": "application/rss+xml,application/atom+xml,application/xml,text/xml",
 }
 USER_CONTENT_LIMIT = 3200
-EXTRACTOR_VERSION = "horizon-inspired-article-v5"
+EXTRACTOR_VERSION = "horizon-inspired-article-v6"
 
 COLLECTOR_TERMS = re.compile(
     r"collector|limited|exclusive|merch|figurine|statue|mascot|plush|"
@@ -124,6 +125,8 @@ def apply_community_evidence(
         return
     haystack = re.sub(r"[^a-z0-9]+", " ", (title + " " + summary).casefold())
     for op in state["opportunities"].values():
+        if not is_named_product(op.get("name")):
+            continue
         name = re.sub(r"[^a-z0-9]+", " ", op["name"].casefold()).strip()
         if len(name) < 9 or len(name.split()) < 2 or name not in haystack:
             continue
@@ -176,7 +179,8 @@ def review_documents(
             document["image_type"] = "official_article_preview"
         title = document.get("title", "")
         text = (title + ". " + summary + ". " + full)[:17500]
-        detected = extract_objects(text)
+        detected = [obj for obj in extract_objects(text)
+                    if is_named_product(obj["name"])]
         accepted_ids = {
             stable_id("object", doc_id, obj["name"]) for obj in detected
         }
@@ -242,6 +246,7 @@ def review_documents(
         document["analysis_status"] = output.get("status", "not_checked")
         document["candidate_count"] = len(detected)
         results["articles_reviewed"] += 1
+    results.update(quarantine_invalid(state))
     results["articles_pending_after"] = sum(
         d.get("extractor_version") != EXTRACTOR_VERSION and
         d.get("kind") != "community"
