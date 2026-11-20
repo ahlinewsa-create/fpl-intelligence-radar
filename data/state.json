@@ -9862,6 +9862,12 @@
       "report_sha256": "4e62c04e5458b42e3475ddf062dee43406746a621b6e556ebe5afe75ae9e43e4",
       "status": "SENT",
       "token": "44670085454:1"
+    },
+    "tal3d-hunter:2026-11-20:Asia-Riyadh:primary": {
+      "claimed_at": "2026-11-20T15:17:00+00:00",
+      "report_sha256": "bd6708faad0b34e813f5b00feaf5f5a304bac8f225d30ed06741bc2c53dba06d",
+      "status": "ATTEMPTING",
+      "token": "44761606707:1"
     }
   },
   "product_registry": {
