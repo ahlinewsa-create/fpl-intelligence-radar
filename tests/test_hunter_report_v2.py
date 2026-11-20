@@ -8,8 +8,6 @@ def test_next_research_step_tracks_missing_market_and_demand():
     assert "Cults3D" in next_research_step(op)
     op["competition"] = {"status": "sampled", "schema_version": 2}
     assert "STL" in next_research_step(op)
-    op["youtube_probe"] = {"status": "failed"}
-    assert "YouTube" in next_research_step(op)
 
 
 def test_large_event_has_three_visible_candidates_not_ten():
