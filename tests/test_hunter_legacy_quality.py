@@ -63,7 +63,7 @@ def test_stale_archive_cannot_emit_invalid_products_even_without_collect():
     soup = BeautifulSoup(output, "html.parser")
     labels = [tag.find_next_sibling("div").get_text(" ", strip=True)
               for tag in soup.find_all("div")
-              if "🔎 عنصر مرشح للمراجعة" in tag.get_text(" ", strip=True)
+              if tag.get_text(" ", strip=True) == "🔎 عنصر مرشح للمراجعة"
               and tag.find_next_sibling("div") is not None]
     for bad in BAD:
         assert bad not in labels, bad
