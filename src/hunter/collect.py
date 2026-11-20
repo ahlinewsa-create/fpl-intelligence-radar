@@ -16,6 +16,7 @@ import httpx
 
 from .article import fetch_article
 from .objects import extract_objects, detect_demand, plain_text
+from .evidence import classify_demand
 from .state import now_utc, stable_id
 
 HEADERS = {
@@ -114,7 +115,11 @@ def feed_image(entry: dict) -> str | None:
 def apply_community_evidence(
     state: dict, link: str, title: str, summary: str, timestamp: str
 ) -> None:
-    intents = detect_demand(title + " " + summary)
+    statement = title + " " + summary
+    level = classify_demand(statement)
+    intents = detect_demand(statement)
+    if level != "unclassified":
+        intents = sorted(set(intents + [level]))
     if not intents:
         return
     haystack = re.sub(r"[^a-z0-9]+", " ", (title + " " + summary).casefold())
@@ -126,6 +131,7 @@ def apply_community_evidence(
         if all(e["url"] != link for e in evidence):
             evidence.append({
                 "url": link, "intent_types": intents,
+                "demand_level": level,
                 "observed_at": timestamp, "source_type": "community",
                 "quote_stored": False,
             })
