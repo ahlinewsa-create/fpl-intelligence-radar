@@ -12,6 +12,7 @@ from urllib.parse import urlsplit
 
 import httpx
 from .state import now_utc
+from .quality import is_publishable
 
 QUERY = """
 query($term: String!, $limit: Int!) {
@@ -235,7 +236,7 @@ def scan_variants(op: dict, sample_limit: int = 20,
 def update_market(state: dict, limit: int = 8, sample_limit: int = 20,
                   query_variants: int = 1) -> int:
     active = [op for op in state["opportunities"].values()
-              if op.get("status") != "superseded"]
+              if is_publishable(op)]
     if not os.getenv("CULTS_API_KEY") or not os.getenv("CULTS_USERNAME"):
         for op in active:
             if op.get("competition", {}).get("status") == "not_checked":
