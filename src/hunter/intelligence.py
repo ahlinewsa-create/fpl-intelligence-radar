@@ -54,8 +54,12 @@ def event_id(op: dict) -> str:
 
 
 def product_id(op: dict) -> str:
-    """Different product lines/variants remain distinct unless alias is exact."""
-    return stable_id("product", normalized(op.get("name", "")), op.get("kind", ""))
+    """Normalize synonymous physical-object suffixes, not editions/characters."""
+    words = normalized(op.get("name", "")).split()
+    suffix = {"figure", "figures", "figurine", "figurines"}
+    if words and words[-1] in suffix and op.get("kind") == "figurine":
+        words.pop()
+    return stable_id("product", " ".join(words), op.get("kind", ""))
 
 
 def fdm_assessment(op: dict) -> dict:
