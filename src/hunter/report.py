@@ -13,6 +13,7 @@ from urllib.parse import urlsplit
 from zoneinfo import ZoneInfo
 
 from .state import now_utc
+from .quality import is_publishable
 from .trend_history import change_since, followup_due
 from .triage import demand_coverage, event_key, group_events, select_news
 
@@ -314,7 +315,7 @@ def render(state: dict, date: str, manual: bool = False) -> str:
     docs = state.get("documents") or {}
     ops = [
         op for op in (state.get("opportunities") or {}).values()
-        if op.get("status") != "superseded"
+        if is_publishable(op)
     ]
     recent_events = group_events(
         ops, date, max_age_days=7, max_groups=3,
