@@ -11,6 +11,7 @@ from collections import defaultdict
 from datetime import date, datetime, time, timedelta
 from urllib.parse import urlsplit
 from zoneinfo import ZoneInfo
+from .quality import is_publishable
 
 ZONE = ZoneInfo("Asia/Riyadh")
 _EXHIBIT = re.compile(r"\b(exhibit|exhibition|museum|gallery)\b", re.I)
@@ -77,7 +78,7 @@ def group_events(ops: list[dict], report_date: str, max_age_days: int = 7,
                  max_groups: int = 3) -> list[dict]:
     groups = defaultdict(list)
     for op in ops:
-        if op.get("status") == "superseded":
+        if not is_publishable(op):
             continue
         origin_age = age_days(
             op.get("first_signal_date") or op.get("document_first_seen")
