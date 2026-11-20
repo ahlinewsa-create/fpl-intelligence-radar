@@ -3,7 +3,7 @@ max_items_per_feed: 25
 max_article_fetches_per_run: 12
 report_news_watch_limit: 6
 max_article_age_days: 14
-max_market_scans_per_run: 8
+max_market_scans_per_run: 4
 market_sample_limit: 20
 max_opportunities_in_report: 5
 max_http_content_bytes: 750000
