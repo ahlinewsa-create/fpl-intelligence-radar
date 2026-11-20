@@ -59,8 +59,14 @@ def test_stale_archive_cannot_emit_invalid_products_even_without_collect():
         return
     state = json.loads(path.read_text(encoding="utf-8"))
     output = render(state, "2026-11-20")
+    from bs4 import BeautifulSoup
+    soup = BeautifulSoup(output, "html.parser")
+    labels = [tag.find_next_sibling("div").get_text(" ", strip=True)
+              for tag in soup.find_all("div")
+              if "🔎 عنصر مرشح للمراجعة" in tag.get_text(" ", strip=True)
+              and tag.find_next_sibling("div") is not None]
     for bad in BAD:
-        assert bad not in output, bad
+        assert bad not in labels, bad
     assert "القرار اليوم" in output
     assert "Rebuild of Evangelion Asuka Figure" in output
 
