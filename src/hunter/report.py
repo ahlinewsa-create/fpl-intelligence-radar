@@ -157,31 +157,58 @@ def object_detail(op: dict, communities_checked: bool,
                                report_date, 7) if report_date else {"status": "not_checked"}
     followup = followup_due(op, report_date) if report_date else {"status": "unknown_date"}
     demand_state = (dimensions.get("demand") or {}).get("status", "not_checked")
-    evidence_detail = (
-        f'<div style="font-size:12px;line-height:1.85"><b>تغطية الأدلة:</b> '
+    labels = {
+        "not_checked": "غير مفحوص", "unknown": "غير محدد",
+        "time_available": "توجد نافذة زمنية مبدئية",
+        "tight": "المدة الزمنية قصيرة",
+        "low_provisional": "مخاطر أولية منخفضة",
+        "moderate_provisional": "مخاطر أولية متوسطة",
+        "not_applicable": "غير منطبق على المنتج الأصلي",
+    }
+    line_style = 'font-size:12px;line-height:1.85'
+    detail_lines = [
+        f'<div style="{line_style}"><b>تغطية الأدلة:</b> '
         f'{h(str(coverage.get("checked", 0)))}/{h(str(coverage.get("total", 5)))} مجالات '
-        f'• طلب: {h(demand_state)} '
-        f'• قرار: {h(score.get("decision", "WATCH"))}</div>'
-        f'<div style="font-size:12px;line-height:1.85"><b>فكرة أصلية للاختبار:</b> '
+        f'• طلب: {h(labels.get(demand_state, demand_state))} '
+        f'• قرار: {h(score.get("decision", "WATCH"))}</div>',
+        f'<div style="{line_style}"><b>فكرة أولية للاختبار:</b> '
         f'{h(hypothesis.get("title", "لم تُنشأ بعد"))} '
-        f'(فرضية غير مثبتة)</div>'
-        f'<div style="font-size:12px;line-height:1.85"><b>FDM:</b> '
-        f'{h(fdm.get("risk", "غير مفحوص"))} — تقدير أولي، لم تُختبر الهندسة</div>'
-        f'<div style="font-size:12px;line-height:1.85"><b>التوقيت:</b> '
-        f'{h(timing.get("status", "غير مفحوص"))}'
-        f'{(" • ذروة موسمية تقديرية: " + h(timing["estimated_peak"])) if timing.get("estimated_peak") else ""}'
-        f'{(" • موعد إصدار موثق للمراجعة: " + h(release["release_date"])) if release.get("release_date") else ""}'
-        '</div>'
-        f'<div style="font-size:12px;line-height:1.85"><b>منصات STL الأخرى:</b> '
-        f'{len(external)} روابط راجعها مستخدم؛ لا تمثل مسحًا شاملًا</div>'
-        f'<div style="font-size:12px;line-height:1.85"><b>مؤشرات المنتجات الفعلية:</b> '
-        f'{len(physical)} روابط متاجر • <b>اتجاهات نسبية:</b> {len(trends)} أدلة '
-        '(لا تثبت مبيعات STL)</div>'
-        f'<div style="font-size:12px;line-height:1.85"><b>التغير خلال 7 أيام:</b> '
-        f'{h(str(trend_delta.get("new_evidence_links", "بيانات غير كافية"))) } '
-        f'• <b>مراجعات مؤجلة:</b> '
-        f'{h(str(followup.get("checkpoints_due", []))) if followup.get("status") == "due" else "لا توجد"}</div>'
-    )
+        f'(غير مثبتة)</div>',
+        f'<div style="{line_style}"><b>FDM:</b> '
+        f'{h(labels.get(fdm.get("risk", "unknown"), fdm.get("risk", "unknown")))} '
+        '• لم تُختبر هندسيًا</div>',
+    ]
+    if timing.get("status") != "unknown" or release.get("release_date"):
+        text = labels.get(timing.get("status"), timing.get("status", "غير مفحوص"))
+        date_text = (
+            (" • ذروة موسمية تقديرية: " + h(timing["estimated_peak"]))
+            if timing.get("estimated_peak") else ""
+        )
+        release_text = (
+            (" • موعد إصدار بمصدر: " + h(release["release_date"]))
+            if release.get("release_date") else ""
+        )
+        detail_lines.append(
+            f'<div style="{line_style}"><b>التوقيت:</b> '
+            f'{h(text)}{date_text}{release_text}</div>'
+        )
+    if external or physical or trends:
+        detail_lines.append(
+            f'<div style="{line_style}"><b>أدلة خارجية راجعها المستخدم:</b> '
+            f'منصات STL: {len(external)} • متاجر: {len(physical)} '
+            f'• اتجاهات: {len(trends)} (ليست إثبات مبيعات STL)</div>'
+        )
+    if trend_delta.get("status") == "observed":
+        detail_lines.append(
+            f'<div style="{line_style}"><b>التغير خلال 7 أيام:</b> '
+            f'{h(str(trend_delta.get("new_evidence_links", 0)))} روابط دليل جديدة</div>'
+        )
+    if followup.get("status") == "due":
+        detail_lines.append(
+            f'<div style="{line_style}"><b>مراجعات مؤجلة:</b> '
+            f'{h(str(followup.get("checkpoints_due", [])))}</div>'
+        )
+    evidence_detail = "".join(detail_lines)
     body = (
         '<div style="border-top:1px solid #ece8f2;padding:11px 0 4px">'
         '<div style="font-size:12px;color:#81519c">🔎 عنصر مرشح للمراجعة</div>'
