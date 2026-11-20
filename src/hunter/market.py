@@ -157,33 +157,118 @@ def scan(name: str, sample_limit: int = 20, origin: str = "") -> dict:
                 "checked_at": now_utc()}
 
 
-def update_market(state: dict, limit: int = 8, sample_limit: int = 20) -> int:
-    active = [
-        op for op in state["opportunities"].values()
-        if op.get("status") != "superseded"
-    ]
+
+def search_queries(op: dict, limit: int = 2) -> list[str]:
+    """Few distinct, source-grounded query variants; no sentence fragments."""
+    name = (op.get("name") or "").strip()
+    proposals = [name] + list(op.get("aliases") or [])
+    # A different formulation may find models not named 'figure/figurine'.
+    generic_tail = re.compile(
+        r"\s+(?:figure|figurine|statue|mascot|miniature|plush|stand)s?$", re.I
+    )
+    short = generic_tail.sub("", name).strip()
+    if len(key_tokens(short)) >= 2:
+        proposals.append(short)
+    seen, result = set(), []
+    for query in proposals:
+        query = " ".join(str(query).split())[:110]
+        normalized = normalized_phrase(query)
+        if len(query) < 6 or normalized in seen:
+            continue
+        seen.add(normalized)
+        result.append(query)
+    return result[:max(1, min(3, int(limit)))]
+
+
+def scan_variants(op: dict, sample_limit: int = 20,
+                  query_limit: int = 2) -> dict:
+    """Scan source-grounded variants without summing overlapping search totals."""
+    queries = search_queries(op, query_limit)
+    if not queries:
+        return {"status": "not_checked", "reason": "no_valid_search_query"}
+    attempts = [scan(q, sample_limit, op.get("origin", "")) for q in queries]
+    successful = [r for r in attempts if r.get("status") == "sampled"]
+    if not successful:
+        first = attempts[0]
+        return {
+            "status": first.get("status", "failed"),
+            "reason": first.get("reason", "all_queries_failed"),
+            "checked_at": now_utc(),
+            "query_attempts": len(attempts),
+        }
+    unique = {}
+    for result in successful:
+        for listing in result.get("listings", []):
+            key = listing.get("url") or normalized_phrase(listing.get("name", ""))
+            if key and key not in unique:
+                unique[key] = listing
+    listings = list(unique.values())[:20]
+    return {
+        "status": "sampled", "schema_version": 3,
+        "checked_at": now_utc(),
+        "queries": queries, "queries_successful": len(successful),
+        "queries_failed": len(attempts) - len(successful),
+        "query_reports": [
+            {"query": q, "status": r.get("status"),
+             "sample_size": r.get("sample_size"),
+             "search_total": r.get("search_total")}
+            for q, r in zip(queries, attempts)
+        ],
+        "sample_size": sum(r.get("sample_size", 0) for r in successful),
+        "sample_limit": sample_limit,
+        "search_total": None,  # cannot add overlapping searches
+        "contextual_name_candidates": sum(
+            l.get("match") == "contextual_name_candidate" for l in listings
+        ),
+        "name_only_candidates": sum(
+            l.get("match") == "name_only_candidate" for l in listings
+        ),
+        "similar_name_candidates": sum(
+            l.get("match") == "similar_name_candidate" for l in listings
+        ),
+        "verified_exact_count": None,
+        "listings": listings,
+        "coverage": "multi_query_search_samples_only_no_visual_confirmation",
+    }
+
+
+def update_market(state: dict, limit: int = 8, sample_limit: int = 20,
+                  query_variants: int = 1) -> int:
+    active = [op for op in state["opportunities"].values()
+              if op.get("status") != "superseded"]
     if not os.getenv("CULTS_API_KEY") or not os.getenv("CULTS_USERNAME"):
         for op in active:
             if op.get("competition", {}).get("status") == "not_checked":
                 op["competition"]["reason"] = "missing_api_credentials"
         return 0
+    version = 3 if query_variants > 1 else 2
     pending = [
         op for op in active
         if op.get("competition", {}).get("status") in ("not_checked", "failed")
-        or op.get("competition", {}).get("schema_version") != 2
+        or op.get("competition", {}).get("schema_version") != version
     ]
     pending.sort(key=lambda op: op.get("discovery_date", ""), reverse=True)
     processed = 0
-    for item in pending[:max(0, limit)]:
+    for item in pending[:max(0, int(limit))]:
         prior = item.get("competition") or {}
-        next_scan = scan(item["name"], sample_limit, item.get("origin", ""))
+        newer = (scan_variants(item, sample_limit, query_variants)
+                 if query_variants > 1 else
+                 scan(item["name"], sample_limit, item.get("origin", "")))
         if prior.get("status") == "sampled":
             item.setdefault("competition_history", []).append({
                 "checked_at": prior.get("checked_at"),
                 "schema_version": prior.get("schema_version", 1),
                 "sample_size": prior.get("sample_size"),
-                "note": "older name-match criteria; not comparable with v2",
+                "note": "prior search sample; comparison may differ",
             })
-        item["competition"] = next_scan
+            item["competition_history"] = item["competition_history"][-12:]
+        if newer.get("status") == "failed" and prior.get("status") == "sampled":
+            # Preserve the last good sample rather than replacing it with an error.
+            item["competition"] = {
+                **prior, "latest_attempt": newer,
+                "status_note": "latest_sample_failed; historical_sample_retained",
+            }
+        else:
+            item["competition"] = newer
         processed += 1
     return processed

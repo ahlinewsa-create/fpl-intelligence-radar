@@ -33,6 +33,8 @@ jobs:
         env:
           CULTS_USERNAME: ${{ secrets.CULTS_USERNAME }}
           CULTS_API_KEY: ${{ secrets.CULTS_API_KEY }}
+          TMDB_READ_TOKEN: ${{ secrets.TMDB_READ_TOKEN }}
+          HUNTER_TMDB_SHADOW: ${{ vars.HUNTER_TMDB_SHADOW || '0' }}
         run: python main.py collect
       - name: Render report
         run: python main.py report

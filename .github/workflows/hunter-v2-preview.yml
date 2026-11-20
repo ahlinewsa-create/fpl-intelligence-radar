@@ -1,0 +1,45 @@
+name: TaL3D V2 - Safe Preview From Stored Data
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "src/hunter/**"
+      - "main.py"
+      - "config/settings.yaml"
+      - "tests/**"
+      - ".github/workflows/hunter-v2-preview.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install and run tests
+        run: python -m pip install -e ".[test]" && python -m pytest -q
+      - name: Render stored data (NO API, NO EMAIL, NO GIT WRITE)
+        env:
+          HUNTER_NOTIFICATIONS_ENABLED: "0"
+          HUNTER_TMDB_SHADOW: "0"
+        run: |
+          python main.py dry-run
+          test -s reports/preview.html
+          python - <<'PY'
+          from pathlib import Path
+          html = Path("reports/preview.html").read_text(encoding="utf-8")
+          assert "TaL3D" in html
+          assert "القرار اليوم" in html
+          assert "تغطية الأدلة" in html or "لا توجد إشارات حديثة" in html
+          print("Stored-state preview rendered without network or email.")
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: global-hunter-v2-safe-preview
+          path: reports/preview.html
+          retention-days: 14
+          if-no-files-found: error
