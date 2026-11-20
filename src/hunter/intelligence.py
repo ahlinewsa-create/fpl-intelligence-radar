@@ -11,6 +11,7 @@ from datetime import datetime, timezone
 from urllib.parse import urlsplit
 
 from .state import stable_id, now_utc
+from .quality import is_publishable
 
 _STOP = {"the", "of", "a", "an", "and", "figure", "figurine", "statue",
          "model", "3d", "stl", "printable", "new", "edition"}
@@ -123,7 +124,7 @@ def enrich_state(state: dict, date: str | None = None) -> dict:
     registry = state.setdefault("product_registry", {})
     events = state.setdefault("event_registry", {})
     active = [op for op in (state.get("opportunities") or {}).values()
-              if op.get("status") != "superseded" and op.get("name")]
+              if is_publishable(op)]
     grouped = defaultdict(list)
     for op in active:
         pid, eid = product_id(op), event_id(op)

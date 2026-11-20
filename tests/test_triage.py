@@ -26,12 +26,12 @@ def test_two_objects_one_announcement_are_one_event():
     }
     groups = group_events(list(state["opportunities"].values()), "2026-11-19")
     assert len(groups) == 1
-    assert len(groups[0]["members"]) == 2
+    assert len(groups[0]["members"]) == 1
     assert groups[0]["type"] == "exhibition"
     html = render(state, "2026-11-19")
     assert "Mister Handy replica" in html
-    assert "terminal replicas" in html
-    assert html.count("🔎 عنصر مرشح") == 2
+    assert "terminal replicas" not in html
+    assert html.count("🔎 عنصر مرشح") == 1
     assert "معرض / محتوى متحفي" in html
     assert "مصادر النقاش غير مفحوصة" in html
 

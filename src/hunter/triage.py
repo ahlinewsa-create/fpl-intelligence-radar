@@ -11,6 +11,7 @@ from collections import defaultdict
 from datetime import date, datetime, time, timedelta
 from urllib.parse import urlsplit
 from zoneinfo import ZoneInfo
+from .quality import is_publishable
 
 ZONE = ZoneInfo("Asia/Riyadh")
 _EXHIBIT = re.compile(r"\b(exhibit|exhibition|museum|gallery)\b", re.I)
@@ -73,11 +74,27 @@ def specificity(op: dict) -> float:
     return min(1.0, 0.6 + 0.1 * len((op.get("aliases") or [])))
 
 
+_TOPIC_NOISE = {
+    "the", "and", "with", "of", "from", "for", "new", "figure", "figures",
+    "figurine", "figurines", "mascot", "mascots", "prize", "game", "games",
+    "review", "edition", "version", "wears", "dress", "like", "is", "a", "an",
+    "as", "its", "has", "in", "to", "at", "on", "their", "her", "his",
+}
+
+
+def topic_overlap(op: dict) -> int:
+    """Title-name overlap is a ranking hint, not independent proof of identity."""
+    words = lambda text: set(re.findall(r"[^\W_]+", str(text or "").casefold()))
+    name_words = words(op.get("name")) - _TOPIC_NOISE
+    headline = words(op.get("origin")) - _TOPIC_NOISE
+    return len(name_words & headline)
+
+
 def group_events(ops: list[dict], report_date: str, max_age_days: int = 7,
                  max_groups: int = 3) -> list[dict]:
     groups = defaultdict(list)
     for op in ops:
-        if op.get("status") == "superseded":
+        if not is_publishable(op):
             continue
         origin_age = age_days(
             op.get("first_signal_date") or op.get("document_first_seen")
@@ -89,7 +106,22 @@ def group_events(ops: list[dict], report_date: str, max_age_days: int = 7,
         groups[event_key(op)].append(op)
     out = []
     for key, members in groups.items():
-        members.sort(key=lambda op: (specificity(op), op.get("name", "")), reverse=True)
+        # Display the headline's named products before incidental mentions in
+        # the article. Keep secondary mentions in the audit trail; do not
+        # mistake them for a recommendation.
+        members.sort(
+            key=lambda op: (
+                topic_overlap(op), specificity(op),
+                len(op.get("name", "")), op.get("name", "")
+            ),
+            reverse=True,
+        )
+        secondary = []
+        if members and topic_overlap(members[0]) >= 2:
+            secondary = [op for op in members if topic_overlap(op) == 0]
+            members = [op for op in members if topic_overlap(op) > 0]
+        if not members:
+            continue
         main = members[0]
         demand = sum(len(op.get("demand_evidence") or []) for op in members)
         oldness = age_days(
@@ -105,6 +137,7 @@ def group_events(ops: list[dict], report_date: str, max_age_days: int = 7,
         )
         out.append({
             "id": key, "members": members,
+            "secondary_mentions": len(secondary),
             "primary": main, "type": typ, "demand_count": demand,
             "age_days": oldness, "sort_rank": rank,
         })
