@@ -327,13 +327,13 @@
       "_render_rank": 2,
       "analysis_status": "full_text",
       "candidate_count": 0,
-      "extractor_version": "horizon-inspired-article-v4",
+      "extractor_version": "horizon-inspired-article-v6",
       "first_seen": "2026-11-18T18:04:36+00:00",
       "image_type": "official_article_preview",
       "image_url": "https://assets.topics.apps-jp.nintendo.com/image/2026/10/07070638092355/1280/d8781568e2ee473ba0eb32e4d3ee2d9d.jpg",
       "kind": "official",
       "published_at": "2026-11-10T01:20:58+00:00",
-      "reviewed_at": "2026-11-18T23:23:19+00:00",
+      "reviewed_at": "2026-11-20T15:16:50+00:00",
       "source": "nintendo_jp",
       "summary": "",
       "title": "Nintendo Switch 2 / Nintendo Switchの本体機能をバージョンアップ。新しい機能をご紹介します。",
@@ -433,6 +433,23 @@
       "title": "Ice Cream Simulator: Why We Gave Our Customers Infinite Patience",
       "url": "https://news.xbox.com/en-us/2026/11/17/ice-cream-simulator/"
     },
+    "256e0b1957b18fd06723": {
+      "analysis_status": "full_text",
+      "candidate_count": 0,
+      "extractor_version": "horizon-inspired-article-v6",
+      "first_seen": "2026-11-20T15:16:46+00:00",
+      "image_type": "official_article_preview",
+      "image_url": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/11/nwox-hero-f37af1684711fca65783.jpg",
+      "kind": "official",
+      "news_category": "gaming",
+      "news_interest": 2,
+      "published_at": "2026-11-20T15:00:00+00:00",
+      "reviewed_at": "2026-11-20T15:16:48+00:00",
+      "source": "xbox_wire",
+      "summary": "Welcome to Next Week on XBOX! In this weekly feature we cover all the games coming soon to XBOX Series X|S, XBOX One, XBOX on PC, and Game Pass! Get more details on these upcoming games below and click their profiles for further info (release dates subject to change). Let’s jump in! Jaden Industries: Cozy Automation Puzzler Pushka Studios ☆ ☆ ☆ ☆ ☆ ★ ★ ★ ★ ★ Get it now Jaden Industries: Cozy Automation Puzzler – November 23 Smart Delivery / XBOX Play Anywhere Jaden Industries is a relaxing factory-building puzzle game about managing compact crafting chains across floating islands. As an expedition engineer, you’ll explore a peaceful Archipelago, configure production flows, refine resources, and achieve perfect efficiency. Build. Optimize. Relax. The Spotter: Dig or Die Forklift Interactive ☆ ☆ ☆ ☆ ☆ ★ ★ ★ ★ ★ $12.99 Pre-order The Spotter: Dig or Die – November 23 XBOX Play Anywhere You’re a Spotter, the unlucky soul stationed at the worst gas station in Nevada. Your mission: hold the line against mutant hordes spilling from the ruins of Las Veganos, while awaiting a message from the President himself. But when a colossal sandstorm wrecks the base and ruins your only receiver, you lose your one chance of contact. Now everything hinges on repairing it in time. Dig by day, fight by night, and reclaim the signal before the world’s last hope is lost. Descend into a mine to scavenge for resources, discover roguelike artifacts that rewrite the rules, and turn your rusty junkyard into an impenetrable fortress in this unique hybrid of digging simulator and Tower Defense. Bungle Brawl: Couch Co-op Party NexoriumGames ☆ ☆ ☆ ☆ ☆ ★ ★ ★ ★ ★ $11.99 $9.59 Pre-order Bungle Brawl: Couch Co-op Party – November 24 Grab your friends. Lift them over your head. Throw them off a pizza rooftop. Bungle Brawl is a wobbly physics party brawler for 1–4 players on one screen, with bots to fill every match. Everyone is the same jelly body in a different costume. Be a Banana, a Shark, a Hot Dog, a Ghost or a Nightstand. Punch, kick and grab. Knock a fighter dizzy, carry them to the edge while the crowd chants, and let go. Storage Hunter Simulator astragon Entertainment ☆ ☆ ☆ ☆ ☆ ★ ★ ★ ★ ★ Get it now Storage Hunter Simulator – November 24 Master the art of auctions and score big against others for treasures in Storage Hunter Simulator ! Stay ahead of the competition in the high-risk, high-reward world of storage auctions. Showcase your skills, win intense bidding wars and sell your hard-earned valuables to customers. Getting the best deal and maximizing your earnings is key to staying in business and building a solid reputation. Cat Mirror Tribus Games Indie ☆ ☆ ☆ ☆ ☆ ★ ★ ★ ★ ★ Get it now Cat Mirror – November 25 A deceptively simple puzzle game where symmetry is your greatest challenge. Control two cats at the same time, navigating complex levels where every move is mirrored. It seems easy… until your mind is put to the test. Can you master the reflection? Sokobear Goo Little Giant Game Studio ☆ ☆ ☆ ☆ ☆ ★ ★ ★ ★ ★ Get it now Sokobear Goo – November 25 The forest has been invaded by slime creatures, and now it’s up to Bear to help the villagers reclaim their home! Get ready f",
+      "title": "Next Week on XBOX: New Games for November 23 to 27",
+      "url": "https://news.xbox.com/en-us/2026/11/20/next-week-on-xbox-new-games-for-november-23-to-27/"
+    },
     "2674ae59c8cc13810c71": {
       "_render_category": "gaming",
       "_render_rank": 2,
@@ -472,13 +489,13 @@
       "_render_rank": 2,
       "analysis_status": "full_text",
       "candidate_count": 0,
-      "extractor_version": "horizon-inspired-article-v4",
+      "extractor_version": "horizon-inspired-article-v6",
       "first_seen": "2026-11-18T18:04:36+00:00",
       "image_type": "official_article_preview",
       "image_url": "https://nintendo.com/jp/character/pikmin/sns.png",
       "kind": "official",
       "published_at": "2026-11-11T14:00:34+00:00",
-      "reviewed_at": "2026-11-18T19:37:57+00:00",
+      "reviewed_at": "2026-11-20T15:16:48+00:00",
       "source": "nintendo_jp",
       "summary": "",
       "title": "「Hello! Pikmin 03 ボウリング」を公開しました。",
@@ -565,6 +582,23 @@
       "title": "There Aren’t Enough Castlevania Style Metroidvania",
       "url": "https://www.siliconera.com/there-arent-enough-castlevania-style-metroidvania/"
     },
+    "3bad5535b52daac131cb": {
+      "analysis_status": "full_text",
+      "candidate_count": 3,
+      "extractor_version": "horizon-inspired-article-v6",
+      "first_seen": "2026-11-20T15:16:48+00:00",
+      "image_type": "official_article_preview",
+      "image_url": "https://images.nintendolife.com/3df5e354ad843/1280x720.jpg",
+      "kind": "press",
+      "news_category": "other",
+      "news_interest": 1,
+      "published_at": "2026-11-20T14:00:00+00:00",
+      "reviewed_at": "2026-11-20T15:16:51+00:00",
+      "source": "nintendo_life",
+      "summary": "Every game we scored 9/10 or higher, plus a personal pick. With Nintendo launching its Black Friday sale on the European eShop earlier this week, we knew it was only a matter of time before our friends in North America got some savings of their own. And what do you know, they have! Nintendo's ' Adventure Awaits ' sale is now live on the North American storefront, with discounts across a bunch of first- and third-party delights. It'll be sticking around until 2nd December at 11:59pm PT , so you still have a couple of weeks to make the most of it. Read the full article on nintendolife.com",
+      "title": "Guide: 43 Switch 1 & 2 Games You Should Check Out In Nintendo's 'Adventure Awaits' eShop Sale (US)",
+      "url": "https://www.nintendolife.com/guides/43-switch-1-and-2-games-you-should-check-out-in-nintendos-adventure-awaits-eshop-sale-us"
+    },
     "3c3534560f5761eb1eb8": {
       "analysis_status": "full_text",
       "candidate_count": 0,
@@ -647,13 +681,17 @@
       "url": "https://www.nintendolife.com/news/2026/11/8bitdo-reveals-its-own-gamecube-controller-for-switch-2"
     },
     "4441edf610dd1ebb24b9": {
+      "analysis_status": "full_text",
+      "candidate_count": 0,
+      "extractor_version": "horizon-inspired-article-v6",
       "first_seen": "2026-11-20T14:03:45+00:00",
-      "image_type": "feed_preview",
-      "image_url": "https://images.nintendolife.com/353ac63fcff76/small.jpg",
+      "image_type": "official_article_preview",
+      "image_url": "https://images.nintendolife.com/353ac63fcff76/1280x720.jpg",
       "kind": "press",
       "news_category": "other",
       "news_interest": 1,
       "published_at": "2026-11-20T13:15:00+00:00",
+      "reviewed_at": "2026-11-20T15:16:52+00:00",
       "source": "nintendo_life",
       "summary": "Just hold on a little while longer. If you live in the US and happened to miss out on the Zelda 40th Anniversary Switch 2 console, then good news – more is on the way. This was already kind of confirmed in a recent interview with Nintendo's Latin America Vice President and General Manager Bill van Zyll, in which he claimed Nintendo \"underestimated\" how popular the hardware would be, but promised that more would come at a later date. Read the full article on nintendolife.com",
       "title": "Zelda Switch 2 Console Is Back In Stock Soon If You Missed Out (US)",
@@ -711,13 +749,13 @@
       "_render_rank": 2,
       "analysis_status": "full_text",
       "candidate_count": 0,
-      "extractor_version": "horizon-inspired-article-v4",
+      "extractor_version": "horizon-inspired-article-v6",
       "first_seen": "2026-11-18T18:04:36+00:00",
       "image_type": "official_article_preview",
       "image_url": "https://assets.topics.apps-jp.nintendo.com/image/2026/11/10002844238807/1280/33febb6f626b4f3d92427a099e498556.jpg",
       "kind": "official",
       "published_at": "2026-11-10T01:03:56+00:00",
-      "reviewed_at": "2026-11-18T23:23:20+00:00",
+      "reviewed_at": "2026-11-20T15:16:51+00:00",
       "source": "nintendo_jp",
       "summary": "",
       "title": "「Hello! インディー」遊べるテーブルゲームは40種類以上『テーブルゲームワールド CCFOLIA for Nintendo Switch 2』",
@@ -881,6 +919,23 @@
       "title": "\"We're Going Bananas For Our Newest Furry Friend\" - Donkey Kong Is Coming Soon To Build-A-Bear Workshop",
       "url": "https://www.nintendolife.com/news/2026/11/were-going-bananas-for-our-newest-furry-friend-donkey-kong-is-coming-soon-to-build-a-bear-workshop"
     },
+    "68765988b23e2d90c7e2": {
+      "analysis_status": "full_text",
+      "candidate_count": 0,
+      "extractor_version": "horizon-inspired-article-v6",
+      "first_seen": "2026-11-20T15:16:47+00:00",
+      "image_type": "official_article_preview",
+      "image_url": "https://www.siliconera.com/wp-content/uploads/2026/11/square-enix-might-show-ffvii-revelation-in-jump-festa-2027.jpg",
+      "kind": "press",
+      "news_category": "gaming",
+      "news_interest": 2,
+      "published_at": "2026-11-20T15:00:00+00:00",
+      "reviewed_at": "2026-11-20T15:16:48+00:00",
+      "source": "siliconera",
+      "summary": "Developer and publisher Square Enix is a mainstay of the yearly Jump Festa event in Japan, and with the company set to return for Jump Festa 2027 in December 19-20, 2026, we might see the list of Final Fantasy titles and other games soon. An update from leaker Ryokutya suggested the company will be at the event with titles. [Thanks, ryokutya2089 !] As reported by leaker ryokutya, the upcoming Jump Festa event might give us an opportunity to see more of Final Fantasy VII Revelation , FFXIV Evercold , as well as Dragon Quest Monsters: The Withering World , which will have released by then. As it is usual for these types of events, we could see a photo booth for FFVII Revelation featuring iconic past moments in the series. Meanwhile, Fluffy from Dragon Quest Monsters series as well as will represent the title, with a meet and greet with Alpha and the moogles from FFXIV being held as well. With only five months until the April 8, 2027 release of the final part of the FFVII Remake trilogy, it’s reasonable to think that Square Enix might feature a playable build appear during Jump Festa 2027. Especially considering that FFVII Rebirth saw a playable demo appear during Tokyo Game Show 2023, also five months before the release of that game. While Square Enix has yet to confirm the list of games featured at the upcoming Jump Festa, we know that the lineup for Shueisha Games will include demos for Jujutsu Kaisen Rumble: Survivaton and Hoshin Engi Re:surrection . Jump Festa 2027 will be held at Makuhari Messe in Chiba, Japan, on December 19-20, 2026.",
+      "title": "Square Enix Might Show FFVII Revelation in Jump Festa 2027",
+      "url": "https://www.siliconera.com/square-enix-might-show-ffvii-revelation-in-jump-festa-2027/"
+    },
     "6991a1e60d7fdd257c7a": {
       "first_seen": "2026-11-20T01:29:09+00:00",
       "image_type": "feed_preview",
@@ -944,6 +999,19 @@
       "summary": "",
       "title": "「仕事を読み解くキーワード」のページを更新しました。任天堂ではたらく社員の声を追加しています。",
       "url": "https://www.nintendo.co.jp/jobs/keyword/index.html"
+    },
+    "6b2b7982970adf390055": {
+      "first_seen": "2026-11-20T15:16:47+00:00",
+      "image_type": "feed_preview",
+      "image_url": null,
+      "kind": "press",
+      "news_category": "other",
+      "news_interest": 1,
+      "published_at": "2026-11-20T12:00:13+00:00",
+      "source": "gematsu",
+      "summary": "Fizzglee Studio will host the closed “Doki Test” for “3D RIDER girl dokidoki romance RPG” … Source",
+      "title": "Chasing Kaleidorider closed ‘Doki Test’ begins December 17",
+      "url": "https://www.gematsu.com/2026/11/chasing-kaleidorider-closed-doki-test-begins-december-17"
     },
     "6c564c817adae8f93a14": {
       "analysis_status": "full_text",
@@ -1343,13 +1411,17 @@
       "url": "https://www.siliconera.com/next-punk-hatsune-miku-figure-is-figurizm%ce%b1-midnight/"
     },
     "9671751db164a1d6f62d": {
+      "analysis_status": "full_text",
+      "candidate_count": 0,
+      "extractor_version": "horizon-inspired-article-v6",
       "first_seen": "2026-11-20T14:03:44+00:00",
-      "image_type": "feed_preview",
-      "image_url": null,
+      "image_type": "official_article_preview",
+      "image_url": "https://www.siliconera.com/wp-content/uploads/2026/11/ss-3ca2d82c1664475fc45cad6abf94a09a8e335ff51920x1080-1.jpg",
       "kind": "press",
       "news_category": "other",
       "news_interest": 1,
       "published_at": "2026-11-20T14:00:00+00:00",
+      "reviewed_at": "2026-11-20T15:16:51+00:00",
       "source": "siliconera",
       "summary": "FuRyu is one of those companies where you tend to know what their games might be like before they drop as a result of the track record. They can absolutely be fun and memorable, but we know they’re more likely to be average and a little flawed than some AAA, once-in-a-lifetime, must-play. But usually about once a year or so, we’ll see an absolute banger in the roster, and CRYMELIGHT is it. It isn’t a perfect roguelike, but its Hades and Cult of the Lamb approach to dungeon-crawling combat, Poker hand approach to ability upgrades, and troubled characters combine into something worth playing. It also fits well within the established CRY series alongside CRYSTAR and CRYMACHINA . CRYMELIGHT is set in Wonderland, a purgatory where troubled sinners compete in a death game based on Lewis Carroll’s Alice’s Adventures in Wonderland for a chance at freedom if they defeat the Queen. Our adventure begins with a young woman in a blue and white dress facing that final boss. As she’s about to win, she’s defeated. Time then rewinds to a point at which we see a blue butterfly floating through the Queen’s gardens. A voice warns that if she loses her sense of self, she’ll be targeted b the Card Soldiers and eliminated. It seems she could falter until she sees another, colorless butterfly about to suffer the same fate. She defends them, then develops a body again and gains a CRYME weapon. White Rabbit then appears a a guide and declares the nameless girl, who is suffering from amnesia and now given the moniker Alice, a challenger in the death game. Though she suggests abandoning and destroying the other butterfly, Alice claims she owes her one and is her “plus one.” That girl too, who also can’t remember who she is, develops a sense of self and becomes Mary. From there, we jump into solid gameplay loop. The Tea Party Hall hub in Wonderland features a table section with March where you can unlock story scenes of the four challengers Alice, Cheshire, March, and Mad, as well as Mary, that offer insights into who they were in the past and are now. The Tailor lets you upgrade Alice’s weapons and equip accessories. At the Confessional, you can use points earned from dungeon runs to unlock/upgrade abilities (like a revival) and upgrade stats. You can also check in with Cheshire at the library to see past story scenes and segments. It’s a way to relax and prepare for runs, while also perhaps gaining more insights into individuals. Heading out through the doors to Wonderland sends you through different realms toward the Queen’s castle. In typical roguelike fashion, we’re presented with a map with nodes and shown what the “reward” might be for selecting it. This could range from things like additional cards that bolster your attacks and moveset, Skill acquisition, and currency for areas like the Tailor or Wonderland shop. Selecting nodes will send you either into a small stage with a set number of enemies or a shop run by White Rabbit. Once you defeat all of the foes, you get your reward, are sent back to the map, and continue until you reach that region’s Alice’s Adventures in Wonderland -themed boss. Defeating them nets you another important item for progression and acc",
       "title": "Review: CRYMELIGHT Is a Good Roguelike and CRY Series Game",
@@ -1509,13 +1581,13 @@
       "_render_rank": 2,
       "analysis_status": "full_text",
       "candidate_count": 0,
-      "extractor_version": "horizon-inspired-article-v4",
+      "extractor_version": "horizon-inspired-article-v6",
       "first_seen": "2026-11-18T18:04:36+00:00",
       "image_type": "official_article_preview",
       "image_url": "https://www.nintendo.co.jp/img/og_nintendo.png",
       "kind": "official",
       "published_at": "2026-11-11T06:30:51+00:00",
-      "reviewed_at": "2026-11-18T23:23:18+00:00",
+      "reviewed_at": "2026-11-20T15:16:49+00:00",
       "source": "nintendo_jp",
       "summary": "",
       "title": "ニュースリリース「Nintendo Switch 2 ソフト『ゼルダの伝説 時のオカリナ』の世界累計販売本数が発売後4日間で520万本を突破」を公開しました。",
@@ -2088,18 +2160,35 @@
       "title": "Grand Theft Auto VI launches tomorrow, November 19",
       "url": "https://blog.playstation.com/2026/11/18/grand-theft-auto-vi-launches-tomorrow-november-19/"
     },
+    "e5b8b56328c9d00263d7": {
+      "analysis_status": "full_text",
+      "candidate_count": 0,
+      "extractor_version": "horizon-inspired-article-v6",
+      "first_seen": "2026-11-20T15:16:48+00:00",
+      "image_type": "official_article_preview",
+      "image_url": "https://images.nintendolife.com/dcf51d099b468/1280x720.jpg",
+      "kind": "press",
+      "news_category": "other",
+      "news_interest": 1,
+      "published_at": "2026-11-20T14:45:00+00:00",
+      "reviewed_at": "2026-11-20T15:16:51+00:00",
+      "source": "nintendo_life",
+      "summary": "Sweet Temtemptations. Crema Games' Temtem was one of the better Pokémon-likes we had played when it arrived on Switch back in 2022. The dev released its final update a couple of years back, but soon, we'll get a chance to play its Survivors-style spinoff. Temtem: Swarm launches on Switch on 21st January 2027 after coming to Steam back in April. An initial glance made us think this was Crema's take on Pokémon Unite , but on closer inspection, it's far more Vampire Survivors . Read the full article on nintendolife.com",
+      "title": "Pokémon-Like Temtem's Bullet Heaven Spin-Off Arrives On Switch Next Year",
+      "url": "https://www.nintendolife.com/news/2026/11/pokemon-like-temtems-bullet-heaven-spin-off-arrives-on-switch-next-year"
+    },
     "e7b2186ad2391aa4ba1b": {
       "_render_category": "gaming",
       "_render_rank": 2,
       "analysis_status": "full_text",
       "candidate_count": 0,
-      "extractor_version": "horizon-inspired-article-v4",
+      "extractor_version": "horizon-inspired-article-v6",
       "first_seen": "2026-11-18T18:04:36+00:00",
       "image_type": "official_article_preview",
       "image_url": "https://www.nintendo.com/jp/switch/as8sa/senior-bowling-2026/sns.png",
       "kind": "official",
       "published_at": "2026-11-10T01:37:44+00:00",
-      "reviewed_at": "2026-11-18T23:23:19+00:00",
+      "reviewed_at": "2026-11-20T15:16:49+00:00",
       "source": "nintendo_jp",
       "summary": "",
       "title": "「Nintendo Switch Sports ゲーム運動会 シニアボウリングトーナメント2026」のページを更新しました。 全国から集った16団体の頂点をかけ、「広川町ゲームサポーター」と「けっぱれ！青森県」が決勝戦に臨みます。 これまでの全試合の様子も公開しています。",
@@ -2161,13 +2250,13 @@
       "_render_rank": 2,
       "analysis_status": "full_text",
       "candidate_count": 0,
-      "extractor_version": "horizon-inspired-article-v4",
+      "extractor_version": "horizon-inspired-article-v6",
       "first_seen": "2026-11-18T18:04:36+00:00",
       "image_type": "official_article_preview",
       "image_url": "https://www.nintendo.com/jp/my-mario/sns.png?20250808v2",
       "kind": "official",
       "published_at": "2026-11-11T01:09:02+00:00",
-      "reviewed_at": "2026-11-18T23:23:18+00:00",
+      "reviewed_at": "2026-11-20T15:16:49+00:00",
       "source": "nintendo_jp",
       "summary": "",
       "title": "「マイマリオ（MY MARIO）」の公式サイトを更新しました。 コマどりマリオ 第10話「がんばれキノピオ！」を公開しています。",
@@ -2303,6 +2392,19 @@
       "summary": "The version 3.4 update for Zenless Zone Zero, dubbed “The Finality of the Day,” will … Source",
       "title": "Zenless Zone Zero version 3.4 update ‘The Finality of the Day’ launches December 2",
       "url": "https://www.gematsu.com/2026/11/zenless-zone-zero-version-3-4-update-the-finality-of-the-day-launches-december-2"
+    },
+    "f459cce7408bd1d94dea": {
+      "first_seen": "2026-11-20T15:16:47+00:00",
+      "image_type": "feed_preview",
+      "image_url": null,
+      "kind": "press",
+      "news_category": "other",
+      "news_interest": 1,
+      "published_at": "2026-11-20T13:00:17+00:00",
+      "source": "gematsu",
+      "summary": "The Switch version of roguelike action game Temtem: Swarm will launch on January 21, 2027… Source",
+      "title": "Temtem: Swarm for Switch launches January 21, 2027",
+      "url": "https://www.gematsu.com/2026/11/temtem-swarm-for-switch-launches-january-21-2027"
     },
     "f51e48202f16e8382348": {
       "analysis_status": "full_text",
@@ -2491,6 +2593,14 @@
         "https://www.siliconera.com/one-piece-characters-turned-into-dogs-for-irritated-ruffment-figures/"
       ],
       "title": "One Piece Characters Turned Into Dogs for Irritated Ruffment Figures"
+    },
+    "32ef7f3d3abb5a88760a": {
+      "first_seen": "2026-11-20T14:00:00+00:00",
+      "id": "32ef7f3d3abb5a88760a",
+      "source_urls": [
+        "https://www.nintendolife.com/guides/43-switch-1-and-2-games-you-should-check-out-in-nintendos-adventure-awaits-eshop-sale-us"
+      ],
+      "title": "Guide: 43 Switch 1 & 2 Games You Should Check Out In Nintendo's 'Adventure Awaits' eShop Sale (US)"
     },
     "81b58d2a3d763b4a8221": {
       "first_seen": "2026-11-19T21:00:00+00:00",
@@ -3113,6 +3223,144 @@
       },
       "status": "superseded",
       "superseded_reason": "Merged or removed by object extraction v3"
+    },
+    "0f339528dc507bf8d40c": {
+      "aliases": [],
+      "competition": {
+        "checked_at": "2026-11-20T15:16:54+00:00",
+        "contextual_name_candidates": 0,
+        "coverage": "multi_query_search_samples_only_no_visual_confirmation",
+        "listings": [],
+        "name_only_candidates": 0,
+        "queries": [
+          "It's a full-featured package and stands",
+          "It's a full-featured package and"
+        ],
+        "queries_failed": 0,
+        "queries_successful": 2,
+        "query_reports": [
+          {
+            "query": "It's a full-featured package and stands",
+            "sample_size": 10,
+            "search_total": 10,
+            "status": "sampled"
+          },
+          {
+            "query": "It's a full-featured package and",
+            "sample_size": 20,
+            "search_total": 279,
+            "status": "sampled"
+          }
+        ],
+        "sample_limit": 20,
+        "sample_size": 30,
+        "schema_version": 3,
+        "search_total": null,
+        "similar_name_candidates": 0,
+        "status": "sampled",
+        "verified_exact_count": null
+      },
+      "demand_evidence": [],
+      "design_hypothesis": {
+        "demand_evidence": "not_checked",
+        "derived_from_product_id": "e9fe51e936d1b476999a",
+        "id": "f35aea1bd6f34f2650c0",
+        "kind": "functional_display",
+        "originality": "requires_human_review",
+        "status": "untested",
+        "title": "Original FDM-friendly display accessory"
+      },
+      "discovery_date": "2026-11-20T15:16:51+00:00",
+      "discovery_note": "Discovered during article analysis",
+      "document_first_seen": "2026-11-20T15:16:48+00:00",
+      "event_id": "32ef7f3d3abb5a88760a",
+      "evidence": [
+        {
+          "excerpt": "oyed on Switch, Faeria is easily the highlight of the bunch and deserves to do well. It's a full-featured package and stands out as an excellent card/board/strategy experience. If you w",
+          "extraction_confidence": 0.6,
+          "extraction_method": "named_object_in_source",
+          "source_span": "It's a full-featured package and stands",
+          "type": "press_article",
+          "url": "https://www.nintendolife.com/guides/43-switch-1-and-2-games-you-should-check-out-in-nintendos-adventure-awaits-eshop-sale-us"
+        }
+      ],
+      "fdm_precheck": {
+        "geometry_tested": false,
+        "reason": "flat bases often FDM friendly",
+        "risk": "low_provisional",
+        "status": "preliminary_only"
+      },
+      "first_signal_date": "2026-11-20T14:00:00+00:00",
+      "id": "0f339528dc507bf8d40c",
+      "image_type": "official_article_preview",
+      "image_url": "https://images.nintendolife.com/3df5e354ad843/1280x720.jpg",
+      "kind": "stand",
+      "language": "en",
+      "last_changed": "2026-11-20T15:16:51+00:00",
+      "name": "It's a full-featured package and stands",
+      "origin": "Guide: 43 Switch 1 & 2 Games You Should Check Out In Nintendo's 'Adventure Awaits' eShop Sale (US)",
+      "product_id": "e9fe51e936d1b476999a",
+      "region": "global",
+      "rights_status": "unverified",
+      "score": {
+        "blockers": [
+          "demand_not_checked",
+          "fdm_geometry_not_tested",
+          "originality_not_reviewed"
+        ],
+        "confidence": 25,
+        "coverage": {
+          "checked": 2,
+          "dimensions": {
+            "competition": true,
+            "demand": false,
+            "event": true,
+            "fdm": false,
+            "timing": false
+          },
+          "total": 5
+        },
+        "decision": "WATCH",
+        "dimensions": {
+          "competition": {
+            "sampled": 30,
+            "status": "sampled",
+            "verified_exact_count": null
+          },
+          "concept": {
+            "status": "untested"
+          },
+          "demand": {
+            "independent_hosts": 0,
+            "levels": [],
+            "status": "not_checked"
+          },
+          "fdm": {
+            "geometry_tested": false,
+            "risk": "low_provisional",
+            "status": "preliminary_only"
+          },
+          "timing": {
+            "date_source": "not_checked",
+            "status": "unknown"
+          }
+        },
+        "lower": null,
+        "missing_factors": [
+          "gap",
+          "demand",
+          "fdm",
+          "timing"
+        ],
+        "notes": "Search samples and editorial news are not verified buying demand.",
+        "score_version": "evidence-gates-v3",
+        "upper": null
+      },
+      "source_kind": "press",
+      "timing_precheck": {
+        "date_source": "not_checked",
+        "status": "unknown"
+      }
     },
     "12a1a5605efc00f8e395": {
       "aliases": [],
@@ -3822,6 +4070,137 @@
       "source_kind": "press",
       "status": "superseded",
       "superseded_reason": "Merged or removed by object extraction v3"
+    },
+    "2d6b8f7f8ce71095d7ab": {
+      "aliases": [],
+      "competition": {
+        "checked_at": "2026-11-20T15:16:56+00:00",
+        "contextual_name_candidates": 0,
+        "coverage": "multi_query_search_samples_only_no_visual_confirmation",
+        "listings": [],
+        "name_only_candidates": 0,
+        "queries": [
+          "Kaze and the Wild Masks"
+        ],
+        "queries_failed": 0,
+        "queries_successful": 1,
+        "query_reports": [
+          {
+            "query": "Kaze and the Wild Masks",
+            "sample_size": 1,
+            "search_total": 1,
+            "status": "sampled"
+          }
+        ],
+        "sample_limit": 20,
+        "sample_size": 1,
+        "schema_version": 3,
+        "search_total": null,
+        "similar_name_candidates": 0,
+        "status": "sampled",
+        "verified_exact_count": null
+      },
+      "demand_evidence": [],
+      "design_hypothesis": {
+        "demand_evidence": "not_checked",
+        "derived_from_product_id": "8d3b3dbe4f862759dd44",
+        "id": "8adfc4cf95a63dc3febe",
+        "kind": "original_printable_object",
+        "originality": "requires_human_review",
+        "status": "untested",
+        "title": "Original FDM-printable object"
+      },
+      "discovery_date": "2026-11-20T15:16:51+00:00",
+      "discovery_note": "Discovered during article analysis",
+      "document_first_seen": "2026-11-20T15:16:48+00:00",
+      "event_id": "32ef7f3d3abb5a88760a",
+      "evidence": [
+        {
+          "excerpt": "a-na na-naa na na na... price:$3.99/14.99 An absolute pleasure from start to finish, what Kaze and the Wild Masks lacks in originality it makes up for in the strength of its level desig",
+          "extraction_confidence": 0.6,
+          "extraction_method": "named_object_in_source",
+          "source_span": "what Kaze and the Wild Masks",
+          "type": "press_article",
+          "url": "https://www.nintendolife.com/guides/43-switch-1-and-2-games-you-should-check-out-in-nintendos-adventure-awaits-eshop-sale-us"
+        }
+      ],
+      "fdm_precheck": {
+        "geometry_tested": false,
+        "reason": "geometry unknown",
+        "risk": "unknown",
+        "status": "preliminary_only"
+      },
+      "first_signal_date": "2026-11-20T14:00:00+00:00",
+      "id": "2d6b8f7f8ce71095d7ab",
+      "image_type": "official_article_preview",
+      "image_url": "https://images.nintendolife.com/3df5e354ad843/1280x720.jpg",
+      "kind": "mask",
+      "language": "en",
+      "last_changed": "2026-11-20T15:16:51+00:00",
+      "name": "Kaze and the Wild Masks",
+      "origin": "Guide: 43 Switch 1 & 2 Games You Should Check Out In Nintendo's 'Adventure Awaits' eShop Sale (US)",
+      "product_id": "8d3b3dbe4f862759dd44",
+      "region": "global",
+      "rights_status": "unverified",
+      "score": {
+        "blockers": [
+          "demand_not_checked",
+          "fdm_geometry_not_tested",
+          "originality_not_reviewed"
+        ],
+        "confidence": 25,
+        "coverage": {
+          "checked": 2,
+          "dimensions": {
+            "competition": true,
+            "demand": false,
+            "event": true,
+            "fdm": false,
+            "timing": false
+          },
+          "total": 5
+        },
+        "decision": "WATCH",
+        "dimensions": {
+          "competition": {
+            "sampled": 1,
+            "status": "sampled",
+            "verified_exact_count": null
+          },
+          "concept": {
+            "status": "untested"
+          },
+          "demand": {
+            "independent_hosts": 0,
+            "levels": [],
+            "status": "not_checked"
+          },
+          "fdm": {
+            "geometry_tested": false,
+            "risk": "unknown",
+            "status": "preliminary_only"
+          },
+          "timing": {
+            "date_source": "not_checked",
+            "status": "unknown"
+          }
+        },
+        "lower": null,
+        "missing_factors": [
+          "gap",
+          "demand",
+          "fdm",
+          "timing"
+        ],
+        "notes": "Search samples and editorial news are not verified buying demand.",
+        "score_version": "evidence-gates-v3",
+        "upper": null
+      },
+      "source_kind": "press",
+      "timing_precheck": {
+        "date_source": "not_checked",
+        "status": "unknown"
+      }
     },
     "30c8a87d48d49d193654": {
       "aliases": [],
@@ -4899,6 +5278,282 @@
       },
       "status": "superseded",
       "superseded_reason": "Merged or removed by object extraction v3"
+    },
+    "53a3c1a6678aa78c8d61": {
+      "aliases": [],
+      "competition": {
+        "checked_at": "2026-11-20T15:16:57+00:00",
+        "contextual_name_candidates": 0,
+        "coverage": "multi_query_search_samples_only_no_visual_confirmation",
+        "listings": [
+          {
+            "currency": "EUR",
+            "match": "similar_name_candidate",
+            "name": "Solaire of Astora",
+            "price": 6.0,
+            "published_at": "2021-08-21T22:32:49Z",
+            "url": "https://cults3d.com/:500595"
+          },
+          {
+            "currency": "EUR",
+            "match": "similar_name_candidate",
+            "name": "Solaire of Astora - Dark souls",
+            "price": 16.0,
+            "published_at": "2026-01-02T19:35:30Z",
+            "url": "https://cults3d.com/:3876699"
+          },
+          {
+            "currency": "EUR",
+            "match": "similar_name_candidate",
+            "name": "Solaire of Astora 32mm (Dark Souls)",
+            "price": 1.3,
+            "published_at": "2026-03-21T14:33:31Z",
+            "url": "https://cults3d.com/:4168803"
+          },
+          {
+            "currency": "EUR",
+            "match": "similar_name_candidate",
+            "name": "Solaire of Astora keychain",
+            "price": 1.0,
+            "published_at": "2022-10-13T17:34:24Z",
+            "url": "https://cults3d.com/:884171"
+          },
+          {
+            "currency": "EUR",
+            "match": "similar_name_candidate",
+            "name": "Solaire of Astora – Cute Chibi Keychain",
+            "price": 1.0,
+            "published_at": "2025-05-21T02:32:08Z",
+            "url": "https://cults3d.com/:3004135"
+          },
+          {
+            "currency": "EUR",
+            "match": "similar_name_candidate",
+            "name": "Solaire of Astora Helmet",
+            "price": 6.0,
+            "published_at": "2025-03-03T09:27:07Z",
+            "url": "https://cults3d.com/:2785125"
+          },
+          {
+            "currency": "EUR",
+            "match": "similar_name_candidate",
+            "name": "Solaire of Astora | Chibi | Dark Souls | Fan Art",
+            "price": 9.14,
+            "published_at": "2026-09-30T12:39:10Z",
+            "url": "https://cults3d.com/:4937019"
+          },
+          {
+            "currency": "EUR",
+            "match": "similar_name_candidate",
+            "name": "Solaire of Astora Chibi Dark souls Collection",
+            "price": 2.28,
+            "published_at": "2025-12-10T02:32:20Z",
+            "url": "https://cults3d.com/:3789363"
+          },
+          {
+            "currency": "EUR",
+            "match": "similar_name_candidate",
+            "name": "Solaire of Astora – Dark Souls Remastered | Action Figure STL.",
+            "price": 0.0,
+            "published_at": "2026-10-28T22:38:57Z",
+            "url": "https://cults3d.com/:5135207"
+          },
+          {
+            "currency": "EUR",
+            "match": "similar_name_candidate",
+            "name": "Solaire of Astora Funko Pop",
+            "price": 0.0,
+            "published_at": "2026-09-06T03:09:43Z",
+            "url": "https://cults3d.com/:4876489"
+          },
+          {
+            "currency": "EUR",
+            "match": "similar_name_candidate",
+            "name": "Solaire of Astora | Dark Souls Praise the Sun Bust STL | 4 Sizes",
+            "price": 2.28,
+            "published_at": "2026-10-20T15:47:11Z",
+            "url": "https://cults3d.com/:5091428"
+          },
+          {
+            "currency": "EUR",
+            "match": "similar_name_candidate",
+            "name": "SOLAIRE OF ASTORA - HELMET",
+            "price": 20.0,
+            "published_at": "2025-09-14T15:07:41Z",
+            "url": "https://cults3d.com/:3434409"
+          },
+          {
+            "currency": "EUR",
+            "match": "similar_name_candidate",
+            "name": "Solaire of Astora #1",
+            "price": 0.91,
+            "published_at": "2026-08-02T14:06:19Z",
+            "url": "https://cults3d.com/:4736864"
+          },
+          {
+            "currency": "EUR",
+            "match": "similar_name_candidate",
+            "name": "Solaire of Astora #2",
+            "price": 0.0,
+            "published_at": "2026-08-02T17:07:32Z",
+            "url": "https://cults3d.com/:4737460"
+          },
+          {
+            "currency": "EUR",
+            "match": "similar_name_candidate",
+            "name": "Solaire of Astora — Dark Souls",
+            "price": 4.56,
+            "published_at": "2026-07-07T10:07:09Z",
+            "url": "https://cults3d.com/:4639654"
+          },
+          {
+            "currency": "EUR",
+            "match": "similar_name_candidate",
+            "name": "Solaire of Astora - Dark Souls Sunlight Spear Diorama Statue 3D Print",
+            "price": 2.31,
+            "published_at": "2026-10-30T17:39:42Z",
+            "url": "https://cults3d.com/:5144836"
+          },
+          {
+            "currency": "EUR",
+            "match": "similar_name_candidate",
+            "name": "Dark Souls Solaire of Astora Full Armor Bundle for Cosplay",
+            "price": 49.9,
+            "published_at": "2023-05-23T20:46:24Z",
+            "url": "https://cults3d.com/:1235033"
+          },
+          {
+            "currency": "EUR",
+            "match": "similar_name_candidate",
+            "name": "Dark Souls Solaire of Astora Helmet for Cosplay",
+            "price": 17.5,
+            "published_at": "2023-05-19T14:59:20Z",
+            "url": "https://cults3d.com/:1228577"
+          }
+        ],
+        "name_only_candidates": 0,
+        "queries": [
+          "Solaire of Astora amiibo"
+        ],
+        "queries_failed": 0,
+        "queries_successful": 1,
+        "query_reports": [
+          {
+            "query": "Solaire of Astora amiibo",
+            "sample_size": 20,
+            "search_total": 58,
+            "status": "sampled"
+          }
+        ],
+        "sample_limit": 20,
+        "sample_size": 20,
+        "schema_version": 3,
+        "search_total": null,
+        "similar_name_candidates": 18,
+        "status": "sampled",
+        "verified_exact_count": null
+      },
+      "demand_evidence": [],
+      "design_hypothesis": {
+        "demand_evidence": "not_checked",
+        "derived_from_product_id": "c81e0cd15884af034701",
+        "id": "2c1de84529ce9b3a6e7e",
+        "kind": "collectible_display_base",
+        "originality": "requires_human_review",
+        "status": "untested",
+        "title": "Original display base for collectible figurines"
+      },
+      "discovery_date": "2026-11-20T15:16:51+00:00",
+      "discovery_note": "Discovered during article analysis",
+      "document_first_seen": "2026-11-20T15:16:48+00:00",
+      "event_id": "32ef7f3d3abb5a88760a",
+      "evidence": [
+        {
+          "excerpt": "t way to experience Lordran’s ultra-challenging odyssey in true handheld form. Plus, there's a Solaire of Astora amiibo. Praise the Sun, indeed. price:$1.99/2.99 This is an excellent po",
+          "extraction_confidence": 0.6,
+          "extraction_method": "named_object_in_source",
+          "source_span": "there's a Solaire of Astora amiibo",
+          "type": "press_article",
+          "url": "https://www.nintendolife.com/guides/43-switch-1-and-2-games-you-should-check-out-in-nintendos-adventure-awaits-eshop-sale-us"
+        }
+      ],
+      "fdm_precheck": {
+        "geometry_tested": false,
+        "reason": "hair, arms and details need real geometry",
+        "risk": "unknown",
+        "status": "preliminary_only"
+      },
+      "first_signal_date": "2026-11-20T14:00:00+00:00",
+      "id": "53a3c1a6678aa78c8d61",
+      "image_type": "official_article_preview",
+      "image_url": "https://images.nintendolife.com/3df5e354ad843/1280x720.jpg",
+      "kind": "figurine",
+      "language": "en",
+      "last_changed": "2026-11-20T15:16:51+00:00",
+      "name": "Solaire of Astora amiibo",
+      "origin": "Guide: 43 Switch 1 & 2 Games You Should Check Out In Nintendo's 'Adventure Awaits' eShop Sale (US)",
+      "product_id": "c81e0cd15884af034701",
+      "region": "global",
+      "rights_status": "unverified",
+      "score": {
+        "blockers": [
+          "demand_not_checked",
+          "fdm_geometry_not_tested",
+          "originality_not_reviewed"
+        ],
+        "confidence": 25,
+        "coverage": {
+          "checked": 2,
+          "dimensions": {
+            "competition": true,
+            "demand": false,
+            "event": true,
+            "fdm": false,
+            "timing": false
+          },
+          "total": 5
+        },
+        "decision": "WATCH",
+        "dimensions": {
+          "competition": {
+            "sampled": 20,
+            "status": "sampled",
+            "verified_exact_count": null
+          },
+          "concept": {
+            "status": "untested"
+          },
+          "demand": {
+            "independent_hosts": 0,
+            "levels": [],
+            "status": "not_checked"
+          },
+          "fdm": {
+            "geometry_tested": false,
+            "risk": "unknown",
+            "status": "preliminary_only"
+          },
+          "timing": {
+            "date_source": "not_checked",
+            "status": "unknown"
+          }
+        },
+        "lower": null,
+        "missing_factors": [
+          "gap",
+          "demand",
+          "fdm",
+          "timing"
+        ],
+        "notes": "Search samples and editorial news are not verified buying demand.",
+        "score_version": "evidence-gates-v3",
+        "upper": null
+      },
+      "source_kind": "press",
+      "timing_precheck": {
+        "date_source": "not_checked",
+        "status": "unknown"
+      }
     },
     "5443baf9644c1a106b53": {
       "aliases": [],
@@ -9456,6 +10111,21 @@
         "30c8a87d48d49d193654"
       ]
     },
+    "8d3b3dbe4f862759dd44": {
+      "active": true,
+      "aliases": [],
+      "event_ids": [
+        "32ef7f3d3abb5a88760a"
+      ],
+      "evidence_status": "source_backed_only",
+      "first_seen": "2026-11-20T15:16:52+00:00",
+      "id": "8d3b3dbe4f862759dd44",
+      "kind": "mask",
+      "name": "Kaze and the Wild Masks",
+      "opportunity_ids": [
+        "2d6b8f7f8ce71095d7ab"
+      ]
+    },
     "8e62469958ac5c2aa430": {
       "active": false,
       "aliases": [
@@ -9551,6 +10221,21 @@
         "9639b1824f68b0761d26"
       ]
     },
+    "c81e0cd15884af034701": {
+      "active": true,
+      "aliases": [],
+      "event_ids": [
+        "32ef7f3d3abb5a88760a"
+      ],
+      "evidence_status": "source_backed_only",
+      "first_seen": "2026-11-20T15:16:52+00:00",
+      "id": "c81e0cd15884af034701",
+      "kind": "figurine",
+      "name": "Solaire of Astora amiibo",
+      "opportunity_ids": [
+        "53a3c1a6678aa78c8d61"
+      ]
+    },
     "c92f2b29d70f809962b3": {
       "active": false,
       "aliases": [],
@@ -9628,6 +10313,21 @@
         "0602b18fa0f674587030"
       ]
     },
+    "e9fe51e936d1b476999a": {
+      "active": true,
+      "aliases": [],
+      "event_ids": [
+        "32ef7f3d3abb5a88760a"
+      ],
+      "evidence_status": "source_backed_only",
+      "first_seen": "2026-11-20T15:16:52+00:00",
+      "id": "e9fe51e936d1b476999a",
+      "kind": "stand",
+      "name": "It's a full-featured package and stands",
+      "opportunity_ids": [
+        "0f339528dc507bf8d40c"
+      ]
+    },
     "f3ee1cfbbcc752a16c54": {
       "active": true,
       "aliases": [],
@@ -9670,6 +10370,13 @@
       "created_at": "2026-11-18T23:30:59+00:00",
       "path": "reports/2026-11-19.html",
       "sha256": "a9a72e95c44f2f4598f9b65d3b2cda66854a4b799394dcd67265e715284e76e5",
+      "status": "saved"
+    },
+    "2026-11-20": {
+      "created_at": "2026-11-20T15:16:58+00:00",
+      "mode": "scheduled",
+      "path": "reports/2026-11-20.html",
+      "sha256": "bd6708faad0b34e813f5b00feaf5f5a304bac8f225d30ed06741bc2c53dba06d",
       "status": "saved"
     },
     "manual:2026-11-19:44428789206:1": {
@@ -9726,18 +10433,18 @@
   "source_health": {
     "community_placeholder": {
       "kind": "community",
-      "last_checked": "2026-11-20T14:03:45+00:00",
+      "last_checked": "2026-11-20T15:16:48+00:00",
       "source_name": "Authorized community feed (configure before enabling)",
       "status": "disabled"
     },
     "gematsu": {
       "error": null,
-      "etag": "W/\"b04c68db4f17e7dbf70169cf00341cb6\"",
+      "etag": "W/\"e5e192a8209b86c015dfb4333a7a9737\"",
       "items_seen": 20,
       "kind": "press",
-      "last_checked": "2026-11-20T14:03:44+00:00",
-      "last_modified": "Fri, 20 Nov 2026 13:55:55 GMT",
-      "last_success": "2026-11-20T14:03:44+00:00",
+      "last_checked": "2026-11-20T15:16:47+00:00",
+      "last_modified": "Fri, 20 Nov 2026 14:22:52 GMT",
+      "last_success": "2026-11-20T15:16:47+00:00",
       "source_name": "Gematsu - Japanese Gaming Announcements",
       "status": "ok"
     },
@@ -9746,9 +10453,9 @@
       "etag": null,
       "items_seen": 25,
       "kind": "official",
-      "last_checked": "2026-11-20T14:03:44+00:00",
-      "last_modified": "Fri, 20 Nov 2026 14:00:10 GMT",
-      "last_success": "2026-11-20T14:03:44+00:00",
+      "last_checked": "2026-11-20T15:16:46+00:00",
+      "last_modified": "Fri, 20 Nov 2026 15:15:08 GMT",
+      "last_success": "2026-11-20T15:16:47+00:00",
       "source_name": "Nintendo Japan",
       "status": "ok"
     },
@@ -9757,9 +10464,9 @@
       "etag": null,
       "items_seen": 25,
       "kind": "press",
-      "last_checked": "2026-11-20T14:03:44+00:00",
+      "last_checked": "2026-11-20T15:16:47+00:00",
       "last_modified": null,
-      "last_success": "2026-11-20T14:03:45+00:00",
+      "last_success": "2026-11-20T15:16:48+00:00",
       "source_name": "Nintendo Life - Games and Merchandise",
       "status": "ok"
     },
@@ -9768,31 +10475,31 @@
       "etag": "\"626c27de3b8623b2df2fbd562b38e1c7\"",
       "items_seen": 10,
       "kind": "official",
-      "last_checked": "2026-11-20T14:03:43+00:00",
+      "last_checked": "2026-11-20T15:16:46+00:00",
       "last_modified": "Fri, 20 Nov 2026 09:20:26 GMT",
-      "last_success": "2026-11-20T14:03:43+00:00",
+      "last_success": "2026-11-20T15:16:46+00:00",
       "source_name": "PlayStation Blog",
-      "status": "ok"
+      "status": "ok_not_modified"
     },
     "siliconera": {
       "error": null,
-      "etag": "W/\"01b0e19b7212d0843430ff0cb98795b5\"",
+      "etag": "W/\"fa421d005f6a04bcb1b7f47982ddbe94\"",
       "items_seen": 15,
       "kind": "press",
-      "last_checked": "2026-11-20T14:03:44+00:00",
-      "last_modified": "Thu, 05 Nov 2026 21:16:07 GMT",
-      "last_success": "2026-11-20T14:03:44+00:00",
+      "last_checked": "2026-11-20T15:16:47+00:00",
+      "last_modified": "Fri, 20 Nov 2026 02:29:20 GMT",
+      "last_success": "2026-11-20T15:16:47+00:00",
       "source_name": "Siliconera - Japanese Gaming and Merchandise",
       "status": "ok"
     },
     "xbox_wire": {
       "error": null,
-      "etag": "W/\"d165ff77daccf2d422d000c5f79d1bed\"",
+      "etag": "W/\"26c1a05c4f60c9c9de43a135f609c3f8\"",
       "items_seen": 10,
       "kind": "official",
-      "last_checked": "2026-11-20T14:03:43+00:00",
-      "last_modified": "Fri, 20 Nov 2026 10:28:45 GMT",
-      "last_success": "2026-11-20T14:03:44+00:00",
+      "last_checked": "2026-11-20T15:16:46+00:00",
+      "last_modified": "Fri, 20 Nov 2026 15:00:00 GMT",
+      "last_success": "2026-11-20T15:16:46+00:00",
       "source_name": "Xbox Wire",
       "status": "ok"
     }
@@ -9926,6 +10633,14 @@
         "distinct_events": 1
       }
     ],
+    "8d3b3dbe4f862759dd44": [
+      {
+        "cults_samples": 1,
+        "date": "2026-11-20",
+        "direct_evidence_links": 0,
+        "distinct_events": 1
+      }
+    ],
     "8e62469958ac5c2aa430": [
       {
         "cults_samples": 1,
@@ -9974,6 +10689,14 @@
         "distinct_events": 1
       }
     ],
+    "c81e0cd15884af034701": [
+      {
+        "cults_samples": 1,
+        "date": "2026-11-20",
+        "direct_evidence_links": 0,
+        "distinct_events": 1
+      }
+    ],
     "c92f2b29d70f809962b3": [
       {
         "cults_samples": 1,
@@ -10007,6 +10730,14 @@
       }
     ],
     "dc3c3c68a3bfae71b3f6": [
+      {
+        "cults_samples": 1,
+        "date": "2026-11-20",
+        "direct_evidence_links": 0,
+        "distinct_events": 1
+      }
+    ],
+    "e9fe51e936d1b476999a": [
       {
         "cults_samples": 1,
         "date": "2026-11-20",
