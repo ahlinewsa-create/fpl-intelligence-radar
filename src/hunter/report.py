@@ -171,7 +171,7 @@ def object_detail(op: dict, communities_checked: bool,
         f'{h(str(coverage.get("checked", 0)))}/{h(str(coverage.get("total", 5)))} مجالات '
         f'• طلب: {h(labels.get(demand_state, demand_state))} '
         f'• قرار: {h(score.get("decision", "WATCH"))}</div>',
-        f'<div style="{line_style}"><b>فكرة أولية للاختبار:</b> '
+        f'<div style="{line_style}"><b>فكرة أصلية للاختبار:</b> '
         f'{h(hypothesis.get("title", "لم تُنشأ بعد"))} '
         f'(غير مثبتة)</div>',
         f'<div style="{line_style}"><b>FDM:</b> '
