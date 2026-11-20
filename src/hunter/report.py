@@ -121,14 +121,9 @@ def competition_text(comp: dict) -> str:
 def next_research_step(op: dict) -> str:
     """A concrete next check, not an invented forecast."""
     comp = op.get("competition") or {}
-    youtube = op.get("youtube_probe") or {}
     if comp.get("status") != "sampled":
         return "فحص منافسة Cults3D باستعلام اسم المنتج الحقيقي وتوثيق العينة"
     if not op.get("demand_evidence"):
-        if youtube.get("status") == "sampled":
-            return "مراجعة روابط طلب STL المحتمل، ثم البحث عن دليل مستقل آخر"
-        if youtube.get("status") == "failed":
-            return "إعادة فحص طلب STL بعد تعافي مصدر YouTube"
         return "البحث عن طلب صريح على STL أو طباعة FDM دون استنتاج من الخبر وحده"
     return "تقييم ملاءمة الفكرة للطباعة FDM بمراجعة هندسية أولية"
 
@@ -144,18 +139,6 @@ def object_detail(op: dict, communities_checked: bool) -> str:
         demand_text = "لم تُسجل إشارة مرتبطة بالقطعة ضمن المصادر المجتمعية المفحوصة"
     else:
         demand_text = "غير مفحوص — مصادر النقاش غير مفعّلة"
-    youtube = op.get("youtube_probe") or {}
-    youtube_line = ""
-    if youtube.get("status") == "sampled":
-        youtube_line = (
-            f'<div style="font-size:12px;line-height:1.8"><b>YouTube — تجربة فقط:</b> '
-            f'{int(youtube.get("videos_sampled", 0))} فيديوهات و'
-            f'{int(youtube.get("comments_sampled", 0))} تعليقًا فُحصت؛ '
-            f'{int(youtube.get("requests_found", 0))} طلب STL محتمل. '
-            'هذه عينة غير ممثلة ولا تثبت الشراء.</div>'
-        )
-    elif youtube.get("status") == "failed":
-        youtube_line = '<div style="font-size:12px">YouTube: تعذر الفحص (ليس صفر طلب)</div>'
     body = (
         '<div style="border-top:1px solid #ece8f2;padding:11px 0 4px">'
         '<div style="font-size:12px;color:#81519c">🔎 عنصر مرشح للمراجعة</div>'
@@ -168,7 +151,7 @@ def object_detail(op: dict, communities_checked: bool) -> str:
         f'<b>الطلب:</b> {h(demand_text)}'
         '</div><div style="font-size:12px;line-height:1.8">'
         f'<b>منافسة Cults3D:</b> {h(competition_text(comp))}'
-        '</div>' + youtube_line +
+        '</div>'
         '<div style="font-size:12px;line-height:1.8"><b>الخطوة التالية:</b> '
         + h(next_research_step(op)) + '</div></div>'
     )
