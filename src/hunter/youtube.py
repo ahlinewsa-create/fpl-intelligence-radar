@@ -16,20 +16,20 @@ from .state import now_utc
 
 API = "https://www.googleapis.com/youtube/v3"
 STL_REQUEST = re.compile(
-    r"\\b(?:where (?:can|do) i (?:get|find|download)|can (?:you|someone) "
-    r"(?:share|send|make)|looking for|need|want|anyone have|is there)\\b"
-    r".{0,95}\\b(?:stl|3d print(?:able)? file|printable model)\\b"
-    r"|\\b(?:stl|printable model)\\b.{0,80}\\b(?:please|link|download)\\b",
+    r"\b(?:where (?:can|do) i (?:get|find|download)|can (?:you|someone) "
+    r"(?:share|send|make)|looking for|need|want|anyone have|is there)\b"
+    r".{0,95}\b(?:stl|3d print(?:able)? file|printable model)\b"
+    r"|\b(?:stl|printable model)\b.{0,80}\b(?:please|link|download)\b",
     re.I | re.S,
 )
 PRINT_INTEREST = re.compile(
-    r"\\b(?:i (?:want|need|would love) to 3d print|i(?:'d| would) print|"
-    r"print this on my|fdm friendly|will this print)\\b", re.I,
+    r"\b(?:i (?:want|need|would love) to 3d print|i(?:'d| would) print|"
+    r"print this on my|fdm friendly|will this print)\b", re.I,
 )
 
 
 def classify_comment(text: str) -> str | None:
-    text = re.sub(r"\\s+", " ", text or "")[:1000]
+    text = re.sub(r"\s+", " ", text or "")[:1000]
     if STL_REQUEST.search(text):
         return "stl_request"
     if PRINT_INTEREST.search(text):
